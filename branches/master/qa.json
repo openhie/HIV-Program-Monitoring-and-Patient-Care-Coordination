@@ -1,9 +1,9 @@
 {
-  "url" : "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
-  "name" : "XXYourComputableMyIGNameHere",
-  "package-id" : "xxexample.fhir.uv.myig",
+  "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
+  "name" : "HIVProgramMonitoring",
+  "package-id" : "openhie.fhir.hiv.program-monitoring",
   "ig-ver" : "0.1.0-test",
-  "date" : "Tue, 31 Jan, 2023 05:22:08 +0000",
+  "date" : "Tue, 31 Jan, 2023 11:56:32 +0000",
   "errs" : 1,
   "warnings" : 4,
   "hints" : 0,

@@ -1,9 +1,9 @@
 [
   {
-    "id" : "xxexample.fhir.uv.myig",
+    "id" : "openhie.fhir.hiv.program-monitoring",
     "type" : "ImplementationGuide",
-    "url" : "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
     "version" : "0.1.0-test",
-    "name" : "XXYourComputableMyIGNameHere"
+    "name" : "HIVProgramMonitoring"
   }
 ]
