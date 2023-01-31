@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="openhie.fhir.hiv.program-monitoring"/>
+  <id value="xxexample.fhir.uv.myig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HIVProgramMonitoring</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring</pre><div><p>HIV Program Monitoring and Patient Care Coordination</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>XXYourComputableMyIGNameHere</h2><p>The official URL for this implementation guide is: </p><pre>http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig</pre><div><p>xxxA brief description of what this IG is about</p>
 </div></div>
   </text>
-  <url value="http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring"/>
+  <url value="http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig"/>
   <version value="0.1.0-test"/>
-  <name value="HIVProgramMonitoring"/>
-  <title value="HIV Program Monitoring and Patient Care Coordination"/>
+  <name value="XXYourComputableMyIGNameHere"/>
+  <title value="xxYour User Friendly Name for MyIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-01-31T11:56:32+00:00"/>
-  <publisher value="Jembi Health Systems"/>
+  <date value="2023-01-31T12:27:09+00:00"/>
+  <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
       <system value="url"/>
-      <value value="https://www.jembi.org"/>
-    </telecom>
-    <telecom>
-      <system value="email"/>
-      <value value="info@jembi.org"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="HIV Program Monitoring and Patient Care Coordination"/>
+  <description value="xxxA brief description of what this IG is about "/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
       <code value="001"/>
     </coding>
   </jurisdiction>
-  <packageId value="openhie.fhir.hiv.program-monitoring"/>
+  <packageId value="xxexample.fhir.uv.myig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
@@ -136,7 +132,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://openhie.org/fhir/hiv-program-monitoring/history.html"/>
+        <valueString value="http://xxsomewhere.org/fhir/myig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -344,7 +340,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://openhie.org/fhir/hiv-program-monitoring/history.html"/>
+        <valueString value="http://xxsomewhere.org/fhir/myig/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
