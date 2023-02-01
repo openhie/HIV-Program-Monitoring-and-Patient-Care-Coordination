@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Example Organization - HIVOrganizationExample - JSON Representation - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Example Patient - HIVPatientExample - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -143,7 +143,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Organization - HIVOrganizationExample</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Patient - HIVPatientExample</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -169,14 +169,14 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Organization-HIVOrganizationExample.html">Narrative Content</a>
+    <a href="Patient-HIVPatientExample.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Organization-HIVOrganizationExample.xml.html">XML</a>
+      <a href="Patient-HIVPatientExample.xml.html">XML</a>
     </li>
   
 
@@ -190,7 +190,7 @@
 
   
     <li>
-      <a href="Organization-HIVOrganizationExample.ttl.html">TTL</a>
+      <a href="Patient-HIVPatientExample.ttl.html">TTL</a>
     </li>
   
 
@@ -202,7 +202,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Example Organization - HIVOrganizationExample - JSON Representation</h2>
+<h2 id="root">: Example Patient - HIVPatientExample - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
@@ -217,7 +217,7 @@
   </table>
 
 
-<p><a href="Organization-HIVOrganizationExample.json" no-download="true">Raw json</a> | <a href="Organization-HIVOrganizationExample.json" download>Download</a></p>
+<p><a href="Patient-HIVPatientExample.json" no-download="true">Raw json</a> | <a href="Patient-HIVPatientExample.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
@@ -226,38 +226,83 @@
 
   <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
 {
-  "<a href="http://hl7.org/fhir/R4/organization.html#Organization">resourceType</a>" : "Organization",
-  "<a href="http://hl7.org/fhir/R4/organization.html#Organization.id">id</a>" : "HIVOrganizationExample",
-  "<a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">meta</a>" : {
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resourceType</a>" : "Patient",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "HIVPatientExample",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization"
+      "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient"
     ]
   },
-  "<a href="http://hl7.org/fhir/R4/organization.html#Organization.text">text</a>" : {
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization&lt;/b&gt;&lt;a name=\&quot;HIVOrganizationExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Organization &amp;quot;HIVOrganizationExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-organization.html\&quot;&gt;HIV Organization&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: facility1&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: HIV Organization&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country &lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;Jane Maria Smith (OFFICIAL)&lt;/b&gt; female, DoB: 1990-12-12 ( id: NID1234567)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Details:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;tel:+27821234567\&quot;&gt;+27821234567&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;mailto:someone@example.com\&quot;&gt;someone@example.com&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Cape Town Western Province South Africa &lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Nominated Contact: Next-of-Kin\&quot;&gt;Next-of-Kin:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;John Doe &lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;tel:+27829999999\&quot;&gt;+27829999999&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Patient Links\&quot;&gt;Links:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;Managing Organization: &lt;a href=\&quot;HIVOrganizationExample\&quot;&gt;HIVOrganizationExample&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
-  "<a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">identifier</a>" : [
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "facility1"
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/nid",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "NID1234567"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/organization.html#Organization.name">name</a>" : "HIV Organization",
-  "<a href="http://hl7.org/fhir/R4/organization.html#Organization.address">address</a>" : [
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.active">active</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.name">name</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
-        "DISI line 1",
-        "DISI line 2",
-        "DISI line 3"
-      ],
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "DISI city 1",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "DISI district 1",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "DISI state 1",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "DISI postal code",
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "DISI country"
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">use</a>" : "official",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Smith",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+        "Jane",
+        "Maria"
+      ]
     }
-  ]
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">telecom</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "+27821234567"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "someone@example.com"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1990-12-12",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.address">address</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Cape Town",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">district</a>" : "City of Cape Town",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">state</a>" : "Western Province",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "South Africa"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.relationship">relationship</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+              "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "N"
+            }
+          ]
+        }
+      ],
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.name">name</a>" : {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">family</a>" : "Doe",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">given</a>" : [
+          "John"
+        ]
+      },
+      "<a href="http://hl7.org/fhir/R4/patient.html#Patient.contact.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "phone",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "+27829999999"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.managingOrganization">managingOrganization</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "HIVOrganizationExample"
+  }
 }</code></pre>
 
 
@@ -289,7 +334,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 1, 2023 09:51+0000">2023-02-01</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 1, 2023 10:34+0000">2023-02-01</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

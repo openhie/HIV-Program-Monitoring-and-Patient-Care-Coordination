@@ -7,10 +7,10 @@
     "name" : "HIVProgramMonitoring"
   },
   {
-    "id" : "hiv-organization",
+    "id" : "hiv-patient",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
     "version" : "0.1.0-test",
-    "name" : "HIVOrganization"
+    "name" : "HIVPatient"
   }
 ]
