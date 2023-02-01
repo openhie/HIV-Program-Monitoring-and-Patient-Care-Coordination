@@ -8,4 +8,5 @@ Description: "HIV Organization for case report - this represents a health facili
 * address.state 1..1
 * address.district 1..1
 * address.city 1..1
+* name 1..1 
 * identifier 1..*
