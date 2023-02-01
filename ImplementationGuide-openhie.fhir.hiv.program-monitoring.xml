@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-01T12:37:33+00:00"/>
+  <date value="2023-02-01T12:41:24+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -464,20 +464,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-patient"/>
+        <reference value="StructureDefinition/hiv-organization"/>
       </reference>
-      <name value="Patient"/>
-      <description value="A patient resource for an HIV Patient"/>
+      <name value="HIV Organization"/>
+      <description value="HIV Organization for case report - this represents a health facility"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Patient/HIVPatientExample"/>
+        <reference value="Organization/HIVOrganizationExample"/>
       </reference>
-      <name value="Example Patient - HIVPatientExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient"/>
+      <name value="Example Organization - HIVOrganizationExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
