@@ -10,6 +10,12 @@
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
         "title": "HIV Organization"
       }
+    ],
+    "Patient": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
+        "title": "Patient"
+      }
     ]
   },
   "usage": {
@@ -30,6 +36,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
