@@ -21,7 +21,7 @@
   ]; # 
   fhir:Organization.identifier [
      fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-casereporting/identifier/hiv-organization" ];
+     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization" ];
      fhir:Identifier.value [ fhir:value "facility1" ]
   ]; # 
   fhir:Organization.name [ fhir:value "HIV Organization"]; # 
