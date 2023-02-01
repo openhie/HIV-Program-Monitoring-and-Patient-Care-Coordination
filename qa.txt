@@ -2,8 +2,8 @@
 =========================================
 
 err = 1, warn = 5, info = 0
-IG Publisher Version: 1.2.31 Out of date - current version is ?pub-ver-1?
-Generated Wed Feb 01 10:34:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+IG Publisher Version: 1.2.31
+Generated Wed Feb 01 10:47:58 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 1 / 5 / 0
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
