@@ -5,5 +5,12 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
     "version" : "0.1.0-test",
     "name" : "HIVProgramMonitoring"
+  },
+  {
+    "id" : "hiv-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
+    "version" : "0.1.0-test",
+    "name" : "HIVOrganization"
   }
 ]

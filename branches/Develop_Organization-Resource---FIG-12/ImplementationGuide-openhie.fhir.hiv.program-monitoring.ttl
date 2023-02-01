@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Program Monitoring and Patient Care Coordination"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-01T07:03:20+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-01T07:05:31+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -687,6 +687,36 @@
          fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Organization for case report - this represents a health facility" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Organization/HIVOrganizationExample>;
+         fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - HIVOrganizationExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [
