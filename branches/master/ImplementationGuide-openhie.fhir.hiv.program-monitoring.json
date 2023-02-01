@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-01T12:37:33+00:00",
+  "date" : "2023-02-01T15:21:20+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -637,6 +637,28 @@
       },
       "name" : "Example Patient - HIVPatientExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-organization"
+      },
+      "name" : "HIV Organization",
+      "description" : "HIV Organization for case report - this represents a health facility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "name" : "Example Organization - HIVOrganizationExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization"
     }],
     "page" : {
       "extension" : [{
