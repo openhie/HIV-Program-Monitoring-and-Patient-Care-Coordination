@@ -1,16 +1,20 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 1, warn = 4, info = 0
+err = 0, warn = 5, info = 0
 IG Publisher Version: 1.2.30
-Generated Wed Feb 01 07:03:29 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
- Build Errors : 0 / 4 / 0
- /github/workspace/input/myig : 1 / 0 / 1
+Generated Wed Feb 01 07:05:45 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+ Build Errors : 0 / 5 / 0
+ /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
+ /github/workspace/input/myig : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/HIVOrganizationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Organization-HIVOrganizationExample.json ==
+== fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == input/myig.xml ==
-ERROR: ImplementationGuide/openhie.fhir.hiv.program-monitoring: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
