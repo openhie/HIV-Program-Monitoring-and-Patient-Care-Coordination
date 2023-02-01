@@ -20,10 +20,4 @@ Description: "Patient example"
 * address.state = "Western Province"
 * address.district = "City of Cape Town"
 * address.city = "Cape Town"
-* contact[0].relationship = #N
-* contact[0].relationship.coding.system = "http://terminology.hl7.org/CodeSystem/v2-0131"
-* contact[0].name.given = "John" 
-* contact[0].name.family = "Doe"
-* contact[0].telecom.system = #phone
-* contact[0].telecom.value = "+27829999999"
 * managingOrganization = Reference(HIVOrganizationExample)

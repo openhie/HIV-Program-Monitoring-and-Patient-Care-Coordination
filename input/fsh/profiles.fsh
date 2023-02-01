@@ -21,6 +21,4 @@ Description: "A patient resource for an HIV Patient"
 * gender 1..1
 * birthDate 1..1
 * address 0..*
-* maritalStatus 0..1
-* contact 0..*
 * managingOrganization 1..1
