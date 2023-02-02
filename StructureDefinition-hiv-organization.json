@@ -18,7 +18,7 @@
   "name" : "HIVOrganization",
   "title" : "HIV Organization",
   "status" : "active",
-  "date" : "2023-02-02T13:10:09+00:00",
+  "date" : "2023-02-02T13:39:31+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -30,7 +30,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "Organization providing HIV Testing Services",
+  "description" : "HIV Organization for case report - this represents a health facility",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
