@@ -21,3 +21,14 @@ Description: "Patient example"
 * address.district = "City of Cape Town"
 * address.city = "Cape Town"
 * managingOrganization = Reference(HIVOrganizationExample)
+
+Instance: TransferOutExample
+InstanceOf: TransferOut
+Usage: #example
+Title: "Transfer-Out Request example"
+Description: "Service Request for Transfer-Out example"
+* occurrenceDateTime = "2023-01-01"
+* performer = Reference(HIVOrganizationExample)
+* status = #active
+* intent = #proposal
+* subject = Reference(HIVPatientExample)

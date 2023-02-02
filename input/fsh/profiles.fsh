@@ -22,3 +22,11 @@ Description: "A patient resource for an HIV Patient"
 * birthDate 1..1
 * address 0..*
 * managingOrganization 1..1
+
+Profile: TransferOut
+Parent: ServiceRequest
+Id: transferout
+Title: "Transfer-Out Request"
+Description: "Service Request for Transfer-Out"
+* occurrenceDateTime 0..1
+* performer 0..*
