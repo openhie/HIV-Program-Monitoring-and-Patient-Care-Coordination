@@ -19,5 +19,12 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
     "version" : "0.1.0-test",
     "name" : "HIVPatient"
+  },
+  {
+    "id" : "transferout",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout",
+    "version" : "0.1.0-test",
+    "name" : "TransferOut"
   }
 ]
