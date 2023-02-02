@@ -9,4 +9,11 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
+  <sch:pattern>
+    <sch:title>f:ServiceRequest</sch:title>
+    <sch:rule context="f:ServiceRequest">
+      <sch:assert test="count(f:performer) &gt;= 1">performer: minimum cardinality of 'performer' is 1</sch:assert>
+      <sch:assert test="count(f:performer) &lt;= 1">performer: maximum cardinality of 'performer' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>
