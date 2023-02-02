@@ -2,7 +2,7 @@ Profile: HIVOrganization
 Parent: Organization
 Id: hiv-organization
 Title: "HIV Organization"
-Description: "HIV Organization for case report - this represents a health facility"
+Description: "Organization providing HIV Testing Services"
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
@@ -43,3 +43,75 @@ Description: "A patient resource for an HIV Patient"
 * birthDate 1..1
 * address 0..*
 * managingOrganization 1..1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MARIUS SPACE
+Profile: HIVDiagnosisEncounter
+Parent: Encounter
+Id: hiv-diagnosis-encounter
+Title: "HIV Diagnosis Encounter"
+Description: "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
+* serviceProvider only Reference(Organization)
+* serviceProvider 1..1
+* status = #finished
+* subject 1..1
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
+* extension contains HIVCareNextAppointment named next-visit 0..1 MS
+
+Extension: HIVCareNextAppointment
+Id: hiv-care-next-visit
+Title: "Next Appointment Date"
+Description: ""
+* value[x] only dateTime

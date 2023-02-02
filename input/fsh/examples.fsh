@@ -39,3 +39,72 @@ Description: "Patient example"
 * address.district = "City of Cape Town"
 * address.city = "Cape Town"
 * managingOrganization = Reference(HIVOrganizationExample)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//MARIUS SPACE
+Instance: HIVDiagnosisEncounterExample
+InstanceOf: HIVDiagnosisEncounter
+Usage: #example
+Title: "HIV Diagnosis Encounter Example"
+Description: "HIV Diagnosis Encounter example"
+* serviceProvider = Reference(HIVOrganizationExample)
+* status = #finished
+* subject = Reference(HIVPatientExample)
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
+* extension[next-visit].valueDateTime = "2022-10-22"
