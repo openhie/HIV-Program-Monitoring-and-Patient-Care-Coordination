@@ -5,16 +5,16 @@
   "jurisdiction": "001",
   "extensions": [],
   "profiles": {
-    "Organization": [
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
-        "title": "HIV Organization"
-      }
-    ],
     "Patient": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
         "title": "Patient"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout",
+        "title": "Transfer-Out Request"
       }
     ]
   },
