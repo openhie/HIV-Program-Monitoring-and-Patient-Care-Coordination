@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-02T07:02:51+00:00",
+  "date" : "2023-02-02T08:17:06+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -619,17 +619,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/TransferOutExample"
-      },
-      "name" : "Example ServiceRequest - TransferOutExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -655,10 +644,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/transferout"
+        "reference" : "StructureDefinition/hiv-organization"
       },
-      "name" : "Transfer-Out Request",
-      "description" : "Service Request for Transfer-Out"
+      "name" : "HIV Organization",
+      "description" : "HIV Organization for case report - this represents a health facility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "name" : "Example Organization - HIVOrganizationExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization"
     }],
     "page" : {
       "extension" : [{
