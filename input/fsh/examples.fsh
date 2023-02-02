@@ -1,3 +1,21 @@
+Instance: HIVOrganizationExample
+InstanceOf: HIVOrganization
+Usage: #example
+Title: "HIV Organization Example"
+Description: "Organization example"
+* identifier[HTS].value = "facility1"
+* identifier[HTS].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization"
+* name = "HIV Test Services Health Facility"
+* address[+].country = "DISI country"
+* address[=].state = "DISI state 1"
+* address[=].district = "DISI district 1"
+* address[=].city = "DISI city 1"
+* address[=].line[+] = "DISI line 1"
+* address[=].line[+] = "DISI line 2"
+* address[=].line[+] = "DISI line 3"
+* address[=].postalCode = "DISI postal code"
+
+
 Instance: HIVPatientExample
 InstanceOf: HIVPatient
 Usage: #example
