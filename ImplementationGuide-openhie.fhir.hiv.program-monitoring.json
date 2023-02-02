@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-02T11:57:26+00:00",
+  "date" : "2023-02-02T13:01:09+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -619,13 +619,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
+        "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "ServiceRequest/TransferOutExample"
+        "reference" : "Encounter/HIVDiagnosisEncounterExample"
       },
-      "name" : "Example ServiceRequest - TransferOutExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout"
+      "name" : "Example Encounter - HIVDiagnosisEncounterExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis-encounter"
     },
     {
       "extension" : [{
@@ -637,6 +637,27 @@
       },
       "name" : "Patient",
       "description" : "A patient resource for an HIV Patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-diagnosis-encounter"
+      },
+      "name" : "HIV Diagnosis Encounter",
+      "description" : "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-care-next-visit"
+      },
+      "name" : "Next Appointment Date"
     },
     {
       "extension" : [{
@@ -658,18 +679,7 @@
         "reference" : "StructureDefinition/hiv-organization"
       },
       "name" : "HIV Organization",
-      "description" : "HIV Organization for case report - this represents a health facility"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/transferout"
-      },
-      "name" : "Transfer-Out Request",
-      "description" : "This profile will be used to capture a Transfer-Out request for a patient"
+      "description" : "Organization providing HIV Testing Services"
     },
     {
       "extension" : [{
