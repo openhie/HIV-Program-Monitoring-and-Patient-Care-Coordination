@@ -44,60 +44,6 @@ Description: "A patient resource for an HIV Patient"
 * address 0..*
 * managingOrganization 1..1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//MARIUS SPACE
 Profile: HIVDiagnosisEncounter
 Parent: Encounter
 Id: hiv-diagnosis-encounter

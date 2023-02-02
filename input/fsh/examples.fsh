@@ -40,64 +40,6 @@ Description: "Patient example"
 * address.city = "Cape Town"
 * managingOrganization = Reference(HIVOrganizationExample)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//MARIUS SPACE
 Instance: HIVDiagnosisEncounterExample
 InstanceOf: HIVDiagnosisEncounter
 Usage: #example
