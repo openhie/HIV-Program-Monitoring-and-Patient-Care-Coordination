@@ -44,7 +44,7 @@ Instance: TransferOutExample
 InstanceOf: TransferOut
 Usage: #example
 Title: "Transfer-Out Request example"
-Description: "Service Request for Transfer-Out example"
+Description: "Patient Transfer-Out request example"
 * occurrenceDateTime = "2023-01-01"
 * performer = Reference(HIVOrganizationExample)
 * status = #active
