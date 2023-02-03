@@ -1,5 +1,3 @@
-<!-- get modelType -->
-
 
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -7,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Next Appointment Date - Mappings - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Example Condition - HIVDiagnosisExample - JSON Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -145,7 +143,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Next Appointment Date</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Condition - HIVDiagnosisExample</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -157,11 +155,8 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">HIV Program Monitoring and Patient Care Coordination, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.1.0-test). This version is based on the current content of <a href="https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination">https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-program-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  
-
-
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">HIV Program Monitoring and Patient Care Coordination, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.1.0-test). This version is based on the current content of <a href="https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination">https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-program-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -174,63 +169,46 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-hiv-care-next-visit.html">Content</a>
+    <a href="Condition-HIVDiagnosisExample.html">Narrative Content</a>
   </li>
 
 
 
-  <li>
-    <a href="StructureDefinition-hiv-care-next-visit-definitions.html">Detailed Descriptions</a>
-  </li>
-
+  
+    <li>
+      <a href="Condition-HIVDiagnosisExample.xml.html">XML</a>
+    </li>
+  
 
 
   
     <li class="active">
-      <a href="#">Mappings</a>
-    </li>
-  
-
-
-
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-hiv-care-next-visit.profile.xml.html">XML</a>
+      <a href="#">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-hiv-care-next-visit.profile.json.html">JSON</a>
+      <a href="Condition-HIVDiagnosisExample.ttl.html">TTL</a>
     </li>
   
 
-
-  
-    <li>
-      <a href="StructureDefinition-hiv-care-next-visit.profile.ttl.html">TTL</a>
-    </li>
-  
 
 
 </ul>
 
 
 <a name="root"> </a>
-<h2 id="root">Extension: HIVCareNextAppointment - Mappings</h2>
+
+
+<h2 id="root">: Example Condition - HIVDiagnosisExample - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
       <td colspan="2">
         
-          Active
           
-            as of 2023-02-03
           
         
       </td>
@@ -239,20 +217,59 @@
   </table>
 
 
-<p>Mappings for the hiv-care-next-visit extension.</p>
+<p><a href="Condition-HIVDiagnosisExample.json" no-download="true">Raw json</a> | <a href="Condition-HIVDiagnosisExample.json" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>HIVCareNextAppointment</b></td></tr>
- <tr><td>Extension</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;value[x]</td><td>N/A</td> </tr>
-</table>
+  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition">resourceType</a>" : "Condition",
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.id">id</a>" : "HIVDiagnosisExample",
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;HIVDiagnosisExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition &amp;quot;HIVDiagnosisExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-diagnosis.html\&quot;&gt;HIV Diagnosis&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: abc&lt;/p&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: confirmed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ([not stated]#confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Human immunodeficiency virus infection &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#86406008)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-HIVPatientExample.html\&quot;&gt;Patient/HIVPatientExample&lt;/a&gt; &amp;quot; SMITH&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;recordedDate&lt;/b&gt;: 2021-05-18&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "abc"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">clinicalStatus</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "active"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.verificationStatus">verificationStatus</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "confirmed"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.code">code</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://snomed.info/sct",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "86406008"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.subject">subject</a>" : {
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/HIVPatientExample"
+  },
+  "<a href="http://hl7.org/fhir/R4/condition.html#Condition.recordedDate">recordedDate</a>" : "2021-05-18"
+}</code></pre>
 
 
   <!-- insert notes if present -->
@@ -261,7 +278,6 @@
 
 
 </div>
-
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -269,29 +285,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -307,7 +300,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 3, 2023 13:32+0000">2023-02-03</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 3, 2023 15:13+0000">2023-02-03</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
