@@ -7,6 +7,13 @@
     "name" : "HIVProgramMonitoring"
   },
   {
+    "id" : "hiv-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
+    "version" : "0.1.0-test",
+    "name" : "HIVDiagnosis"
+  },
+  {
     "id" : "hiv-organization",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",

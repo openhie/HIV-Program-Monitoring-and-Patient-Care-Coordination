@@ -5,6 +5,12 @@
   "jurisdiction": "001",
   "extensions": [],
   "profiles": {
+    "Condition": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
+        "title": "HIV Diagnosis"
+      }
+    ],
     "Organization": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
