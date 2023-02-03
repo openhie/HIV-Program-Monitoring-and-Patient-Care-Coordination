@@ -52,8 +52,9 @@ Description: "The interaction representing the HIV Diagnosis Encounter between t
 * serviceProvider only Reference(Organization)
 * serviceProvider 1..1
 * status = #finished
+* class 1..1
+* subject only Reference(Patient)
 * subject 1..1
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
 
 Extension: HIVCareNextAppointment
