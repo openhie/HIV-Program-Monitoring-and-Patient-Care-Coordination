@@ -49,7 +49,6 @@ Description: "This profile represents the facility the patient is being transfer
 * class 1..1
 * period 1..1
 * serviceProvider 1..1
-* serviceProvider only Reference(HIVOrganization)
 * partOf only Reference(TransferringFacilityEncounter)
 
 Profile: TransferringFacilityEncounter
@@ -61,7 +60,6 @@ Description: "This profile represents the facility the patient is being transfer
 * class 1..1
 * period 1..1
 * serviceProvider 1..1
-* serviceProvider only Reference(HIVOrganization)
 
 Profile: HIVEncounter
 Parent: Encounter
