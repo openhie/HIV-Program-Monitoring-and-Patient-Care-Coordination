@@ -45,8 +45,11 @@ InstanceOf: HIVDiagnosisEncounter
 Usage: #example
 Title: "HIV Diagnosis Encounter Example"
 Description: "HIV Diagnosis Encounter example"
-* serviceProvider = Reference(HIVOrganizationExample)
-* status = #finished
-* subject = Reference(HIVPatientExample)
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
 * extension[next-visit].valueDateTime = "2022-10-22"
+* status = #finished
+* class.code = #PRENC
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* subject = Reference(HIVPatientExample)
+* period.start = "2022-07-28"
+* period.end  = "2022-07-28"
+* serviceProvider = Reference(HIVOrganizationExample)

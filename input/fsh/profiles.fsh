@@ -49,15 +49,17 @@ Parent: Encounter
 Id: hiv-diagnosis-encounter
 Title: "HIV Diagnosis Encounter"
 Description: "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
-* serviceProvider only Reference(Organization)
-* serviceProvider 1..1
-* status = #finished
-* subject 1..1
-* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#PRENC
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
+* status = #finished
+* class 1..1
+* subject only Reference(Patient)
+* subject 1..1
+* period 1..1
+* serviceProvider Reference(Organization)
+* serviceProvider 1..1
 
 Extension: HIVCareNextAppointment
 Id: hiv-care-next-visit
 Title: "Next Appointment Date"
-Description: ""
+Description: "A date representing the patient's next scheduled appointment"
 * value[x] only dateTime
