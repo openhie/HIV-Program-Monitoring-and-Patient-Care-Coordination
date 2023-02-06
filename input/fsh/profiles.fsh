@@ -24,17 +24,13 @@ Parent: Patient
 Id: hiv-patient
 Title: "Patient"
 Description: "A patient resource for an HIV Patient"
-
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
-
 * identifier contains
     NID 0..1
-
 * identifier[NID].value 0..1
 * identifier[NID].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/nid" (exactly)
-
 * active 0..1
 * name.given 1..*
 * name.family 1..1
@@ -49,7 +45,6 @@ Parent: Encounter
 Id: hiv-encounter
 Title: "HIV Diagnosis Encounter"
 Description: "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
-
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status = #finished
 * class 1..1
