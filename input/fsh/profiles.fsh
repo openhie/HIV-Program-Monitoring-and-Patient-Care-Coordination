@@ -17,7 +17,7 @@ Description: "Organization providing HIV Testing Services"
 * address.state 1..1
 * address.district 1..1
 * address.city 1..1
-* name 1..1 
+* name 1..1
 
 Profile: HIVPatient
 Parent: Patient
