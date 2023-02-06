@@ -1,25 +1,32 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 0, warn = 6, info = 0
-IG Publisher Version: 1.2.31
-Generated Thu Feb 02 09:41:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
- Build Errors : 0 / 6 / 0
+err = 0, warn = 7, info = 0
+IG Publisher Version: 1.2.34
+Generated Mon Feb 06 10:21:38 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+ Build Errors : 0 / 7 / 0
+ /github/workspace/fsh-generated/resources/Encounter-HIVEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
- /github/workspace/input/myig : 0 / 0 / 1
+ /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/HIVPatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/HIVEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/HIVOrganizationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Encounter-HIVEncounterExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
+== fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
+== fsh-generated/resources/StructureDefinition-hiv-encounter.json ==
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
-== input/myig.xml ==
+== input/hiv-program-monitoring.xml ==

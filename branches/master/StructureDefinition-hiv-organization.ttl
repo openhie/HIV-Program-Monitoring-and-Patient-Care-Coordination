@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "HIVOrganization"]; # 
   fhir:StructureDefinition.title [ fhir:value "HIV Organization"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-02T09:41:21+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-06T10:21:17+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -40,7 +40,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "HIV Organization for case report - this represents a health facility"]; # 
+  fhir:StructureDefinition.description [ fhir:value "Organization providing HIV Testing Services"]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
