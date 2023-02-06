@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "openhie.fhir.hiv.program-monitoring",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
+    "version" : "0.1.0-test",
+    "name" : "HIVProgramMonitoring"
+  },
+  {
+    "id" : "hiv-care-next-visit",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
+    "version" : "0.1.0-test",
+    "name" : "HIVCareNextAppointment"
+  },
+  {
+    "id" : "hiv-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
+    "version" : "0.1.0-test",
+    "name" : "HIVOrganization"
+  },
+  {
+    "id" : "hiv-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
+    "version" : "0.1.0-test",
+    "name" : "HIVPatient"
+  },
+  {
+    "id" : "target-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
+    "version" : "0.1.0-test",
+    "name" : "TargetFacilityEncounter"
+  },
+  {
+    "id" : "transferring-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
+    "version" : "0.1.0-test",
+    "name" : "TransferringFacilityEncounter"
+  }
+]
