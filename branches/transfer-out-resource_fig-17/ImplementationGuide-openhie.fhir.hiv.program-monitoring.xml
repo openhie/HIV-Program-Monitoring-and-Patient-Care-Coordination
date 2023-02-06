@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-06T06:48:27+00:00"/>
+  <date value="2023-02-06T11:47:33+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -491,6 +491,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-care-next-visit"/>
+      </reference>
+      <name value="Next Appointment Date"/>
+      <description value="A date representing the patient's next scheduled appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -507,7 +517,17 @@
         <reference value="StructureDefinition/hiv-organization"/>
       </reference>
       <name value="HIV Organization"/>
-      <description value="HIV Organization for case report - this represents a health facility"/>
+      <description value="Organization providing HIV Testing Services"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-encounter"/>
+      </reference>
+      <name value="HIV Diagnosis Encounter"/>
+      <description value="The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -518,6 +538,16 @@
       </reference>
       <name value="Target Facility Encounter"/>
       <description value="This profile represents the facility the patient is being transferred to"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/HIVEncounterExample"/>
+      </reference>
+      <name value="Example Encounter - HIVEncounterExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
