@@ -52,7 +52,7 @@ Description: "This profile represents the facility the patient is being transfer
 * subject 1..1
 * period 1..1
 * serviceProvider 1..1
-* partOf only Reference(TransferringFacilityEncounter)
+* partOf 0..1
 
 Extension: HIVCareNextAppointment
 Id: hiv-care-next-visit
