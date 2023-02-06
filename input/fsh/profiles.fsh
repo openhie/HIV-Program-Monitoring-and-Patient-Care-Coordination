@@ -49,6 +49,7 @@ Parent: Encounter
 Id: hiv-diagnosis-encounter
 Title: "HIV Diagnosis Encounter"
 Description: "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
+
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status = #finished
 * class 1..1
