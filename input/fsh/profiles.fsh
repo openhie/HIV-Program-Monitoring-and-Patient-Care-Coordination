@@ -51,7 +51,6 @@ Description: "The interaction representing the HIV Diagnosis Encounter between t
 * subject only Reference(Patient)
 * subject 1..1
 * period 1..1
-* serviceProvider Reference(Organization)
 * serviceProvider 1..1
 
 Extension: HIVCareNextAppointment
