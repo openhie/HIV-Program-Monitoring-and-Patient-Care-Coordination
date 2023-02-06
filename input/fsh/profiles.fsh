@@ -44,9 +44,9 @@ Description: "A patient resource for an HIV Patient"
 * address 0..*
 * managingOrganization 1..1
 
-Profile: HIVDiagnosisEncounter
+Profile: HIVEncounter
 Parent: Encounter
-Id: hiv-diagnosis-encounter
+Id: hiv-encounter
 Title: "HIV Diagnosis Encounter"
 Description: "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
 

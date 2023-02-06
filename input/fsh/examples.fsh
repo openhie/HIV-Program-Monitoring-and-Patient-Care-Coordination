@@ -40,8 +40,8 @@ Description: "Patient example"
 * address.city = "Cape Town"
 * managingOrganization = Reference(HIVOrganizationExample)
 
-Instance: HIVDiagnosisEncounterExample
-InstanceOf: HIVDiagnosisEncounter
+Instance: HIVEncounterExample
+InstanceOf: HIVEncounter
 Usage: #example
 Title: "HIV Diagnosis Encounter Example"
 Description: "HIV Diagnosis Encounter example"
