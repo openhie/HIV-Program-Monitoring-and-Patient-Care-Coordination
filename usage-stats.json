@@ -15,8 +15,12 @@
   "profiles": {
     "Encounter": [
       {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-encounter",
-        "title": "HIV Diagnosis Encounter"
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
+        "title": "Target Facility Encounter"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
+        "title": "Transferring Facility Encounter"
       }
     ],
     "Organization": [
@@ -58,6 +62,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
