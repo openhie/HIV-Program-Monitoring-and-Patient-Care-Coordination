@@ -14,13 +14,6 @@
     "name" : "HIVCareNextAppointment"
   },
   {
-    "id" : "hiv-encounter",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-encounter",
-    "version" : "0.1.0-test",
-    "name" : "HIVEncounter"
-  },
-  {
     "id" : "hiv-organization",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
