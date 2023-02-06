@@ -7,11 +7,11 @@
     "name" : "HIVProgramMonitoring"
   },
   {
-    "id" : "hiv-care-next-visit",
+    "id" : "hiv-diagnosis",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
     "version" : "0.1.0-test",
-    "name" : "HIVCareNextAppointment"
+    "name" : "HIVDiagnosis"
   },
   {
     "id" : "hiv-organization",
@@ -26,19 +26,5 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
     "version" : "0.1.0-test",
     "name" : "HIVPatient"
-  },
-  {
-    "id" : "target-facility-encounter",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
-    "version" : "0.1.0-test",
-    "name" : "TargetFacilityEncounter"
-  },
-  {
-    "id" : "transferring-facility-encounter",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
-    "version" : "0.1.0-test",
-    "name" : "TransferringFacilityEncounter"
   }
 ]

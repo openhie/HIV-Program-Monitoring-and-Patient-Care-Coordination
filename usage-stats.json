@@ -3,16 +3,14 @@
   "version": "0.1.0-test",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [
-    {
-      "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
-      "title": "Next Appointment Date",
-      "types": [
-        "dateTime"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
+    "Condition": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
+        "title": "HIV Diagnosis"
+      }
+    ],
     "Organization": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
@@ -23,16 +21,6 @@
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
         "title": "Patient"
-      }
-    ],
-    "Encounter": [
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
-        "title": "Target Facility Encounter"
-      },
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
-        "title": "Transferring Facility Encounter"
       }
     ]
   },
@@ -79,9 +67,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit": [
-      "Encounter"
     ]
   }
 }
