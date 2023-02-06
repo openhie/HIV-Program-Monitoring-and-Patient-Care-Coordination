@@ -69,3 +69,22 @@ Description: "This profile represents the facility the patient is being transfer
 * class 1..1
 * period 1..1
 * serviceProvider 1..1
+
+Profile: HIVDiagnosis
+Parent: Condition
+Id: hiv-diagnosis
+Title: "HIV Diagnosis"
+Description: "This profile allows the exchange of a patient's hiv diagnosis"
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #openAtEnd
+* identifier contains
+    HPTUI 0..1
+* identifier[HPTUI].value 0..1
+* identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis" (exactly)
+* verificationStatus 1..1
+* verificationStatus = #confirmed
+* code 1..1
+* subject only Reference(Patient)
+* recordedDate 1..1

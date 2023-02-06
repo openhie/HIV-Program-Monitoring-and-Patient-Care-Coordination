@@ -66,3 +66,15 @@ Description: "Transferring Facility Encounter example"
 * period.start = "2022-12-01"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
+
+Instance: HIVDiagnosisExample
+InstanceOf: HIVDiagnosis
+Usage: #example
+Title: "HIV Condition example"
+Description: "."
+* identifier[HPTUI].value = "abc"
+* identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis"
+* verificationStatus = #confirmed
+* code = $SCT#86406008
+* subject = Reference(HIVPatientExample)
+* recordedDate = "2021-05-18"
