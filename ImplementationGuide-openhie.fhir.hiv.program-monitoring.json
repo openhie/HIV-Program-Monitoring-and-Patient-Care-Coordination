@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-06T06:48:27+00:00",
+  "date" : "2023-02-06T10:17:42+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -619,17 +619,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/TransferringFacilityEncounterExample"
-      },
-      "name" : "Example Encounter - TransferringFacilityEncounterExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -641,13 +630,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "Encounter/TargetFacilityEncounterExample"
+        "reference" : "StructureDefinition/hiv-care-next-visit"
       },
-      "name" : "Example Encounter - TargetFacilityEncounterExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter"
+      "name" : "Next Appointment Date",
+      "description" : "A date representing the patient's next scheduled appointment"
     },
     {
       "extension" : [{
@@ -669,7 +658,7 @@
         "reference" : "StructureDefinition/hiv-organization"
       },
       "name" : "HIV Organization",
-      "description" : "HIV Organization for case report - this represents a health facility"
+      "description" : "Organization providing HIV Testing Services"
     },
     {
       "extension" : [{
@@ -677,10 +666,21 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/target-facility-encounter"
+        "reference" : "StructureDefinition/hiv-encounter"
       },
-      "name" : "Target Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred to"
+      "name" : "HIV Diagnosis Encounter",
+      "description" : "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/HIVEncounterExample"
+      },
+      "name" : "Example Encounter - HIVEncounterExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-encounter"
     },
     {
       "extension" : [{
@@ -692,17 +692,6 @@
       },
       "name" : "Example Organization - HIVOrganizationExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/transferring-facility-encounter"
-      },
-      "name" : "Transferring Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred from"
     }],
     "page" : {
       "extension" : [{
