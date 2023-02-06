@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-02T11:57:26+00:00"/>
+  <date value="2023-02-06T06:48:12+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -461,13 +461,13 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
+        <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="ServiceRequest/TransferOutExample"/>
+        <reference value="Encounter/TransferringFacilityEncounterExample"/>
       </reference>
-      <name value="Example ServiceRequest - TransferOutExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout"/>
+      <name value="Example Encounter - TransferringFacilityEncounterExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -478,6 +478,16 @@
       </reference>
       <name value="Patient"/>
       <description value="A patient resource for an HIV Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/TargetFacilityEncounterExample"/>
+      </reference>
+      <name value="Example Encounter - TargetFacilityEncounterExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -504,10 +514,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/transferout"/>
+        <reference value="StructureDefinition/target-facility-encounter"/>
       </reference>
-      <name value="Transfer-Out Request"/>
-      <description value="This profile will be used to capture a Transfer-Out request for a patient"/>
+      <name value="Target Facility Encounter"/>
+      <description value="This profile represents the facility the patient is being transferred to"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -518,6 +528,16 @@
       </reference>
       <name value="Example Organization - HIVOrganizationExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/transferring-facility-encounter"/>
+      </reference>
+      <name value="Transferring Facility Encounter"/>
+      <description value="This profile represents the facility the patient is being transferred from"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

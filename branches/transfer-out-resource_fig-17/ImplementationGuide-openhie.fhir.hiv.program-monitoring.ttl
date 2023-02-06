@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Program Monitoring and Patient Care Coordination"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-02T11:57:26+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-06T06:48:12+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -693,16 +693,16 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ServiceRequest/TransferOutExample>;
-         fhir:Reference.reference [ fhir:value "ServiceRequest/TransferOutExample" ]
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Encounter/TransferringFacilityEncounterExample>;
+         fhir:Reference.reference [ fhir:value "Encounter/TransferringFacilityEncounterExample" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example ServiceRequest - TransferOutExample" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Encounter - TransferringFacilityEncounterExample" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout";
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout>
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter>
        ]
      ], [
        fhir:index 1;
@@ -722,6 +722,22 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Encounter/TargetFacilityEncounterExample>;
+         fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Encounter - TargetFacilityEncounterExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter>
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -734,7 +750,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient>
        ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -747,20 +763,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Organization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Organization for case report - this represents a health facility" ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/transferout" ]
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/target-facility-encounter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Transfer-Out Request" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile will be used to capture a Transfer-Out request for a patient" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Target Facility Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the facility the patient is being transferred to" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -775,6 +791,19 @@
          fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization";
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization>
        ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/transferring-facility-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Transferring Facility Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the facility the patient is being transferred from" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [

@@ -21,10 +21,17 @@
     "name" : "HIVPatient"
   },
   {
-    "id" : "transferout",
+    "id" : "target-facility-encounter",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferout",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
     "version" : "0.1.0-test",
-    "name" : "TransferOut"
+    "name" : "TargetFacilityEncounter"
+  },
+  {
+    "id" : "transferring-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
+    "version" : "0.1.0-test",
+    "name" : "TransferringFacilityEncounter"
   }
 ]
