@@ -15,7 +15,7 @@
   "profiles": {
     "Encounter": [
       {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis-encounter",
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-encounter",
         "title": "HIV Diagnosis Encounter"
       }
     ],
