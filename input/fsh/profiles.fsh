@@ -44,15 +44,26 @@ Description: "A patient resource for an HIV Patient"
 * address 0..*
 * managingOrganization 1..1
 
-Profile: TransferOut
-Parent: ServiceRequest
-Id: transferout
-Title: "Transfer-Out Request"
-Description: "This profile will be used to capture a Transfer-Out request for a patient"
-* occurrenceDateTime 1..1
-* performer 1..1
-* status 1..1 
-* intent 1..1
-* intent = #proposal
-* subject only Reference(HIVPatient)
-* subject 1..1
+Profile: TargetFacilityEncounter
+Parent: Encounter
+Id: target-facility-encounter
+Title: "Target Facility Encounter" 
+Description: "This profile represents the facility the patient is being transferred to"
+* status 1..1
+* class 1..1
+* period 1..1
+* serviceProvider 1..1
+* serviceProvider only Reference(HIVOrganization)
+* partOf only Reference(TransferringFacilityEncounter)
+
+
+Profile: TransferringFacilityEncounter
+Parent: Encounter
+Id: transferring-facility-encounter
+Title: "Transferring Facility Encounter" 
+Description: "This profile represents the facility the patient is being transferred from"
+* status 1..1
+* class 1..1
+* period 1..1
+* serviceProvider 1..1
+* serviceProvider only Reference(HIVOrganization)

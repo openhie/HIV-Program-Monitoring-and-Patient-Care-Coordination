@@ -40,13 +40,28 @@ Description: "Patient example"
 * address.city = "Cape Town"
 * managingOrganization = Reference(HIVOrganizationExample)
 
-Instance: TransferOutExample
-InstanceOf: TransferOut
+Instance: TargetFacilityEncounterExample
+InstanceOf: TargetFacilityEncounter
 Usage: #example
-Title: "Transfer-Out Request example"
-Description: "Patient Transfer-Out request example"
-* occurrenceDateTime = "2023-01-01"
-* performer = Reference(HIVOrganizationExample)
-* status = #active
-* intent = #proposal
-* subject = Reference(HIVPatientExample)
+Title: "Target Facility Encounter example" 
+Description: "Target Facility Encounter example"
+* status = #finished
+* class.code = #IMP
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* period.start = "2022-12-01"
+* period.end = "2023-01-20"
+* serviceProvider = Reference(HIVOrganizationExample)
+* partOf = Reference(TransferringFacilityEncounterExample)
+
+
+Instance: TransferringFacilityEncounterExample
+InstanceOf: TransferringFacilityEncounter
+Usage: #example
+Title: "Transferring Facility Encounter example" 
+Description: "Transferring Facility Encounter example"
+* status = #finished
+* class.code = #IMP
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* period.start = "2022-12-01"
+* period.end = "2023-01-20"
+* serviceProvider = Reference(HIVOrganizationExample)
