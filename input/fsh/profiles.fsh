@@ -45,11 +45,20 @@ Parent: Encounter
 Id: target-facility-encounter
 Title: "Target Facility Encounter" 
 Description: "This profile represents the facility the patient is being transferred to"
+* extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status 1..1
 * class 1..1
+* subject only Reference(Patient)
+* subject 1..1
 * period 1..1
 * serviceProvider 1..1
 * partOf only Reference(TransferringFacilityEncounter)
+
+Extension: HIVCareNextAppointment
+Id: hiv-care-next-visit
+Title: "Next Appointment Date"
+Description: "A date representing the patient's next scheduled appointment"
+* value[x] only dateTime
 
 Profile: TransferringFacilityEncounter
 Parent: Encounter
@@ -60,22 +69,3 @@ Description: "This profile represents the facility the patient is being transfer
 * class 1..1
 * period 1..1
 * serviceProvider 1..1
-
-Profile: HIVEncounter
-Parent: Encounter
-Id: hiv-encounter
-Title: "HIV Diagnosis Encounter"
-Description: "The interaction representing the HIV Diagnosis Encounter between the Patient and the HIV Health Facility"
-* extension contains HIVCareNextAppointment named next-visit 0..1 MS
-* status = #finished
-* class 1..1
-* subject only Reference(Patient)
-* subject 1..1
-* period 1..1
-* serviceProvider 1..1
-
-Extension: HIVCareNextAppointment
-Id: hiv-care-next-visit
-Title: "Next Appointment Date"
-Description: "A date representing the patient's next scheduled appointment"
-* value[x] only dateTime

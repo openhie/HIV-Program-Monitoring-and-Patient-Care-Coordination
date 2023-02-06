@@ -45,9 +45,11 @@ InstanceOf: TargetFacilityEncounter
 Usage: #example
 Title: "Target Facility Encounter example" 
 Description: "Target Facility Encounter example"
+* extension[next-visit].valueDateTime = "2022-10-22"
 * status = #finished
 * class.code = #IMP
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* subject = Reference(HIVPatientExample)
 * period.start = "2022-12-01"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
@@ -63,18 +65,4 @@ Description: "Transferring Facility Encounter example"
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * period.start = "2022-12-01"
 * period.end = "2023-01-20"
-* serviceProvider = Reference(HIVOrganizationExample)
-
-Instance: HIVEncounterExample
-InstanceOf: HIVEncounter
-Usage: #example
-Title: "HIV Diagnosis Encounter Example"
-Description: "HIV Diagnosis Encounter example"
-* extension[next-visit].valueDateTime = "2022-10-22"
-* status = #finished
-* class.code = #PRENC
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-* subject = Reference(HIVPatientExample)
-* period.start = "2022-07-28"
-* period.end  = "2022-07-28"
 * serviceProvider = Reference(HIVOrganizationExample)
