@@ -13,16 +13,6 @@
     }
   ],
   "profiles": {
-    "Encounter": [
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
-        "title": "Target Facility Encounter"
-      },
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
-        "title": "Transferring Facility Encounter"
-      }
-    ],
     "Organization": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
@@ -33,6 +23,16 @@
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
         "title": "Patient"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
+        "title": "Target Facility Encounter"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
+        "title": "Transferring Facility Encounter"
       }
     ]
   },
@@ -62,7 +62,6 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
-      "StructureDefinition.differential.element.type",
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
