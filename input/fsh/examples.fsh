@@ -66,3 +66,17 @@ Description: "Transferring Facility Encounter example"
 * period.start = "2022-12-01"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
+
+Instance: ViralLoadSuppressionExample
+InstanceOf: ViralLoadSuppression
+Usage: #example
+Title: "Viral Load Suppression example" 
+Description: "Viral Load Suppression example"
+* status = #final
+* code = #VL-RESULT
+* effectiveDateTime = "2022-11-30"
+* valueInteger = 1001
+* interpretation.coding.code = #UNSUP
+* interpretation.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"
+* interpretation.coding.display = "Unsuppressed"
+* note.text = "Viral load not suppressed"

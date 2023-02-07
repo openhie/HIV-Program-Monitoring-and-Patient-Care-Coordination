@@ -69,3 +69,17 @@ Description: "This profile represents the facility the patient is being transfer
 * class 1..1
 * period 1..1
 * serviceProvider 1..1
+
+Profile: ViralLoadSuppression
+Parent: Observation
+Id: viral-load-suppression
+Title: "Viral Load Suppression"
+Description: "This profile is to record a Viral Load Suppression observation for a patient"
+* status = #final
+* code from VSVLResultCode
+* effectiveDateTime 1..1
+* valueInteger only integer
+* interpretation.coding.code from VSVLInterpretation (required)
+* interpretation.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"
+* interpretation.coding.display from VSVLInterpretation (required)
+* note.text 1..1
