@@ -1,17 +1,10 @@
 [
   {
-    "id" : "cs-vl-interpretation",
+    "id" : "cs-artregimen-lines",
     "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
     "version" : "0.1.0-test",
-    "name" : "CSVLInterpretation"
-  },
-  {
-    "id" : "cs-vl-result-code",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
-    "version" : "0.1.0-test",
-    "name" : "CSVLResultCode"
+    "name" : "CSARTRegimenLines"
   },
   {
     "id" : "openhie.fhir.hiv.program-monitoring",
@@ -19,6 +12,20 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
     "version" : "0.1.0-test",
     "name" : "HIVProgramMonitoring"
+  },
+  {
+    "id" : "art-regimen-line",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
+    "version" : "0.1.0-test",
+    "name" : "ARTRegimenLine"
+  },
+  {
+    "id" : "hiv-arv-treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
+    "version" : "0.1.0-test",
+    "name" : "ARVTreatment"
   },
   {
     "id" : "hiv-care-next-visit",
@@ -56,24 +63,10 @@
     "name" : "TransferringFacilityEncounter"
   },
   {
-    "id" : "viral-load-suppression",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
-    "version" : "0.1.0-test",
-    "name" : "ViralLoadSuppression"
-  },
-  {
-    "id" : "vs-vl-interpretation",
+    "id" : "vs-artregimen-lines",
     "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-interpretation",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
     "version" : "0.1.0-test",
-    "name" : "VSVLInterpretation"
-  },
-  {
-    "id" : "vs-vl-result-code",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
-    "version" : "0.1.0-test",
-    "name" : "VSVLResultCode"
+    "name" : "VSARTRegimenLines"
   }
 ]

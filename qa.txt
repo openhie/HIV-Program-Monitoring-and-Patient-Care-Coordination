@@ -1,54 +1,66 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 2, warn = 10, info = 1
+err = 6, warn = 20, info = 1
 IG Publisher Version: 1.2.34
-Generated Tue Feb 07 13:46:17 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
- Build Errors : 0 / 9 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-interpretation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
+Generated Tue Feb 07 15:20:10 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+ Build Errors : 0 / 12 / 0
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 6 / 3 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-artregimen-lines : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-suppression : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-interpretation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 2 / 1
  /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/TransferringFacilityEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CarePlan/ARVTreatmentExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/TargetFacilityEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/HIVPatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ViralLoadSuppressionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-artregimen-lines.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/art-regimen-line.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-artregimen-lines.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/HIVOrganizationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CodeSystem-cs-vl-interpretation.json ==
-== fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
+ERROR: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[0]: Profile http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment|0.1.0-test, Element matches more than one slice - artRegimenLineInitiated, artRegimenLineCurrent
+ERROR: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[1]: Profile http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment|0.1.0-test, Element matches more than one slice - artRegimenLineInitiated, artRegimenLineCurrent
+ERROR: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail: CarePlan.activity.detail.extension:artRegimenLineInitiated: max allowed = 1, but found 2 (from http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment|0.1.0-test)
+ERROR: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail: CarePlan.activity.detail.extension:artRegimenLineCurrent: minimum required = 1, but only found 0 (from http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment|0.1.0-test)
+ERROR: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'VSART Regimen Lines' (http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines|0.1.0-test), and a coding from this value set is required) (codes = null#FIRST-LINE)
+WARNING: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[1].value.ofType(CodeableConcept): None of the codings provided are in the value set 'VSART Regimen Lines' (http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines|0.1.0-test), and a coding from this value set is required) (codes = null#SECOND-LINE)
+WARNING: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/CodeSystem-cs-artregimen-lines.json ==
+INFORMATION: CodeSystem/cs-artregimen-lines: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-artregimen-lines: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cs-artregimen-lines: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/cs-artregimen-lines: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
-== fsh-generated/resources/Observation-ViralLoadSuppressionExample.json ==
-ERROR: Observation/ViralLoadSuppressionExample: Observation.code: None of the codings provided are in the value set 'Viral Load Result Code' (http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code|0.1.0-test), and a coding from this value set is required) (codes = null#VL-RESULT)
-WARNING: Observation/ViralLoadSuppressionExample: Observation.code.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Observation/ViralLoadSuppressionExample: Observation.interpretation[0].coding[0]: Code System URI 'http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression' is unknown so the code cannot be validated
-ERROR: Observation/ViralLoadSuppressionExample: Observation.interpretation[0].coding[0].display: The value provided ('Unsuppressed') is not in the value set 'Viral load Interpretation' (http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-interpretation|0.1.0-test), and a code is required from this value set) (error message = Unknown Code http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation#Unsuppressed in http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation)
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
+== fsh-generated/resources/StructureDefinition-art-regimen-line.json ==
+== fsh-generated/resources/StructureDefinition-hiv-arv-treatment.json ==
 == fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
-== fsh-generated/resources/StructureDefinition-viral-load-suppression.json ==
-== fsh-generated/resources/ValueSet-vs-vl-interpretation.json ==
-== fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
+== fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
+WARNING: ValueSet/vs-artregimen-lines: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/vs-artregimen-lines: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == input/hiv-program-monitoring.xml ==

@@ -1,26 +1,25 @@
 {
   "resourceType" : "Bundle",
-  "id" : "1dc33fc9-2545-41c6-8601-0eb7f38d7825",
+  "id" : "67ed7212-972b-4da3-9beb-4e8fb48b3452",
   "meta" : {
-    "lastUpdated" : "2023-02-07T13:44:50.846+00:00"
+    "lastUpdated" : "2023-02-07T15:19:32.992+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
+    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-vl-result-code",
+      "id" : "vs-artregimen-lines",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-result-code.html\">Viral Load Result Code v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-VL-RESULT\"> </a>  <a href=\"CodeSystem-cs-vl-result-code.html#cs-vl-result-code-VL-RESULT\">VL-RESULT</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</td><td>HIV VL Test Result</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-artregimen-lines.html\">ART Regimen Lines v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-FIRST-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-FIRST-LINE\">FIRST-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>First line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-SECOND-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SECOND-LINE\">SECOND-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Second line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-THIRD-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-THIRD-LINE\">THIRD-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Third line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-SPECIAL-UNKNOWN\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SPECIAL-UNKNOWN\">SPECIAL-UNKNOWN</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Special/Unknown</td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
+      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
       "version" : "0.1.0-test",
-      "name" : "VSVLResultCode",
-      "title" : "Viral Load Result Code",
+      "name" : "VSARTRegimenLines",
+      "title" : "VSART Regimen Lines",
       "status" : "active",
-      "experimental" : false,
-      "date" : "2023-02-07T13:44:50+00:00",
+      "date" : "2023-02-07T15:19:32+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -32,7 +31,6 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "Viral Load Result Code",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -40,85 +38,36 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:04272f4b-42b4-4013-9148-108c0f7037c9",
-        "timestamp" : "2023-02-07T13:45:49+00:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:02703425-f3fd-42ac-9fd4-ccbaabc6002b",
+        "timestamp" : "2023-02-07T15:19:54+00:00",
+        "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code|0.1.0-test"
+          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines|0.1.0-test"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
-          "code" : "VL-RESULT",
-          "display" : "HIV VL Test Result"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-interpretation",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-vl-interpretation",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-interpretation.html\">Viral load Interpretation v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-interpretation-S\"> </a>  <a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-S\">S</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation</td><td>Suppressed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-interpretation-UNSUP\"> </a>  <a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-UNSUP\">UNSUP</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation</td><td>Unsuppressed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-interpretation-UNK\"> </a>  <a href=\"CodeSystem-cs-vl-interpretation.html#cs-vl-interpretation-UNK\">UNK</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation</td><td>Unknown</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-interpretation",
-      "version" : "0.1.0-test",
-      "name" : "VSVLInterpretation",
-      "title" : "Viral load Interpretation",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-02-07T13:44:50+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "FIRST-LINE",
+          "display" : "First line ARTs"
         },
         {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "Valueset - Viral load Interpretations",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:0575898f-ac7b-4222-9f53-20cb6dd79a43",
-        "timestamp" : "2023-02-07T13:45:55+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "SECOND-LINE",
+          "display" : "Second line ARTs"
         },
         {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation",
-          "code" : "S",
-          "display" : "Suppressed"
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "THIRD-LINE",
+          "display" : "Third line ARTs"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation",
-          "code" : "UNSUP",
-          "display" : "Unsuppressed"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation",
-          "code" : "UNK",
-          "display" : "Unknown"
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "SPECIAL-UNKNOWN",
+          "display" : "Special/Unknown"
         }]
       }
     }
