@@ -1,3 +1,5 @@
+Alias: $LNC = http://loinc.org
+
 CodeSystem: CSARTRegimenLines
 Id: cs-artregimen-lines
 Title: "ART Regimen Lines"

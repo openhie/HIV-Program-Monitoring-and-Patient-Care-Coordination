@@ -87,13 +87,14 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * subject 1..1
 * subject only Reference(Patient) 
 * period.start 1..1
+* activity 1..* 
 * activity.detail 1..1
-* activity 1..* MS
-* activity.detail.scheduled[x] MS
-* activity.detail.productCodeableConcept 1..1  
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 "HIV ART medication"
 * activity.detail.status 1..1
-* activity.detail.extension contains ARTRegimenLine named artRegimenLineCurrent 1..1 
+* activity.detail.productCodeableConcept 1..1  
 * activity.detail.extension contains ARTRegimenLine named artRegimenLineInitiated 1..1
+* activity.detail.extension contains ARTRegimenLine named artRegimenLineCurrent 1..1 
 
 Extension: ARTRegimenLine
 Id: art-regimen-line
@@ -101,10 +102,3 @@ Title: "ART Regimen Line"
 Description: ""
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenLines
-/*
-----------------
-NOT SURE IF THE FOLLOWING IS REQUIRED: Is this related to CBS or PM?
-* activity.detail.kind = #MedicationRequest
-* activity.detail.code = $LNC#45260-7 "HIV ART medication"
-
-*/
