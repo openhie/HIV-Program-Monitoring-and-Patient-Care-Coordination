@@ -69,3 +69,42 @@ Description: "This profile represents the facility the patient is being transfer
 * class 1..1
 * period 1..1
 * serviceProvider 1..1
+
+Profile: ARVTreatment
+Parent: CarePlan
+Id: hiv-arv-treatment
+Title: "ARVCarePlan"
+Description: "This profile allows the exchange of a patient's ARV treatment"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #openAtEnd
+* identifier contains
+    CPID 1..1
+* identifier[CPID].value 1..1
+* identifier[CPID].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/cpid" (exactly)
+* status 1..1
+* intent 1..1
+* subject 1..1
+* subject only Reference(Patient) 
+* period.start 1..1
+* activity.detail 1..1
+* activity 1..* MS
+* activity.detail.scheduled[x] MS
+* activity.detail.productCodeableConcept 1..1  
+* activity.detail.status 1..1
+* activity.detail.extension contains ARTRegimenLine named artRegimenLineCurrent 1..1 
+* activity.detail.extension contains ARTRegimenLine named artRegimenLineInitiated 1..1
+
+Extension: ARTRegimenLine
+Id: art-regimen-line
+Title: "ART Regimen Line"
+Description: ""
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTRegimenLines
+/*
+----------------
+NOT SURE IF THE FOLLOWING IS REQUIRED: Is this related to CBS or PM?
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 "HIV ART medication"
+
+*/

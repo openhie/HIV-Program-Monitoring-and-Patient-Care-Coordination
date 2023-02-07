@@ -66,3 +66,6 @@ Description: "Transferring Facility Encounter example"
 * period.start = "2022-12-01"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
+
+
+
