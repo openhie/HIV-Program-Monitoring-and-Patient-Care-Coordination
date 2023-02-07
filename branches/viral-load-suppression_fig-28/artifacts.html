@@ -176,7 +176,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Example: Example Instances</a>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -208,13 +217,121 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/hiv-organization">HIV Organization</a>
                </td>
                <td>
-<p>HIV Organization for case report - this represents a health facility</p>
+<p>Organization providing HIV Testing Services</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-target-facility-encounter.html"
+                     title="StructureDefinition/target-facility-encounter">Target Facility Encounter</a>
+               </td>
+               <td>
+<p>This profile represents the facility the patient is being transferred to</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-viral-load-suppression.html"
+                     title="StructureDefinition/viral-load-suppression">Viral Load Suppression</a>
+               </td>
+               <td>
+<p>This profile is to record a Viral Load Suppression observation for a patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-transferring-facility-encounter.html"
+                     title="StructureDefinition/transferring-facility-encounter">Transferring Facility Encounter</a>
+               </td>
+               <td>
+<p>This profile represents the facility the patient is being transferred from</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-care-next-visit.html"
+                     title="StructureDefinition/hiv-care-next-visit">Next Appointment Date</a>
+               </td>
+               <td>
+<p>A date representing the patient’s next scheduled appointment</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-result-code.html"
+                     title="ValueSet/vs-vl-result-code">Viral Load Result Code</a>
+               </td>
+               <td>
+<p>Viral Load Result Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-interpretation.html"
+                     title="ValueSet/vs-vl-interpretation">Viral load Interpretation</a>
+               </td>
+               <td>
+<p>Valueset - Viral load Interpretations</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-vl-interpretation.html"
+                     title="CodeSystem/cs-vl-interpretation">Viral load Interpretation</a>
+               </td>
+               <td>
+<p>A list of Viral load Interpretations</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-vl-result-code.html"
+                     title="CodeSystem/cs-vl-result-code">Viral Load Result Code</a>
+               </td>
+               <td>
+<p>Viral Load Result Code</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
@@ -225,7 +342,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="Encounter-TransferringFacilityEncounterExample.html"
+                     title="Encounter/TransferringFacilityEncounterExample">Example Encounter - TransferringFacilityEncounterExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-TargetFacilityEncounterExample.html"
+                     title="Encounter/TargetFacilityEncounterExample">Example Encounter - TargetFacilityEncounterExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Example Patient - HIVPatientExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ViralLoadSuppressionExample.html"
+                     title="Observation/ViralLoadSuppressionExample">Example Observation - ViralLoadSuppressionExample</a>
                </td>
             </tr>
             <tr>
@@ -262,7 +397,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 2, 2023 09:55+0000">2023-02-02</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 7, 2023 13:43+0000">2023-02-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

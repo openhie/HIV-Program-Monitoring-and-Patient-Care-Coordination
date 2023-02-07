@@ -3,7 +3,15 @@
   "version": "0.1.0-test",
   "fhirVersion": "4.0.1",
   "jurisdiction": "001",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
+      "title": "Next Appointment Date",
+      "types": [
+        "dateTime"
+      ]
+    }
+  ],
   "profiles": {
     "Organization": [
       {
@@ -15,6 +23,22 @@
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
         "title": "Patient"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
+        "title": "Target Facility Encounter"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
+        "title": "Transferring Facility Encounter"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
+        "title": "Viral Load Suppression"
       }
     ]
   },
@@ -34,8 +58,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
@@ -49,6 +79,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page"
@@ -61,6 +94,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit": [
+      "Encounter"
     ]
   }
 }
