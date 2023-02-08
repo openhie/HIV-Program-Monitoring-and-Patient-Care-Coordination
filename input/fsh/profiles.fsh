@@ -76,10 +76,11 @@ Id: viral-load-suppression
 Title: "Viral Load Suppression"
 Description: "This profile is to record a Viral Load Suppression observation for a patient"
 * status = #final
-* code from VSVLResultCode
+* code from VSVLResultCode (required)
+* subject 0..1
 * effectiveDateTime 1..1
-* valueInteger only integer
+* valueInteger 1..1
 * interpretation.coding.code from VSVLInterpretation (required)
 * interpretation.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"
 * interpretation.coding.display from VSVLInterpretation (required)
-* note.text 1..1
+* note 0..1

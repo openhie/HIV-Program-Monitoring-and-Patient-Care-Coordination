@@ -74,9 +74,12 @@ Title: "Viral Load Suppression example"
 Description: "Viral Load Suppression example"
 * status = #final
 * code = #VL-RESULT
+* subject = Reference(HIVPatientExample)
 * effectiveDateTime = "2022-11-30"
 * valueInteger = 1001
 * interpretation.coding.code = #UNSUP
 * interpretation.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"
 * interpretation.coding.display = "Unsuppressed"
 * note.text = "Viral load not suppressed"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
