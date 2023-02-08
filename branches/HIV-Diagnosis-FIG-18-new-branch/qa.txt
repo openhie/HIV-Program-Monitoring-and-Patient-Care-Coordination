@@ -2,8 +2,8 @@
 =========================================
 
 err = 1, warn = 12, info = 0
-IG Publisher Version: 1.2.34
-Generated Mon Feb 06 15:53:04 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+IG Publisher Version: 1.2.35
+Generated Wed Feb 08 08:31:33 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 9 / 0
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
@@ -38,7 +38,7 @@ WARNING: Condition/HIVDiagnosisExample: Condition.verificationStatus.coding[0]: 
 == fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
 == fsh-generated/resources/StructureDefinition-hiv-diagnosis.json ==
 WARNING: StructureDefinition/hiv-diagnosis: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/hiv-diagnosis: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/hiv-diagnosis: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
