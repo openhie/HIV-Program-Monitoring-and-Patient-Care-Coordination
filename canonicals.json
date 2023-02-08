@@ -1,31 +1,10 @@
 [
   {
-    "id" : "cs-artregimen-lines",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
-    "version" : "0.1.0-test",
-    "name" : "CSARTRegimenLines"
-  },
-  {
     "id" : "openhie.fhir.hiv.program-monitoring",
     "type" : "ImplementationGuide",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
     "version" : "0.1.0-test",
     "name" : "HIVProgramMonitoring"
-  },
-  {
-    "id" : "art-regimen-line",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
-    "version" : "0.1.0-test",
-    "name" : "ARTRegimenLine"
-  },
-  {
-    "id" : "hiv-arv-treatment",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
-    "version" : "0.1.0-test",
-    "name" : "ARVTreatment"
   },
   {
     "id" : "hiv-care-next-visit",
@@ -61,12 +40,5 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
     "version" : "0.1.0-test",
     "name" : "TransferringFacilityEncounter"
-  },
-  {
-    "id" : "vs-artregimen-lines",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
-    "version" : "0.1.0-test",
-    "name" : "VSARTRegimenLines"
   }
 ]
