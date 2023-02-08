@@ -1,12 +1,12 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 1, warn = 19, info = 1
+err = 1, warn = 14, info = 0
 IG Publisher Version: 1.2.35
-Generated Wed Feb 08 12:09:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
- Build Errors : 0 / 12 / 0
+Generated Wed Feb 08 14:26:58 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+ Build Errors : 0 / 11 / 0
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 1 / 2 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-artregimen-lines : 0 / 3 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
@@ -18,7 +18,7 @@ Generated Wed Feb 08 12:09:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 1 / 1
  /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
 </table>
 == n/a ==
@@ -28,7 +28,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/HIVPatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/vs-artregimen-lines.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/art-regimen-line.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/cs-artregimen-lines.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/HIVOrganizationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
@@ -39,10 +38,6 @@ ERROR: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[0].va
 WARNING: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/CodeSystem-cs-artregimen-lines.json ==
-INFORMATION: CodeSystem/cs-artregimen-lines: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/cs-artregimen-lines: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/cs-artregimen-lines: CodeSystem: The ShareableCodeSystem profile says that the description element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/cs-artregimen-lines: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
@@ -55,6 +50,5 @@ WARNING: CodeSystem/cs-artregimen-lines: CodeSystem: The ShareableCodeSystem pro
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
-WARNING: ValueSet/vs-artregimen-lines: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet/vs-artregimen-lines: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == input/hiv-program-monitoring.xml ==
