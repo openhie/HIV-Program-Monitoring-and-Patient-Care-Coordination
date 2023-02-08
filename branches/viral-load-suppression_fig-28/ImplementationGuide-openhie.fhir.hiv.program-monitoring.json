@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-08T11:03:46+00:00",
+  "date" : "2023-02-08T12:16:58+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -641,13 +641,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "CodeSystem/cs-vl-interpretation"
+        "reference" : "Condition/HIVDiagnosisExample"
       },
-      "name" : "Viral load Interpretation",
-      "description" : "A list of Viral load Interpretations"
+      "name" : "Example Condition - HIVDiagnosisExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-diagnosis"
+      },
+      "name" : "Diagnosis",
+      "description" : "Confirmation of the diagnosis"
     },
     {
       "extension" : [{
@@ -681,6 +692,17 @@
       },
       "name" : "Next Appointment Date",
       "description" : "A date representing the patient's next scheduled appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-vl-suppression"
+      },
+      "name" : "Viral load Suppressions Status",
+      "description" : "A list of Viral load Statuses"
     },
     {
       "extension" : [{
@@ -743,10 +765,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-vl-interpretation"
+        "reference" : "ValueSet/vs-hiv-diagnosis"
       },
-      "name" : "Viral load Interpretation",
-      "description" : "Valueset - Viral load Interpretations"
+      "name" : "HIV Diagnosis",
+      "description" : "A list of possible HIV diagnoses"
     },
     {
       "extension" : [{
@@ -758,6 +780,17 @@
       },
       "name" : "Viral Load Result Code",
       "description" : "Viral Load Result Code"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-vl-suppression"
+      },
+      "name" : "Viral load Suppressions Status",
+      "description" : "A list of Viral load Statuses"
     },
     {
       "extension" : [{
