@@ -77,7 +77,7 @@ Title: "Viral Load Suppression"
 Description: "This profile is to record a Viral Load Suppression observation for a patient"
 * status = #final
 * code from VSVLResultCode (required)
-* subject 0..1
+* subject 1..1
 * effectiveDateTime 1..1
 * valueInteger 1..1
 * interpretation.coding.code from VSVLInterpretation (required)
