@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-08T06:08:33+00:00"/>
+  <date value="2023-02-08T11:31:48+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -471,6 +471,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/HIVDiagnosisExample"/>
+      </reference>
+      <name value="Example Condition - HIVDiagnosisExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hiv-diagnosis"/>
+      </reference>
+      <name value="Diagnosis"/>
+      <description value="Confirmation of the diagnosis"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -528,6 +548,16 @@
       </reference>
       <name value="Target Facility Encounter"/>
       <description value="This profile represents the facility the patient is being transferred to"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-hiv-diagnosis"/>
+      </reference>
+      <name value="HIV Diagnosis"/>
+      <description value="A list of possible HIV diagnoses"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

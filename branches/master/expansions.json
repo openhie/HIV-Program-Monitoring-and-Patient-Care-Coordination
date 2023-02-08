@@ -1,8 +1,66 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5777b40a-b17c-4365-9cb4-a719457d53a1",
+  "id" : "6211fa86-af4c-4c39-92f6-e46665600ef7",
   "meta" : {
-    "lastUpdated" : "2023-02-08T06:08:33.813+00:00"
+    "lastUpdated" : "2023-02-08T11:31:48.300+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-diagnosis",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86406008\"> </a>  <a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus infection (disorder)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
+      "version" : "0.1.0-test",
+      "name" : "VSHIVDiagnosis",
+      "title" : "HIV Diagnosis",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-02-08T11:31:48+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of possible HIV diagnoses",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6d01428f-3621-4f17-9253-aa9e5e0482ab",
+        "timestamp" : "2023-02-08T11:32:06+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "86406008",
+          "display" : "Human immunodeficiency virus infection (disorder)"
+        }]
+      }
+    }
+  }]
 }

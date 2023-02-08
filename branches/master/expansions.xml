@@ -1,9 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5777b40a-b17c-4365-9cb4-a719457d53a1"/>
+  <id value="6211fa86-af4c-4c39-92f6-e46665600ef7"/>
   <meta>
-    <lastUpdated value="2023-02-08T06:08:33.813+00:00"/>
+    <lastUpdated value="2023-02-08T11:31:48.300+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-hiv-diagnosis"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-86406008"> </a>  
+                  <a href="http://snomed.info/id/86406008">86406008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Human immunodeficiency virus infection (disorder)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis"/>
+        <version value="0.1.0-test"/>
+        <name value="VSHIVDiagnosis"/>
+        <title value="HIV Diagnosis"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-02-08T11:31:48+00:00"/>
+        <publisher value="Jembi Health Systems"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.jembi.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@jembi.org"/>
+          </telecom>
+        </contact>
+        <description value="A list of possible HIV diagnoses"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:6d01428f-3621-4f17-9253-aa9e5e0482ab"/>
+          <timestamp value="2023-02-08T11:32:06+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="86406008"/>
+            <display value="Human immunodeficiency virus infection (disorder)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>
