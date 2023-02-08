@@ -16,7 +16,7 @@
     "Condition": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
-        "title": "HIV Diagnosis"
+        "title": "Diagnosis"
       }
     ],
     "Organization": [

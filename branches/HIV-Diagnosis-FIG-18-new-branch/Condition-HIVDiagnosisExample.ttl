@@ -18,16 +18,24 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"HIVDiagnosisExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;HIVDiagnosisExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnosis.html\">HIV Diagnosis</a></p></div><p><b>identifier</b>: id: abc</p><p><b>verificationStatus</b>: confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#confirmed)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>recordedDate</b>: 2021-05-18</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"HIVDiagnosisExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;HIVDiagnosisExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-diagnosis.html\">Diagnosis</a></p></div><p><b>identifier</b>: id: abc123</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Human immunodeficiency virus infection <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#86406008)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>recordedDate</b>: 2021-05-18</p></div>"
   ]; # 
   fhir:Condition.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis" ];
-     fhir:Identifier.value [ fhir:value "abc" ]
+     fhir:Identifier.value [ fhir:value "abc123" ]
+  ]; # 
+  fhir:Condition.clinicalStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
+       fhir:Coding.code [ fhir:value "active" ]
+     ]
   ]; # 
   fhir:Condition.verificationStatus [
      fhir:CodeableConcept.coding [
        fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
        fhir:Coding.code [ fhir:value "confirmed" ]
      ]
   ]; # 
@@ -42,6 +50,10 @@
   fhir:Condition.subject [
      fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Patient/HIVPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ]; # 
+  fhir:Condition.encounter [
+     fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Encounter/TargetFacilityEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
   ]; # 
   fhir:Condition.recordedDate [ fhir:value "2021-05-18"^^xsd:date] . # 
 

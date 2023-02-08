@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-08T08:31:05+00:00",
+  "date" : "2023-02-08T11:22:24+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -646,8 +646,8 @@
       "reference" : {
         "reference" : "StructureDefinition/hiv-diagnosis"
       },
-      "name" : "HIV Diagnosis",
-      "description" : "This profile allows the exchange of a patient's hiv diagnosis"
+      "name" : "Diagnosis",
+      "description" : "Confirmation of the diagnosis"
     },
     {
       "extension" : [{
@@ -714,6 +714,17 @@
       },
       "name" : "Target Facility Encounter",
       "description" : "This profile represents the facility the patient is being transferred to"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-hiv-diagnosis"
+      },
+      "name" : "HIV Diagnosis",
+      "description" : "A list of possible HIV diagnoses"
     },
     {
       "extension" : [{
