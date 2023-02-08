@@ -84,7 +84,7 @@ con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 ","Anatomical location, if relevant","The anatomical location where this condition manifests itself.","Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](http://hl7.org/fhir/R4/extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"Condition.bodySite",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-diagnosis","Condition.subject","Condition.subject","","patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
 ","Who has the condition?","Indicates the patient or group who the condition record is associated with.","","Group is typically used for veterinary or public health use cases.","","","","","","","",,,,,"",,,,"Condition.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-diagnosis","Condition.encounter","Condition.encounter","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
@@ -661,7 +661,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Indicates the urgency of the encounter","Indicates the urgency of the encounter.","","","","","","","","","",,"example","Indicates the urgency of the encounter.","http://terminology.hl7.org/ValueSet/v3-ActPriority","",,,,"Encounter.priority",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "target-facility-encounter","Encounter.subject","Encounter.subject","","patient
-","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
 ","The patient or group present at the encounter","The patient or group present at the encounter.","While the encounter is always about the patient, the patient might not actually be known in all contexts of use, and there may be a group of patients that could be anonymous (such as in a group therapy for Alcoholics Anonymous - where the recording of the encounter could be used for billing on the number of people/staff and not important to the context of the specific patients) or alternately in veterinary care a herd of sheep receiving treatment (where the animals are not individually tracked).","","","","","","","","",,,,,"",,,,"Encounter.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "target-facility-encounter","Encounter.episodeOfCare","Encounter.episodeOfCare","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]}
