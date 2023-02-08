@@ -75,13 +75,12 @@ Parent: Condition
 Id: hiv-diagnosis
 Title: "HIV Diagnosis"
 Description: "This profile allows the exchange of a patient's hiv diagnosis"
-* identifier 1..*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
 * identifier contains
-    HPTUI 0..1
-* identifier[HPTUI].value 0..1
+    HPTUI 1..1
+* identifier[HPTUI].value 1..1
 * identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis" (exactly)
 * verificationStatus 1..1
 * verificationStatus = #confirmed
