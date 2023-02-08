@@ -82,8 +82,6 @@ Description: "This profile is to record a Viral Load Suppression observation for
 * effectiveDateTime 1..1
 * valueInteger 1..1
 * interpretation from VSVLSuppression (required)
-//* interpretation.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"
-//* interpretation.coding.display from VSVLInterpretation (required)
 * note 0..1
 
 Profile: HIVDiagnosis
