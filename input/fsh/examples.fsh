@@ -73,11 +73,13 @@ Usage: #example
 Title: "Viral Load Suppression example" 
 Description: "Viral Load Suppression example"
 * status = #final
+* code.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code"
 * code = #VL-RESULT
 * subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-11-30"
 * valueInteger = 1001
-* interpretation.coding.code = #UNSUP
+* interpretation = #UNSUP
 * interpretation.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"
 * interpretation.coding.display = "Unsuppressed"
 * note.text = "Viral load not suppressed"
@@ -88,7 +90,7 @@ Instance: HIVDiagnosisExample
 InstanceOf: HIVDiagnosis
 Usage: #example
 Title: "HIV Condition example"
-Description: "."
+Description: "Showing a confirmed HIV diagnosis"
 * identifier[HPTUI].value = "abc123"
 * identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis"
 * clinicalStatus = #active
