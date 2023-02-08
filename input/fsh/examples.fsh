@@ -101,3 +101,33 @@ Description: "Showing a confirmed HIV diagnosis"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
+
+Instance: ViralLoadSuppressionMostRecentTestDateExample
+InstanceOf: ViralLoadSuppressionMostRecentTestDate
+Usage: #example
+Title: "Viral Load Suppression Most Recent Test Date example"
+Description: "Viral Load Suppression Most Recent Test Date example"
+* status = #final
+* code = #VL-MOST-RECENT-TEST-DATE
+* subject = Reference(HIVPatientExample)
+* effectiveDateTime = "2023-01-10"
+
+Instance: ViralLoadSuppressionMostRecentTestResultExample
+InstanceOf: ViralLoadSuppressionMostRecentTestResult
+Usage: #example
+Title: "Viral Load Suppression Most Recent Test Result example"
+Description: "Viral Load Suppression Most Recent Test Result example"
+* status = #final
+* code = #VL-MOST-RECENT-TEST-RESULT
+* subject = Reference(HIVPatientExample)
+* valueInteger = 999
+
+Instance: DeathExample
+InstanceOf: Death
+Usage: #example
+Title: "Patient Death example"
+Description: "Patient Death example"
+* status = #final
+* code = $SCT#419099009
+* subject = Reference(HIVPatientExample)
+* effectiveDateTime = "2023-02-05"

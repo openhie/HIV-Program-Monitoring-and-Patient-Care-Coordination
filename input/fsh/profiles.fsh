@@ -101,3 +101,33 @@ Description: "Confirmation of the diagnosis"
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
+
+Profile: ViralLoadSuppressionMostRecentTestDate
+Parent: Observation
+Id: vl-suppression-most-recent-testdate
+Title: "Viral Load Suppression Most Recent Test Date"
+Description: "This profile is to record a Viral Load Suppression Most Recent Test Date observation for a patient"
+* status = #final
+* code from VSVLResultCode (required)
+* subject 1..1
+* effectiveDateTime 1..1
+
+Profile: ViralLoadSuppressionMostRecentTestResult
+Parent: Observation
+Id: vl-suppression-most-recent-testresult
+Title: "Viral Load Suppression Most Recent Test Result"
+Description: "This profile is to record a Viral Load Suppression Most Recent Test Result observation for a patient"
+* status = #final
+* code from VSVLResultCode (required)
+* subject 1..1
+* valueInteger 1..1
+
+Profile: Death
+Parent: Observation
+Id: death
+Title: "Patient Death"
+Description: "This profile is to record the death of a patient observation"
+* status = #final
+* code from VSHIVDeath (required)
+* subject 1..1
+* effectiveDateTime 1..1
