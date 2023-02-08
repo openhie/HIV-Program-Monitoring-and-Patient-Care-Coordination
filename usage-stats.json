@@ -5,6 +5,14 @@
   "jurisdiction": "001",
   "extensions": [
     {
+      "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
+      "title": "ART Regimen Line",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
       "title": "Next Appointment Date",
       "types": [
@@ -13,10 +21,10 @@
     }
   ],
   "profiles": {
-    "Condition": [
+    "CarePlan": [
       {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
-        "title": "Diagnosis"
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
+        "title": "ARVCarePlan"
       }
     ],
     "Organization": [
@@ -40,12 +48,6 @@
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
         "title": "Transferring Facility Encounter"
       }
-    ],
-    "Observation": [
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
-        "title": "Viral Load Suppression"
-      }
     ]
   },
   "usage": {
@@ -67,9 +69,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -81,9 +80,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
@@ -97,6 +93,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line": [
+      "CarePlan.activity.detail"
     ],
     "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit": [
       "Encounter"

@@ -1,26 +1,26 @@
 {
   "resourceType" : "Bundle",
-  "id" : "04b4b714-21f4-4e4a-9f4e-7cd22946e345",
+  "id" : "cd369398-2530-43e7-a13a-b16105ec074d",
   "meta" : {
-    "lastUpdated" : "2023-02-08T12:31:04.706+00:00"
+    "lastUpdated" : "2023-02-08T14:26:19.906+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
+    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-vl-result-code",
+      "id" : "vs-artregimen-lines",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-result-code.html\">Viral Load Result Code v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-VL-RESULT\"> </a>  <a href=\"CodeSystem-cs-vl-result-code.html#cs-vl-result-code-VL-RESULT\">VL-RESULT</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</td><td>HIV VL Test Result</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-artregimen-lines.html\">ART Regimen Lines v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-FIRST-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-FIRST-LINE\">FIRST-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>First line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-SECOND-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SECOND-LINE\">SECOND-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Second line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-THIRD-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-THIRD-LINE\">THIRD-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Third line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-SPECIAL-UNKNOWN\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SPECIAL-UNKNOWN\">SPECIAL-UNKNOWN</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Special/Unknown</td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
+      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
       "version" : "0.1.0-test",
-      "name" : "VSVLResultCode",
-      "title" : "Viral Load Result Code",
+      "name" : "VSARTRegimenLines",
+      "title" : "VSART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-08T12:31:04+00:00",
+      "date" : "2023-02-08T14:26:19+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -32,7 +32,6 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "Viral Load Result Code",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -40,143 +39,36 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6131df67-9949-490d-b938-8cb47fd74ded",
-        "timestamp" : "2023-02-08T12:31:21+00:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:39401a6e-d6b6-4ffd-b03b-63a967f42617",
+        "timestamp" : "2023-02-08T14:26:38+00:00",
+        "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code|0.1.0-test"
+          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines|0.1.0-test"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
-          "code" : "VL-RESULT",
-          "display" : "HIV VL Test Result"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-hiv-diagnosis",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86406008\"> </a>  <a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus infection (disorder)</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
-      "version" : "0.1.0-test",
-      "name" : "VSHIVDiagnosis",
-      "title" : "HIV Diagnosis",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-02-08T12:31:04+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "FIRST-LINE",
+          "display" : "First line ARTs"
         },
         {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of possible HIV diagnoses",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:5c93f853-361e-4755-a8e4-63095f8064a3",
-        "timestamp" : "2023-02-08T12:31:30+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "SECOND-LINE",
+          "display" : "Second line ARTs"
         },
         {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "THIRD-LINE",
+          "display" : "Third line ARTs"
         },
         {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "86406008",
-          "display" : "Human immunodeficiency virus infection (disorder)"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-suppression",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-vl-suppression",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-suppression.html\">Viral load Suppressions Status v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-suppression-S\"> </a>  <a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-S\">S</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression</td><td>Suppressed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-suppression-UNSUP\"> </a>  <a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNSUP\">UNSUP</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression</td><td>Unsuppressed</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-suppression-UNK\"> </a>  <a href=\"CodeSystem-cs-vl-suppression.html#cs-vl-suppression-UNK\">UNK</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression</td><td>Unknown</td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-suppression",
-      "version" : "0.1.0-test",
-      "name" : "VSVLSuppression",
-      "title" : "Viral load Suppressions Status",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-02-08T12:31:04+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "A list of Viral load Statuses",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:82fdf533-009a-4cb4-9a90-b602027ceb86",
-        "timestamp" : "2023-02-08T12:31:30+00:00",
-        "total" : 3,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression|0.1.0-test"
-        }],
-        "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression",
-          "code" : "S",
-          "display" : "Suppressed"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression",
-          "code" : "UNSUP",
-          "display" : "Unsuppressed"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression",
-          "code" : "UNK",
-          "display" : "Unknown"
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
+          "code" : "SPECIAL-UNKNOWN",
+          "display" : "Special/Unknown"
         }]
       }
     }
