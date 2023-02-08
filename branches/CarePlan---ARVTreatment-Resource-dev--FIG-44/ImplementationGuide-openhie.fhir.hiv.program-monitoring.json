@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-08T14:26:19+00:00",
+  "date" : "2023-02-08T15:31:30+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -652,6 +652,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-arvtreatment-activity-type"
+      },
+      "name" : "ARV Treatment Activity Type",
+      "description" : "ARV Treatment Activity Type"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CarePlan"
       }],
       "reference" : {
@@ -733,7 +744,8 @@
       "reference" : {
         "reference" : "StructureDefinition/art-regimen-line"
       },
-      "name" : "ART Regimen Line"
+      "name" : "ART Regimen Line",
+      "description" : "ART Regimen Line"
     },
     {
       "extension" : [{

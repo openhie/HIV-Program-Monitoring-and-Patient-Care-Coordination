@@ -26,6 +26,7 @@
         "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
         "valueCodeableConcept" : {
           "coding" : [{
+            "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
             "code" : "FIRST-LINE"
           }]
         }

@@ -68,5 +68,12 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
     "version" : "0.1.0-test",
     "name" : "VSARTRegimenLines"
+  },
+  {
+    "id" : "vs-arvtreatment-activity-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
+    "version" : "0.1.0-test",
+    "name" : "VSARVTreatmentActivityType"
   }
 ]
