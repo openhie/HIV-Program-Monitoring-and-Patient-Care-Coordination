@@ -83,3 +83,19 @@ Description: "Viral Load Suppression example"
 * note.text = "Viral load not suppressed"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVDiagnosisExample
+InstanceOf: HIVDiagnosis
+Usage: #example
+Title: "HIV Condition example"
+Description: "."
+* identifier[HPTUI].value = "abc123"
+* identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis"
+* clinicalStatus = #active
+* clinicalStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-clinical"
+* verificationStatus = #confirmed
+* verificationStatus.coding.system = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* code = $SCT#86406008
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* recordedDate = "2021-05-18"
