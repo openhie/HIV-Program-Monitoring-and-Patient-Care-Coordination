@@ -178,15 +178,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "hiv-arv-treatment","CarePlan.activity.detail.id","CarePlan.activity.detail.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"hiv-arv-treatment","CarePlan.activity.detail.extension","CarePlan.activity.detail.extension","","","",2,*,"","","","Extension {[]} {[]}
+"hiv-arv-treatment","CarePlan.activity.detail.extension","CarePlan.activity.detail.extension","","","",1,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenLineInitiated","CarePlan.activity.detail.extension","artRegimenLineInitiated","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line]]} {[]}
-","ART Regimen Line","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenLineCurrent","CarePlan.activity.detail.extension","artRegimenLineCurrent","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line]]} {[]}
+"hiv-arv-treatment","CarePlan.activity.detail.extension:artRegimenLine","CarePlan.activity.detail.extension","artRegimenLine","","",1,1,"","","","Extension {[CanonicalType[http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line]]} {[]}
 ","ART Regimen Line","An Extension","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

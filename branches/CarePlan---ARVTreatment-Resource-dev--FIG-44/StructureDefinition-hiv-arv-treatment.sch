@@ -49,8 +49,6 @@
     <sch:rule context="f:CarePlan/f:activity/f:detail">
       <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line']) &gt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line']) &gt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line']) &lt;= 1">extension with URL = 'http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>
