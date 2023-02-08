@@ -67,11 +67,30 @@ Description: "Transferring Facility Encounter example"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
 
+Instance: ViralLoadSuppressionExample
+InstanceOf: ViralLoadSuppression
+Usage: #example
+Title: "Viral Load Suppression example" 
+Description: "Viral Load Suppression example"
+* status = #final
+* code.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code"
+* code = #VL-RESULT
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2022-11-30"
+* valueInteger = 1001
+* interpretation = #UNSUP
+* interpretation.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"
+* interpretation.coding.display = "Unsuppressed"
+* note.text = "Viral load not suppressed"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
 Instance: HIVDiagnosisExample
 InstanceOf: HIVDiagnosis
 Usage: #example
 Title: "HIV Condition example"
-Description: "."
+Description: "Showing a confirmed HIV diagnosis"
 * identifier[HPTUI].value = "abc123"
 * identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis"
 * clinicalStatus = #active

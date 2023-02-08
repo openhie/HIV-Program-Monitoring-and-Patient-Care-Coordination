@@ -48,7 +48,6 @@ Description: "This profile represents the facility the patient is being transfer
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status 1..1
 * class 1..1
-* subject only Reference(Patient)
 * subject 1..1
 * period 1..1
 * serviceProvider 1..1
@@ -70,6 +69,20 @@ Description: "This profile represents the facility the patient is being transfer
 * period 1..1
 * serviceProvider 1..1
 
+Profile: ViralLoadSuppression
+Parent: Observation
+Id: viral-load-suppression
+Title: "Viral Load Suppression"
+Description: "This profile is to record a Viral Load Suppression observation for a patient"
+* status = #final
+* code from VSVLResultCode (required)
+* subject 1..1
+* encounter 1..1
+* effectiveDateTime 1..1
+* valueInteger 1..1
+* interpretation from VSVLSuppression (required)
+* note 0..1
+
 Profile: HIVDiagnosis
 Parent: Condition
 Id: hiv-diagnosis
@@ -85,7 +98,6 @@ Description: "Confirmation of the diagnosis"
 * clinicalStatus 1..1
 * verificationStatus 1..1
 * code from VSHIVDiagnosis (required)
-* subject only Reference(Patient)
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
