@@ -82,5 +82,4 @@ Description: "ARVCarePlan example"
 * activity.detail.code = $LNC#45260-7 "HIV ART medication" 
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept = #TDF/3TC/DTG
-* activity.detail.extension[artRegimenLineInitiated].valueCodeableConcept = #FIRST-LINE
-* activity.detail.extension[artRegimenLineCurrent].valueCodeableConcept = #SECOND-LINE
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
