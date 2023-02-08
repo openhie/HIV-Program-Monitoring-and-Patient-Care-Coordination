@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ViralLoadSuppressionExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ViralLoadSuppressionExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ViralLoadSuppressionExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-viral-load-suppression.html">Viral Load Suppression</a></p></div><p><b>status</b>: final</p><p><b>code</b>: VL-RESULT <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#VL-RESULT)</span></p><p><b>subject</b>: <a href="Patient-HIVPatientExample.html">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>effective</b>: 2022-11-30</p><p><b>value</b>: 1001</p><p><b>interpretation</b>: Unsuppressed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (cs-vl-suppression#UNSUP)</span></p><p><b>note</b>: Viral load not suppressed (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <code value="VL-RESULT"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/HIVPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2022-11-30"/>
+  <valueInteger value="1001"/>
+  <interpretation>
+    <coding>
+      <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"/>
+      <code value="UNSUP"/>
+      <display value="Unsuppressed"/>
+    </coding>
+  </interpretation>
+  <note>
+    <authorReference>
+      <reference value="Organization/HIVOrganizationExample"/>
+    </authorReference>
+    <time value="2015-02-07T13:28:17-05:00"/>
+    <text value="Viral load not suppressed"/>
+  </note>
+</Observation>

@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-08T08:31:05+00:00",
+  "date" : "2023-02-08T09:57:31+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -630,24 +630,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "Condition/HIVDiagnosisExample"
+        "reference" : "ValueSet/vs-vl-result-code"
       },
-      "name" : "Example Condition - HIVDiagnosisExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"
+      "name" : "Viral Load Result Code",
+      "description" : "Viral Load Result Code"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-diagnosis"
+        "reference" : "CodeSystem/cs-vl-interpretation"
       },
-      "name" : "HIV Diagnosis",
-      "description" : "This profile allows the exchange of a patient's hiv diagnosis"
+      "name" : "Viral load Interpretation",
+      "description" : "A list of Viral load Interpretations"
     },
     {
       "extension" : [{
@@ -707,6 +707,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ViralLoadSuppressionExample"
+      },
+      "name" : "Example Observation - ViralLoadSuppressionExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -714,6 +725,39 @@
       },
       "name" : "Target Facility Encounter",
       "description" : "This profile represents the facility the patient is being transferred to"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/viral-load-suppression"
+      },
+      "name" : "Viral Load Suppression",
+      "description" : "This profile is to record a Viral Load Suppression observation for a patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-vl-interpretation"
+      },
+      "name" : "Viral load Interpretation",
+      "description" : "Valueset - Viral load Interpretations"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-vl-result-code"
+      },
+      "name" : "Viral Load Result Code",
+      "description" : "Viral Load Result Code"
     },
     {
       "extension" : [{
