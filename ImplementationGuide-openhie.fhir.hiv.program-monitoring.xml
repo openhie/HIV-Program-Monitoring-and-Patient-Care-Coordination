@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-08T15:01:20+00:00"/>
+  <date value="2023-02-08T15:31:30+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -471,43 +471,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/DeathExample"/>
-      </reference>
-      <name value="Example Observation - DeathExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-vl-result-code"/>
-      </reference>
-      <name value="Viral Load Result Code"/>
-      <description value="Viral Load Result Code"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/HIVDiagnosisExample"/>
-      </reference>
-      <name value="Example Condition - HIVDiagnosisExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-diagnosis"/>
+        <reference value="StructureDefinition/hiv-arv-treatment"/>
       </reference>
-      <name value="Diagnosis"/>
-      <description value="Confirmation of the diagnosis"/>
+      <name value="ARVCarePlan"/>
+      <description value="This profile allows the exchange of a patient's ARV treatment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -521,6 +491,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-arvtreatment-activity-type"/>
+      </reference>
+      <name value="ARV Treatment Activity Type"/>
+      <description value="ARV Treatment Activity Type"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/ARVTreatmentExample"/>
+      </reference>
+      <name value="Example CarePlan - ARVTreatmentExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Encounter"/>
       </extension>
       <reference>
@@ -531,16 +521,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ViralLoadSuppressionMostRecentTestResultExample"/>
-      </reference>
-      <name value="Example Observation - ViralLoadSuppressionMostRecentTestResultExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testresult"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -548,16 +528,6 @@
       </reference>
       <name value="Next Appointment Date"/>
       <description value="A date representing the patient's next scheduled appointment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-vl-suppression"/>
-      </reference>
-      <name value="Viral load Suppressions Status"/>
-      <description value="A list of Viral load Statuses"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -581,33 +551,12 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ViralLoadSuppressionExample"/>
-      </reference>
-      <name value="Example Observation - ViralLoadSuppressionExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-hiv-death"/>
+        <reference value="ValueSet/vs-artregimen-lines"/>
       </reference>
-      <name value="Death"/>
-      <description value="A list of possible HIV deaths"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vl-suppression-most-recent-testdate"/>
-      </reference>
-      <name value="Viral Load Suppression Most Recent Test Date"/>
-      <description value="This profile is to record a Viral Load Suppression Most Recent Test Date observation for a patient"/>
+      <name value="VSART Regimen Lines"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -621,73 +570,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/death"/>
+        <reference value="StructureDefinition/art-regimen-line"/>
       </reference>
-      <name value="Patient Death"/>
-      <description value="This profile is to record the death of a patient observation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/viral-load-suppression"/>
-      </reference>
-      <name value="Viral Load Suppression"/>
-      <description value="This profile is to record a Viral Load Suppression observation for a patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vl-suppression-most-recent-testresult"/>
-      </reference>
-      <name value="Viral Load Suppression Most Recent Test Result"/>
-      <description value="This profile is to record a Viral Load Suppression Most Recent Test Result observation for a patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-hiv-diagnosis"/>
-      </reference>
-      <name value="HIV Diagnosis"/>
-      <description value="A list of possible HIV diagnoses"/>
+      <name value="ART Regimen Line"/>
+      <description value="ART Regimen Line"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cs-vl-result-code"/>
+        <reference value="CodeSystem/cs-artregimen-lines"/>
       </reference>
-      <name value="Viral Load Result Code"/>
-      <description value="Viral Load Result Code"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-vl-suppression"/>
-      </reference>
-      <name value="Viral load Suppressions Status"/>
-      <description value="A list of Viral load Statuses"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ViralLoadSuppressionMostRecentTestDateExample"/>
-      </reference>
-      <name value="Example Observation - ViralLoadSuppressionMostRecentTestDateExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testdate"/>
+      <name value="ART Regimen Lines"/>
+      <description value="A list of ART Regimen Lines"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

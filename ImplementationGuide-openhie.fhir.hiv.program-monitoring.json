@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-08T15:01:20+00:00",
+  "date" : "2023-02-08T15:31:30+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -630,46 +630,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/DeathExample"
-      },
-      "name" : "Example Observation - DeathExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-vl-result-code"
-      },
-      "name" : "Viral Load Result Code",
-      "description" : "Viral Load Result Code"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/HIVDiagnosisExample"
-      },
-      "name" : "Example Condition - HIVDiagnosisExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/hiv-diagnosis"
+        "reference" : "StructureDefinition/hiv-arv-treatment"
       },
-      "name" : "Diagnosis",
-      "description" : "Confirmation of the diagnosis"
+      "name" : "ARVCarePlan",
+      "description" : "This profile allows the exchange of a patient's ARV treatment"
     },
     {
       "extension" : [{
@@ -685,6 +652,28 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-arvtreatment-activity-type"
+      },
+      "name" : "ARV Treatment Activity Type",
+      "description" : "ARV Treatment Activity Type"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
       }],
       "reference" : {
@@ -696,17 +685,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ViralLoadSuppressionMostRecentTestResultExample"
-      },
-      "name" : "Example Observation - ViralLoadSuppressionMostRecentTestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testresult"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -714,17 +692,6 @@
       },
       "name" : "Next Appointment Date",
       "description" : "A date representing the patient's next scheduled appointment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-vl-suppression"
-      },
-      "name" : "Viral load Suppressions Status",
-      "description" : "A list of Viral load Statuses"
     },
     {
       "extension" : [{
@@ -751,35 +718,12 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ViralLoadSuppressionExample"
-      },
-      "name" : "Example Observation - ViralLoadSuppressionExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-hiv-death"
+        "reference" : "ValueSet/vs-artregimen-lines"
       },
-      "name" : "Death",
-      "description" : "A list of possible HIV deaths"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/vl-suppression-most-recent-testdate"
-      },
-      "name" : "Viral Load Suppression Most Recent Test Date",
-      "description" : "This profile is to record a Viral Load Suppression Most Recent Test Date observation for a patient"
+      "name" : "VSART Regimen Lines"
     },
     {
       "extension" : [{
@@ -795,46 +739,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/death"
+        "reference" : "StructureDefinition/art-regimen-line"
       },
-      "name" : "Patient Death",
-      "description" : "This profile is to record the death of a patient observation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/viral-load-suppression"
-      },
-      "name" : "Viral Load Suppression",
-      "description" : "This profile is to record a Viral Load Suppression observation for a patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/vl-suppression-most-recent-testresult"
-      },
-      "name" : "Viral Load Suppression Most Recent Test Result",
-      "description" : "This profile is to record a Viral Load Suppression Most Recent Test Result observation for a patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-diagnosis"
-      },
-      "name" : "HIV Diagnosis",
-      "description" : "A list of possible HIV diagnoses"
+      "name" : "ART Regimen Line",
+      "description" : "ART Regimen Line"
     },
     {
       "extension" : [{
@@ -842,32 +753,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/cs-vl-result-code"
+        "reference" : "CodeSystem/cs-artregimen-lines"
       },
-      "name" : "Viral Load Result Code",
-      "description" : "Viral Load Result Code"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-vl-suppression"
-      },
-      "name" : "Viral load Suppressions Status",
-      "description" : "A list of Viral load Statuses"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ViralLoadSuppressionMostRecentTestDateExample"
-      },
-      "name" : "Example Observation - ViralLoadSuppressionMostRecentTestDateExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testdate"
+      "name" : "ART Regimen Lines",
+      "description" : "A list of ART Regimen Lines"
     },
     {
       "extension" : [{
