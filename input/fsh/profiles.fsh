@@ -100,4 +100,4 @@ Id: art-regimen-line
 Title: "ART Regimen Line"
 Description: ""
 * value[x] only CodeableConcept
-* valueCodeableConcept from VSARTRegimenLines
+* valueCodeableConcept from VSARTRegimenLines (required)
