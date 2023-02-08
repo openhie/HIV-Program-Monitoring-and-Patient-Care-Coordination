@@ -90,7 +90,7 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * activity 1..* 
 * activity.detail 1..1
 * activity.detail.kind = #MedicationRequest
-* activity.detail.code = $LNC#45260-7 "HIV ART medication"
+* activity.detail.code from VSARVTreatmentActivityType (required)
 * activity.detail.status 1..1
 * activity.detail.productCodeableConcept 1..1  
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
@@ -98,6 +98,6 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 Extension: ARTRegimenLine
 Id: art-regimen-line
 Title: "ART Regimen Line"
-Description: ""
+Description: "ART Regimen Line"
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenLines (required)
