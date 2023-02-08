@@ -1,54 +1,44 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 2, warn = 10, info = 1
+err = 0, warn = 9, info = 0
 IG Publisher Version: 1.2.35
-Generated Wed Feb 08 11:04:34 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Wed Feb 08 11:23:02 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 9 / 0
- /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-interpretation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-suppression : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-interpretation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/TransferringFacilityEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/HIVDiagnosisExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/TargetFacilityEncounterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/HIVPatientExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ViralLoadSuppressionExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/HIVOrganizationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
-== fsh-generated/resources/CodeSystem-cs-vl-interpretation.json ==
-== fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
+== fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
-== fsh-generated/resources/Observation-ViralLoadSuppressionExample.json ==
-ERROR: Observation/ViralLoadSuppressionExample: Observation.code: None of the codings provided are in the value set 'Viral Load Result Code' (http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code|0.1.0-test), and a coding from this value set is required) (codes = null#VL-RESULT)
-WARNING: Observation/ViralLoadSuppressionExample: Observation.code.coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: Observation/ViralLoadSuppressionExample: Observation.interpretation[0].coding[0]: Code System URI 'http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression' is unknown so the code cannot be validated
-ERROR: Observation/ViralLoadSuppressionExample: Observation.interpretation[0].coding[0].display: The value provided ('Unsuppressed') is not in the value set 'Viral load Interpretation' (http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-interpretation|0.1.0-test), and a code is required from this value set) (error message = Unknown Code http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation#Unsuppressed in http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-interpretation)
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
 == fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
+== fsh-generated/resources/StructureDefinition-hiv-diagnosis.json ==
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
-== fsh-generated/resources/StructureDefinition-viral-load-suppression.json ==
-== fsh-generated/resources/ValueSet-vs-vl-interpretation.json ==
-== fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
+== fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
 == input/hiv-program-monitoring.xml ==

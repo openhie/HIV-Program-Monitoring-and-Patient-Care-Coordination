@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-08T11:03:46+00:00",
+  "date" : "2023-02-08T11:22:28+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -630,24 +630,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Condition"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-vl-result-code"
+        "reference" : "Condition/HIVDiagnosisExample"
       },
-      "name" : "Viral Load Result Code",
-      "description" : "Viral Load Result Code"
+      "name" : "Example Condition - HIVDiagnosisExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "CodeSystem/cs-vl-interpretation"
+        "reference" : "StructureDefinition/hiv-diagnosis"
       },
-      "name" : "Viral load Interpretation",
-      "description" : "A list of Viral load Interpretations"
+      "name" : "Diagnosis",
+      "description" : "Confirmation of the diagnosis"
     },
     {
       "extension" : [{
@@ -707,17 +707,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ViralLoadSuppressionExample"
-      },
-      "name" : "Example Observation - ViralLoadSuppressionExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -729,35 +718,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/viral-load-suppression"
-      },
-      "name" : "Viral Load Suppression",
-      "description" : "This profile is to record a Viral Load Suppression observation for a patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-vl-interpretation"
+        "reference" : "ValueSet/vs-hiv-diagnosis"
       },
-      "name" : "Viral load Interpretation",
-      "description" : "Valueset - Viral load Interpretations"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-vl-result-code"
-      },
-      "name" : "Viral Load Result Code",
-      "description" : "Viral Load Result Code"
+      "name" : "HIV Diagnosis",
+      "description" : "A list of possible HIV diagnoses"
     },
     {
       "extension" : [{
