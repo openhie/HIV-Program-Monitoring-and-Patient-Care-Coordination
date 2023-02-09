@@ -1,92 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bd425da6-b12b-4cb6-a714-8654e7b203ab"/>
+  <id value="fa43a274-9788-4ce2-829c-40f03d7be323"/>
   <meta>
-    <lastUpdated value="2023-02-09T07:17:47.143+00:00"/>
+    <lastUpdated value="2023-02-09T10:24:05.911+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-art-regimen"/>
-    <resource>
-      <ValueSet>
-        <id value="vs-art-regimen"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cs-art-regimen.html">ART Regimen Lines v0.1.0-test (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-art-regimen-TDF-3TC-DTG"> </a>  
-                  <a href="CodeSystem-cs-art-regimen.html#cs-art-regimen-TDF.473TC.47DTG">TDF/3TC/DTG</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-art-regimen</td>
-                <td>Dolutegravir/lamivudine/tenofovir</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-art-regimen"/>
-        <version value="0.1.0-test"/>
-        <name value="VSARTRegimen"/>
-        <title value="ART Regimen Lines"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-02-09T07:17:47+00:00"/>
-        <publisher value="Jembi Health Systems"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.jembi.org"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="info@jembi.org"/>
-          </telecom>
-        </contact>
-        <description value="A list of ART Regimen Lines"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:ac5d5cc7-d5a4-40ab-b83d-c4cd7149071a"/>
-          <timestamp value="2023-02-09T07:18:04+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-art-regimen|0.1.0-test"/>
-          </parameter>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-art-regimen"/>
-            <code value="TDF/3TC/DTG"/>
-            <display value="Dolutegravir/lamivudine/tenofovir"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type"/>
     <resource>
@@ -126,7 +45,7 @@
         <title value="ARV Treatment Activity Type"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-09T07:17:47+00:00"/>
+        <date value="2023-02-09T10:24:05+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -146,8 +65,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:895d0b96-ba1b-4f5b-a595-782a6f39f876"/>
-          <timestamp value="2023-02-09T07:18:10+00:00"/>
+          <identifier value="urn:uuid:96579b38-f14e-402d-aed7-9113b4374197"/>
+          <timestamp value="2023-02-09T10:24:22+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -235,7 +154,7 @@
         <title value="VSART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-09T07:17:47+00:00"/>
+        <date value="2023-02-09T10:24:05+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -254,8 +173,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ae3dba78-c36b-40b8-9a94-608dbc5252cc"/>
-          <timestamp value="2023-02-09T07:18:11+00:00"/>
+          <identifier value="urn:uuid:8479e76e-86f3-4c9d-938e-db22d0da355d"/>
+          <timestamp value="2023-02-09T10:24:24+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>

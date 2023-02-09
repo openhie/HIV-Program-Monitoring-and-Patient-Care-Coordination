@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-09T07:17:47+00:00",
+  "date" : "2023-02-09T10:24:05+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -630,17 +630,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-art-regimen"
-      },
-      "name" : "ART Regimen Lines",
-      "description" : "A list of ART Regimen Lines"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -765,17 +754,6 @@
       }],
       "reference" : {
         "reference" : "CodeSystem/cs-artregimen-lines"
-      },
-      "name" : "ART Regimen Lines",
-      "description" : "A list of ART Regimen Lines"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-art-regimen"
       },
       "name" : "ART Regimen Lines",
       "description" : "A list of ART Regimen Lines"
