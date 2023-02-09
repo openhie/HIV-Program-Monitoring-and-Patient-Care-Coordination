@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Program Monitoring and Patient Care Coordination"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-09T13:39:21+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-09T15:03:43+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -899,7 +899,8 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-artregimen-lines" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VSART Regimen Lines" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Regimen Lines" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of ART Regimen Lines" ]
      ], [
        fhir:index 15;
        fhir:Element.extension [

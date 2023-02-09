@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-09T13:39:21+00:00"/>
+  <date value="2023-02-09T15:03:43+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -606,7 +606,8 @@
       <reference>
         <reference value="ValueSet/vs-artregimen-lines"/>
       </reference>
-      <name value="VSART Regimen Lines"/>
+      <name value="ART Regimen Lines"/>
+      <description value="A list of ART Regimen Lines"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
