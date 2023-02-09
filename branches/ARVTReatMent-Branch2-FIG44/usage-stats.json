@@ -5,6 +5,14 @@
   "jurisdiction": "001",
   "extensions": [
     {
+      "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
+      "title": "ART Regimen Line",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
       "title": "Next Appointment Date",
       "types": [
@@ -13,6 +21,12 @@
     }
   ],
   "profiles": {
+    "CarePlan": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
+        "title": "ARVCarePlan"
+      }
+    ],
     "Condition": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
@@ -64,6 +78,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -97,6 +114,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line": [
+      "CarePlan.activity.detail"
     ],
     "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit": [
       "Encounter"
