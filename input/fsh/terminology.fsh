@@ -40,23 +40,14 @@ Description:  "A list of possible HIV diagnoses"
 * ^experimental = false
 * $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
 
-CodeSystem: CSARTRegimenLines
-Id: cs-artregimen-lines
-Title: "ART Regimen Lines"
-Description: "A list of ART Regimen Lines"
-* ^experimental = false
-* ^caseSensitive = true
-* #FIRST-LINE "First line ARTs"
-* #SECOND-LINE "Second line ARTs"
-* #THIRD-LINE "Third line ARTs"
-* #SPECIAL-UNKNOWN "Special/Unknown"
-
 ValueSet: VSARTRegimenLines
 Id: vs-artregimen-lines
 Title: "VSART Regimen Lines"
 Description: ""
 * ^experimental = false
-* include codes from system CSARTRegimenLines
+* $SCT#708255002 "First line treatment (procedure)"
+* $SCT#708256001 "Second line treatment (procedure)"
+* $SCT#708255002 "Third line treatment (procedure)"
 
 ValueSet: VSARVTreatmentActivityType
 Id: vs-arvtreatment-activity-type

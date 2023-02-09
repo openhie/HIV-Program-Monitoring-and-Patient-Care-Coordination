@@ -116,7 +116,7 @@ Description: "ARVCarePlan example"
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 "HIV ART medication" 
 * activity.detail.status = #in-progress
-* activity.detail.productCodeableConcept.text = #TDF/3TC/DTG 
-* activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
-* activity.detail.extension[artRegimenLine].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines"
+* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.extension[artRegimenLine].valueCodeableConcept =  $SCT#708255002 "First line treatment (procedure)"
+//* activity.detail.extension[artRegimenLine].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines"
 
