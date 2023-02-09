@@ -1,11 +1,12 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 0, warn = 12, info = 0
+err = 0, warn = 11, info = 0
 IG Publisher Version: 1.2.35
-Generated Wed Feb 08 15:32:13 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Thu Feb 09 07:18:29 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 10 / 0
- /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-art-regimen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
@@ -18,6 +19,7 @@ Generated Wed Feb 08 15:32:13 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-art-regimen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
  /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
@@ -34,7 +36,7 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
-WARNING: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.product.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/CodeSystem-cs-art-regimen.json ==
 == fsh-generated/resources/CodeSystem-cs-artregimen-lines.json ==
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
@@ -47,6 +49,7 @@ WARNING: CarePlan/ARVTreatmentExample: CarePlan.activity[0].detail.product.ofTyp
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
+== fsh-generated/resources/ValueSet-vs-art-regimen.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
 WARNING: ValueSet/vs-artregimen-lines: ValueSet: The ShareableValueSet profile says that the description element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==

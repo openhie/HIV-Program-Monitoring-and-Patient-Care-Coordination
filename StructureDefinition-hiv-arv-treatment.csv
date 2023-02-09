@@ -238,7 +238,7 @@ Period {[]} {[]}string {[]} {[]}","When activity is to occur","The period, timin
 ","",,"closed","CarePlan.activity.detail.product[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=PRD].role","RXE-2 / RXO-1 / RXD-2"
 "CarePlan.activity.detail.product[x]:productCodeableConcept","CarePlan.activity.detail.product[x]","productCodeableConcept","","",1,1,"","","","CodeableConcept {[]} {[]}
-","What is to be administered/supplied","Identifies the food, drug or other product to be consumed or supplied in the activity.","","","","","","","","","",,"example","A product supplied or administered as part of a care plan activity.","http://hl7.org/fhir/ValueSet/medication-codes","",,,,"CarePlan.activity.detail.product[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","What is to be administered/supplied","Identifies the food, drug or other product to be consumed or supplied in the activity.","","","","","","","","","",,"required","","http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-art-regimen","",,,,"CarePlan.activity.detail.product[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=PRD].role","RXE-2 / RXO-1 / RXD-2"
 "CarePlan.activity.detail.dailyAmount","CarePlan.activity.detail.dailyAmount","","daily dose
 ","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}

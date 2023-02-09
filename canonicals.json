@@ -1,5 +1,12 @@
 [
   {
+    "id" : "cs-art-regimen",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-art-regimen",
+    "version" : "0.1.0-test",
+    "name" : "CSARTRegimen"
+  },
+  {
     "id" : "cs-artregimen-lines",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
@@ -61,6 +68,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
     "version" : "0.1.0-test",
     "name" : "TransferringFacilityEncounter"
+  },
+  {
+    "id" : "vs-art-regimen",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-art-regimen",
+    "version" : "0.1.0-test",
+    "name" : "VSARTRegimen"
   },
   {
     "id" : "vs-artregimen-lines",
