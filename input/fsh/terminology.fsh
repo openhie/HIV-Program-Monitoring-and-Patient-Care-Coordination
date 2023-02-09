@@ -8,8 +8,7 @@ Description: "Viral Load Result Code"
 * ^experimental = false
 * ^caseSensitive = true
 * #VL-RESULT "HIV VL Test Result"
-* #VL-MOST-RECENT-TEST-DATE "HIV VL most recent test date" 
-* #VL-MOST-RECENT-TEST-RESULT "HIV VL most recent test result" 
+* #VL-TEST "HIV Vtiral Load test"  
 
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
