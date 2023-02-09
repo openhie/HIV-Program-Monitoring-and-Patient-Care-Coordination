@@ -1,12 +1,5 @@
 [
   {
-    "id" : "cs-artregimen-lines",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
-    "version" : "0.1.0-test",
-    "name" : "CSARTRegimenLines"
-  },
-  {
     "id" : "cs-vl-result-code",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
@@ -28,18 +21,11 @@
     "name" : "HIVProgramMonitoring"
   },
   {
-    "id" : "art-regimen-line",
+    "id" : "death",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death",
     "version" : "0.1.0-test",
-    "name" : "ARTRegimenLine"
-  },
-  {
-    "id" : "hiv-arv-treatment",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
-    "version" : "0.1.0-test",
-    "name" : "ARVTreatment"
+    "name" : "Death"
   },
   {
     "id" : "hiv-care-next-visit",
@@ -91,18 +77,18 @@
     "name" : "ViralLoadSuppression"
   },
   {
-    "id" : "vs-artregimen-lines",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
+    "id" : "viral-load-test",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-test",
     "version" : "0.1.0-test",
-    "name" : "VSARTRegimenLines"
+    "name" : "ViralLoadTest"
   },
   {
-    "id" : "vs-arvtreatment-activity-type",
+    "id" : "vs-hiv-death",
     "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
     "version" : "0.1.0-test",
-    "name" : "VSARVTreatmentActivityType"
+    "name" : "VSHIVDeath"
   },
   {
     "id" : "vs-hiv-diagnosis",
