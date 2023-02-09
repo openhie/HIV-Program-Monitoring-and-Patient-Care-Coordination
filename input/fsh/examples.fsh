@@ -101,3 +101,22 @@ Description: "Showing a confirmed HIV diagnosis"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
+
+Instance: ARVTreatmentExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARVCarePlan example"
+Description: "ARVCarePlan example"
+* identifier[CPID].value = "CPID1234567"
+* identifier[CPID].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/cpid"
+* status = #active
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* period.start = 2022-12-01
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 "HIV ART medication" 
+* activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept.text = #TDF/3TC/DTG 
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = #FIRST-LINE
+* activity.detail.extension[artRegimenLine].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines"
+
