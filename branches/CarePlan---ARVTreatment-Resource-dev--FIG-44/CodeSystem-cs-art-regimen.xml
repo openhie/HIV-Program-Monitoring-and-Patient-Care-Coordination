@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-art-regimen"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-art-regimen</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">TDF/3TC/DTG<a name="cs-art-regimen-TDF.473TC.47DTG"> </a></td><td>Dolutegravir/lamivudine/tenofovir</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-art-regimen"/>
+  <version value="0.1.0-test"/>
+  <name value="CSARTRegimen"/>
+  <title value="ART Regimen Lines"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-02-09T07:17:47+00:00"/>
+  <publisher value="Jembi Health Systems"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.jembi.org"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@jembi.org"/>
+    </telecom>
+  </contact>
+  <description value="A list of ART Regimen Lines"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="TDF/3TC/DTG"/>
+    <display value="Dolutegravir/lamivudine/tenofovir"/>
+  </concept>
+</CodeSystem>
