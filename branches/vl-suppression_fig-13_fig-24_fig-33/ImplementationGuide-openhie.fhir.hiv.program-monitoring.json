@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-08T15:01:20+00:00",
+  "date" : "2023-02-09T09:47:00+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -663,6 +663,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ViralLoadTestExample"
+      },
+      "name" : "Example Observation - ViralLoadTestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-test"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -692,17 +703,6 @@
       },
       "name" : "Example Encounter - TargetFacilityEncounterExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ViralLoadSuppressionMostRecentTestResultExample"
-      },
-      "name" : "Example Observation - ViralLoadSuppressionMostRecentTestResultExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testresult"
     },
     {
       "extension" : [{
@@ -776,9 +776,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/vl-suppression-most-recent-testdate"
+        "reference" : "StructureDefinition/viral-load-test"
       },
-      "name" : "Viral Load Suppression Most Recent Test Date",
+      "name" : "Viral Load Test",
       "description" : "This profile is to record a Viral Load Suppression Most Recent Test Date observation for a patient"
     },
     {
@@ -817,17 +817,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/vl-suppression-most-recent-testresult"
-      },
-      "name" : "Viral Load Suppression Most Recent Test Result",
-      "description" : "This profile is to record a Viral Load Suppression Most Recent Test Result observation for a patient"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -857,17 +846,6 @@
       },
       "name" : "Viral load Suppressions Status",
       "description" : "A list of Viral load Statuses"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ViralLoadSuppressionMostRecentTestDateExample"
-      },
-      "name" : "Example Observation - ViralLoadSuppressionMostRecentTestDateExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testdate"
     },
     {
       "extension" : [{

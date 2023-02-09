@@ -19,12 +19,8 @@
         "title": "Viral Load Suppression"
       },
       {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testdate",
-        "title": "Viral Load Suppression Most Recent Test Date"
-      },
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testresult",
-        "title": "Viral Load Suppression Most Recent Test Result"
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-test",
+        "title": "Viral Load Test"
       }
     ],
     "Condition": [

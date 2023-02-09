@@ -3,7 +3,7 @@
   "id" : "cs-vl-result-code",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VL-RESULT<a name=\"cs-vl-result-code-VL-RESULT\"> </a></td><td>HIV VL Test Result</td></tr><tr><td style=\"white-space:nowrap\">VL-MOST-RECENT-TEST-DATE<a name=\"cs-vl-result-code-VL-MOST-RECENT-TEST-DATE\"> </a></td><td>HIV VL most recent test date</td></tr><tr><td style=\"white-space:nowrap\">VL-MOST-RECENT-TEST-RESULT<a name=\"cs-vl-result-code-VL-MOST-RECENT-TEST-RESULT\"> </a></td><td>HIV VL most recent test result</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VL-RESULT<a name=\"cs-vl-result-code-VL-RESULT\"> </a></td><td>HIV VL Test Result</td></tr><tr><td style=\"white-space:nowrap\">VL-TEST<a name=\"cs-vl-result-code-VL-TEST\"> </a></td><td>HIV Vtiral Load test</td></tr></table></div>"
   },
   "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
   "version" : "0.1.0-test",
@@ -11,7 +11,7 @@
   "title" : "Viral Load Result Code",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-02-08T15:01:20+00:00",
+  "date" : "2023-02-09T09:47:00+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -32,17 +32,13 @@
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 3,
+  "count" : 2,
   "concept" : [{
     "code" : "VL-RESULT",
     "display" : "HIV VL Test Result"
   },
   {
-    "code" : "VL-MOST-RECENT-TEST-DATE",
-    "display" : "HIV VL most recent test date"
-  },
-  {
-    "code" : "VL-MOST-RECENT-TEST-RESULT",
-    "display" : "HIV VL most recent test result"
+    "code" : "VL-TEST",
+    "display" : "HIV Vtiral Load test"
   }]
 }

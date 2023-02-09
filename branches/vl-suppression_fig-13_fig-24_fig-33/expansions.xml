@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="ae32fb7a-5a00-497f-b082-0430ef60159c"/>
+  <id value="17a06eaa-80f5-4e5c-b4bb-004bd3c09631"/>
   <meta>
-    <lastUpdated value="2023-02-08T15:01:20.017+00:00"/>
+    <lastUpdated value="2023-02-09T09:47:00.361+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-vl-result-code.html">Viral Load Result Code v0.1.0-test (CodeSystem)</a>
             </p>
@@ -40,19 +40,11 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-VL-MOST-RECENT-TEST-DATE"> </a>  
-                  <a href="CodeSystem-cs-vl-result-code.html#cs-vl-result-code-VL-MOST-RECENT-TEST-DATE">VL-MOST-RECENT-TEST-DATE</a>
+                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-VL-TEST"> </a>  
+                  <a href="CodeSystem-cs-vl-result-code.html#cs-vl-result-code-VL-TEST">VL-TEST</a>
                 </td>
                 <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</td>
-                <td>HIV VL most recent test date</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-VL-MOST-RECENT-TEST-RESULT"> </a>  
-                  <a href="CodeSystem-cs-vl-result-code.html#cs-vl-result-code-VL-MOST-RECENT-TEST-RESULT">VL-MOST-RECENT-TEST-RESULT</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</td>
-                <td>HIV VL most recent test result</td>
+                <td>HIV Vtiral Load test</td>
               </tr>
             </table>
           </div>
@@ -63,7 +55,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-08T15:01:20+00:00"/>
+        <date value="2023-02-09T09:47:00+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -83,9 +75,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:46164218-0956-4610-8574-129f39fe4102"/>
-          <timestamp value="2023-02-08T15:01:40+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:efd634da-1ae9-4be7-a467-5006e4af8ae7"/>
+          <timestamp value="2023-02-09T09:47:15+00:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -101,13 +93,8 @@
           </contains>
           <contains>
             <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code"/>
-            <code value="VL-MOST-RECENT-TEST-DATE"/>
-            <display value="HIV VL most recent test date"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code"/>
-            <code value="VL-MOST-RECENT-TEST-RESULT"/>
-            <display value="HIV VL most recent test result"/>
+            <code value="VL-TEST"/>
+            <display value="HIV Vtiral Load test"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -152,7 +139,7 @@
         <title value="Death"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-08T15:01:20+00:00"/>
+        <date value="2023-02-09T09:47:00+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -172,8 +159,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b741bd9b-9f9a-4b4b-a00b-d47ef8bae470"/>
-          <timestamp value="2023-02-08T15:01:46+00:00"/>
+          <identifier value="urn:uuid:30a0bdfd-b34f-48ea-aa97-ca3ee5d2aa05"/>
+          <timestamp value="2023-02-09T09:47:20+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -235,7 +222,7 @@
         <title value="HIV Diagnosis"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-08T15:01:20+00:00"/>
+        <date value="2023-02-09T09:47:00+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -255,8 +242,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0bae8594-3942-455b-8928-3e3b1a6fcbe1"/>
-          <timestamp value="2023-02-08T15:01:52+00:00"/>
+          <identifier value="urn:uuid:88b8c4ab-2899-456e-bed3-1f4dc53f455e"/>
+          <timestamp value="2023-02-09T09:47:24+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -336,7 +323,7 @@
         <title value="Viral load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-08T15:01:20+00:00"/>
+        <date value="2023-02-09T09:47:00+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -356,8 +343,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3965520a-0ae0-4b72-9a66-95cf945cce31"/>
-          <timestamp value="2023-02-08T15:01:53+00:00"/>
+          <identifier value="urn:uuid:d3f59686-05f6-4ca2-97b6-547a5b1f9056"/>
+          <timestamp value="2023-02-09T09:47:24+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

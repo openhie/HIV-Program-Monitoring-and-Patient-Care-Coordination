@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-08T15:01:20+00:00"/>
+  <date value="2023-02-09T09:47:00+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -501,6 +501,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ViralLoadTestExample"/>
+      </reference>
+      <name value="Example Observation - ViralLoadTestExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-test"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -528,16 +538,6 @@
       </reference>
       <name value="Example Encounter - TargetFacilityEncounterExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ViralLoadSuppressionMostRecentTestResultExample"/>
-      </reference>
-      <name value="Example Observation - ViralLoadSuppressionMostRecentTestResultExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testresult"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -604,9 +604,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/vl-suppression-most-recent-testdate"/>
+        <reference value="StructureDefinition/viral-load-test"/>
       </reference>
-      <name value="Viral Load Suppression Most Recent Test Date"/>
+      <name value="Viral Load Test"/>
       <description value="This profile is to record a Viral Load Suppression Most Recent Test Date observation for a patient"/>
     </resource>
     <resource>
@@ -641,16 +641,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vl-suppression-most-recent-testresult"/>
-      </reference>
-      <name value="Viral Load Suppression Most Recent Test Result"/>
-      <description value="This profile is to record a Viral Load Suppression Most Recent Test Result observation for a patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -678,16 +668,6 @@
       </reference>
       <name value="Viral load Suppressions Status"/>
       <description value="A list of Viral load Statuses"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ViralLoadSuppressionMostRecentTestDateExample"/>
-      </reference>
-      <name value="Example Observation - ViralLoadSuppressionMostRecentTestDateExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testdate"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -77,18 +77,11 @@
     "name" : "ViralLoadSuppression"
   },
   {
-    "id" : "vl-suppression-most-recent-testdate",
+    "id" : "viral-load-test",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testdate",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-test",
     "version" : "0.1.0-test",
-    "name" : "ViralLoadSuppressionMostRecentTestDate"
-  },
-  {
-    "id" : "vl-suppression-most-recent-testresult",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-suppression-most-recent-testresult",
-    "version" : "0.1.0-test",
-    "name" : "ViralLoadSuppressionMostRecentTestResult"
+    "name" : "ViralLoadTest"
   },
   {
     "id" : "vs-hiv-death",
