@@ -7,6 +7,20 @@
     "name" : "CSARTRegimenLines"
   },
   {
+    "id" : "cs-vl-result-code",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
+    "version" : "0.1.0-test",
+    "name" : "CSVLResultCode"
+  },
+  {
+    "id" : "cs-vl-suppression",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression",
+    "version" : "0.1.0-test",
+    "name" : "CSVLSuppression"
+  },
+  {
     "id" : "openhie.fhir.hiv.program-monitoring",
     "type" : "ImplementationGuide",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
@@ -33,6 +47,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
     "version" : "0.1.0-test",
     "name" : "HIVCareNextAppointment"
+  },
+  {
+    "id" : "hiv-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
+    "version" : "0.1.0-test",
+    "name" : "HIVDiagnosis"
   },
   {
     "id" : "hiv-organization",
@@ -63,6 +84,13 @@
     "name" : "TransferringFacilityEncounter"
   },
   {
+    "id" : "viral-load-suppression",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
+    "version" : "0.1.0-test",
+    "name" : "ViralLoadSuppression"
+  },
+  {
     "id" : "vs-artregimen-lines",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
@@ -75,5 +103,26 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
     "version" : "0.1.0-test",
     "name" : "VSARVTreatmentActivityType"
+  },
+  {
+    "id" : "vs-hiv-diagnosis",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
+    "version" : "0.1.0-test",
+    "name" : "VSHIVDiagnosis"
+  },
+  {
+    "id" : "vs-vl-result-code",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
+    "version" : "0.1.0-test",
+    "name" : "VSVLResultCode"
+  },
+  {
+    "id" : "vs-vl-suppression",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-suppression",
+    "version" : "0.1.0-test",
+    "name" : "VSVLSuppression"
   }
 ]
