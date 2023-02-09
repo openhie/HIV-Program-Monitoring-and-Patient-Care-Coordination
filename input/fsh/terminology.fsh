@@ -24,3 +24,18 @@ Title: "ARV Treatment Activity Type"
 Description: "ARV Treatment Activity Type"
 * ^experimental = false
 *  $LNC#45260-7 "HIV ART medication"
+
+CodeSystem: CSARTRegimen
+Id: cs-art-regimen
+Title: "ART Regimen Lines"
+Description: "A list of ART Regimen Lines"
+* ^experimental = false
+* ^caseSensitive = true
+* #TDF/3TC/DTG "Dolutegravir/lamivudine/tenofovir"    
+
+ValueSet: VSARTRegimen
+Id: vs-art-regimen
+Title: "ART Regimen Lines"
+Description: "A list of ART Regimen Lines"
+* ^experimental = false
+* include codes from system CSARTRegimen 

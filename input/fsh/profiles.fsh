@@ -93,6 +93,7 @@ Description: "This profile allows the exchange of a patient's ARV treatment"
 * activity.detail.code from VSARVTreatmentActivityType (required)
 * activity.detail.status 1..1
 * activity.detail.productCodeableConcept 1..1  
+* activity.detail.productCodeableConcept from VSARTRegimen (required)  
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
 
 Extension: ARTRegimenLine
