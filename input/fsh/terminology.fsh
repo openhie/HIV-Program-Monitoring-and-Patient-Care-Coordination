@@ -42,8 +42,8 @@ Description:  "A list of possible HIV diagnoses"
 
 ValueSet: VSARTRegimenLines
 Id: vs-artregimen-lines
-Title: "VSART Regimen Lines"
-Description: ""
+Title: "ART Regimen Lines"
+Description: "A list of ART Regimen Lines"
 * ^experimental = false
 * $SCT#708255002 "First line treatment (procedure)"
 * $SCT#708256001 "Second line treatment (procedure)"
