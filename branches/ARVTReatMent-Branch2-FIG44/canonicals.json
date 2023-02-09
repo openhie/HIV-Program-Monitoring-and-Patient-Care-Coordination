@@ -1,12 +1,5 @@
 [
   {
-    "id" : "cs-artregimen-lines",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
-    "version" : "0.1.0-test",
-    "name" : "CSARTRegimenLines"
-  },
-  {
     "id" : "cs-vl-result-code",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",

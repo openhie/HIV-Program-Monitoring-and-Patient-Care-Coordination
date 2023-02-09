@@ -2,6 +2,7 @@
 @prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -43,8 +44,10 @@
          fhir:Extension.valueCodeableConcept [
            fhir:CodeableConcept.coding [
              fhir:index 0;
-             fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines" ];
-             fhir:Coding.code [ fhir:value "FIRST-LINE" ]
+             a sct:708255002;
+             fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+             fhir:Coding.code [ fhir:value "708255002" ];
+             fhir:Coding.display [ fhir:value "First line treatment (procedure)" ]
            ]
          ]
        ];

@@ -25,8 +25,9 @@
       <extension url="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line">
         <valueCodeableConcept>
           <coding>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines"/>
-            <code value="FIRST-LINE"/>
+            <system value="http://snomed.info/sct"/>
+            <code value="708255002"/>
+            <display value="First line treatment (procedure)"/>
           </coding>
         </valueCodeableConcept>
       </extension>

@@ -3,10 +3,9 @@
 
 err = 0, warn = 5, info = 0
 IG Publisher Version: 1.2.35
-Generated Thu Feb 09 10:40:47 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Thu Feb 09 13:09:21 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
@@ -37,7 +36,6 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
-== fsh-generated/resources/CodeSystem-cs-artregimen-lines.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-suppression.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "50a0d9f6-ac06-4d17-8e90-daba5b6b504b",
+  "id" : "5c03464f-923e-4a4d-b0b6-96c218fe5538",
   "meta" : {
-    "lastUpdated" : "2023-02-09T10:40:09.881+00:00"
+    "lastUpdated" : "2023-02-09T13:08:40.098+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-09T10:40:09+00:00",
+      "date" : "2023-02-09T13:08:40+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:022496d7-47ec-4edd-b8cf-dda834fa468f",
-        "timestamp" : "2023-02-09T10:40:23+00:00",
+        "identifier" : "urn:uuid:733cea9d-cb61-42a0-a5a1-da3c3dd51e74",
+        "timestamp" : "2023-02-09T13:08:57+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -74,7 +74,7 @@
       "title" : "ARV Treatment Activity Type",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-09T10:40:09+00:00",
+      "date" : "2023-02-09T13:08:40+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:4d33fbe8-4bf7-4d1f-97f6-fde03fe29e7a",
-        "timestamp" : "2023-02-09T10:40:28+00:00",
+        "identifier" : "urn:uuid:56589b80-f530-4001-81d1-994f50d2651c",
+        "timestamp" : "2023-02-09T13:09:02+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -124,7 +124,7 @@
       "id" : "vs-artregimen-lines",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-artregimen-lines.html\">ART Regimen Lines v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-FIRST-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-FIRST-LINE\">FIRST-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>First line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-SECOND-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SECOND-LINE\">SECOND-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Second line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-THIRD-LINE\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-THIRD-LINE\">THIRD-LINE</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Third line ARTs</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-artregimen-lines-SPECIAL-UNKNOWN\"> </a>  <a href=\"CodeSystem-cs-artregimen-lines.html#cs-artregimen-lines-SPECIAL-UNKNOWN\">SPECIAL-UNKNOWN</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines</td><td>Special/Unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708255002\"> </a>  <a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>http://snomed.info/sct</td><td>First line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708256001\"> </a>  <a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>http://snomed.info/sct</td><td>Second line treatment (procedure)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
       "version" : "0.1.0-test",
@@ -132,7 +132,7 @@
       "title" : "VSART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-09T10:40:09+00:00",
+      "date" : "2023-02-09T13:08:40+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -151,36 +151,30 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6ed403bb-ba08-403c-bfbb-3fd31d8f8f81",
-        "timestamp" : "2023-02-09T10:40:30+00:00",
-        "total" : 4,
+        "identifier" : "urn:uuid:57c3fc41-a8c1-4f29-bb4e-30e094856d01",
+        "timestamp" : "2023-02-09T13:09:03+00:00",
+        "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
           "name" : "version",
-          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines|0.1.0-test"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
         }],
         "contains" : [{
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
-          "code" : "FIRST-LINE",
-          "display" : "First line ARTs"
+          "system" : "http://snomed.info/sct",
+          "code" : "708255002",
+          "display" : "First line treatment (procedure)"
         },
         {
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
-          "code" : "SECOND-LINE",
-          "display" : "Second line ARTs"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
-          "code" : "THIRD-LINE",
-          "display" : "Third line ARTs"
-        },
-        {
-          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines",
-          "code" : "SPECIAL-UNKNOWN",
-          "display" : "Special/Unknown"
+          "system" : "http://snomed.info/sct",
+          "code" : "708256001",
+          "display" : "Second line treatment (procedure)"
         }]
       }
     }
@@ -200,7 +194,7 @@
       "title" : "HIV Diagnosis",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-09T10:40:09+00:00",
+      "date" : "2023-02-09T13:08:40+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -220,8 +214,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:40cdccd7-0644-42cd-83b8-b1552aac4641",
-        "timestamp" : "2023-02-09T10:40:32+00:00",
+        "identifier" : "urn:uuid:5ec6ba0c-fe15-4a35-bf5e-00a25faf374e",
+        "timestamp" : "2023-02-09T13:09:05+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -258,7 +252,7 @@
       "title" : "Viral load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-09T10:40:09+00:00",
+      "date" : "2023-02-09T13:08:40+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -278,8 +272,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7866dc03-7c65-4442-a056-efbdbc0674ae",
-        "timestamp" : "2023-02-09T10:40:32+00:00",
+        "identifier" : "urn:uuid:988dac4b-4bb2-4c16-9390-d763fe9dda82",
+        "timestamp" : "2023-02-09T13:09:06+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
