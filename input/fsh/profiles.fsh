@@ -107,7 +107,9 @@ Parent: Observation
 Id: viral-load-test
 Title: "Viral Load Test"
 Description: "This profile is to record a Viral Load Suppression Most Recent Test Date observation for a patient"
+* status 1..1
 * status = #final
+* code 1..1
 * code from VSVLResultCode (required)
 * subject 1..1
 * encounter 1..1
@@ -119,7 +121,9 @@ Parent: Observation
 Id: death
 Title: "Patient Death"
 Description: "This profile is to record the death of a patient observation"
+* status 1..1
 * status = #final
+* code 1..1
 * code from VSHIVDeath (required)
 * subject 1..1
 * encounter 1..1
