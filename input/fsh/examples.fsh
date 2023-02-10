@@ -108,7 +108,7 @@ Usage: #example
 Title: "Date HIV Test Done example"
 Description: "Date HIV Test Done example"
 * status = #final
-* code = #DATE-TESTED-FOR-HIV
+* code = $SCT#31676001
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-12-10"

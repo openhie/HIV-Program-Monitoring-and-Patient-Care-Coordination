@@ -8,7 +8,6 @@ Description: "Viral Load Result Code"
 * ^experimental = false
 * ^caseSensitive = true
 * #VL-RESULT "HIV VL Test Result"
-* #DATE-TESTED-FOR-HIV "Date tested for HIV" 
 
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
@@ -40,3 +39,10 @@ Title: "HIV Diagnosis"
 Description:  "A list of possible HIV diagnoses"
 * ^experimental = false
 * $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
+
+ValueSet: VSHIVTestDone
+Id: vs-hiv-test-done
+Title: "HIV Test Done"
+Description:  "HIV Test Done"
+* ^experimental = false
+* $SCT#31676001 "Human immunodeficiency virus antigen test (procedure)"
