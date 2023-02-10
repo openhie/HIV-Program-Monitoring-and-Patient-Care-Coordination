@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-10T07:15:43+00:00",
+  "date" : "2023-02-10T13:19:16+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -655,6 +655,17 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/hiv-arv-treatment"
+      },
+      "name" : "ARVCarePlan",
+      "description" : "This profile allows the exchange of a patient's ARV treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/hiv-diagnosis"
       },
       "name" : "Diagnosis",
@@ -670,6 +681,28 @@
       },
       "name" : "Patient",
       "description" : "A patient resource for an HIV Patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-arvtreatment-activity-type"
+      },
+      "name" : "ARV Treatment Medication Request",
+      "description" : "ARV Treatment Medication Request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"
     },
     {
       "extension" : [{
@@ -740,6 +773,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-artregimen-lines"
+      },
+      "name" : "ART Regimen Lines",
+      "description" : "A list of ART Regimen Lines"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -762,24 +806,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "Observation/DateHIVTestDoneExample"
+        "reference" : "StructureDefinition/art-regimen-line"
       },
-      "name" : "Example Observation - DateHIVTestDoneExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/date-hiv-test-done"
-      },
-      "name" : "Date HIV Test Done",
-      "description" : "This profile is to record the Date when HIV test was done for a patient"
+      "name" : "ART Regimen Line",
+      "description" : "ART Regimen Line"
     },
     {
       "extension" : [{
