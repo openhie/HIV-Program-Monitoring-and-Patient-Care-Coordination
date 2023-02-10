@@ -21,6 +21,12 @@
     }
   ],
   "profiles": {
+    "Observation": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
+        "title": "Viral Load Suppression"
+      }
+    ],
     "CarePlan": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
@@ -53,12 +59,6 @@
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
         "title": "Transferring Facility Encounter"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
-        "title": "Viral Load Suppression"
       }
     ]
   },
