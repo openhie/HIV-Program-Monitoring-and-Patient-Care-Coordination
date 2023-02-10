@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-10T13:23:24+00:00"/>
+  <date value="2023-02-10T13:48:02+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -494,16 +494,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/hiv-arv-treatment"/>
-      </reference>
-      <name value="ARVCarePlan"/>
-      <description value="This profile allows the exchange of a patient's ARV treatment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/hiv-diagnosis"/>
       </reference>
       <name value="Diagnosis"/>
@@ -518,26 +508,6 @@
       </reference>
       <name value="Patient"/>
       <description value="A patient resource for an HIV Patient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-arvtreatment-activity-type"/>
-      </reference>
-      <name value="ARV Treatment Medication Request"/>
-      <description value="ARV Treatment Medication Request"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CarePlan"/>
-      </extension>
-      <reference>
-        <reference value="CarePlan/ARVTreatmentExample"/>
-      </reference>
-      <name value="Example CarePlan - ARVTreatmentExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -604,10 +574,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-artregimen-lines"/>
+        <reference value="ValueSet/vs-hiv-test-done"/>
       </reference>
-      <name value="ART Regimen Lines"/>
-      <description value="A list of ART Regimen Lines"/>
+      <name value="HIV Test Done"/>
+      <description value="HIV Test Done"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -631,13 +601,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/art-regimen-line"/>
+        <reference value="Observation/DateHIVTestDoneExample"/>
       </reference>
-      <name value="ART Regimen Line"/>
-      <description value="ART Regimen Line"/>
+      <name value="Example Observation - DateHIVTestDoneExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-hiv-test-done"/>
+      </reference>
+      <name value="Date HIV Test Done"/>
+      <description value="This profile is to record the Date when HIV test was done for a patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
