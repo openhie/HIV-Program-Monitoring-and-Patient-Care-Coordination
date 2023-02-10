@@ -102,6 +102,17 @@ Description: "Showing a confirmed HIV diagnosis"
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
 
+Instance: DateHIVTestDoneExample
+InstanceOf: DateHIVTestDone
+Usage: #example
+Title: "Date HIV Test Done example"
+Description: "Date HIV Test Done example"
+* status = #final
+* code = $SCT#31676001
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2022-12-10"
+
 Instance: ARVTreatmentExample
 InstanceOf: ARVTreatment
 Usage: #example
@@ -118,4 +129,3 @@ Description: "ARVCarePlan example"
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
-

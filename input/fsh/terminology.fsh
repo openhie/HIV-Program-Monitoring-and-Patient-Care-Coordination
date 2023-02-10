@@ -40,6 +40,13 @@ Description:  "A list of possible HIV diagnoses"
 * ^experimental = false
 * $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
 
+ValueSet: VSHIVTestDone
+Id: vs-hiv-test-done
+Title: "HIV Test Done"
+Description:  "HIV Test Done"
+* ^experimental = false
+* $SCT#31676001 "Human immunodeficiency virus antigen test (procedure)"
+
 ValueSet: VSARTRegimenLines
 Id: vs-artregimen-lines
 Title: "ART Regimen Lines"
