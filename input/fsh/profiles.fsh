@@ -106,7 +106,7 @@ Profile: DateHIVTestDone
 Parent: Observation
 Id: date-hiv-test-done
 Title: "Date HIV Test Done"
-Description: "This profile is to record the Date when HIV was done for a patient"
+Description: "This profile is to record the Date when HIV test was done for a patient"
 * status 1..1
 * status = #final
 * code 1..1
