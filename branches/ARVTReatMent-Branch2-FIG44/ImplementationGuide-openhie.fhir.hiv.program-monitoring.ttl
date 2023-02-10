@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Program Monitoring and Patient Care Coordination"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-09T15:04:10+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-10T13:19:16+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -783,8 +783,8 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-arvtreatment-activity-type" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV Treatment Activity Type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ARV Treatment Activity Type" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV Treatment Medication Request" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ARV Treatment Medication Request" ]
      ], [
        fhir:index 7;
        fhir:Element.extension [

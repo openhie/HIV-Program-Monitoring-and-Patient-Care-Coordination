@@ -95,7 +95,7 @@
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
     "version" : "0.1.0-test",
-    "name" : "VSARVTreatmentActivityType"
+    "name" : "VSARVMedicationRequest"
   },
   {
     "id" : "vs-hiv-diagnosis",

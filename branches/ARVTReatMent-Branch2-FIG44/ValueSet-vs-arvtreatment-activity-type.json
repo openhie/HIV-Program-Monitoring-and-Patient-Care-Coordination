@@ -7,11 +7,11 @@
   },
   "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
   "version" : "0.1.0-test",
-  "name" : "VSARVTreatmentActivityType",
-  "title" : "ARV Treatment Activity Type",
+  "name" : "VSARVMedicationRequest",
+  "title" : "ARV Treatment Medication Request",
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-02-09T15:04:10+00:00",
+  "date" : "2023-02-10T13:19:16+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -23,7 +23,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "ARV Treatment Activity Type",
+  "description" : "ARV Treatment Medication Request",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

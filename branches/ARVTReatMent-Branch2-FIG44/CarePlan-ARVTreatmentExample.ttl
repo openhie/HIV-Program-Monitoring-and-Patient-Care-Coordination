@@ -19,12 +19,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;ARVTreatmentExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>identifier</b>: id: CPID1234567</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>period</b>: 2022-12-01 --&gt; (ongoing)</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td/><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>TDF/3TC/DTG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></blockquote></div>"
-  ]; # 
-  fhir:CarePlan.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/identifier/cpid" ];
-     fhir:Identifier.value [ fhir:value "CPID1234567" ]
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"ARVTreatmentExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;ARVTreatmentExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-hiv-arv-treatment.html\">ARVCarePlan</a></p></div><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>period</b>: 2022-12-01 --&gt; 2022-12-01</p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td/><td>MedicationRequest</td><td>HIV ART medication <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#45260-7)</span></td><td>in-progress</td><td>TDF/3TC/DTG <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></blockquote></div>"
   ]; # 
   fhir:CarePlan.status [ fhir:value "active"]; # 
   fhir:CarePlan.intent [ fhir:value "plan"]; # 
@@ -32,8 +27,13 @@
      fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Patient/HIVPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
   ]; # 
+  fhir:CarePlan.encounter [
+     fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Encounter/TargetFacilityEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
+  ]; # 
   fhir:CarePlan.period [
-     fhir:Period.start [ fhir:value "2022-12-01"^^xsd:date ]
+     fhir:Period.start [ fhir:value "2022-12-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2022-12-01"^^xsd:date ]
   ]; # 
   fhir:CarePlan.activity [
      fhir:index 0;
@@ -46,8 +46,7 @@
              fhir:index 0;
              a sct:708255002;
              fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-             fhir:Coding.code [ fhir:value "708255002" ];
-             fhir:Coding.display [ fhir:value "First line treatment (procedure)" ]
+             fhir:Coding.code [ fhir:value "708255002" ]
            ]
          ]
        ];
@@ -57,8 +56,7 @@
            fhir:index 0;
            a loinc:45260-7;
            fhir:Coding.system [ fhir:value "http://loinc.org" ];
-           fhir:Coding.code [ fhir:value "45260-7" ];
-           fhir:Coding.display [ fhir:value "HIV ART medication" ]
+           fhir:Coding.code [ fhir:value "45260-7" ]
          ]
        ];
        fhir:CarePlan.activity.detail.status [ fhir:value "in-progress" ];
