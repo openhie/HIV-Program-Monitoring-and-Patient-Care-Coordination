@@ -107,16 +107,15 @@ InstanceOf: ARVTreatment
 Usage: #example
 Title: "ARVCarePlan example"
 Description: "ARVCarePlan example"
-* identifier[CPID].value = "CPID1234567"
-* identifier[CPID].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/cpid"
 * status = #active
 * intent = #plan
 * subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
 * period.start = 2022-12-01
+* period.end = 2022-12-01
 * activity.detail.kind = #MedicationRequest
-* activity.detail.code = $LNC#45260-7 "HIV ART medication" 
+* activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
-* activity.detail.extension[artRegimenLine].valueCodeableConcept =  $SCT#708255002 "First line treatment (procedure)"
-//* activity.detail.extension[artRegimenLine].valueCodeableConcept.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-artregimen-lines"
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
 

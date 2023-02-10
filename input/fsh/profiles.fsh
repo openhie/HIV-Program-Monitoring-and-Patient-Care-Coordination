@@ -107,27 +107,17 @@ Parent: CarePlan
 Id: hiv-arv-treatment
 Title: "ARVCarePlan"
 Description: "This profile allows the exchange of a patient's ARV treatment"
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #openAtEnd
-* identifier contains
-    CPID 1..1
-* identifier[CPID].value 1..1
-* identifier[CPID].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/cpid" (exactly)
 * status 1..1
 * intent 1..1
 * subject 1..1
-* subject only Reference(Patient) 
-* period.start 1..1
+* encounter 1..1
+* period 1..1
 * activity 1..* 
 * activity.detail 1..1
-* activity.detail.kind 1..1
 * activity.detail.kind = #MedicationRequest
-* activity.detail.code 1..1
-* activity.detail.code from VSARVTreatmentActivityType (required)
+* activity.detail.code from VSARVMedicationRequest (required)
 * activity.detail.status 1..1
 * activity.detail.productCodeableConcept 1..1  
-* activity.detail.productCodeableConcept.text 1..1
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
 
 Extension: ARTRegimenLine
