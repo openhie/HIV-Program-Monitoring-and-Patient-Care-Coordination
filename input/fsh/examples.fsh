@@ -101,3 +101,14 @@ Description: "Showing a confirmed HIV diagnosis"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
+
+Instance: DateHIVTestDoneExample
+InstanceOf: DateHIVTestDone
+Usage: #example
+Title: "Date HIV Test Done example"
+Description: "Date HIV Test Done example"
+* status = #final
+* code = #DATE-TESTED-FOR-HIV
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2022-12-10"

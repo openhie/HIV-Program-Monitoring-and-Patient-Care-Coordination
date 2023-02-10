@@ -101,3 +101,16 @@ Description: "Confirmation of the diagnosis"
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
+
+Profile: DateHIVTestDone
+Parent: Observation
+Id: date-hiv-test-done
+Title: "Date HIV Test Done"
+Description: "This profile is to record the Date when HIV was done for a patient"
+* status 1..1
+* status = #final
+* code 1..1
+* code from VSVLResultCode (required)
+* subject 1..1
+* encounter 1..1
+* effectiveDateTime 1..1
