@@ -21,6 +21,20 @@
     "name" : "HIVProgramMonitoring"
   },
   {
+    "id" : "art-regimen-line",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
+    "version" : "0.1.0-test",
+    "name" : "ARTRegimenLine"
+  },
+  {
+    "id" : "hiv-arv-treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
+    "version" : "0.1.0-test",
+    "name" : "ARVTreatment"
+  },
+  {
     "id" : "hiv-care-next-visit",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
@@ -68,6 +82,20 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
     "version" : "0.1.0-test",
     "name" : "ViralLoadSuppression"
+  },
+  {
+    "id" : "vs-artregimen-lines",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
+    "version" : "0.1.0-test",
+    "name" : "VSARTRegimenLines"
+  },
+  {
+    "id" : "vs-arvtreatment-activity-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
+    "version" : "0.1.0-test",
+    "name" : "VSARVMedicationRequest"
   },
   {
     "id" : "vs-hiv-diagnosis",
