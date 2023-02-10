@@ -84,6 +84,13 @@
     "name" : "VSHIVDiagnosis"
   },
   {
+    "id" : "vs-hiv-test-done",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-test-done",
+    "version" : "0.1.0-test",
+    "name" : "VSHIVTestDone"
+  },
+  {
     "id" : "vs-vl-result-code",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",

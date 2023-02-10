@@ -1,16 +1,16 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 1, warn = 5, info = 0
+err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.35
-Generated Fri Feb 10 07:16:26 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Fri Feb 10 13:48:47 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
@@ -23,6 +23,7 @@ Generated Fri Feb 10 07:16:26 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-suppression : 0 / 0 / 1
  /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
@@ -38,8 +39,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
 == fsh-generated/resources/Observation-DateHIVTestDoneExample.json ==
-ERROR: Observation/DateHIVTestDoneExample: Observation.code: None of the codings provided are in the value set 'Viral Load Result Code' (http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code|0.1.0-test), and a coding from this value set is required) (codes = null#DATE-TESTED-FOR-HIV)
-WARNING: Observation/DateHIVTestDoneExample: Observation.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/Observation-ViralLoadSuppressionExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
@@ -52,6 +51,7 @@ WARNING: Observation/DateHIVTestDoneExample: Observation.code.coding[0]: A code 
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-viral-load-suppression.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
+== fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==
 == fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
 == fsh-generated/resources/ValueSet-vs-vl-suppression.json ==
 == input/hiv-program-monitoring.xml ==
