@@ -21,6 +21,13 @@
     "name" : "HIVProgramMonitoring"
   },
   {
+    "id" : "date-hiv-test-done",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done",
+    "version" : "0.1.0-test",
+    "name" : "DateHIVTestDone"
+  },
+  {
     "id" : "hiv-care-next-visit",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",

@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Observation",
+  "id" : "DateHIVTestDoneExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"DateHIVTestDoneExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;DateHIVTestDoneExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-date-hiv-test-done.html\">Date HIV Test Done</a></p></div><p><b>status</b>: final</p><p><b>code</b>: DATE-TESTED-FOR-HIV <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#DATE-TESTED-FOR-HIV)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>effective</b>: 2022-12-10</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "code" : "DATE-TESTED-FOR-HIV"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/HIVPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/TargetFacilityEncounterExample"
+  },
+  "effectiveDateTime" : "2022-12-10"
+}

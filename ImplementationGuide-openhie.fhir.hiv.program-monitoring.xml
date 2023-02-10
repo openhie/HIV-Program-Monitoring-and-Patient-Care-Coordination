@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-10T06:41:50+00:00"/>
+  <date value="2023-02-10T06:42:24+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -588,6 +588,26 @@
       </reference>
       <name value="Viral Load Suppression"/>
       <description value="This profile is to record a Viral Load Suppression observation for a patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DateHIVTestDoneExample"/>
+      </reference>
+      <name value="Example Observation - DateHIVTestDoneExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-hiv-test-done"/>
+      </reference>
+      <name value="Date HIV Test Done"/>
+      <description value="This profile is to record the Date when HIV was done for a patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

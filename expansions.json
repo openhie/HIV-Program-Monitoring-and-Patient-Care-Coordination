@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "cf05e8c2-d766-4276-9824-7161bb1daa77",
+  "id" : "3ddd5aa2-d387-4835-b24e-19a573ac7137",
   "meta" : {
-    "lastUpdated" : "2023-02-10T06:41:50.298+00:00"
+    "lastUpdated" : "2023-02-10T06:42:24.175+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,7 +12,7 @@
       "id" : "vs-vl-result-code",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-result-code.html\">Viral Load Result Code v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-VL-RESULT\"> </a>  <a href=\"CodeSystem-cs-vl-result-code.html#cs-vl-result-code-VL-RESULT\">VL-RESULT</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</td><td>HIV VL Test Result</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-result-code.html\">Viral Load Result Code v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-VL-RESULT\"> </a>  <a href=\"CodeSystem-cs-vl-result-code.html#cs-vl-result-code-VL-RESULT\">VL-RESULT</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</td><td>HIV VL Test Result</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-result-code-DATE-TESTED-FOR-HIV\"> </a>  <a href=\"CodeSystem-cs-vl-result-code.html#cs-vl-result-code-DATE-TESTED-FOR-HIV\">DATE-TESTED-FOR-HIV</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code</td><td>Date tested for HIV</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
       "version" : "0.1.0-test",
@@ -20,7 +20,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-10T06:41:50+00:00",
+      "date" : "2023-02-10T06:42:24+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,9 +40,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dc3a5330-64bc-43af-966a-e63fa71d9753",
-        "timestamp" : "2023-02-10T06:42:03+00:00",
-        "total" : 1,
+        "identifier" : "urn:uuid:48f8f110-bf58-497d-91b0-f7d99bfdd2c3",
+        "timestamp" : "2023-02-10T06:42:38+00:00",
+        "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -55,6 +55,11 @@
           "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
           "code" : "VL-RESULT",
           "display" : "HIV VL Test Result"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
+          "code" : "DATE-TESTED-FOR-HIV",
+          "display" : "Date tested for HIV"
         }]
       }
     }
@@ -74,7 +79,7 @@
       "title" : "HIV Diagnosis",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-10T06:41:50+00:00",
+      "date" : "2023-02-10T06:42:24+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -94,8 +99,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1c75a1ed-c616-4096-a1df-bdabdfbf5128",
-        "timestamp" : "2023-02-10T06:42:11+00:00",
+        "identifier" : "urn:uuid:930f7e5f-872b-43f8-8fb9-d85ea2d9142d",
+        "timestamp" : "2023-02-10T06:42:46+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -132,7 +137,7 @@
       "title" : "Viral load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-10T06:41:50+00:00",
+      "date" : "2023-02-10T06:42:24+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -152,8 +157,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a048bb46-d193-4ef8-b6a3-efed9879712f",
-        "timestamp" : "2023-02-10T06:42:11+00:00",
+        "identifier" : "urn:uuid:b43f911c-ef7f-41c1-a14a-3a34eb323f12",
+        "timestamp" : "2023-02-10T06:42:46+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
