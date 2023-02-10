@@ -18,7 +18,7 @@
   "name" : "DateHIVTestDone",
   "title" : "Date HIV Test Done",
   "status" : "active",
-  "date" : "2023-02-10T06:43:03+00:00",
+  "date" : "2023-02-10T07:15:04+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -30,7 +30,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "This profile is to record the Date when HIV was done for a patient",
+  "description" : "This profile is to record the Date when HIV test was done for a patient",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
