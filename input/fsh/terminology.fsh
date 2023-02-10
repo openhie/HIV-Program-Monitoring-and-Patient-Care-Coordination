@@ -39,3 +39,19 @@ Title: "HIV Diagnosis"
 Description:  "A list of possible HIV diagnoses"
 * ^experimental = false
 * $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
+
+ValueSet: VSARTRegimenLines
+Id: vs-artregimen-lines
+Title: "ART Regimen Lines"
+Description: "A list of ART Regimen Lines"
+* ^experimental = false
+* $SCT#708255002 "First line treatment (procedure)"
+* $SCT#708256001 "Second line treatment (procedure)"
+* $SCT#708257005 "Third line treatment (procedure)"
+
+ValueSet: VSARVMedicationRequest
+Id: vs-arvtreatment-activity-type
+Title: "ARV Treatment Medication Request"
+Description: "ARV Treatment Medication Request"
+* ^experimental = false
+*  $LNC#45260-7 "HIV ART medication"
