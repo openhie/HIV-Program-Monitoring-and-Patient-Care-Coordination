@@ -112,3 +112,20 @@ Description: "Date HIV Test Done example"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-12-10"
+
+Instance: ARVTreatmentExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARVCarePlan example"
+Description: "ARVCarePlan example"
+* status = #active
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = 2022-12-01
+* period.end = 2022-12-01
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 
+* activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
