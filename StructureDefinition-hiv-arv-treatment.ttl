@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"]; # 
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"]; # 
   fhir:StructureDefinition.name [ fhir:value "ARVTreatment"]; # 
-  fhir:StructureDefinition.title [ fhir:value "ARVCarePlan"]; # 
+  fhir:StructureDefinition.title [ fhir:value "ARV Treatment"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-10T14:00:13+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-13T07:29:47+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -40,7 +40,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:StructureDefinition.description [ fhir:value "This profile allows the exchange of a patient's ARV treatment"]; # 
+  fhir:StructureDefinition.description [ fhir:value "This profile is to record prescribed ARV regimen against a given therapeutic line"]; # 
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

@@ -28,11 +28,11 @@
     "name" : "ARTRegimenLine"
   },
   {
-    "id" : "date-hiv-test-done",
+    "id" : "death",
     "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death",
     "version" : "0.1.0-test",
-    "name" : "DateHIVTestDone"
+    "name" : "Death"
   },
   {
     "id" : "hiv-arv-treatment",
@@ -105,18 +105,18 @@
     "name" : "VSARVMedicationRequest"
   },
   {
+    "id" : "vs-hiv-death",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
+    "version" : "0.1.0-test",
+    "name" : "VSHIVDeath"
+  },
+  {
     "id" : "vs-hiv-diagnosis",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
     "version" : "0.1.0-test",
     "name" : "VSHIVDiagnosis"
-  },
-  {
-    "id" : "vs-hiv-test-done",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-test-done",
-    "version" : "0.1.0-test",
-    "name" : "VSHIVTestDone"
   },
   {
     "id" : "vs-vl-result-code",
