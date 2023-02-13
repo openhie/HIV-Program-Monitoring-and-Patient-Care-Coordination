@@ -1,5 +1,12 @@
 [
   {
+    "id" : "cs-enrollment-type",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type",
+    "version" : "0.1.0-test",
+    "name" : "CSPatientEnrollmentType"
+  },
+  {
     "id" : "cs-vl-result-code",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
@@ -21,6 +28,34 @@
     "name" : "HIVProgramMonitoring"
   },
   {
+    "id" : "art-regimen-line",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
+    "version" : "0.1.0-test",
+    "name" : "ARTRegimenLine"
+  },
+  {
+    "id" : "date-hiv-test-done",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done",
+    "version" : "0.1.0-test",
+    "name" : "DateHIVTestDone"
+  },
+  {
+    "id" : "death",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death",
+    "version" : "0.1.0-test",
+    "name" : "Death"
+  },
+  {
+    "id" : "hiv-arv-treatment",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
+    "version" : "0.1.0-test",
+    "name" : "ARVTreatment"
+  },
+  {
     "id" : "hiv-care-next-visit",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
@@ -33,6 +68,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
     "version" : "0.1.0-test",
     "name" : "HIVDiagnosis"
+  },
+  {
+    "id" : "hiv-episode-of-care",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care",
+    "version" : "0.1.0-test",
+    "name" : "HIVEpisodeOfCare"
   },
   {
     "id" : "hiv-organization",
@@ -70,11 +112,46 @@
     "name" : "ViralLoadSuppression"
   },
   {
+    "id" : "vs-artregimen-lines",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
+    "version" : "0.1.0-test",
+    "name" : "VSARTRegimenLines"
+  },
+  {
+    "id" : "vs-arvtreatment-activity-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
+    "version" : "0.1.0-test",
+    "name" : "VSARVMedicationRequest"
+  },
+  {
+    "id" : "vs-enrollment-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type",
+    "version" : "0.1.0-test",
+    "name" : "VSPatientEnrollmentType"
+  },
+  {
+    "id" : "vs-hiv-death",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
+    "version" : "0.1.0-test",
+    "name" : "VSHIVDeath"
+  },
+  {
     "id" : "vs-hiv-diagnosis",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
     "version" : "0.1.0-test",
     "name" : "VSHIVDiagnosis"
+  },
+  {
+    "id" : "vs-hiv-test-done",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-test-done",
+    "version" : "0.1.0-test",
+    "name" : "VSHIVTestDone"
   },
   {
     "id" : "vs-vl-result-code",
