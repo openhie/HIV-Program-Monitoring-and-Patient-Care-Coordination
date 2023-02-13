@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-13T11:48:16+00:00"/>
+  <date value="2023-02-13T12:16:03+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -534,6 +534,16 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/vs-enrollment-type"/>
+      </reference>
+      <name value="Patient Type at Enrolment"/>
+      <description value="A list of Patient Types at Enrolment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/vs-arvtreatment-activity-type"/>
       </reference>
       <name value="ARV Treatment Medication Request"/>
@@ -594,6 +604,26 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/hiv-episode-of-care"/>
+      </reference>
+      <name value="HIV Episode Of Care"/>
+      <description value="This profile is to record the patient HIV Management Programme Enrollment details."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
+        <reference value="EpisodeOfCare/HIVEpisodeOfCareExample"/>
+      </reference>
+      <name value="Example EpisodeOfCare - HIVEpisodeOfCareExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/hiv-organization"/>
       </reference>
       <name value="HIV Organization"/>
@@ -648,6 +678,16 @@
       </reference>
       <name value="Target Facility Encounter"/>
       <description value="This profile represents the facility the patient is being transferred to"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-enrollment-type"/>
+      </reference>
+      <name value="Patient Type at Enrolment"/>
+      <description value="A list of Patient Types at Enrolment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
