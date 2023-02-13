@@ -102,6 +102,20 @@ Description: "Showing a confirmed HIV diagnosis"
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
 
+Instance: DeathExample
+InstanceOf: Death
+Usage: #example
+Title: "Patient Death example"
+Description: "Patient Death example"
+* status = #final
+* code = $SCT#419099009
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* effectiveDateTime = "2023-02-05"
+* note.text = "Deatils regarding death"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
 Instance: DateHIVTestDoneExample
 InstanceOf: DateHIVTestDone
 Usage: #example
@@ -112,6 +126,9 @@ Description: "Date HIV Test Done example"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-12-10"
+* note.text = "Additional information regarding the HIV test"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
 
 Instance: ARVTreatmentExample
 InstanceOf: ARVTreatment

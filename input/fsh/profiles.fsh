@@ -102,6 +102,18 @@ Description: "Confirmation of the diagnosis"
 * encounter 1..1
 * recordedDate 1..1
 
+Profile: Death
+Parent: Observation
+Id: death
+Title: "Patient Death"
+Description: "This profile is to record the death of a patient observation"
+* status = #final
+* code from VSHIVDeath (required)
+* subject 1..1
+* encounter 1..1
+* effectiveDateTime 1..1
+* note 0..1
+
 Profile: DateHIVTestDone
 Parent: Observation
 Id: date-hiv-test-done
@@ -112,12 +124,13 @@ Description: "This profile is to record the Date when HIV test was done for a pa
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1
+* note 0..1
 
 Profile: ARVTreatment
 Parent: CarePlan
 Id: hiv-arv-treatment
-Title: "ARVCarePlan"
-Description: "This profile allows the exchange of a patient's ARV treatment"
+Title: "ARV Treatment"
+Description: "This profile is to record prescribed ARV regimen against a given therapeutic line"
 * status 1..1
 * intent 1..1
 * subject 1..1

@@ -40,6 +40,13 @@ Description:  "A list of possible HIV diagnoses"
 * ^experimental = false
 * $SCT#86406008 "Human immunodeficiency virus infection (disorder)"
 
+ValueSet: VSHIVDeath
+Id: vs-hiv-death
+Title: "Death"
+Description:  "A list of possible HIV deaths"
+* ^experimental = false
+* $SCT#419099009 "Dead (finding)"
+
 ValueSet: VSHIVTestDone
 Id: vs-hiv-test-done
 Title: "HIV Test Done"
