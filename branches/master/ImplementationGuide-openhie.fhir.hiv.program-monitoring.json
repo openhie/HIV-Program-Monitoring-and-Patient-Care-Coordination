@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-10T14:00:13+00:00",
+  "date" : "2023-02-13T07:50:39+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -630,6 +630,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DeathExample"
+      },
+      "name" : "Example Observation - DeathExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -657,8 +668,8 @@
       "reference" : {
         "reference" : "StructureDefinition/hiv-arv-treatment"
       },
-      "name" : "ARVCarePlan",
-      "description" : "This profile allows the exchange of a patient's ARV treatment"
+      "name" : "ARV Treatment",
+      "description" : "This profile is to record prescribed ARV regimen against a given therapeutic line"
     },
     {
       "extension" : [{
@@ -776,6 +787,17 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/vs-hiv-death"
+      },
+      "name" : "Death",
+      "description" : "A list of possible HIV deaths"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/vs-hiv-test-done"
       },
       "name" : "HIV Test Done",
@@ -802,6 +824,17 @@
       },
       "name" : "Target Facility Encounter",
       "description" : "This profile represents the facility the patient is being transferred to"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/death"
+      },
+      "name" : "Patient Death",
+      "description" : "This profile is to record the death of a patient observation"
     },
     {
       "extension" : [{

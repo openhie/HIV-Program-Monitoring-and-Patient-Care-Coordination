@@ -25,9 +25,9 @@
   <url value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"/>
   <version value="0.1.0-test"/>
   <name value="ARVTreatment"/>
-  <title value="ARVCarePlan"/>
+  <title value="ARV Treatment"/>
   <status value="active"/>
-  <date value="2023-02-10T14:00:13+00:00"/>
+  <date value="2023-02-13T07:50:39+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -39,7 +39,7 @@
       <value value="info@jembi.org"/>
     </telecom>
   </contact>
-  <description value="This profile allows the exchange of a patient's ARV treatment"/>
+  <description value="This profile is to record prescribed ARV regimen against a given therapeutic line"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

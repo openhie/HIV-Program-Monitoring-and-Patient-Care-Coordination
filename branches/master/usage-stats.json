@@ -30,7 +30,7 @@
     "CarePlan": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
-        "title": "ARVCarePlan"
+        "title": "ARV Treatment"
       }
     ],
     "Condition": [
