@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Program Monitoring and Patient Care Coordination"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-13T07:29:47+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-13T07:44:02+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -925,13 +925,26 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-test-done>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-hiv-test-done" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Test Done" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Test Done" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-artregimen-lines" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Regimen Lines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of ART Regimen Lines" ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -944,7 +957,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Target Facility Encounter" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the facility the patient is being transferred to" ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -957,7 +970,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Death" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the death of a patient observation" ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -970,7 +983,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Suppression" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record a Viral Load Suppression observation for a patient" ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -983,7 +996,36 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Regimen Line" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ART Regimen Line" ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Observation/DateHIVTestDoneExample>;
+         fhir:Reference.reference [ fhir:value "Observation/DateHIVTestDoneExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - DateHIVTestDoneExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/date-hiv-test-done" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Date HIV Test Done" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the Date when HIV test was done for a patient" ]
+     ], [
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -996,7 +1038,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Diagnosis" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of possible HIV diagnoses" ]
      ], [
-       fhir:index 22;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1009,7 +1051,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Result Code" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Viral Load Result Code" ]
      ], [
-       fhir:index 23;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1022,7 +1064,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral load Suppressions Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Viral load Statuses" ]
      ], [
-       fhir:index 24;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1038,7 +1080,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
