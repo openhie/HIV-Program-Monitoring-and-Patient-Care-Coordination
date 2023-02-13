@@ -114,6 +114,18 @@ Description: "This profile is to record the death of a patient observation"
 * effectiveDateTime 1..1
 * note 0..1
 
+Profile: DateHIVTestDone
+Parent: Observation
+Id: date-hiv-test-done
+Title: "Date HIV Test Done"
+Description: "This profile is to record the Date when HIV test was done for a patient"
+* status = #final
+* code from VSHIVTestDone (required)
+* subject 1..1
+* encounter 1..1
+* effectiveDateTime 1..1
+* note 0..1
+
 Profile: ARVTreatment
 Parent: CarePlan
 Id: hiv-arv-treatment

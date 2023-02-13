@@ -47,6 +47,13 @@ Description:  "A list of possible HIV deaths"
 * ^experimental = false
 * $SCT#419099009 "Dead (finding)"
 
+ValueSet: VSHIVTestDone
+Id: vs-hiv-test-done
+Title: "HIV Test Done"
+Description:  "HIV Test Done"
+* ^experimental = false
+* $SCT#31676001 "Human immunodeficiency virus antigen test (procedure)"
+
 ValueSet: VSARTRegimenLines
 Id: vs-artregimen-lines
 Title: "ART Regimen Lines"
