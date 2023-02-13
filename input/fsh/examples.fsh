@@ -162,7 +162,7 @@ Description: "HIV Episode Of Care for "
 * identifier[HMPUI].value = "abc123"
 * identifier[HMPUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id" (exactly)
 * status = #active
-* type  = $SCT#185387006 "New client"
+* type  = $SCT#185387006 "New patient consultation"
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * patient = Reference(HIVPatientExample)
 * period.start = "2021-05-18"
