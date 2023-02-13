@@ -102,18 +102,6 @@ Description: "Showing a confirmed HIV diagnosis"
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
 
-Instance: ViralLoadTestExample
-InstanceOf: ViralLoadTest
-Usage: #example
-Title: "Viral Load Test example"
-Description: "Viral Load Test example"
-* status = #final
-* code = #VL-TEST
-* subject = Reference(HIVPatientExample)
-* encounter = Reference(TargetFacilityEncounterExample)
-* effectiveDateTime = "2023-01-10"
-* valueInteger = 999
-
 Instance: DeathExample
 InstanceOf: Death
 Usage: #example
@@ -124,3 +112,24 @@ Description: "Patient Death example"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2023-02-05"
+* note.text = "Deatils regarding death"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: ARVTreatmentExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARVCarePlan example"
+Description: "ARVCarePlan example"
+* status = #active
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = 2022-12-01
+* period.end = 2022-12-01
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code = $LNC#45260-7 
+* activity.detail.status = #in-progress
+* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+

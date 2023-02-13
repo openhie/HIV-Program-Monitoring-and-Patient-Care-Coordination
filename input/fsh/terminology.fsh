@@ -8,7 +8,6 @@ Description: "Viral Load Result Code"
 * ^experimental = false
 * ^caseSensitive = true
 * #VL-RESULT "HIV VL Test Result"
-* #VL-TEST "HIV Vtiral Load test"  
 
 ValueSet: VSVLResultCode
 Id: vs-vl-result-code
@@ -47,3 +46,19 @@ Title: "Death"
 Description:  "A list of possible HIV deaths"
 * ^experimental = false
 * $SCT#419099009 "Dead (finding)"
+
+ValueSet: VSARTRegimenLines
+Id: vs-artregimen-lines
+Title: "ART Regimen Lines"
+Description: "A list of ART Regimen Lines"
+* ^experimental = false
+* $SCT#708255002 "First line treatment (procedure)"
+* $SCT#708256001 "Second line treatment (procedure)"
+* $SCT#708257005 "Third line treatment (procedure)"
+
+ValueSet: VSARVMedicationRequest
+Id: vs-arvtreatment-activity-type
+Title: "ARV Treatment Medication Request"
+Description: "ARV Treatment Medication Request"
+* ^experimental = false
+*  $LNC#45260-7 "HIV ART medication"

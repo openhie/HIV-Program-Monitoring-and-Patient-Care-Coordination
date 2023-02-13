@@ -102,29 +102,39 @@ Description: "Confirmation of the diagnosis"
 * encounter 1..1
 * recordedDate 1..1
 
-Profile: ViralLoadTest
-Parent: Observation
-Id: viral-load-test
-Title: "Viral Load Test"
-Description: "This profile is to record a Viral Load Suppression Most Recent Test Date observation for a patient"
-* status 1..1
-* status = #final
-* code 1..1
-* code from VSVLResultCode (required)
-* subject 1..1
-* encounter 1..1
-* effectiveDateTime 1..1
-* valueInteger 1..1
-
 Profile: Death
 Parent: Observation
 Id: death
 Title: "Patient Death"
 Description: "This profile is to record the death of a patient observation"
-* status 1..1
 * status = #final
-* code 1..1
 * code from VSHIVDeath (required)
 * subject 1..1
 * encounter 1..1
 * effectiveDateTime 1..1
+* note 0..1
+
+Profile: ARVTreatment
+Parent: CarePlan
+Id: hiv-arv-treatment
+Title: "ARV Treatment"
+Description: "This profile is to record prescribed ARV regimen against a given therapeutic line"
+* status 1..1
+* intent 1..1
+* subject 1..1
+* encounter 1..1
+* period 1..1
+* activity 1..* 
+* activity.detail 1..1
+* activity.detail.kind = #MedicationRequest
+* activity.detail.code from VSARVMedicationRequest (required)
+* activity.detail.status 1..1
+* activity.detail.productCodeableConcept 1..1  
+* activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
+
+Extension: ARTRegimenLine
+Id: art-regimen-line
+Title: "ART Regimen Line"
+Description: "ART Regimen Line"
+* value[x] only CodeableConcept
+* valueCodeableConcept from VSARTRegimenLines (required)
