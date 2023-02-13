@@ -52,7 +52,7 @@ Id: vs-hiv-test-done
 Title: "HIV Test Done"
 Description:  "HIV Test Done"
 * ^experimental = false
-* $SCT#31676001 "Human immunodeficiency virus antigen test (procedure)"
+* $SCT#315124004 "Human immunodeficiency virus viral load (procedure)"
 
 ValueSet: VSARTRegimenLines
 Id: vs-artregimen-lines
