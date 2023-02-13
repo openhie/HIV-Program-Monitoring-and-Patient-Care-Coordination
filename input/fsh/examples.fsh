@@ -54,6 +54,7 @@ Description: "Target Facility Encounter example"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
 * partOf = Reference(TransferringFacilityEncounterExample)
+* episodeOfCare = Reference(HIVEpisodeOfCareExample)
 
 Instance: TransferringFacilityEncounterExample
 InstanceOf: TransferringFacilityEncounter
@@ -101,7 +102,6 @@ Description: "Showing a confirmed HIV diagnosis"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
-
 Instance: DeathExample
 InstanceOf: Death
 Usage: #example
@@ -146,3 +146,16 @@ Description: "ARVCarePlan example"
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+
+Instance: HIVEpisodeOfCareExample
+InstanceOf: HIVEpisodeOfCare
+Usage: #example
+Title: "HIV Episode Of Care"
+Description: "HIV Episode Of Care for "
+* identifier[HMPUI].value = "abc123"
+* identifier[HMPUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id" (exactly)
+* status = #active
+* type  = $SCT#185387006 "New client"
+* diagnosis.condition = Reference(HIVDiagnosisExample)
+* patient = Reference(HIVPatientExample)
+* period.start = "2021-05-18"
