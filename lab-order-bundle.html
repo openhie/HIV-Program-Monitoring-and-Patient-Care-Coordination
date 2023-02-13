@@ -1,13 +1,9 @@
-<!-- get modelType -->
-
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\HIV Episode Of Care - Mappings - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Lab Order Bundle - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.4"}
-    h3,h4,h5,h6{--heading-prefix:"3.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.1.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.1.2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -104,36 +100,141 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul
-	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
-	<li>
-		<a href="index.html">IG Home</a>
-	</li>
-	<li>
-		<a href="toc.html">Table of Contents</a>
-	</li>
-<!--
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
-		</a>
+              <style>
+    *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 
-	</li>
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
-		</a>
+.dropdown {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100px;
+}
 
-	</li>
--->
-	<li class="dropdown">
-		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
-		</a>
-		<ul class="dropdown-menu">
-			<li>
-				<a href="artifacts.html">Artifact Index</a>
+.dropdown li {
+    position: relative;
+    z-index: 999;
+}
+
+.dropdown li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    background-color: #DDFFEE;
+}
+
+.dropdown li ul li a {
+    text-align: left;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown li ul li ul {
+    left: 100%;
+    top: 0;
+}
+
+#mainMenuOptions li:hover>a {
+    background-color: #43A682;
+    color: white;
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+#mainMenuOptions li:hover>ul {
+    display: block;
+}
+
+	.heading {
+    display: block;
+    font-family: verdana;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    margin: 0 0 3px 0;
+    margin-top: 10px;
+    color: #337AB7;
+    background-color: white !important;
+}
+
+.not-allowed {
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+</style>
+
+<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
+	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="bussiness-description.html">Bussiness Description <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li>
+						<a href="requirements.html">Functional Requirements <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="use-cases.html">Use Cases</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="personas.html">Personas</a></li>
+					<li><a href="workflows.html">Usage Workflows</a></li>
+				</ul>
 			</li>
+			<li><a href="deployment.html">Deployment &amp; Use <b class="caret" style="transform:rotate(270deg);"></b></a>
+				<ul>
+					<li><a href="bundles.html">Message Bundles <b class="caret" style="transform:rotate(270deg);"></b></a>
+						<ul>
+							<li>
+								<a href="emr-bundle.html">EMR</a>
+							</li>
+							<li>
+								<a href="lab-order-bundle.html">Lab Order</a>
+							</li>
+							<li>
+								<a href="lab-result-bundle.html">Lab Result</a>
+							</li>
+							<li>
+								<a href="lab-rejection-bundle.html">Lab Rejection</a>
+							</li>
+							<li>
+								<a href="lab-cancellation-bundle.html">Lab Cancellation</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="security-privacy.html">Security &amp; Privacy</a></li>
+					<li><a href="testing.html">Testing</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="referenced-sources.html">References</a></li>
+			<li><a href="artifacts.html">Artifacts</a></li>
+			<li><a href="toc.html">Table of Contents</a></li>
 		</ul>
-	</li>
-</ul>      
+    </li>
+</ul> 
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
@@ -145,7 +246,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>HIV Episode Of Care</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='deployment.html'><b>Deployment &amp; Use</b></a></li><li><a href='bundles.html'><b>Message Bundles</b></a></li><li><b>Lab Order Bundle</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -157,168 +258,23 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 5" class="col-12">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">HIV Program Monitoring and Patient Care Coordination, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.1.0-test). This version is based on the current content of <a href="https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination">https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-program-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Lab Order Bundle</h2>
   
-
-
-
-
-
-
-
-
-
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="StructureDefinition-hiv-episode-of-care.html">Content</a>
-  </li>
-
-
-
-  <li>
-    <a href="StructureDefinition-hiv-episode-of-care-definitions.html">Detailed Descriptions</a>
-  </li>
-
-
-
   
-    <li class="active">
-      <a href="#">Mappings</a>
-    </li>
   
-
-
-
-
-
-
-  
-    
-      <li>
-        <a href="StructureDefinition-hiv-episode-of-care-examples.html">Examples</a>
-      </li>
-    
-  
-
-
-
-
-  
-    <li>
-      <a href="StructureDefinition-hiv-episode-of-care.profile.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-hiv-episode-of-care.profile.json.html">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="StructureDefinition-hiv-episode-of-care.profile.ttl.html">TTL</a>
-    </li>
-  
-
-
-</ul>
-
-
-<a name="root"> </a>
-<h2 id="root">Resource Profile: HIVEpisodeOfCare - Mappings</h2>
-  <table class="colsi">
-    <tr>
-
-      <td colspan="2">
-        
-          Active
-          
-            as of 2023-02-13
-          
-        
-      </td>
-
-    </tr>
-  </table>
-
-
-<p>Mappings for the hiv-episode-of-care resource profile.</p>
-
-  <!-- insert intro if present -->
-  
-
-
-
-  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>HIVEpisodeOfCare</b></td></tr>
- <tr><td>EpisodeOfCare</td><td>Event</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (HMPUI)</td><td>Event.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Event.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>Event.code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;diagnosis</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;condition</td><td>Event.reasonReference</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>Event.subject</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;managingOrganization</td><td>Event.performer.actor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>Event.occurrence[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;referralRequest</td><td>Event.basedOn</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;careManager</td><td>Event.performer.actor</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;team</td><td>Event.performer.actor</td> </tr>
-</table>
-<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>HIVEpisodeOfCare</b></td></tr>
- <tr><td>EpisodeOfCare</td><td>Entity. Role, or Act, n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;text</td><td>Act.text?</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (HMPUI)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>Role.code or implied by context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>Role.code or implied by context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>II.root or Role.id.root</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value</td><td>II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusHistory</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;diagnosis</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
-</table>
-<a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>HIVEpisodeOfCare</b></td></tr>
- <tr><td>EpisodeOfCare</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (HMPUI)</td><td>FiveWs.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.class</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;diagnosis</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;condition</td><td>FiveWs.what[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>FiveWs.init</td> </tr>
-</table>
-
-
-  <!-- insert notes if present -->
-  
-
-
-
+  <div xmlns="http://www.w3.org/1999/xhtml" lang="en">
+ 
 </div>
-
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
@@ -326,29 +282,6 @@
 
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <script type="text/javascript">
     $(document).ready(function(){
@@ -364,7 +297,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 13, 2023 12:39+0000">2023-02-13</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 13, 2023 14:47+0000">2023-02-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

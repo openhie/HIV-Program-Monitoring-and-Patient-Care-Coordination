@@ -39,12 +39,6 @@
         "title": "Diagnosis"
       }
     ],
-    "EpisodeOfCare": [
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care",
-        "title": "HIV Episode Of Care"
-      }
-    ],
     "Organization": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
@@ -107,7 +101,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
+      "ImplementationGuide.definition.page.page.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
