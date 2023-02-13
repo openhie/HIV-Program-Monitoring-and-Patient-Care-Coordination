@@ -179,7 +179,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Example: Example Instances</a>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -196,6 +202,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-arv-treatment.html"
+                     title="StructureDefinition/hiv-arv-treatment">ARV Treatment</a>
+               </td>
+               <td>
+<p>This profile is to record prescribed ARV regimen against a given therapeutic line</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-hiv-diagnosis.html"
+                     title="StructureDefinition/hiv-diagnosis">Diagnosis</a>
+               </td>
+               <td>
+<p>Confirmation of the diagnosis</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-hiv-patient.html"
@@ -221,6 +245,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>This profile represents the facility the patient is being transferred to</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-death.html" title="StructureDefinition/death">Patient Death</a>
+               </td>
+               <td>
+<p>This profile is to record the death of a patient observation</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-viral-load-suppression.html"
+                     title="StructureDefinition/viral-load-suppression">Viral Load Suppression</a>
+               </td>
+               <td>
+<p>This profile is to record a Viral Load Suppression observation for a patient</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-date-hiv-test-done.html"
+                     title="StructureDefinition/date-hiv-test-done">Date HIV Test Done</a>
+               </td>
+               <td>
+<p>This profile is to record the Date when HIV test was done for a patient</p>
 </td>
             </tr>
             <tr>
@@ -253,10 +303,121 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>A date representing the patient’s next scheduled appointment</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-art-regimen-line.html"
+                     title="StructureDefinition/art-regimen-line">ART Regimen Line</a>
+               </td>
+               <td>
+<p>ART Regimen Line</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
    <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-result-code.html"
+                     title="ValueSet/vs-vl-result-code">Viral Load Result Code</a>
+               </td>
+               <td>
+<p>Viral Load Result Code</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-arvtreatment-activity-type.html"
+                     title="ValueSet/vs-arvtreatment-activity-type">ARV Treatment Medication Request</a>
+               </td>
+               <td>
+<p>ARV Treatment Medication Request</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-hiv-death.html" title="ValueSet/vs-hiv-death">Death</a>
+               </td>
+               <td>
+<p>A list of possible HIV deaths</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-hiv-test-done.html" title="ValueSet/vs-hiv-test-done">HIV Test Done</a>
+               </td>
+               <td>
+<p>HIV Test Done</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-artregimen-lines.html"
+                     title="ValueSet/vs-artregimen-lines">ART Regimen Lines</a>
+               </td>
+               <td>
+<p>A list of ART Regimen Lines</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-hiv-diagnosis.html" title="ValueSet/vs-hiv-diagnosis">HIV Diagnosis</a>
+               </td>
+               <td>
+<p>A list of possible HIV diagnoses</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-vl-suppression.html"
+                     title="ValueSet/vs-vl-suppression">Viral load Suppressions Status</a>
+               </td>
+               <td>
+<p>A list of Viral load Statuses</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-vl-suppression.html"
+                     title="CodeSystem/cs-vl-suppression">Viral load Suppressions Status</a>
+               </td>
+               <td>
+<p>A list of Viral load Statuses</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cs-vl-result-code.html"
+                     title="CodeSystem/cs-vl-result-code">Viral Load Result Code</a>
+               </td>
+               <td>
+<p>Viral Load Result Code</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
    <p>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
@@ -273,6 +434,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-DeathExample.html" title="Observation/DeathExample">Example Observation - DeathExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-HIVDiagnosisExample.html"
+                     title="Condition/HIVDiagnosisExample">Example Condition - HIVDiagnosisExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-ARVTreatmentExample.html"
+                     title="CarePlan/ARVTreatmentExample">Example CarePlan - ARVTreatmentExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Encounter-TargetFacilityEncounterExample.html"
                      title="Encounter/TargetFacilityEncounterExample">Example Encounter - TargetFacilityEncounterExample</a>
                </td>
@@ -280,6 +458,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="Patient-HIVPatientExample.html" title="Patient/HIVPatientExample">Example Patient - HIVPatientExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-ViralLoadSuppressionExample.html"
+                     title="Observation/ViralLoadSuppressionExample">Example Observation - ViralLoadSuppressionExample</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-DateHIVTestDoneExample.html"
+                     title="Observation/DateHIVTestDoneExample">Example Observation - DateHIVTestDoneExample</a>
                </td>
             </tr>
             <tr>
@@ -316,7 +506,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 8, 2023 06:03+0000">2023-02-08</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 13, 2023 10:40+0000">2023-02-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
