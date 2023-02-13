@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-enrollment-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-enrollment-type.html\"><code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/185387006\">185387006</a></td><td>New patient consultation</td></tr><tr><td><a href=\"http://snomed.info/id/309037001\">309037001</a></td><td>Transfer status</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type",
+  "version" : "0.1.0-test",
+  "name" : "VSPatientEnrollmentType",
+  "title" : "Patient Type at Enrolment",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-02-13T15:22:00+00:00",
+  "publisher" : "Jembi Health Systems",
+  "contact" : [{
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.jembi.org"
+    },
+    {
+      "system" : "email",
+      "value" : "info@jembi.org"
+    }]
+  }],
+  "description" : "A list of Patient Types at Enrolment",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "185387006",
+        "display" : "New patient consultation"
+      },
+      {
+        "code" : "309037001",
+        "display" : "Transfer status"
+      }]
+    }]
+  }
+}

@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-13T15:20:12+00:00",
+  "date" : "2023-02-13T15:22:00+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -699,6 +699,17 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/vs-enrollment-type"
+      },
+      "name" : "Patient Type at Enrolment",
+      "description" : "A list of Patient Types at Enrolment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/vs-arvtreatment-activity-type"
       },
       "name" : "ARV Treatment Medication Request",
@@ -765,6 +776,28 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/hiv-episode-of-care"
+      },
+      "name" : "HIV Episode Of Care",
+      "description" : "This profile is to record the patient HIV Management Programme Enrollment details."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EpisodeOfCare"
+      }],
+      "reference" : {
+        "reference" : "EpisodeOfCare/HIVEpisodeOfCareExample"
+      },
+      "name" : "Example EpisodeOfCare - HIVEpisodeOfCareExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/hiv-organization"
       },
       "name" : "HIV Organization",
@@ -824,6 +857,17 @@
       },
       "name" : "Target Facility Encounter",
       "description" : "This profile represents the facility the patient is being transferred to"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-enrollment-type"
+      },
+      "name" : "Patient Type at Enrolment",
+      "description" : "A list of Patient Types at Enrolment"
     },
     {
       "extension" : [{
