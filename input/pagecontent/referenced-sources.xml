@@ -1,0 +1,13 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+    <h3>Overview</h3> <a name="references-overview"> </a>
+
+    <p>
+        The following references have been cited to assist with the formulation of the specification for this implementation guide.
+    </p>
+
+    <div>
+        <ol>
+            <li><a href="index.html#ref1">University of California, San Francisco, Makerere University, &amp; University of Nairobi. (2022, April).</a> Overview of DISI Components for program management and patient care coordination. An Overview of DISI Components. Retrieved February 13, 2023, from https://docs.google.com/document/d/1p51XML6m0g6Vfy5x5uhPhu4It4VDKin5BLh4nTrlYh0/</li>
+        </ol>
+    </div>
+</div>

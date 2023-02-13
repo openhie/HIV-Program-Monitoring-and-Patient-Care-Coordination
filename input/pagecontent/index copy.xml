@@ -6,7 +6,7 @@
   <a name="scope">  </a>
 
   <p>
-    This Implementation Guide contains the specifications for HIV program monioring and patient care coordination.
+    This Implementation Guide contains the specifications for HIV Case Based Surveillence (CBS) reporting.
   </p>
 
   <blockquote class="stu-note">
@@ -20,19 +20,17 @@
   <h3>Introduction</h3> <a name="intro"> </a>
 
   <p>
-    The ultimate goal of HIV treatment is to achieve viral suppression. Program management and patient care coordination refers to continuous use of data at patient level to systematically provide high quality services to patients and achieve maximum program impact. 
+    There is a need for countries to centralize and report on data that is captured at the point of service systems to effectively measure and monitor the progression and outcome of HIV through CBS <a href="https://www.pepfarsolutions.org/resourcesandtools-2/2019/8/5/hiv-case-based-surveillance-system-with-biometric-code-and-patient-linkage-and-retention-tool" target="_blank">sentinel events</a>.
+    HIV case reporting refers to the ongoing, systematic collection, analysis, interpretation, dissemination and evaluation of the HIV population <a href="#ref1">(HIV Case Surveillance, 2021)</a>. 
+    Moreover, to effectively track index cases (HIV infected individuals), planning, monitoring and resource allocation should happen at a national level. Tracking index cases is commonly performed using HIV CBS which is a method used to routinely capture generated individual-level patient information <a href="#ref2">(Takarinda et al., 2021)</a>.
+    Index cases are reported using a single HIV case report form which only has information about that specific individual. CBS offers a patient record that is longitudinal thus allowing additional care and treatment outcomes over time. HIV CBS monitors the patient from the time of diagnosis to death using sentinel events.
     <br />
     <br />
-    As countries are working towards the attainment of the United Nations Programme on HIV/AIDS (<a href ="https://www.unaids.org/en" target="_blank">UNAIDS</a>) 95-95-95 goals, it is critical to understand gaps in the HIV continuum of care. 
-    Key elements to program management and patient care coordination include; identification and linkage to treatment &amp; care, retention and viral load monitoring <a href="#ref1">(University of California, San Francisco et al., 2022)</a>.
+    A nationally implemented system to help understand the progress in the HIV program using real-time data analytics will improve the measure of CBS sentinel events and monitoring towards a virally suppressed population. Thus, a national central data repository (CDR), a component of the Data Integration Strategies &amp; Implementation (DISI) reference platform architecture, can be implemented to integrate data for longitudinal patient records, program management and monitoring.
+    Commonly, CBS reporting is done ad hoc per country. DISI refers to the practice of centralizing and integrating HIV case-based surveillance data in a central repository for further reporting, analysis, and visualization.
     <br />
     <br />
-    Program management and patient care coordination serves both the needs of the patient and more broadly, achieving the goal of reaching epidemic control. 
-    This means that all people living with HIV (PLHIV) should be identified, linked to treatment, and have continuity of treatment to achieve viral suppression. 
-    Interruption/Complete disengagement from treatment increases the risk of continued HIV transmission and is a deterrent in the journey towards the attainment of the <a href="https://www.unaids.org/sites/default/files/media_asset/201506_JC2743_Understanding_FastTrack_en.pdf" target="_blank">UNAIDS 95-95-95 goals</a> <a href="#ref1">(University of California, San Francisco et al., 2022)</a>.
-    <br />
-    <br />
-    This is a content specific implementation guide that has been derived from the <a href="https://www.notion.so/gicsandbox/9bef96ab62b54ff9904fe93e13357b0a?v=ecd8a8b04b31406a92e9eb3a6420d051" target="_blank">HIV program monioring and patient care coordination</a> in order to effectively report on the progress towards viral suppression.
+    This is a content specific implementation guide that has been derived from the <a href="#" target="_blank">HIV CBS Minimum Dataset</a> in order to effectively report on HIV CBS in an integrated fashion.
   </p>
   <p>
     The <a href="bussiness-description.html">Business Description</a> for this implementation guide offers more detail in regards to its purpose.
@@ -62,10 +60,21 @@
 
   <p>
     Using an application called <a href="https://www.postman.com/" target="_blank">Postman</a>, you will be able to submit requests (message bundles) to the DISI Platform for processing &amp; reporting.
+    <br />
+    <br />
+    There are two Postman Collections namely: 
   </p>
 
+  <ol>
+    <li>HIV Case Reporting</li>
+    <li>HIV Lab Integration</li>
+  </ol>
+
   <p>
-    Properly tailored postman collections will enable end-to-end testing between the EMR and analytics platform. Moreover, a tester can configure postman variables which have can be designed to randomly populate data for all key fields in all resources. This is a great way to carry out exploratory testing.
+    Please see our <a href="https://jembi.gitbook.io/disi-on-platform/postman-collections" target="_blank">Postman Collections for HIV</a> as well as the descriptions for each of the message bundles that exist in each postman collection.
+    <br />
+    <br />
+    Each of the these postman collections have been tailored to support end-to-end testing between the EMR and lab systems. Moreover, each collection comes with a set of postman variables which have been designed to randomly populate data for all key fields in all resources. This is a great way to carry out exploratory testing.
     <br />
     <br />
     The use of postman variables also allows you to statically initiate variables to actual values you need.
@@ -134,7 +143,8 @@
 
   <div>
     <ol>
-      <li id="ref1">University of California, San Francisco, Makerere University, &amp; University of Nairobi. (2022, April). Overview of DISI Components for program management and patient care coordination. An Overview of DISI Components. Retrieved February 13, 2023, from https://docs.google.com/document/d/1p51XML6m0g6Vfy5x5uhPhu4It4VDKin5BLh4nTrlYh0/</li>
+      <li id="ref1">HIV Case Surveillance. (2021, December 1). Disease Prevention. https://www.vdh.virginia.gov/disease-prevention/disease-prevention/virginia_hiv_hepatitis_surveillance/hiv-case-surveillance/</li>
+      <li id="ref2">Takarinda, K. P., Nyadundu, S., Govha, E., Gombe, N. T., Juru, T., &amp; Mufuta, T. (2021). Evaluation of the HIV Case-Based Surveillance System: A Pilot of the Electronic Health Record System in Mutare District, Zimbabwe, 2021. Open Journal of Epidemiology, 11(04), 483–500. https://doi.org/10.4236/ojepi.2021.114039</li>
     </ol>
   </div>
 </div>  
