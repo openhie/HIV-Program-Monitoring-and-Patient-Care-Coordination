@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-13T15:03:14+00:00"/>
+  <date value="2023-02-13T15:15:01+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -761,7 +761,7 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="HIV Case Reporting"/>
+        <title value="HIV Program Monitoring and Patient Care Coordination"/>
         <generation value="html"/>
       </page>
       <page>
