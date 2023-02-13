@@ -85,5 +85,5 @@ Title: "Patient Type at Enrolment"
 Description:  "A list of Patient Types at Enrolment"
 * ^experimental = false
 * include codes from system CSPatientEnrollmentType
-* $SCT#185387006 "New patient consultation"  
-* $SCT#309037001 "Transfer status" 
+* $SCT#185387006 "New patient consultation (procedure)"  
+* $SCT#309037001 "Transfer status (finding)" 

@@ -159,7 +159,6 @@ Parent: EpisodeOfCare
 Id: hiv-episode-of-care
 Title: "HIV Episode Of Care"
 Description: "This profile is to record the patient HIV Management Programme Enrollment details."
-* identifier 1..* 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
@@ -167,8 +166,7 @@ Description: "This profile is to record the patient HIV Management Programme Enr
     HMPUI 1..*
 * identifier[HMPUI].value 1..1
 * identifier[HMPUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id" (exactly)
-* status 1..1
-* type 1..1         
+* status 1..1      
 * type from VSPatientEnrollmentType (required)
 * diagnosis 1..* 
 * diagnosis.condition 1..1 
