@@ -101,6 +101,9 @@ Description: "Showing a confirmed HIV diagnosis"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * recordedDate = "2021-05-18"
+* note.text = "Additional information regarding the HIV diagnosis"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
 
 Instance: DeathExample
 InstanceOf: Death
@@ -122,7 +125,7 @@ Usage: #example
 Title: "Date HIV Test Done example"
 Description: "Date HIV Test Done example"
 * status = #final
-* code = $SCT#31676001
+* code = $SCT#315124004
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2022-12-10"
@@ -146,3 +149,6 @@ Description: "ARVCarePlan example"
 * activity.detail.status = #in-progress
 * activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
+* note.text = "Additional information regarding the ARV treatment prescribed"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
