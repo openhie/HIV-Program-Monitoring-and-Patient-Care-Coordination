@@ -102,6 +102,7 @@ Description: "Confirmation of the diagnosis"
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
+* note 0..1
 
 Profile: Death
 Parent: Observation
@@ -144,6 +145,7 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * activity.detail.status 1..1
 * activity.detail.productCodeableConcept 1..1  
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
+* note 0..1
 
 Extension: ARTRegimenLine
 Id: art-regimen-line
