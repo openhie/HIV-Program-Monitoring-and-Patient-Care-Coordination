@@ -66,6 +66,12 @@
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
         "title": "Transferring Facility Encounter"
       }
+    ],
+    "Specimen": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen",
+        "title": "Viral Load Specimen"
+      }
     ]
   },
   "usage": {
