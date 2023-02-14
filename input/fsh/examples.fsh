@@ -168,3 +168,60 @@ Description: "This resource is used for Management of a Patient's HIV Programme.
 * patient = Reference(HIVPatientExample)
 * period.start = "2021-05-18"
 * period.end = "2021-05-18"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Instance: VLProcedureExample
+InstanceOf: VLProcedure
+Usage: #example
+Title: "VL Procedure info example"
+Description: "VL Procedure info example"
+* status = #completed
+* category  = $SCT#108252007 "Laboratory procedure (procedure)"
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* reasonCode.coding.code = #5d4e13af-92ec-4b91-a8e4-97818810e577
+* reasonCode.coding.system  = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"
+* reasonCode.coding.display = "Baseline Viral Load"
+* code = $SCT#315124004 "Human immunodeficiency virus viral load (procedure)"

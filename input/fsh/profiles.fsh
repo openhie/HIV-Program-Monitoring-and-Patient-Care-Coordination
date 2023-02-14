@@ -172,3 +172,50 @@ Description: "This profile is to record the patient HIV Management Programme Enr
 * diagnosis.condition 1..1 
 * patient 1..1
 * period 1..1 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Profile: VLProcedure
+Parent: Procedure
+Id: vl-procedure-info
+Title: "VL Procedure info"
+Description: "This profile is for recording the Reason for Viral Load"
+* status = #completed
+* category from VSProcedureCategory (required)
+* subject 1..1
+* encounter 1..1
+* reasonCode from VSHIVVLReason (required)
+* code from VSProcedureCodeType (required)

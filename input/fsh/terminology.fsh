@@ -87,3 +87,83 @@ Description:  "A list of Patient Types at Enrolment"
 * $SCT#185387006 "New patient consultation (procedure)"  
 * $SCT#309037001 "Transfer status (finding)" 
 * include codes from system CSPatientEnrollmentType
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CodeSystem: CSHIVVLReason
+Id: cs-vl-reason-codes
+Title: "HIV VL Reason codes"
+Description: "A list of Viral Load test reasons"
+* ^experimental = false
+* ^caseSensitive = true
+* #5d4e13af-92ec-4b91-a8e4-97818810e577 "Baseline Viral Load"
+* #1259 "Change regimen"
+* #163523 "Clinical failure"
+* #67143af5-c443-4a4f-a678-f3981b4fcb0f "Confirmation of treatment failure"
+* #5632 "Currently breastfeeding child"
+* #1434 "Currently pregnant"
+* #e185de1e-a9b3-4b10-86df-2300bf4476bb "Persistent low-Level viremia"
+* #c2aed192-73fc-405f-8cc2-776a4da81d59 "Recency Assay"
+* #843 "Regimen failure"
+* #162081 "Repeat"
+* #164369 "Results not available"
+* #be5d6a4a-4018-49dd-869f-273c9f5fec9e "Routine Viral Load"
+
+ValueSet: VSHIVVLReason
+Id: vs-hiv-vl-reason
+Title: "HIV VL Reason codes"
+Description: "Valueset - Viral Load test reasons"
+* ^experimental = false
+* include codes from system CSHIVVLReason
+
+ValueSet: VSProcedureCategory
+Id: vs-vl-reason-codes
+Title: "HIV VL Procedure Categories"
+Description: "A list of Viral Load procedure categories"
+* ^experimental = false
+* $SCT#108252007 "Laboratory procedure (procedure)"
+
+ValueSet: VSProcedureCodeType
+Id: vs-vl-procedure-code-type
+Title: "HIV VL Procedure Code type"
+Description: "A list of codes used to identify the type of procedure"
+* ^experimental = false
+* $SCT#315124004 "Human immunodeficiency virus viral load (procedure)"
