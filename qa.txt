@@ -3,14 +3,16 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.35
-Generated Tue Feb 14 06:15:43 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Tue Feb 14 06:23:31 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-cs-enrollment-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DeathExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample : 0 / 0 / 1
@@ -22,6 +24,7 @@ Generated Tue Feb 14 06:15:43 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-episode-of-care : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
@@ -29,6 +32,7 @@ Generated Tue Feb 14 06:15:43 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-enrollment-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
@@ -42,11 +46,13 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
+== fsh-generated/resources/CodeSystem-cs-enrollment-type.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-suppression.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
+== fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample.json ==
 == fsh-generated/resources/Observation-DateHIVTestDoneExample.json ==
 == fsh-generated/resources/Observation-DeathExample.json ==
 == fsh-generated/resources/Observation-ViralLoadSuppressionExample.json ==
@@ -58,6 +64,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-hiv-arv-treatment.json ==
 == fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
 == fsh-generated/resources/StructureDefinition-hiv-diagnosis.json ==
+== fsh-generated/resources/StructureDefinition-hiv-episode-of-care.json ==
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
@@ -65,6 +72,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-viral-load-suppression.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
+== fsh-generated/resources/ValueSet-vs-enrollment-type.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==
