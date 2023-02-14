@@ -3,7 +3,7 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.35
-Generated Tue Feb 14 07:23:11 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Tue Feb 14 08:51:16 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-enrollment-type : 0 / 0 / 1
@@ -18,6 +18,7 @@ Generated Tue Feb 14 07:23:11 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Specimen-VLSpecimenExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-death : 0 / 0 / 1
@@ -29,6 +30,7 @@ Generated Tue Feb 14 07:23:11 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-specimen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
@@ -58,6 +60,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Observation-ViralLoadSuppressionExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
+== fsh-generated/resources/Specimen-VLSpecimenExample.json ==
 == fsh-generated/resources/StructureDefinition-art-regimen-line.json ==
 == fsh-generated/resources/StructureDefinition-date-hiv-test-done.json ==
 == fsh-generated/resources/StructureDefinition-death.json ==
@@ -69,6 +72,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
+== fsh-generated/resources/StructureDefinition-viral-load-specimen.json ==
 == fsh-generated/resources/StructureDefinition-viral-load-suppression.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==

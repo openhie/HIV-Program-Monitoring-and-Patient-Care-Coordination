@@ -105,6 +105,13 @@
     "name" : "TransferringFacilityEncounter"
   },
   {
+    "id" : "viral-load-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen",
+    "version" : "0.1.0-test",
+    "name" : "VLSpecimen"
+  },
+  {
     "id" : "viral-load-suppression",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
