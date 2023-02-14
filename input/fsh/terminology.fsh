@@ -71,19 +71,19 @@ Description: "ARV Treatment Medication Request"
 *  $LNC#45260-7 "HIV ART medication"
 
 CodeSystem: CSPatientEnrollmentType
-Id: cs-enrollment-type
+Id: cs-patient-enrollment-type
 Title: "Patient Type at Enrolment"
-Description:  "A list of Patient Types at Enrolment"
+Description:  "A list of Custom Patient Types at Enrolment"
 * ^experimental = false
 * ^caseSensitive = true
 * #PMTCT "Mother enrolled in PMTCT program"   
-* #RE "Re-enroll"   
+* #Re-enroll "Re-enroll"
   
 ValueSet: VSPatientEnrollmentType
-Id: vs-enrollment-type
+Id: vs-patient-enrollment-type
 Title: "Patient Type at Enrolment"
 Description:  "A list of Patient Types at Enrolment"
 * ^experimental = false
+* $SCT#185387006 "New patient consultation (procedure)"  
+* $SCT#309037001 "Transfer status (finding)" 
 * include codes from system CSPatientEnrollmentType
-* $SCT#185387006 "New patient consultation"  
-* $SCT#309037001 "Transfer status" 

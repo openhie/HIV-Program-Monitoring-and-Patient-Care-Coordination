@@ -158,14 +158,16 @@ Instance: HIVEpisodeOfCareExample
 InstanceOf: HIVEpisodeOfCare
 Usage: #example
 Title: "HIV Episode Of Care"
-Description: "HIV Episode Of Care for "
+Description: "This resource is used for Management of a Patient's HIV Programme."
 * identifier[HMPUI].value = "abc123"
 * identifier[HMPUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id" (exactly)
 * status = #active
-* type  = $SCT#185387006 "New patient consultation"
+* type.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type"
+* type.coding.code = #PMTCT
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * patient = Reference(HIVPatientExample)
 * period.start = "2021-05-18"
+* period.end = "2021-05-18"
 
 Instance: VLSpecimenExample
 InstanceOf: VLSpecimen
