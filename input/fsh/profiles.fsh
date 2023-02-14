@@ -174,3 +174,14 @@ Description: "This profile is to record the patient HIV Management Programme Enr
 * diagnosis.condition 1..1 
 * patient 1..1
 * period 1..1 
+
+Profile: VLSpecimen
+Parent: Specimen
+Id: viral-load-specimen
+Title: "Viral Load Specimen"
+Description: "This profile is to record the Viral sample collection date and related details."
+* identifier 1..1 
+* type 1..1
+* subject 1..1
+* collection.collectedDateTime 1..1
+* note 0..1

@@ -166,3 +166,17 @@ Description: "HIV Episode Of Care for "
 * diagnosis.condition = Reference(HIVDiagnosisExample)
 * patient = Reference(HIVPatientExample)
 * period.start = "2021-05-18"
+
+Instance: VLSpecimenExample
+InstanceOf: VLSpecimen
+Usage: #example
+Title: "Viral Load Specimen example"
+Description: "Viral Load Specimen example"
+* identifier.value = "395058002"
+* identifier.system = $SCT
+* type = $SCT#395058002
+* subject = Reference(HIVPatientExample)
+* collection.collectedDateTime = "2022-07-28"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes here"
+* note.time = "2015-02-07T13:28:17-05:00"
