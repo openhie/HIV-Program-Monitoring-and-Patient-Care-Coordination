@@ -1,12 +1,5 @@
 [
   {
-    "id" : "cs-enrollment-type",
-    "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type",
-    "version" : "0.1.0-test",
-    "name" : "CSPatientEnrollmentType"
-  },
-  {
     "id" : "cs-vl-result-code",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
@@ -70,13 +63,6 @@
     "name" : "HIVDiagnosis"
   },
   {
-    "id" : "hiv-episode-of-care",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care",
-    "version" : "0.1.0-test",
-    "name" : "HIVEpisodeOfCare"
-  },
-  {
     "id" : "hiv-organization",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
@@ -124,13 +110,6 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
     "version" : "0.1.0-test",
     "name" : "VSARVMedicationRequest"
-  },
-  {
-    "id" : "vs-enrollment-type",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type",
-    "version" : "0.1.0-test",
-    "name" : "VSPatientEnrollmentType"
   },
   {
     "id" : "vs-hiv-death",
