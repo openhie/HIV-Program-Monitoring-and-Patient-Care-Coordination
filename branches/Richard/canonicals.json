@@ -1,5 +1,12 @@
 [
   {
+    "id" : "cs-patient-enrollment-type",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type",
+    "version" : "0.1.0-test",
+    "name" : "CSPatientEnrollmentType"
+  },
+  {
     "id" : "cs-vl-result-code",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
@@ -61,6 +68,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
     "version" : "0.1.0-test",
     "name" : "HIVDiagnosis"
+  },
+  {
+    "id" : "hiv-episode-of-care",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care",
+    "version" : "0.1.0-test",
+    "name" : "HIVEpisodeOfCare"
   },
   {
     "id" : "hiv-organization",
@@ -131,6 +145,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-test-done",
     "version" : "0.1.0-test",
     "name" : "VSHIVTestDone"
+  },
+  {
+    "id" : "vs-patient-enrollment-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type",
+    "version" : "0.1.0-test",
+    "name" : "VSPatientEnrollmentType"
   },
   {
     "id" : "vs-vl-result-code",
