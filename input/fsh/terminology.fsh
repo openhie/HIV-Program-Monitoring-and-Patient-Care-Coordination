@@ -87,3 +87,10 @@ Description:  "A list of Patient Types at Enrolment"
 * $SCT#185387006 "New patient consultation (procedure)"  
 * $SCT#309037001 "Transfer status (finding)" 
 * include codes from system CSPatientEnrollmentType
+
+ValueSet: VSSpecimenType
+Id: vs-specimen-type
+Title: "Specimen type used in Viral Load testing"
+Description:  "Specimen type used in Viral Load testing"
+* ^experimental = false
+* $SCT#395058002 "Procedure by intent (procedure) "
