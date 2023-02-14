@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-13T10:40:45+00:00"/>
+  <date value="2023-02-14T06:06:47+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -761,7 +761,127 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="MyIG Home Page"/>
+        <title value="HIV Case Reporting"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="bussiness-description.html"/>
+        </extension>
+        <nameUrl value="bussiness-description.html"/>
+        <title value="Business Description"/>
+        <generation value="html"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="requirements.html"/>
+          </extension>
+          <nameUrl value="requirements.html"/>
+          <title value="Functional Requirements"/>
+          <generation value="html"/>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="use-cases.html"/>
+            </extension>
+            <nameUrl value="use-cases.html"/>
+            <title value="Use Cases"/>
+            <generation value="html"/>
+          </page>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="personas.html"/>
+          </extension>
+          <nameUrl value="personas.html"/>
+          <title value="Personas"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="workflows.html"/>
+          </extension>
+          <nameUrl value="workflows.html"/>
+          <title value="Usage Workflows"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="deployment.html"/>
+        </extension>
+        <nameUrl value="deployment.html"/>
+        <title value="Deployment &amp; Use"/>
+        <generation value="html"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="bundles.html"/>
+          </extension>
+          <nameUrl value="bundles.html"/>
+          <title value="Message Bundles"/>
+          <generation value="html"/>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="emr-bundle.html"/>
+            </extension>
+            <nameUrl value="emr-bundle.html"/>
+            <title value="EMR Bundle"/>
+            <generation value="html"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="lab-order-bundle.html"/>
+            </extension>
+            <nameUrl value="lab-order-bundle.html"/>
+            <title value="Lab Order Bundle"/>
+            <generation value="html"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="lab-result-bundle.html"/>
+            </extension>
+            <nameUrl value="lab-result-bundle.html"/>
+            <title value="Lab Result Bundle"/>
+            <generation value="html"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="lab-cancellation-bundle.html"/>
+            </extension>
+            <nameUrl value="lab-cancellation-bundle.html"/>
+            <title value="Lab Cancellation Bundle"/>
+            <generation value="html"/>
+          </page>
+          <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+              <valueUrl value="lab-rejection-bundle.html"/>
+            </extension>
+            <nameUrl value="lab-rejection-bundle.html"/>
+            <title value="Lab Rejection Bundle"/>
+            <generation value="html"/>
+          </page>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="security-privacy.html"/>
+          </extension>
+          <nameUrl value="security-privacy.html"/>
+          <title value="Security &amp; Privacy"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="testing.html"/>
+          </extension>
+          <nameUrl value="testing.html"/>
+          <title value="Testing"/>
+          <generation value="html"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="referenced-sources.html"/>
+        </extension>
+        <nameUrl value="referenced-sources.html"/>
+        <title value="References"/>
         <generation value="html"/>
       </page>
       <page>

@@ -206,6 +206,6 @@ Period {[]} {[]}string {[]} {[]}","When activity is to occur","The period, timin
 "CarePlan.activity.detail.description","CarePlan.activity.detail.description","","","",0,1,"","","","string {[]} {[]}
 ","Extra info describing activity to perform","This provides a textual description of constraints on the intended activity occurrence, including relation to other activities.  It may also include objectives, pre-conditions and end-conditions.  Finally, it may convey specifics about the activity such as body site, method, route, etc.","","","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".text","NTE?"
-"CarePlan.note","CarePlan.note","","","",0,*,"","","","Annotation {[]} {[]}
+"CarePlan.note","CarePlan.note","","","",0,1,"","","","Annotation {[]} {[]}
 ","Comments about the plan","General notes about the care plan not covered elsewhere.","","Used to capture information that applies to the plan as a whole that doesn't fit into discrete elements.","","","","","","","",,,,,"",,,,"CarePlan.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.note",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""annotation""].value","NTE?"
