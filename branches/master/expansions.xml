@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bc1b1bdd-3fb2-4c16-8907-8cb611a30ea7"/>
+  <id value="afaf48c8-9eb5-4c27-99fa-3aa7e9d9acb0"/>
   <meta>
-    <lastUpdated value="2023-02-14T06:22:43.448+00:00"/>
+    <lastUpdated value="2023-02-14T09:55:25.720+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -47,7 +47,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -67,8 +67,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f7bf6d3b-91ad-4ee3-8586-fbd5b2a0d915"/>
-          <timestamp value="2023-02-14T06:23:02+00:00"/>
+          <identifier value="urn:uuid:7b66f2bb-ee18-4544-ab54-151104a84496"/>
+          <timestamp value="2023-02-14T09:55:47+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -88,10 +88,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type"/>
+    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type"/>
     <resource>
       <ValueSet>
-        <id value="vs-enrollment-type"/>
+        <id value="vs-patient-enrollment-type"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -101,7 +101,7 @@
               <ul>
                 <li>SNOMED CT International edition 31-Jul 2022</li>
                 <li>
-                  <a href="CodeSystem-cs-enrollment-type.html">Patient Type at Enrolment v0.1.0-test (CodeSystem)</a>
+                  <a href="CodeSystem-cs-patient-enrollment-type.html">Patient Type at Enrolment v0.1.0-test (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -119,27 +119,11 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-enrollment-type-PMTCT"> </a>  
-                  <a href="CodeSystem-cs-enrollment-type.html#cs-enrollment-type-PMTCT">PMTCT</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type</td>
-                <td>Mother enrolled in PMTCT program</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-enrollment-type-RE"> </a>  
-                  <a href="CodeSystem-cs-enrollment-type.html#cs-enrollment-type-RE">RE</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type</td>
-                <td>Re-enroll</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-185387006"> </a>  
                   <a href="http://snomed.info/id/185387006">185387006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>New patient consultation</td>
+                <td>SNOMED - New patient consultation (procedure)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -147,18 +131,34 @@
                   <a href="http://snomed.info/id/309037001">309037001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Transfer status</td>
+                <td>SNOMED - Transfer status (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-patient-enrollment-type-PMTCT"> </a>  
+                  <a href="CodeSystem-cs-patient-enrollment-type.html#cs-patient-enrollment-type-PMTCT">PMTCT</a>
+                </td>
+                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type</td>
+                <td>Mother enrolled in PMTCT program</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-patient-enrollment-type-Re-enroll"> </a>  
+                  <a href="CodeSystem-cs-patient-enrollment-type.html#cs-patient-enrollment-type-Re-enroll">Re-enroll</a>
+                </td>
+                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type</td>
+                <td>Re-enroll</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type"/>
+        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type"/>
         <version value="0.1.0-test"/>
         <name value="VSPatientEnrollmentType"/>
         <title value="Patient Type at Enrolment"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -178,48 +178,44 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4916f8b9-c535-4865-aace-5c2512782c44"/>
-          <timestamp value="2023-02-14T06:23:08+00:00"/>
+          <identifier value="urn:uuid:57374d5f-38c3-4500-a0f8-02bb306fca30"/>
+          <timestamp value="2023-02-14T09:55:47+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type|0.1.0-test"/>
-          </parameter>
-          <parameter>
             <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="excludeNested"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
           </parameter>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type"/>
-            <code value="PMTCT"/>
-            <display value="Mother enrolled in PMTCT program"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type"/>
-            <code value="RE"/>
-            <display value="Re-enroll"/>
-          </contains>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type|0.1.0-test"/>
+          </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="185387006"/>
-            <display value="New patient consultation"/>
+            <display value="SNOMED - New patient consultation (procedure)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="309037001"/>
-            <display value="Transfer status"/>
+            <display value="SNOMED - Transfer status (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type"/>
+            <code value="PMTCT"/>
+            <display value="Mother enrolled in PMTCT program"/>
+          </contains>
+          <contains>
+            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type"/>
+            <code value="Re-enroll"/>
+            <display value="Re-enroll"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -264,7 +260,7 @@
         <title value="ARV Treatment Medication Request"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -284,8 +280,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:04022272-75a4-4489-b72b-a1e2ccc700ce"/>
-          <timestamp value="2023-02-14T06:23:08+00:00"/>
+          <identifier value="urn:uuid:4abc763f-84eb-4c7a-946b-58d83ebad382"/>
+          <timestamp value="2023-02-14T09:55:53+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -347,7 +343,7 @@
         <title value="Death"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -367,8 +363,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ce387885-5075-4b44-b78b-20dc8f43efb8"/>
-          <timestamp value="2023-02-14T06:23:10+00:00"/>
+          <identifier value="urn:uuid:f8517099-08da-4e5a-8a32-849d278905f0"/>
+          <timestamp value="2023-02-14T09:55:56+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -430,7 +426,7 @@
         <title value="HIV Test Done"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -450,8 +446,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0830656a-6d54-4c51-9c2b-b2c9ce6ad444"/>
-          <timestamp value="2023-02-14T06:23:10+00:00"/>
+          <identifier value="urn:uuid:7ec58d0e-80ed-4607-8ca9-31c527bb91e8"/>
+          <timestamp value="2023-02-14T09:55:56+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -529,7 +525,7 @@
         <title value="ART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -549,8 +545,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9189b639-6371-4bcb-b788-7ad68728d976"/>
-          <timestamp value="2023-02-14T06:23:10+00:00"/>
+          <identifier value="urn:uuid:53a8d2ea-e7ac-4c46-b75c-0ceb46794bcf"/>
+          <timestamp value="2023-02-14T09:55:56+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -622,7 +618,7 @@
         <title value="HIV Diagnosis"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -642,8 +638,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f7cc51eb-ad0a-4693-bdb5-05ca6b7b7f41"/>
-          <timestamp value="2023-02-14T06:23:14+00:00"/>
+          <identifier value="urn:uuid:a186a0bf-4a56-478d-8de2-28b92b4abbe7"/>
+          <timestamp value="2023-02-14T09:56:01+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -723,7 +719,7 @@
         <title value="Viral load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-14T06:22:43+00:00"/>
+        <date value="2023-02-14T09:55:25+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -743,8 +739,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a3b47f36-8b84-4f25-b8cf-811b5b8facfc"/>
-          <timestamp value="2023-02-14T06:23:14+00:00"/>
+          <identifier value="urn:uuid:71b47d6b-595a-408d-8600-12c30340adf8"/>
+          <timestamp value="2023-02-14T09:56:02+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
