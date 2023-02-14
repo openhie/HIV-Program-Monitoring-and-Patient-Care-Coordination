@@ -84,6 +84,6 @@ Id: vs-patient-enrollment-type
 Title: "Patient Type at Enrolment"
 Description:  "A list of Patient Types at Enrolment"
 * ^experimental = false
-* $SCT#185387006 "SNOMED - New patient consultation (procedure)"  
-* $SCT#309037001 "SNOMED - Transfer status (finding)" 
+* $SCT#185387006 "New patient consultation (procedure)"  
+* $SCT#309037001 "Transfer status (finding)" 
 * include codes from system CSPatientEnrollmentType
