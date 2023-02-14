@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type> a fhir:CodeSystem;
+<http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "cs-enrollment-type"]; # 
+  fhir:Resource.id [ fhir:value "cs-patient-enrollment-type"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PMTCT<a name=\"cs-enrollment-type-PMTCT\"> </a></td><td>Mother enrolled in PMTCT program</td></tr><tr><td style=\"white-space:nowrap\">RE<a name=\"cs-enrollment-type-RE\"> </a></td><td>Re-enroll</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">PMTCT<a name=\"cs-patient-enrollment-type-PMTCT\"> </a></td><td>Mother enrolled in PMTCT program</td></tr><tr><td style=\"white-space:nowrap\">Re-enroll<a name=\"cs-patient-enrollment-type-Re-enroll\"> </a></td><td>Re-enroll</td></tr></table></div>"
   ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type"]; # 
+  fhir:CodeSystem.url [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type"]; # 
   fhir:CodeSystem.version [ fhir:value "0.1.0-test"]; # 
   fhir:CodeSystem.name [ fhir:value "CSPatientEnrollmentType"]; # 
   fhir:CodeSystem.title [ fhir:value "Patient Type at Enrolment"]; # 
   fhir:CodeSystem.status [ fhir:value "active"]; # 
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-02-14T08:50:38+00:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-02-14T09:43:04+00:00"^^xsd:dateTime]; # 
   fhir:CodeSystem.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "info@jembi.org" ]
      ]
   ]; # 
-  fhir:CodeSystem.description [ fhir:value "A list of Patient Types at Enrolment"]; # 
+  fhir:CodeSystem.description [ fhir:value "A list of Custom Patient Types at Enrolment"]; # 
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -50,13 +50,13 @@
      fhir:CodeSystem.concept.display [ fhir:value "Mother enrolled in PMTCT program" ]
   ], [
      fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "RE" ];
+     fhir:CodeSystem.concept.code [ fhir:value "Re-enroll" ];
      fhir:CodeSystem.concept.display [ fhir:value "Re-enroll" ]
   ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

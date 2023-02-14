@@ -1,11 +1,9 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Patient Type at Enrolment - XML Representation - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Patient Type at Enrolment - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.15"}
-    h3,h4,h5,h6{--heading-prefix:"6.15"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.23"}
+    h3,h4,h5,h6{--heading-prefix:"6.23"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -260,9 +258,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">HIV Program Monitoring and Patient Care Coordination, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.1.0-test). This version is based on the current content of <a href="https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination">https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-program-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HIV Program Monitoring and Patient Care Coordination, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.1.0-test). This version is based on the current content of <a href="https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination">https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-program-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
 
 
 
@@ -273,29 +271,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="ValueSet-vs-enrollment-type.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
-    <li class="active">
-      <a href="#">XML</a>
+    <li>
+      <a href="CodeSystem-cs-patient-enrollment-type.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-vs-enrollment-type.json.html">JSON</a>
+      <a href="CodeSystem-cs-patient-enrollment-type.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="ValueSet-vs-enrollment-type.ttl.html">TTL</a>
+      <a href="CodeSystem-cs-patient-enrollment-type.ttl.html">TTL</a>
     </li>
   
 
@@ -303,15 +301,30 @@
 
 </ul>
 
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Patient Type at Enrolment
 
-<a name="root"> </a>
+  </h2>
 
-
-<h2 id="root">: Patient Type at Enrolment - XML Representation</h2>
   <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0-test<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type|0.1.0-test"/></span>
+      </td>
+    </tr>
+
     <tr>
 
-      <td colspan="2">
+
+
+
+
+
+
+      <td colspan="4">
         
           Active
           
@@ -320,75 +333,46 @@
         
       </td>
 
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">CSPatientEnrollmentType</span></td>
     </tr>
+
+
+
+
   </table>
 
+<p>
+<p>A list of Custom Patient Types at Enrolment</p>
 
-<p><a href="ValueSet-vs-enrollment-type.xml" no-download="true">Raw xml</a> | <a href="ValueSet-vs-enrollment-type.xml" download>Download</a></p>
+</p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
 
-&lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;vs-enrollment-type&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=&quot;CodeSystem-cs-enrollment-type.html&quot;&gt;&lt;code&gt;http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;http://www.snomed.org/&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/185387006&quot;&gt;185387006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;New patient consultation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;http://snomed.info/id/309037001&quot;&gt;309037001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Transfer status&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>
-       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0-test&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;VSPatientEnrollmentType&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Patient Type at Enrolment&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-02-14T08:50:38+00:00&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Jembi Health Systems&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://www.jembi.org&quot;/&gt;
-    &lt;/telecom&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;info@jembi.org&quot;/&gt;
-    &lt;/telecom&gt;
-  &lt;/contact&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a> <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;A list of Patient Types at Enrolment&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;001&quot;/&gt;
-    &lt;/coding&gt;
-  &lt;/jurisdiction&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>
-              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type&quot;/&gt;
-    &lt;/include&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://snomed.info/sct&quot;/&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;185387006&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;New patient consultation&quot;/&gt;
-      &lt;/concept&gt;
-      &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;309037001&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Transfer status&quot;/&gt;
-      &lt;/concept&gt;
-    &lt;/include&gt;
-  &lt;/compose&gt;
-&lt;/ValueSet&gt;</code></pre>
+  
+<ul>
+ <li><a href="ValueSet-vs-patient-enrollment-type.html">VSPatientEnrollmentType</a></li>
+</ul>
 
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">PMTCT<a name="cs-patient-enrollment-type-PMTCT"> </a></td><td>Mother enrolled in PMTCT program</td></tr><tr><td style="white-space:nowrap">Re-enroll<a name="cs-patient-enrollment-type-Re-enroll"> </a></td><td>Re-enroll</td></tr></table></div>
+
+  
 
   <!-- insert notes if present -->
   
 
 
+
+  
 
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -413,7 +397,7 @@
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 14, 2023 08:50+0000">2023-02-14</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.1.0-test based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 14, 2023 09:43+0000">2023-02-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

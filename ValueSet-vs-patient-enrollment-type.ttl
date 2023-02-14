@@ -5,20 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type> a fhir:ValueSet;
+<http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "vs-enrollment-type"]; # 
+  fhir:Resource.id [ fhir:value "vs-patient-enrollment-type"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-enrollment-type.html\"><code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/185387006\">185387006</a></td><td>New patient consultation</td></tr><tr><td><a href=\"http://snomed.info/id/309037001\">309037001</a></td><td>Transfer status</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/185387006\">185387006</a></td><td>SNOMED - New patient consultation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/309037001\">309037001</a></td><td>SNOMED - Transfer status (finding)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-cs-patient-enrollment-type.html\"><code>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type</code></a></li></ul></div>"
   ]; # 
-  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type"]; # 
+  fhir:ValueSet.url [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type"]; # 
   fhir:ValueSet.version [ fhir:value "0.1.0-test"]; # 
   fhir:ValueSet.name [ fhir:value "VSPatientEnrollmentType"]; # 
   fhir:ValueSet.title [ fhir:value "Patient Type at Enrolment"]; # 
   fhir:ValueSet.status [ fhir:value "active"]; # 
   fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2023-02-14T08:50:38+00:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.date [ fhir:value "2023-02-14T09:43:04+00:00"^^xsd:dateTime]; # 
   fhir:ValueSet.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -44,25 +44,25 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type" ]
-     ], [
-       fhir:index 1;
        fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
        fhir:ValueSet.compose.include.concept [
          fhir:index 0;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "185387006" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "New patient consultation" ]
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SNOMED - New patient consultation (procedure)" ]
        ], [
          fhir:index 1;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "309037001" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Transfer status" ]
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "SNOMED - Transfer status (finding)" ]
        ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type" ]
      ]
   ] . # 
 
 # - ontology header ------------------------------------------------------------
 
-<http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type.ttl> a owl:Ontology;
+<http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -1,8 +1,8 @@
 [
   {
-    "id" : "cs-enrollment-type",
+    "id" : "cs-patient-enrollment-type",
     "type" : "CodeSystem",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-enrollment-type",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-patient-enrollment-type",
     "version" : "0.1.0-test",
     "name" : "CSPatientEnrollmentType"
   },
@@ -105,13 +105,6 @@
     "name" : "TransferringFacilityEncounter"
   },
   {
-    "id" : "viral-load-specimen",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen",
-    "version" : "0.1.0-test",
-    "name" : "VLSpecimen"
-  },
-  {
     "id" : "viral-load-suppression",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
@@ -133,13 +126,6 @@
     "name" : "VSARVMedicationRequest"
   },
   {
-    "id" : "vs-enrollment-type",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-enrollment-type",
-    "version" : "0.1.0-test",
-    "name" : "VSPatientEnrollmentType"
-  },
-  {
     "id" : "vs-hiv-death",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
@@ -159,6 +145,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-test-done",
     "version" : "0.1.0-test",
     "name" : "VSHIVTestDone"
+  },
+  {
+    "id" : "vs-patient-enrollment-type",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type",
+    "version" : "0.1.0-test",
+    "name" : "VSPatientEnrollmentType"
   },
   {
     "id" : "vs-vl-result-code",
