@@ -54,6 +54,7 @@ Description: "Target Facility Encounter example"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
 * partOf = Reference(TransferringFacilityEncounterExample)
+* episodeOfCare = Reference(HIVEpisodeOfCareExample)
 
 Instance: TransferringFacilityEncounterExample
 InstanceOf: TransferringFacilityEncounter
@@ -152,3 +153,16 @@ Description: "ARVCarePlan example"
 * note.text = "Additional information regarding the ARV treatment prescribed"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVEpisodeOfCareExample
+InstanceOf: HIVEpisodeOfCare
+Usage: #example
+Title: "HIV Episode Of Care"
+Description: "HIV Episode Of Care for "
+* identifier[HMPUI].value = "abc123"
+* identifier[HMPUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id" (exactly)
+* status = #active
+* type  = $SCT#185387006 "New patient consultation"
+* diagnosis.condition = Reference(HIVDiagnosisExample)
+* patient = Reference(HIVPatientExample)
+* period.start = "2021-05-18"
