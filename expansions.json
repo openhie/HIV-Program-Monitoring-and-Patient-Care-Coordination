@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "f8b9216c-ea82-48da-8a97-b1b595a7b7d3",
+  "id" : "882954f4-c283-4fb8-979a-410fa1c545f5",
   "meta" : {
-    "lastUpdated" : "2023-02-14T14:33:42.217+00:00"
+    "lastUpdated" : "2023-02-14T16:15:08.297+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a82321d3-d30b-45d8-b8a8-0b728c13667b",
-        "timestamp" : "2023-02-14T14:34:17+00:00",
+        "identifier" : "urn:uuid:8e59faf2-c94e-45d5-8bf6-636cd0095da8",
+        "timestamp" : "2023-02-14T16:15:30+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -74,7 +74,7 @@
       "title" : "Patient Type at Enrolment",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:844ea108-1470-45a3-8fca-67769674a7e1",
-        "timestamp" : "2023-02-14T14:34:18+00:00",
+        "identifier" : "urn:uuid:d38d23f8-9d2b-4768-9849-507587d36ab8",
+        "timestamp" : "2023-02-14T16:15:30+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -137,6 +137,115 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-vl-reason",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-hiv-vl-reason",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 12 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-cs-vl-reason-codes.html\">HIV VL Reason codes v0.1.0-test (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-5d4e13af-92ec-4b91-a8e4-97818810e577\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-5d4e13af-92ec-4b91-a8e4-97818810e577\">5d4e13af-92ec-4b91-a8e4-97818810e577</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Baseline Viral Load</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-1259\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-1259\">1259</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Change regimen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-163523\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-163523\">163523</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Clinical failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-67143af5-c443-4a4f-a678-f3981b4fcb0f\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-67143af5-c443-4a4f-a678-f3981b4fcb0f\">67143af5-c443-4a4f-a678-f3981b4fcb0f</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Confirmation of treatment failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-5632\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-5632\">5632</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Currently breastfeeding child</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-1434\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-1434\">1434</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Currently pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-e185de1e-a9b3-4b10-86df-2300bf4476bb\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-e185de1e-a9b3-4b10-86df-2300bf4476bb\">e185de1e-a9b3-4b10-86df-2300bf4476bb</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Persistent low-Level viremia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-c2aed192-73fc-405f-8cc2-776a4da81d59\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-c2aed192-73fc-405f-8cc2-776a4da81d59\">c2aed192-73fc-405f-8cc2-776a4da81d59</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Recency Assay</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-843\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-843\">843</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Regimen failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-162081\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-162081\">162081</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Repeat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-164369\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-164369\">164369</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Results not available</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-be5d6a4a-4018-49dd-869f-273c9f5fec9e\"> </a>  <a href=\"CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-be5d6a4a-4018-49dd-869f-273c9f5fec9e\">be5d6a4a-4018-49dd-869f-273c9f5fec9e</a></td><td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td><td>Routine Viral Load</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-vl-reason",
+      "version" : "0.1.0-test",
+      "name" : "VSHIVVLReason",
+      "title" : "HIV VL Reason codes",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-02-14T16:15:08+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "Valueset - Viral Load test reasons",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:ca565ef5-4708-48ac-9f43-b2a986c76921",
+        "timestamp" : "2023-02-14T16:15:35+00:00",
+        "total" : 12,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "5d4e13af-92ec-4b91-a8e4-97818810e577",
+          "display" : "Baseline Viral Load"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "1259",
+          "display" : "Change regimen"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "163523",
+          "display" : "Clinical failure"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "67143af5-c443-4a4f-a678-f3981b4fcb0f",
+          "display" : "Confirmation of treatment failure"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "5632",
+          "display" : "Currently breastfeeding child"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "1434",
+          "display" : "Currently pregnant"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "e185de1e-a9b3-4b10-86df-2300bf4476bb",
+          "display" : "Persistent low-Level viremia"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "c2aed192-73fc-405f-8cc2-776a4da81d59",
+          "display" : "Recency Assay"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "843",
+          "display" : "Regimen failure"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "162081",
+          "display" : "Repeat"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "164369",
+          "display" : "Results not available"
+        },
+        {
+          "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+          "code" : "be5d6a4a-4018-49dd-869f-273c9f5fec9e",
+          "display" : "Routine Viral Load"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -151,7 +260,7 @@
       "title" : "ARV Treatment Medication Request",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -171,8 +280,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:813f6a1d-39f4-4723-b02c-2ab66c232ba1",
-        "timestamp" : "2023-02-14T14:34:24+00:00",
+        "identifier" : "urn:uuid:a3f93cff-7b3c-47b7-a59a-a5d8154772f0",
+        "timestamp" : "2023-02-14T16:15:35+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -195,6 +304,122 @@
     }
   },
   {
+    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-reason-codes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-vl-reason-codes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-108252007\"> </a>  <a href=\"http://snomed.info/id/108252007\">108252007</a></td><td>http://snomed.info/sct</td><td>Laboratory procedure (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-reason-codes",
+      "version" : "0.1.0-test",
+      "name" : "VSProcedureCategory",
+      "title" : "HIV VL Procedure Categories",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-02-14T16:15:08+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of Viral Load procedure categories",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:05256a73-1d2d-4f9a-915b-a6fce1df4a31",
+        "timestamp" : "2023-02-14T16:15:35+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "108252007",
+          "display" : "Laboratory procedure (procedure)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-procedure-code-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-vl-procedure-code-type",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>  <a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load (procedure)</td></tr></table></div>"
+      },
+      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-procedure-code-type",
+      "version" : "0.1.0-test",
+      "name" : "VSProcedureCodeType",
+      "title" : "HIV VL Procedure Code type",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-02-14T16:15:08+00:00",
+      "publisher" : "Jembi Health Systems",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.jembi.org"
+        },
+        {
+          "system" : "email",
+          "value" : "info@jembi.org"
+        }]
+      }],
+      "description" : "A list of codes used to identify the type of procedure",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:feaddb15-cace-4123-9be5-d46a89616f7a",
+        "timestamp" : "2023-02-14T16:15:36+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "315124004",
+          "display" : "Human immunodeficiency virus viral load (procedure)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -209,7 +434,7 @@
       "title" : "Death",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -229,8 +454,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:68e47a18-bcb3-4d17-bbec-729de8216e8d",
-        "timestamp" : "2023-02-14T14:34:27+00:00",
+        "identifier" : "urn:uuid:d2186393-9ffd-46fa-aa25-bd3c7c4d13b1",
+        "timestamp" : "2023-02-14T16:15:38+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -267,7 +492,7 @@
       "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -287,8 +512,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7cb8b9a1-e1c6-4cd7-959b-06ba45d44ac4",
-        "timestamp" : "2023-02-14T14:34:27+00:00",
+        "identifier" : "urn:uuid:049fba31-73e6-41e8-bad4-af4828f399f0",
+        "timestamp" : "2023-02-14T16:15:38+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -325,7 +550,7 @@
       "title" : "ART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -345,8 +570,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3e6b6001-813c-49db-9103-5f63fd4b8b1c",
-        "timestamp" : "2023-02-14T14:34:28+00:00",
+        "identifier" : "urn:uuid:a32f295d-45fd-4bd8-9824-5f6c34994168",
+        "timestamp" : "2023-02-14T16:15:39+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -393,7 +618,7 @@
       "title" : "HIV Diagnosis",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -413,8 +638,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ab192149-04cb-4014-986b-0cfd0e2095ea",
-        "timestamp" : "2023-02-14T14:34:34+00:00",
+        "identifier" : "urn:uuid:97c3091d-e583-4d07-8cf8-6f5a526baecb",
+        "timestamp" : "2023-02-14T16:15:43+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -451,7 +676,7 @@
       "title" : "Viral load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
+      "date" : "2023-02-14T16:15:08+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -471,8 +696,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:31c8fca9-bee9-4816-841f-dbdf165b9c37",
-        "timestamp" : "2023-02-14T14:34:35+00:00",
+        "identifier" : "urn:uuid:4c68e819-0af0-4ad0-be11-c1e0b609e82f",
+        "timestamp" : "2023-02-14T16:15:43+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -496,64 +721,6 @@
           "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression",
           "code" : "UNK",
           "display" : "Unknown"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "id" : "vs-specimen-type",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-395058002\"> </a>  <a href=\"http://snomed.info/id/395058002\">395058002</a></td><td>http://snomed.info/sct</td><td>Procedure by intent (procedure) </td></tr></table></div>"
-      },
-      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type",
-      "version" : "0.1.0-test",
-      "name" : "VSSpecimenType",
-      "title" : "Specimen type used in Viral Load testing",
-      "status" : "active",
-      "experimental" : false,
-      "date" : "2023-02-14T14:33:42+00:00",
-      "publisher" : "Jembi Health Systems",
-      "contact" : [{
-        "telecom" : [{
-          "system" : "url",
-          "value" : "https://www.jembi.org"
-        },
-        {
-          "system" : "email",
-          "value" : "info@jembi.org"
-        }]
-      }],
-      "description" : "Specimen type used in Viral Load testing",
-      "jurisdiction" : [{
-        "coding" : [{
-          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code" : "001"
-        }]
-      }],
-      "expansion" : {
-        "identifier" : "urn:uuid:42749130-5d33-40c6-b8eb-cf758f65ef2e",
-        "timestamp" : "2023-02-14T14:34:35+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "limitedExpansion",
-          "valueBoolean" : true
-        },
-        {
-          "name" : "version",
-          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }],
-        "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "395058002",
-          "display" : "Procedure by intent (procedure) "
         }]
       }
     }

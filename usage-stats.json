@@ -67,10 +67,10 @@
         "title": "Transferring Facility Encounter"
       }
     ],
-    "Specimen": [
+    "Procedure": [
       {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen",
-        "title": "Viral Load Specimen"
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info",
+        "title": "VL Procedure info"
       }
     ]
   },

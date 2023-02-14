@@ -7,6 +7,13 @@
     "name" : "CSPatientEnrollmentType"
   },
   {
+    "id" : "cs-vl-reason-codes",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+    "version" : "0.1.0-test",
+    "name" : "CSHIVVLReason"
+  },
+  {
     "id" : "cs-vl-result-code",
     "type" : "CodeSystem",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code",
@@ -105,18 +112,18 @@
     "name" : "TransferringFacilityEncounter"
   },
   {
-    "id" : "viral-load-specimen",
-    "type" : "StructureDefinition",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen",
-    "version" : "0.1.0-test",
-    "name" : "VLSpecimen"
-  },
-  {
     "id" : "viral-load-suppression",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
     "version" : "0.1.0-test",
     "name" : "ViralLoadSuppression"
+  },
+  {
+    "id" : "vl-procedure-info",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info",
+    "version" : "0.1.0-test",
+    "name" : "VLProcedure"
   },
   {
     "id" : "vs-artregimen-lines",
@@ -154,6 +161,13 @@
     "name" : "VSHIVTestDone"
   },
   {
+    "id" : "vs-hiv-vl-reason",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-vl-reason",
+    "version" : "0.1.0-test",
+    "name" : "VSHIVVLReason"
+  },
+  {
     "id" : "vs-patient-enrollment-type",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type",
@@ -161,11 +175,18 @@
     "name" : "VSPatientEnrollmentType"
   },
   {
-    "id" : "vs-specimen-type",
+    "id" : "vs-vl-procedure-code-type",
     "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-procedure-code-type",
     "version" : "0.1.0-test",
-    "name" : "VSSpecimenType"
+    "name" : "VSProcedureCodeType"
+  },
+  {
+    "id" : "vs-vl-reason-codes",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-reason-codes",
+    "version" : "0.1.0-test",
+    "name" : "VSProcedureCategory"
   },
   {
     "id" : "vs-vl-result-code",
