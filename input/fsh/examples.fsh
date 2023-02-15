@@ -68,8 +68,8 @@ Description: "Transferring Facility Encounter example"
 * period.end = "2023-01-20"
 * serviceProvider = Reference(HIVOrganizationExample)
 
-Instance: ViralLoadSuppressionExample
-InstanceOf: ViralLoadSuppression
+Instance: HIVTestResultExample
+InstanceOf: HIVTestResult
 Usage: #example
 Title: "Viral Load Suppression example" 
 Description: "Viral Load Suppression example"
@@ -86,6 +86,7 @@ Description: "Viral Load Suppression example"
 * note.text = "Viral load not suppressed"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2015-02-07T13:28:17-05:00"
+* performer = Reference(HIVOrganizationExample)
 
 Instance: HIVDiagnosisExample
 InstanceOf: HIVDiagnosis
@@ -168,3 +169,151 @@ Description: "This resource is used for Management of a Patient's HIV Programme.
 * patient = Reference(HIVPatientExample)
 * period.start = "2021-05-18"
 * period.end = "2021-05-18"
+
+Instance: VLSpecimenExample
+InstanceOf: VLSpecimen
+Usage: #example
+Title: "Viral Load Specimen example"
+Description: "Viral Load Specimen example"
+* identifier.value = "abc123"
+* identifier.system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/specimen"
+* type = $SCT#395058002
+* subject = Reference(HIVPatientExample)
+* collection.collectedDateTime = "2022-07-28"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes here"
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVServiceRequestLocationExample
+InstanceOf: HIVServiceRequestLocation
+Usage: #example
+Title: "HIV Service Request Location example"
+Description: "HIV Service Request Location example"
+* name = "HIV Location"
+* address.country = "DISI country"
+* address.state = "DISI state"
+* address.district = "DISI district"
+* address.city = "DISI city"
+
+Instance: PractitionerExample
+InstanceOf: HIVPractitioner
+Usage: #example
+Title: "Practitioner example"
+Description: "Practitioner example"
+* name.given = "James"
+* name.family = "Smith"
+* telecom.system = #phone
+* telecom.value = "27537652509"
+
+Instance: HIVServiceRequestExample
+InstanceOf: HIVServiceRequest
+Usage: #example
+Title: "HIV Lab Order example"
+Description: "HIV Lab Order example"
+* identifier[FILL].value = "ORDER12345"
+* identifier[FILL].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/lab-order-identifier"
+* status = #completed
+* intent = #order
+* code = $LNC#25836-8
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* occurrenceDateTime = "2012-01-05"
+* requester = Reference(PractitionerExample)
+* locationReference = Reference(HIVServiceRequestLocationExample)
+* doNotPerform = false
+* reasonCode = $SCT#397933008
+* specimen = Reference(VLSpecimenExample)
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes here"
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVLabOrderTaskExample
+InstanceOf: HIVLabTask
+Usage: #example
+Title: "Lab Order example"
+Description: "Lab Order example"
+* identifier.system = "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number"
+* identifier.value = "ORDER12345"
+* basedOn = Reference(HIVServiceRequestExample)
+* status = #requested
+* intent = #order
+* executionPeriod.start = "2022-07-28"
+* lastModified = "2022-07-28"
+* requester = Reference(HIVOrganizationExample)
+* owner = Reference(HIVOrganizationExample)
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes here"
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVLabResultTaskExample
+InstanceOf: HIVLabTask
+Usage: #example
+Title: "Lab Result Task example"
+Description: "Lab Result Task example"
+* identifier.system = "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number"
+* identifier.value = "ORDER12345"
+* basedOn = Reference(HIVServiceRequestExample)
+* status = #completed
+* intent = #order
+* executionPeriod.end = "2022-07-30"
+* lastModified = "2022-07-30"
+* requester = Reference(HIVOrganizationExample)
+* owner = Reference(HIVOrganizationExample)
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes here"
+* note.time = "2015-02-07T13:28:17-05:00"
+* output.type.coding.system = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-result-code"
+* output.type = #VL-RESULT
+* output.valueReference = Reference(HIVLabResultsDiagnosticReportExample)
+
+Instance: HIVLabOrderCancellationTaskExample
+InstanceOf: HIVLabTask
+Usage: #example
+Title: "HIV Lab Order Cancellation  example"
+Description: "HIV Lab Order Cancellation Task example"
+* identifier.system = "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number"
+* identifier.value = "ORDER12345"
+* basedOn = Reference(HIVServiceRequestExample)
+* status = #cancelled
+* statusReason = $SCT#281264009 
+* intent = #order
+* executionPeriod.end = "2022-07-30"
+* lastModified = "2022-07-30"
+* requester = Reference(HIVOrganizationExample)
+* owner = Reference(HIVOrganizationExample)
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes here"
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVLabOrderRejectionTaskExample
+InstanceOf: HIVLabTask
+Usage: #example
+Title: "HIV Lab Order Rejection  example"
+Description: "HIV Lab Order Rejection Task example"
+* identifier.system = "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number"
+* identifier.value = "ORDER12345"
+* basedOn = Reference(HIVServiceRequestExample)
+* status = #rejected
+* statusReason = $SCT#135839007 
+* intent = #order
+* executionPeriod.end = "2022-07-30"
+* lastModified = "2022-07-30"
+* requester = Reference(HIVOrganizationExample)
+* owner = Reference(HIVOrganizationExample)
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes here"
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVLabResultsDiagnosticReportExample
+InstanceOf: HIVDiagnosticReport
+Usage: #example
+Title: "Covid19 Lab Results Diagnostic Report example"
+Description: "Covid19 Lab Results Diagnostic Report example"
+* basedOn = Reference(HIVServiceRequestExample)
+* status = #final
+* code = $LNC#25836-8 
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* performer = Reference(PractitionerExample)
+* result = Reference(HIVTestResultExample)
+* conclusion = "Some conclusion text"

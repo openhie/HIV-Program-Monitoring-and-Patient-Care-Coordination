@@ -1,5 +1,6 @@
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
+Alias: $LNC = http://loinc.org
 
 CodeSystem: CSVLResultCode
 Id: cs-vl-result-code
@@ -87,3 +88,44 @@ Description:  "A list of Patient Types at Enrolment"
 * $SCT#185387006 "New patient consultation (procedure)"  
 * $SCT#309037001 "Transfer status (finding)" 
 * include codes from system CSPatientEnrollmentType
+
+ValueSet: VSSpecimenType
+Id: vs-specimen-type
+Title: "Specimen type used in Viral Load testing"
+Description:  "Specimen type used in Viral Load testing"
+* ^experimental = false
+* $SCT#395058002 "Procedure by intent (procedure)"
+
+ValueSet: VSTestTypes
+Id: vs-test-types
+Title: "Test Types"
+Description: "A list of HIV test types"
+* ^experimental = false
+* $LNC#25842-6 "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"   
+* $LNC#25836-8 "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+
+ValueSet: VSReasonForAssessmentOrTestNotPerformed
+Id: vs-covid19-reason-for-assessment-or-test-not-performed
+Title: "Reason for Assessment or Test Not Performed"
+Description: "A list of reasons associated with the service request for the lab order"
+* ^experimental = false
+//Reasons for assessment
+* $SCT#428792000 "Contact of a case"
+* $SCT#171367005 "Travel Examination"
+* $SCT#308273005 "Follow-up"
+* $SCT#223366009 "Health worker"
+* $SCT#34325006 "Other frontline worker"
+* $SCT#168260004 "Post-mortem"
+* $SCT#170497006 "Quarantine"
+* $SCT#273407003 "RDT confirmatory"
+* $SCT#243790003 "Surveillance"
+* $SCT#264931009 "Symptomatic/Illness"
+* $SCT#255375007 "Voluntary" 
+//Reasons test not performed
+* $SCT#441510007 "Blood sample coagulated" 
+* $SCT#123840003 "Contaminated specimen"
+* $SCT#397933008 "Equipment failure"
+* $SCT#281264009 "Inappropriate sample container used"
+* $SCT#281268007 "Insufficient sample"
+* $SCT#281265005 "Specimen not labeled"
+* $SCT#419182006 "Supplies not available"
