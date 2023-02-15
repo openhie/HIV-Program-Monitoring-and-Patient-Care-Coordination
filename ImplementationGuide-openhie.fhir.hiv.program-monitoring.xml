@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-14T16:15:08+00:00"/>
+  <date value="2023-02-15T07:08:17+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -717,7 +717,7 @@
         <reference value="StructureDefinition/vl-procedure-info"/>
       </reference>
       <name value="VL Procedure info"/>
-      <description value="This profile is for recording the Reason for Viral Load"/>
+      <description value="This profile is for recording the Reason for Viral Load testing."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
