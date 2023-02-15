@@ -13,6 +13,7 @@
     <sch:title>f:Procedure</sch:title>
     <sch:rule context="f:Procedure">
       <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>
+      <sch:assert test="count(f:note) &lt;= 1">note: maximum cardinality of 'note' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

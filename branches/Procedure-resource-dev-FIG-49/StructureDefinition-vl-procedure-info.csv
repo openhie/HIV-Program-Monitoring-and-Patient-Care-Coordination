@@ -130,7 +130,7 @@ Use Procedure.reasonCode when a code sufficiently describes the reason.  Use Pro
 "Procedure.followUp","Procedure.followUp","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Instructions for follow up","If the procedure required specific follow up - e.g. removal of sutures. The follow up may be represented as a simple note or could potentially be more complex, in which case the CarePlan resource can be used.","","","","","","","","","",,"example","Specific follow up required for a procedure e.g. removal of sutures.","http://hl7.org/fhir/ValueSet/procedure-followup","",,,,"Procedure.followUp",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=COMP].target[classCode=ACT, moodCode=INT].code"
-"Procedure.note","Procedure.note","","","",0,*,"","","","Annotation {[]} {[]}
+"Procedure.note","Procedure.note","","","",0,1,"","","","Annotation {[]} {[]}
 ","Additional information about the procedure","Any other notes and comments about the procedure.","","","","","","","","","",,,,,"",,,,"Procedure.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.note",".inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""annotation""].value","NTE"
 "Procedure.focalDevice","Procedure.focalDevice","","","",0,*,"","","","BackboneElement {[]} {[]}
