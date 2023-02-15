@@ -1,0 +1,130 @@
+{
+  "package": "openhie.fhir.hiv.program-monitoring",
+  "version": "0.1.0-test",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line",
+      "title": "ART Regimen Line",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
+      "title": "Next Appointment Date",
+      "types": [
+        "dateTime"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
+        "title": "Viral Load Suppression"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment",
+        "title": "ARV Treatment"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis",
+        "title": "Diagnosis"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care",
+        "title": "HIV Episode Of Care"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization",
+        "title": "HIV Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
+        "title": "Patient"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
+        "title": "Target Facility Encounter"
+      },
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
+        "title": "Transferring Facility Encounter"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
+      "ImplementationGuide.definition.page.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line": [
+      "CarePlan.activity.detail"
+    ],
+    "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit": [
+      "Encounter"
+    ]
+  }
+}
