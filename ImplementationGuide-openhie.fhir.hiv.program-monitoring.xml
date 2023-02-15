@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-15T10:47:55+00:00"/>
+  <date value="2023-02-15T14:53:45+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -728,6 +728,16 @@
       </reference>
       <name value="Lab Task"/>
       <description value="Assists with tracking the state of the lab order and its completion status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/EMR"/>
+      </reference>
+      <name value="Example Bundle - EMR"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
