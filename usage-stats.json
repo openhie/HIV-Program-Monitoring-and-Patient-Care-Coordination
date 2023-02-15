@@ -66,12 +66,6 @@
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
         "title": "Transferring Facility Encounter"
       }
-    ],
-    "Procedure": [
-      {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info",
-        "title": "VL Procedure info"
-      }
     ]
   },
   "usage": {

@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-15T09:19:32+00:00",
+  "date" : "2023-02-15T10:30:33+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -674,17 +674,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-vl-reason-codes"
-      },
-      "name" : "HIV VL Reason codes",
-      "description" : "A list of Viral Load test reasons"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -721,17 +710,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-hiv-vl-reason"
-      },
-      "name" : "HIV VL Reason codes",
-      "description" : "Valueset - Viral Load test reasons"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/vs-arvtreatment-activity-type"
       },
       "name" : "ARV Treatment Medication Request",
@@ -747,17 +725,6 @@
       },
       "name" : "Example CarePlan - ARVTreatmentExample",
       "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-vl-reason-codes"
-      },
-      "name" : "HIV VL Procedure Categories",
-      "description" : "A list of Viral Load procedure categories"
     },
     {
       "extension" : [{
@@ -791,17 +758,6 @@
       },
       "name" : "Viral load Suppressions Status",
       "description" : "A list of Viral load Statuses"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-vl-procedure-code-type"
-      },
-      "name" : "HIV VL Procedure Code type",
-      "description" : "A list of codes used to identify the type of procedure"
     },
     {
       "extension" : [{
@@ -872,17 +828,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Procedure"
-      }],
-      "reference" : {
-        "reference" : "Procedure/VLProcedureExample"
-      },
-      "name" : "Example Procedure - VLProcedureExample",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -890,17 +835,6 @@
       },
       "name" : "HIV Test Done",
       "description" : "HIV Test Done"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/vl-procedure-info"
-      },
-      "name" : "VL Procedure info",
-      "description" : "This profile is for recording the Reason for Viral Load testing."
     },
     {
       "extension" : [{

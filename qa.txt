@@ -3,11 +3,10 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.35
-Generated Wed Feb 15 09:20:50 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Wed Feb 15 10:31:25 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-enrollment-type : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-reason-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
@@ -19,7 +18,6 @@ Generated Wed Feb 15 09:20:50 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Procedure-VLProcedureExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-death : 0 / 0 / 1
@@ -32,16 +30,12 @@ Generated Wed Feb 15 09:20:50 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-suppression : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-vl-procedure-info : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-vl-reason : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-enrollment-type : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-procedure-code-type : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-vl-reason-codes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-suppression : 0 / 0 / 1
  /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
@@ -53,7 +47,6 @@ WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-ta
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
 == fsh-generated/resources/CodeSystem-cs-patient-enrollment-type.json ==
-== fsh-generated/resources/CodeSystem-cs-vl-reason-codes.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-suppression.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
@@ -65,7 +58,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Observation-ViralLoadSuppressionExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
-== fsh-generated/resources/Procedure-VLProcedureExample.json ==
 == fsh-generated/resources/StructureDefinition-art-regimen-line.json ==
 == fsh-generated/resources/StructureDefinition-date-hiv-test-done.json ==
 == fsh-generated/resources/StructureDefinition-death.json ==
@@ -78,16 +70,12 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-viral-load-suppression.json ==
-== fsh-generated/resources/StructureDefinition-vl-procedure-info.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==
-== fsh-generated/resources/ValueSet-vs-hiv-vl-reason.json ==
 == fsh-generated/resources/ValueSet-vs-patient-enrollment-type.json ==
-== fsh-generated/resources/ValueSet-vs-vl-procedure-code-type.json ==
-== fsh-generated/resources/ValueSet-vs-vl-reason-codes.json ==
 == fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
 == fsh-generated/resources/ValueSet-vs-vl-suppression.json ==
 == input/hiv-program-monitoring.xml ==

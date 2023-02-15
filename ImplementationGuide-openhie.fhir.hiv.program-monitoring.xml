@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-15T09:19:32+00:00"/>
+  <date value="2023-02-15T10:30:33+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -511,16 +511,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/cs-vl-reason-codes"/>
-      </reference>
-      <name value="HIV VL Reason codes"/>
-      <description value="A list of Viral Load test reasons"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -554,16 +544,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-hiv-vl-reason"/>
-      </reference>
-      <name value="HIV VL Reason codes"/>
-      <description value="Valueset - Viral Load test reasons"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/vs-arvtreatment-activity-type"/>
       </reference>
       <name value="ARV Treatment Medication Request"/>
@@ -578,16 +558,6 @@
       </reference>
       <name value="Example CarePlan - ARVTreatmentExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-vl-reason-codes"/>
-      </reference>
-      <name value="HIV VL Procedure Categories"/>
-      <description value="A list of Viral Load procedure categories"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -618,16 +588,6 @@
       </reference>
       <name value="Viral load Suppressions Status"/>
       <description value="A list of Viral load Statuses"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-vl-procedure-code-type"/>
-      </reference>
-      <name value="HIV VL Procedure Code type"/>
-      <description value="A list of codes used to identify the type of procedure"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -691,16 +651,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/VLProcedureExample"/>
-      </reference>
-      <name value="Example Procedure - VLProcedureExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -708,16 +658,6 @@
       </reference>
       <name value="HIV Test Done"/>
       <description value="HIV Test Done"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/vl-procedure-info"/>
-      </reference>
-      <name value="VL Procedure info"/>
-      <description value="This profile is for recording the Reason for Viral Load testing."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
