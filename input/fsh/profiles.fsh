@@ -173,46 +173,11 @@ Description: "This profile is to record the patient HIV Management Programme Enr
 * patient 1..1
 * period 1..1 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Profile: VLProcedure
 Parent: Procedure
 Id: vl-procedure-info
 Title: "VL Procedure info"
-Description: "This profile is for recording the Reason for Viral Load"
+Description: "This profile is for recording the Reason for Viral Load testing."
 * status = #completed
 * category from VSProcedureCategory (required)
 * subject 1..1

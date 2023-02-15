@@ -169,49 +169,6 @@ Description: "This resource is used for Management of a Patient's HIV Programme.
 * period.start = "2021-05-18"
 * period.end = "2021-05-18"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Instance: VLProcedureExample
 InstanceOf: VLProcedure
 Usage: #example

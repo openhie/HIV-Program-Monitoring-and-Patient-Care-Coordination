@@ -88,46 +88,6 @@ Description:  "A list of Patient Types at Enrolment"
 * $SCT#309037001 "Transfer status (finding)" 
 * include codes from system CSPatientEnrollmentType
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 CodeSystem: CSHIVVLReason
 Id: cs-vl-reason-codes
 Title: "HIV VL Reason codes"
