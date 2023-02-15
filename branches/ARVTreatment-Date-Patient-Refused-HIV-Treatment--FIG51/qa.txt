@@ -1,41 +1,65 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 0, warn = 4, info = 0
-IG Publisher Version: 1.2.35
-Generated Wed Feb 15 10:31:25 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+err = 0, warn = 8, info = 0
+IG Publisher Version: 1.2.36
+Generated Wed Feb 15 19:35:35 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Bundle-LabOrder : 0 / 0 / 11
+ /github/workspace/fsh-generated/resources/Bundle-LabRejection : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/Bundle-LabResult : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-enrollment-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-suppression : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TargetFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-TransferringFacilityEncounterExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Location-HIVServiceRequestLocationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DateHIVTestDoneExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-DeathExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-ViralLoadSuppressionExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-HIVTestResultExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-HIVOrganizationExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-HIVPatientExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Practitioner-PractitionerExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-HIVServiceRequestExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Specimen-VLSpecimenExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-HIV-lab-order : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-art-regimen-line : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-date-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-arv-treatment : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-care-next-visit : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnosis : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-diagnostic-report : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-episode-of-care : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-lab-task : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-organization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-hiv-patient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-practitioner : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-service-request-location : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-hiv-test-results : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-target-facility-encounter : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-transferring-facility-encounter : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-suppression : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-viral-load-specimen : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-HIVLabOrderCancellationTaskExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-HIVLabOrderRejectionTaskExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-HIVLabOrderTaskExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Task-HIVLabResultTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-covid19-reason-for-assessment-or-test-not-performed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-enrollment-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-test-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-suppression : 0 / 0 / 1
  /github/workspace/input/hiv-program-monitoring : 0 / 0 / 1
@@ -45,37 +69,65 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-LabCancellation.json ==
+== fsh-generated/resources/Bundle-LabOrder.json ==
+== fsh-generated/resources/Bundle-LabRejection.json ==
+== fsh-generated/resources/Bundle-LabResult.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample.json ==
+WARNING: CarePlan/ARVTreatmentRefusedExample: CarePlan.activity[0].outcomeCodeableConcept[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/CodeSystem-cs-patient-enrollment-type.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-suppression.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
+== fsh-generated/resources/DiagnosticReport-HIVLabResultsDiagnosticReportExample.json ==
 == fsh-generated/resources/Encounter-TargetFacilityEncounterExample.json ==
 == fsh-generated/resources/Encounter-TransferringFacilityEncounterExample.json ==
 == fsh-generated/resources/EpisodeOfCare-HIVEpisodeOfCareExample.json ==
+== fsh-generated/resources/Location-HIVServiceRequestLocationExample.json ==
 == fsh-generated/resources/Observation-DateHIVTestDoneExample.json ==
 == fsh-generated/resources/Observation-DeathExample.json ==
-== fsh-generated/resources/Observation-ViralLoadSuppressionExample.json ==
+== fsh-generated/resources/Observation-HIVTestResultExample.json ==
 == fsh-generated/resources/Organization-HIVOrganizationExample.json ==
 == fsh-generated/resources/Patient-HIVPatientExample.json ==
+== fsh-generated/resources/Practitioner-PractitionerExample.json ==
+== fsh-generated/resources/ServiceRequest-HIVServiceRequestExample.json ==
+== fsh-generated/resources/Specimen-VLSpecimenExample.json ==
+== fsh-generated/resources/StructureDefinition-HIV-lab-order.json ==
 == fsh-generated/resources/StructureDefinition-art-regimen-line.json ==
 == fsh-generated/resources/StructureDefinition-date-hiv-test-done.json ==
 == fsh-generated/resources/StructureDefinition-death.json ==
 == fsh-generated/resources/StructureDefinition-hiv-arv-treatment.json ==
 == fsh-generated/resources/StructureDefinition-hiv-care-next-visit.json ==
 == fsh-generated/resources/StructureDefinition-hiv-diagnosis.json ==
+== fsh-generated/resources/StructureDefinition-hiv-diagnostic-report.json ==
 == fsh-generated/resources/StructureDefinition-hiv-episode-of-care.json ==
+== fsh-generated/resources/StructureDefinition-hiv-lab-task.json ==
 == fsh-generated/resources/StructureDefinition-hiv-organization.json ==
 == fsh-generated/resources/StructureDefinition-hiv-patient.json ==
+== fsh-generated/resources/StructureDefinition-hiv-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-hiv-service-request-location.json ==
+== fsh-generated/resources/StructureDefinition-hiv-test-results.json ==
 == fsh-generated/resources/StructureDefinition-target-facility-encounter.json ==
 == fsh-generated/resources/StructureDefinition-transferring-facility-encounter.json ==
-== fsh-generated/resources/StructureDefinition-viral-load-suppression.json ==
+== fsh-generated/resources/StructureDefinition-viral-load-specimen.json ==
+== fsh-generated/resources/Task-HIVLabOrderCancellationTaskExample.json ==
+== fsh-generated/resources/Task-HIVLabOrderRejectionTaskExample.json ==
+== fsh-generated/resources/Task-HIVLabOrderTaskExample.json ==
+== fsh-generated/resources/Task-HIVLabResultTaskExample.json ==
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
+== fsh-generated/resources/ValueSet-vs-careplan-outcome.json ==
+WARNING: ValueSet/vs-careplan-outcome: ValueSet.compose[0].include[0]: Unknown System 'https://openconceptlab.org' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://openconceptlab.org. Server Error: The code system 'https://openconceptlab.org' is not known (encountered paired with code = '162572'); The code provided (https://openconceptlab.org#162572) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/vs-careplan-outcome: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'vs-careplan-outcome'): Error from server: Unable to provide support for code system https://openconceptlab.org
+== fsh-generated/resources/ValueSet-vs-covid19-reason-for-assessment-or-test-not-performed.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==
 == fsh-generated/resources/ValueSet-vs-patient-enrollment-type.json ==
+== fsh-generated/resources/ValueSet-vs-specimen-type.json ==
+== fsh-generated/resources/ValueSet-vs-test-types.json ==
 == fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
 == fsh-generated/resources/ValueSet-vs-vl-suppression.json ==
 == input/hiv-program-monitoring.xml ==
