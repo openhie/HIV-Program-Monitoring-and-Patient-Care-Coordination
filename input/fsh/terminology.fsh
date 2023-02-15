@@ -1,5 +1,6 @@
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
+Alias: $LNC = http://loinc.org
 
 CodeSystem: CSVLResultCode
 Id: cs-vl-result-code
@@ -88,42 +89,43 @@ Description:  "A list of Patient Types at Enrolment"
 * $SCT#309037001 "Transfer status (finding)" 
 * include codes from system CSPatientEnrollmentType
 
-CodeSystem: CSHIVVLReason
-Id: cs-vl-reason-codes
-Title: "HIV VL Reason codes"
-Description: "A list of Viral Load test reasons"
+ValueSet: VSSpecimenType
+Id: vs-specimen-type
+Title: "Specimen type used in Viral Load testing"
+Description:  "Specimen type used in Viral Load testing"
 * ^experimental = false
-* ^caseSensitive = true
-* #5d4e13af-92ec-4b91-a8e4-97818810e577 "Baseline Viral Load"
-* #1259 "Change regimen"
-* #163523 "Clinical failure"
-* #67143af5-c443-4a4f-a678-f3981b4fcb0f "Confirmation of treatment failure"
-* #5632 "Currently breastfeeding child"
-* #1434 "Currently pregnant"
-* #e185de1e-a9b3-4b10-86df-2300bf4476bb "Persistent low-Level viremia"
-* #c2aed192-73fc-405f-8cc2-776a4da81d59 "Recency Assay"
-* #843 "Regimen failure"
-* #162081 "Repeat"
-* #164369 "Results not available"
-* #be5d6a4a-4018-49dd-869f-273c9f5fec9e "Routine Viral Load"
+* $SCT#395058002 "Procedure by intent (procedure)"
 
-ValueSet: VSHIVVLReason
-Id: vs-hiv-vl-reason
-Title: "HIV VL Reason codes"
-Description: "Valueset - Viral Load test reasons"
+ValueSet: VSTestTypes
+Id: vs-test-types
+Title: "Test Types"
+Description: "A list of HIV test types"
 * ^experimental = false
-* include codes from system CSHIVVLReason
+* $LNC#25842-6 "HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"   
+* $LNC#25836-8 "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
 
-ValueSet: VSProcedureCategory
-Id: vs-vl-reason-codes
-Title: "HIV VL Procedure Categories"
-Description: "A list of Viral Load procedure categories"
+ValueSet: VSReasonForAssessmentOrTestNotPerformed
+Id: vs-covid19-reason-for-assessment-or-test-not-performed
+Title: "Reason for Assessment or Test Not Performed"
+Description: "A list of reasons associated with the service request for the lab order"
 * ^experimental = false
-* $SCT#108252007 "Laboratory procedure (procedure)"
-
-ValueSet: VSProcedureCodeType
-Id: vs-vl-procedure-code-type
-Title: "HIV VL Procedure Code type"
-Description: "A list of codes used to identify the type of procedure"
-* ^experimental = false
-* $SCT#315124004 "Human immunodeficiency virus viral load (procedure)"
+//Reasons for assessment
+* $SCT#428792000 "Contact of a case"
+* $SCT#171367005 "Travel Examination"
+* $SCT#308273005 "Follow-up"
+* $SCT#223366009 "Health worker"
+* $SCT#34325006 "Other frontline worker"
+* $SCT#168260004 "Post-mortem"
+* $SCT#170497006 "Quarantine"
+* $SCT#273407003 "RDT confirmatory"
+* $SCT#243790003 "Surveillance"
+* $SCT#264931009 "Symptomatic/Illness"
+* $SCT#255375007 "Voluntary" 
+//Reasons test not performed
+* $SCT#441510007 "Blood sample coagulated" 
+* $SCT#123840003 "Contaminated specimen"
+* $SCT#397933008 "Equipment failure"
+* $SCT#281264009 "Inappropriate sample container used"
+* $SCT#281268007 "Insufficient sample"
+* $SCT#281265005 "Specimen not labeled"
+* $SCT#419182006 "Supplies not available"
