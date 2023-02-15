@@ -18,7 +18,7 @@
   "name" : "VLProcedure",
   "title" : "VL Procedure info",
   "status" : "active",
-  "date" : "2023-02-14T16:15:08+00:00",
+  "date" : "2023-02-15T07:08:17+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -30,7 +30,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "This profile is for recording the Reason for Viral Load",
+  "description" : "This profile is for recording the Reason for Viral Load testing.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
