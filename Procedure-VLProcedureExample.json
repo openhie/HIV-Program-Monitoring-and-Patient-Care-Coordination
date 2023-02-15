@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "VLProcedureExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"VLProcedureExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;VLProcedureExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vl-procedure-info.html\">VL Procedure info</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Laboratory procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108252007)</span></p><p><b>code</b>: Human immunodeficiency virus viral load (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#315124004)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>reasonCode</b>: Baseline Viral Load <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-vl-reason-codes.html\">HIV VL Reason codes</a>#5d4e13af-92ec-4b91-a8e4-97818810e577)</span></p><p><b>note</b>: Additional information regarding the VL procedure (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  },
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "108252007",
+      "display" : "Laboratory procedure (procedure)"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "315124004",
+      "display" : "Human immunodeficiency virus viral load (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/HIVPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/TargetFacilityEncounterExample"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes",
+      "code" : "5d4e13af-92ec-4b91-a8e4-97818810e577",
+      "display" : "Baseline Viral Load"
+    }]
+  }],
+  "note" : [{
+    "authorReference" : {
+      "reference" : "Organization/HIVOrganizationExample"
+    },
+    "time" : "2015-02-07T13:28:17-05:00",
+    "text" : "Additional information regarding the VL procedure"
+  }]
+}

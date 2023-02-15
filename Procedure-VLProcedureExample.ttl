@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-program-monitoring/Procedure/VLProcedureExample> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "VLProcedureExample"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info";
+       fhir:index 0;
+       fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"VLProcedureExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;VLProcedureExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-vl-procedure-info.html\">VL Procedure info</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Laboratory procedure (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#108252007)</span></p><p><b>code</b>: Human immunodeficiency virus viral load (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#315124004)</span></p><p><b>subject</b>: <a href=\"Patient-HIVPatientExample.html\">Patient/HIVPatientExample</a> &quot; SMITH&quot;</p><p><b>encounter</b>: <a href=\"Encounter-TargetFacilityEncounterExample.html\">Encounter/TargetFacilityEncounterExample</a></p><p><b>reasonCode</b>: Baseline Viral Load <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-cs-vl-reason-codes.html\">HIV VL Reason codes</a>#5d4e13af-92ec-4b91-a8e4-97818810e577)</span></p><p><b>note</b>: Additional information regarding the VL procedure (By Organization/HIVOrganizationExample @Feb 7, 2015, 6:28:17 PM)</p></div>"
+  ]; # 
+  fhir:Procedure.status [ fhir:value "completed"]; # 
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:108252007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "108252007" ];
+       fhir:Coding.display [ fhir:value "Laboratory procedure (procedure)" ]
+     ]
+  ]; # 
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:315124004;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "315124004" ];
+       fhir:Coding.display [ fhir:value "Human immunodeficiency virus viral load (procedure)" ]
+     ]
+  ]; # 
+  fhir:Procedure.subject [
+     fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Patient/HIVPatientExample>;
+     fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
+  ]; # 
+  fhir:Procedure.encounter [
+     fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Encounter/TargetFacilityEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
+  ]; # 
+  fhir:Procedure.reasonCode [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes" ];
+       fhir:Coding.code [ fhir:value "5d4e13af-92ec-4b91-a8e4-97818810e577" ];
+       fhir:Coding.display [ fhir:value "Baseline Viral Load" ]
+     ]
+  ]; # 
+  fhir:Procedure.note [
+     fhir:index 0;
+     fhir:Annotation.authorReference [
+       fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Organization/HIVOrganizationExample>;
+       fhir:Reference.reference [ fhir:value "Organization/HIVOrganizationExample" ]
+     ];
+     fhir:Annotation.time [ fhir:value "2015-02-07T13:28:17-05:00"^^xsd:dateTime ];
+     fhir:Annotation.text [ fhir:value "Additional information regarding the VL procedure" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://openhie.org/fhir/hiv-program-monitoring/Procedure/VLProcedureExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
