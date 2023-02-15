@@ -180,7 +180,8 @@ Title: "VL Procedure info"
 Description: "This profile is for recording the Reason for Viral Load testing."
 * status = #completed
 * category from VSProcedureCategory (required)
+* code from VSProcedureCodeType (required)
 * subject 1..1
 * encounter 1..1
 * reasonCode from VSHIVVLReason (required)
-* code from VSProcedureCodeType (required)
+* note 0..1

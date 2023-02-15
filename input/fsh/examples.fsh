@@ -176,9 +176,12 @@ Title: "VL Procedure info example"
 Description: "VL Procedure info example"
 * status = #completed
 * category  = $SCT#108252007 "Laboratory procedure (procedure)"
+* code = $SCT#315124004 "Human immunodeficiency virus viral load (procedure)"
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * reasonCode.coding.code = #5d4e13af-92ec-4b91-a8e4-97818810e577
 * reasonCode.coding.system  = "http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"
 * reasonCode.coding.display = "Baseline Viral Load"
-* code = $SCT#315124004 "Human immunodeficiency virus viral load (procedure)"
+* note.text = "Additional information regarding the VL procedure"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
