@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Program Monitoring and Patient Care Coordination"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-15T07:09:22+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-15T09:10:23+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -738,6 +738,22 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Observation/HIVTestResultExample>;
+         fhir:Reference.reference [ fhir:value "Observation/HIVTestResultExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - HIVTestResultExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results>
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Condition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -750,7 +766,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis>
        ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -763,20 +779,23 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Type at Enrolment" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Patient Types at Enrolment" ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/cs-vl-reason-codes" ]
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Practitioner/PractitionerExample>;
+         fhir:Reference.reference [ fhir:value "Practitioner/PractitionerExample" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV VL Reason codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Viral Load test reasons" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Practitioner - PractitionerExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner>
+       ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -789,7 +808,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV Treatment" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record prescribed ARV regimen against a given therapeutic line" ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-test-types>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-test-types" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Test Types" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of HIV test types" ]
+     ], [
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -802,7 +834,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnosis" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Confirmation of the diagnosis" ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -815,20 +847,23 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A patient resource for an HIV Patient" ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-vl-reason>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-hiv-vl-reason" ]
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Bundle/LabOrder>;
+         fhir:Reference.reference [ fhir:value "Bundle/LabOrder" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV VL Reason codes" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Valueset - Viral Load test reasons" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - LabOrder" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner>
+       ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -841,7 +876,36 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV Treatment Medication Request" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ARV Treatment Medication Request" ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-covid19-reason-for-assessment-or-test-not-performed>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-covid19-reason-for-assessment-or-test-not-performed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Reason for Assessment or Test Not Performed" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of reasons associated with the service request for the lab order" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Bundle/LabCancellation>;
+         fhir:Reference.reference [ fhir:value "Bundle/LabCancellation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - LabCancellation" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
+       ]
+     ], [
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -857,20 +921,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment>
        ]
      ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-reason-codes>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-vl-reason-codes" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV VL Procedure Categories" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Viral Load procedure categories" ]
-     ], [
-       fhir:index 13;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -886,7 +937,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -899,7 +950,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Next Appointment Date" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A date representing the patient's next scheduled appointment" ]
      ], [
-       fhir:index 15;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -912,20 +963,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral load Suppressions Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Viral load Statuses" ]
      ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-procedure-code-type>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-vl-procedure-code-type" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV VL Procedure Code type" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of codes used to identify the type of procedure" ]
-     ], [
-       fhir:index 17;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -941,7 +979,20 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient>
        ]
      ], [
-       fhir:index 18;
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnostic-report>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-diagnostic-report" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Diagnostic Report" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A report as a result of the lab task being completed" ]
+     ], [
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -954,7 +1005,36 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Episode Of Care" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the patient HIV Management Programme Enrollment details." ]
      ], [
-       fhir:index 19;
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/HIV-lab-order>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/HIV-lab-order" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Order" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A service request that initiates the need for the lab to collect the test sample" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "DiagnosticReport" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/DiagnosticReport/HIVLabResultsDiagnosticReportExample>;
+         fhir:Reference.reference [ fhir:value "DiagnosticReport/HIVLabResultsDiagnosticReportExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example DiagnosticReport - HIVLabResultsDiagnosticReportExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnostic-report";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnostic-report>
+       ]
+     ], [
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -970,7 +1050,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -983,23 +1063,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Organization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization providing HIV Testing Services" ]
      ], [
-       fhir:index 21;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Observation/ViralLoadSuppressionExample>;
-         fhir:Reference.reference [ fhir:value "Observation/ViralLoadSuppressionExample" ]
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-lab-task" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Observation - ViralLoadSuppressionExample" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression";
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression>
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Task" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Assists with tracking the state of the lab order and its completion status" ]
      ], [
-       fhir:index 22;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1012,23 +1089,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Death" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of possible HIV deaths" ]
      ], [
-       fhir:index 23;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Procedure" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Procedure/VLProcedureExample>;
-         fhir:Reference.reference [ fhir:value "Procedure/VLProcedureExample" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Procedure - VLProcedureExample" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info";
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info>
-       ]
-     ], [
-       fhir:index 24;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1041,20 +1102,36 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Test Done" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIV Test Done" ]
      ], [
-       fhir:index 25;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/vl-procedure-info>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/vl-procedure-info" ]
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-service-request-location" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VL Procedure info" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is for recording the Reason for Viral Load testing." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Order Request Location" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "What is the location of the organization responsible for conducting the examination of the individual's sample?" ]
      ], [
-       fhir:index 26;
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Task/HIVLabOrderCancellationTaskExample>;
+         fhir:Reference.reference [ fhir:value "Task/HIVLabOrderCancellationTaskExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Task - HIVLabOrderCancellationTaskExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
+       ]
+     ], [
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1067,7 +1144,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Regimen Lines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of ART Regimen Lines" ]
      ], [
-       fhir:index 27;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1080,7 +1157,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Target Facility Encounter" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the facility the patient is being transferred to" ]
      ], [
-       fhir:index 28;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1093,20 +1170,23 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Death" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the death of a patient observation" ]
      ], [
-       fhir:index 29;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+         fhir:Extension.valueString [ fhir:value "Specimen" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/viral-load-suppression" ]
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Specimen/VLSpecimenExample>;
+         fhir:Reference.reference [ fhir:value "Specimen/VLSpecimenExample" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Suppression" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record a Viral Load Suppression observation for a patient" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Specimen - VLSpecimenExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen>
+       ]
      ], [
-       fhir:index 30;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1119,7 +1199,97 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ART Regimen Line" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ART Regimen Line" ]
      ], [
-       fhir:index 31;
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/viral-load-specimen" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Specimen" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The test sample that was collected for the initiated lab order" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Task/HIVLabOrderTaskExample>;
+         fhir:Reference.reference [ fhir:value "Task/HIVLabOrderTaskExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Task - HIVLabOrderTaskExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
+       ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Location/HIVServiceRequestLocationExample>;
+         fhir:Reference.reference [ fhir:value "Location/HIVServiceRequestLocationExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Location - HIVServiceRequestLocationExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location>
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-test-results" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lab Results" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The result of the lab test which determines whether the patient is infected with HIV or not" ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Bundle/LabResult>;
+         fhir:Reference.reference [ fhir:value "Bundle/LabResult" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - LabResult" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner>
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Task/HIVLabResultTaskExample>;
+         fhir:Reference.reference [ fhir:value "Task/HIVLabResultTaskExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Task - HIVLabResultTaskExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
+       ]
+     ], [
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1135,7 +1305,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1148,7 +1318,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Date HIV Test Done" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile is to record the Date when HIV test was done for a patient" ]
      ], [
-       fhir:index 33;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1161,7 +1331,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HIV Diagnosis" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of possible HIV diagnoses" ]
      ], [
-       fhir:index 34;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1174,7 +1344,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral Load Result Code" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Viral Load Result Code" ]
      ], [
-       fhir:index 35;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1187,7 +1357,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Type at Enrolment" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Custom Patient Types at Enrolment" ]
      ], [
-       fhir:index 36;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1200,7 +1370,81 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral load Suppressions Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Viral load Statuses" ]
      ], [
-       fhir:index 37;
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Bundle/LabRejection>;
+         fhir:Reference.reference [ fhir:value "Bundle/LabRejection" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - LabRejection" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/hiv-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The healthcare professional who has been assigned to a given lab task" ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-specimen-type" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen type used in Viral Load testing" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specimen type used in Viral Load testing" ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ServiceRequest/HIVServiceRequestExample>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/HIVServiceRequestExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example ServiceRequest - HIVServiceRequestExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/HIV-lab-order";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/HIV-lab-order>
+       ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Task" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Task/HIVLabOrderRejectionTaskExample>;
+         fhir:Reference.reference [ fhir:value "Task/HIVLabOrderRejectionTaskExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Task - HIVLabOrderRejectionTaskExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
+       ]
+     ], [
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1216,7 +1460,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization>
        ]
      ], [
-       fhir:index 38;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

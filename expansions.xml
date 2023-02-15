@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="9f97d802-3d7f-490b-beb9-96181391e71e"/>
+  <id value="107ab807-547d-415c-83d9-da4635ee661d"/>
   <meta>
-    <lastUpdated value="2023-02-15T07:09:22.209+00:00"/>
+    <lastUpdated value="2023-02-15T09:10:23.270+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -47,7 +47,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -67,8 +67,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:85ddd22d-0eba-4565-bf65-9562eeeb3405"/>
-          <timestamp value="2023-02-15T07:09:48+00:00"/>
+          <identifier value="urn:uuid:06fde2da-e310-497b-b198-e5e97f262a89"/>
+          <timestamp value="2023-02-15T09:10:57+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -158,7 +158,7 @@
         <title value="Patient Type at Enrolment"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -178,8 +178,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:16a38565-421a-4af1-80b2-1d5815028b01"/>
-          <timestamp value="2023-02-15T07:09:49+00:00"/>
+          <identifier value="urn:uuid:6a23b9c0-1f64-4afd-bd16-dd4624950bbc"/>
+          <timestamp value="2023-02-15T09:10:57+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -222,17 +222,15 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-vl-reason"/>
+    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-test-types"/>
     <resource>
       <ValueSet>
-        <id value="vs-hiv-vl-reason"/>
+        <id value="vs-test-types"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 12 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cs-vl-reason-codes.html">HIV VL Reason codes v0.1.0-test (CodeSystem)</a>
-            </p>
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -247,110 +245,30 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-5d4e13af-92ec-4b91-a8e4-97818810e577"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-5d4e13af-92ec-4b91-a8e4-97818810e577">5d4e13af-92ec-4b91-a8e4-97818810e577</a>
+                  <a name="http---loinc.org-25842-6"> </a>  
+                  <a href="https://loinc.org/25842-6/">25842-6</a>
                 </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Baseline Viral Load</td>
+                <td>http://loinc.org</td>
+                <td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-1259"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-1259">1259</a>
+                  <a name="http---loinc.org-25836-8"> </a>  
+                  <a href="https://loinc.org/25836-8/">25836-8</a>
                 </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Change regimen</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-163523"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-163523">163523</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Clinical failure</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-67143af5-c443-4a4f-a678-f3981b4fcb0f"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-67143af5-c443-4a4f-a678-f3981b4fcb0f">67143af5-c443-4a4f-a678-f3981b4fcb0f</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Confirmation of treatment failure</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-5632"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-5632">5632</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Currently breastfeeding child</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-1434"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-1434">1434</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Currently pregnant</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-e185de1e-a9b3-4b10-86df-2300bf4476bb"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-e185de1e-a9b3-4b10-86df-2300bf4476bb">e185de1e-a9b3-4b10-86df-2300bf4476bb</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Persistent low-Level viremia</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-c2aed192-73fc-405f-8cc2-776a4da81d59"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-c2aed192-73fc-405f-8cc2-776a4da81d59">c2aed192-73fc-405f-8cc2-776a4da81d59</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Recency Assay</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-843"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-843">843</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Regimen failure</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-162081"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-162081">162081</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Repeat</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-164369"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-164369">164369</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Results not available</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---openhie.org-fhir-hiv-program-monitoring-CodeSystem-cs-vl-reason-codes-be5d6a4a-4018-49dd-869f-273c9f5fec9e"> </a>  
-                  <a href="CodeSystem-cs-vl-reason-codes.html#cs-vl-reason-codes-be5d6a4a-4018-49dd-869f-273c9f5fec9e">be5d6a4a-4018-49dd-869f-273c9f5fec9e</a>
-                </td>
-                <td>http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes</td>
-                <td>Routine Viral Load</td>
+                <td>http://loinc.org</td>
+                <td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-vl-reason"/>
+        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-test-types"/>
         <version value="0.1.0-test"/>
-        <name value="VSHIVVLReason"/>
-        <title value="HIV VL Reason codes"/>
+        <name value="VSTestTypes"/>
+        <title value="Test Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -362,7 +280,7 @@
             <value value="info@jembi.org"/>
           </telecom>
         </contact>
-        <description value="Valueset - Viral Load test reasons"/>
+        <description value="A list of HIV test types"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -370,76 +288,30 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:43f9c2b7-3786-4310-a402-83641da5641c"/>
-          <timestamp value="2023-02-15T07:09:55+00:00"/>
-          <total value="12"/>
+          <identifier value="urn:uuid:d445b869-d205-4041-930f-c2c63bccdfa3"/>
+          <timestamp value="2023-02-15T09:11:00+00:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
             <name value="version"/>
-            <valueUri value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes|0.1.0-test"/>
+            <valueUri value="http://loinc.org|2.73"/>
           </parameter>
           <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="5d4e13af-92ec-4b91-a8e4-97818810e577"/>
-            <display value="Baseline Viral Load"/>
+            <system value="http://loinc.org"/>
+            <code value="25842-6"/>
+            <display value="HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection"/>
           </contains>
           <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="1259"/>
-            <display value="Change regimen"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="163523"/>
-            <display value="Clinical failure"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="67143af5-c443-4a4f-a678-f3981b4fcb0f"/>
-            <display value="Confirmation of treatment failure"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="5632"/>
-            <display value="Currently breastfeeding child"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="1434"/>
-            <display value="Currently pregnant"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="e185de1e-a9b3-4b10-86df-2300bf4476bb"/>
-            <display value="Persistent low-Level viremia"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="c2aed192-73fc-405f-8cc2-776a4da81d59"/>
-            <display value="Recency Assay"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="843"/>
-            <display value="Regimen failure"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="162081"/>
-            <display value="Repeat"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="164369"/>
-            <display value="Results not available"/>
-          </contains>
-          <contains>
-            <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-reason-codes"/>
-            <code value="be5d6a4a-4018-49dd-869f-273c9f5fec9e"/>
-            <display value="Routine Viral Load"/>
+            <system value="http://loinc.org"/>
+            <code value="25836-8"/>
+            <display value="HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -484,7 +356,7 @@
         <title value="ARV Treatment Medication Request"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -504,8 +376,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eba07888-a3f4-48c0-83d2-e793b7980c9a"/>
-          <timestamp value="2023-02-15T07:09:55+00:00"/>
+          <identifier value="urn:uuid:bd8d6745-3fd1-494c-9339-b8e02aa331df"/>
+          <timestamp value="2023-02-15T09:11:02+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -529,14 +401,14 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-reason-codes"/>
+    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-covid19-reason-for-assessment-or-test-not-performed"/>
     <resource>
       <ValueSet>
-        <id value="vs-vl-reason-codes"/>
+        <id value="vs-covid19-reason-for-assessment-or-test-not-performed"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 18 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <table class="codes">
               <tr>
@@ -552,22 +424,158 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-108252007"> </a>  
-                  <a href="http://snomed.info/id/108252007">108252007</a>
+                  <a name="http---snomed.info-sct-428792000"> </a>  
+                  <a href="http://snomed.info/id/428792000">428792000</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Laboratory procedure (procedure)</td>
+                <td>Contact of a case</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-171367005"> </a>  
+                  <a href="http://snomed.info/id/171367005">171367005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Travel Examination</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-308273005"> </a>  
+                  <a href="http://snomed.info/id/308273005">308273005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Follow-up</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-223366009"> </a>  
+                  <a href="http://snomed.info/id/223366009">223366009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Health worker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-34325006"> </a>  
+                  <a href="http://snomed.info/id/34325006">34325006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Other frontline worker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-168260004"> </a>  
+                  <a href="http://snomed.info/id/168260004">168260004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Post-mortem</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-170497006"> </a>  
+                  <a href="http://snomed.info/id/170497006">170497006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Quarantine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-273407003"> </a>  
+                  <a href="http://snomed.info/id/273407003">273407003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>RDT confirmatory</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-243790003"> </a>  
+                  <a href="http://snomed.info/id/243790003">243790003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Surveillance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-264931009"> </a>  
+                  <a href="http://snomed.info/id/264931009">264931009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Symptomatic/Illness</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-255375007"> </a>  
+                  <a href="http://snomed.info/id/255375007">255375007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Voluntary</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-441510007"> </a>  
+                  <a href="http://snomed.info/id/441510007">441510007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Blood sample coagulated</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-123840003"> </a>  
+                  <a href="http://snomed.info/id/123840003">123840003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Contaminated specimen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-397933008"> </a>  
+                  <a href="http://snomed.info/id/397933008">397933008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Equipment failure</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-281264009"> </a>  
+                  <a href="http://snomed.info/id/281264009">281264009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Inappropriate sample container used</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-281268007"> </a>  
+                  <a href="http://snomed.info/id/281268007">281268007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Insufficient sample</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-281265005"> </a>  
+                  <a href="http://snomed.info/id/281265005">281265005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Specimen not labeled</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-419182006"> </a>  
+                  <a href="http://snomed.info/id/419182006">419182006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Supplies not available</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-reason-codes"/>
+        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-covid19-reason-for-assessment-or-test-not-performed"/>
         <version value="0.1.0-test"/>
-        <name value="VSProcedureCategory"/>
-        <title value="HIV VL Procedure Categories"/>
+        <name value="VSReasonForAssessmentOrTestNotPerformed"/>
+        <title value="Reason for Assessment or Test Not Performed"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -579,7 +587,7 @@
             <value value="info@jembi.org"/>
           </telecom>
         </contact>
-        <description value="A list of Viral Load procedure categories"/>
+        <description value="A list of reasons associated with the service request for the lab order"/>
         <jurisdiction>
           <coding>
             <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -587,9 +595,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:11934b82-023e-451f-ae1d-2f1e3f0ac975"/>
-          <timestamp value="2023-02-15T07:09:56+00:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:f9ab30e4-a6ea-430b-b08c-298d37f6feb1"/>
+          <timestamp value="2023-02-15T09:11:03+00:00"/>
+          <total value="18"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -604,91 +612,93 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="108252007"/>
-            <display value="Laboratory procedure (procedure)"/>
+            <code value="428792000"/>
+            <display value="Contact of a case"/>
           </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-procedure-code-type"/>
-    <resource>
-      <ValueSet>
-        <id value="vs-vl-procedure-code-type"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-315124004"> </a>  
-                  <a href="http://snomed.info/id/315124004">315124004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Human immunodeficiency virus viral load (procedure)</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-procedure-code-type"/>
-        <version value="0.1.0-test"/>
-        <name value="VSProcedureCodeType"/>
-        <title value="HIV VL Procedure Code type"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
-        <publisher value="Jembi Health Systems"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.jembi.org"/>
-          </telecom>
-          <telecom>
-            <system value="email"/>
-            <value value="info@jembi.org"/>
-          </telecom>
-        </contact>
-        <description value="A list of codes used to identify the type of procedure"/>
-        <jurisdiction>
-          <coding>
-            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-            <code value="001"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:12f5e4b7-759f-4e18-baad-cb384c283557"/>
-          <timestamp value="2023-02-15T07:09:56+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
-          </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="315124004"/>
-            <display value="Human immunodeficiency virus viral load (procedure)"/>
+            <code value="171367005"/>
+            <display value="Travel Examination"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="308273005"/>
+            <display value="Follow-up"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="223366009"/>
+            <display value="Health worker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="34325006"/>
+            <display value="Other frontline worker"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="168260004"/>
+            <display value="Post-mortem"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="170497006"/>
+            <display value="Quarantine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="273407003"/>
+            <display value="RDT confirmatory"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="243790003"/>
+            <display value="Surveillance"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="264931009"/>
+            <display value="Symptomatic/Illness"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="255375007"/>
+            <display value="Voluntary"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="441510007"/>
+            <display value="Blood sample coagulated"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="123840003"/>
+            <display value="Contaminated specimen"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="397933008"/>
+            <display value="Equipment failure"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281264009"/>
+            <display value="Inappropriate sample container used"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281268007"/>
+            <display value="Insufficient sample"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="281265005"/>
+            <display value="Specimen not labeled"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="419182006"/>
+            <display value="Supplies not available"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -733,7 +743,7 @@
         <title value="Death"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -753,8 +763,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b5461e5f-029f-4080-b752-85ba8284b294"/>
-          <timestamp value="2023-02-15T07:09:58+00:00"/>
+          <identifier value="urn:uuid:6c71af84-001b-4f1e-bf31-948cf4c3b9d8"/>
+          <timestamp value="2023-02-15T09:11:07+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -816,7 +826,7 @@
         <title value="HIV Test Done"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -836,8 +846,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:41fe0eea-645d-4a3c-86a3-ea91bf0a1c1c"/>
-          <timestamp value="2023-02-15T07:09:58+00:00"/>
+          <identifier value="urn:uuid:39381bbd-b478-4d77-885d-b379315f7b3e"/>
+          <timestamp value="2023-02-15T09:11:07+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -915,7 +925,7 @@
         <title value="ART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -935,8 +945,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:545ea117-bff5-440f-a931-9ddb4b00e89e"/>
-          <timestamp value="2023-02-15T07:09:59+00:00"/>
+          <identifier value="urn:uuid:7c8931db-19a4-4d26-bc7d-3c8cf949a8a4"/>
+          <timestamp value="2023-02-15T09:11:08+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1008,7 +1018,7 @@
         <title value="HIV Diagnosis"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1028,8 +1038,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eee31648-e80f-444a-8d18-8a43b26af93f"/>
-          <timestamp value="2023-02-15T07:10:05+00:00"/>
+          <identifier value="urn:uuid:2afc9893-3e36-4e01-9077-e904bd947360"/>
+          <timestamp value="2023-02-15T09:11:13+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1109,7 +1119,7 @@
         <title value="Viral load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-15T07:09:22+00:00"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1129,8 +1139,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e2d5c660-1159-47b5-9aa7-33f6ca2554b6"/>
-          <timestamp value="2023-02-15T07:10:05+00:00"/>
+          <identifier value="urn:uuid:ddc93bed-591a-4c04-80f9-8552ff3a5142"/>
+          <timestamp value="2023-02-15T09:11:13+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1154,6 +1164,89 @@
             <system value="http://openhie.org/fhir/hiv-program-monitoring/CodeSystem/cs-vl-suppression"/>
             <code value="UNK"/>
             <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-specimen-type"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-395058002"> </a>  
+                  <a href="http://snomed.info/id/395058002">395058002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Procedure by intent (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type"/>
+        <version value="0.1.0-test"/>
+        <name value="VSSpecimenType"/>
+        <title value="Specimen type used in Viral Load testing"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-02-15T09:10:23+00:00"/>
+        <publisher value="Jembi Health Systems"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.jembi.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@jembi.org"/>
+          </telecom>
+        </contact>
+        <description value="Specimen type used in Viral Load testing"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:deb14cb2-b424-4ddf-8cc8-ae9447ee28de"/>
+          <timestamp value="2023-02-15T09:11:14+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="395058002"/>
+            <display value="Procedure by intent (procedure)"/>
           </contains>
         </expansion>
       </ValueSet>
