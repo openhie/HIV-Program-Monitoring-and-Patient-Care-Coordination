@@ -168,6 +168,13 @@
     "name" : "VSARVMedicationRequest"
   },
   {
+    "id" : "vs-careplan-outcome",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-careplan-outcome",
+    "version" : "0.1.0-test",
+    "name" : "VSCarePlanActivityOutcome"
+  },
+  {
     "id" : "vs-covid19-reason-for-assessment-or-test-not-performed",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-covid19-reason-for-assessment-or-test-not-performed",
