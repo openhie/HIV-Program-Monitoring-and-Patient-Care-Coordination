@@ -21,10 +21,16 @@
     }
   ],
   "profiles": {
+    "ServiceRequest": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/HIV-lab-order",
+        "title": "Lab Order"
+      }
+    ],
     "Observation": [
       {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
-        "title": "Viral Load Suppression"
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results",
+        "title": "Lab Results"
       }
     ],
     "CarePlan": [
@@ -39,10 +45,22 @@
         "title": "Diagnosis"
       }
     ],
+    "DiagnosticReport": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnostic-report",
+        "title": "Diagnostic Report"
+      }
+    ],
     "EpisodeOfCare": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care",
         "title": "HIV Episode Of Care"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task",
+        "title": "Lab Task"
       }
     ],
     "Organization": [
@@ -55,6 +73,18 @@
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
         "title": "Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner",
+        "title": "Practitioner"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location",
+        "title": "Lab Order Request Location"
       }
     ],
     "Encounter": [
@@ -89,6 +119,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"

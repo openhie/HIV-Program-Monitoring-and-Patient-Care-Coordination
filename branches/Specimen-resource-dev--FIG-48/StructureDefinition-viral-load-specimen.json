@@ -18,7 +18,7 @@
   "name" : "VLSpecimen",
   "title" : "Viral Load Specimen",
   "status" : "active",
-  "date" : "2023-02-14T14:33:42+00:00",
+  "date" : "2023-02-15T09:10:23+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -30,7 +30,7 @@
       "value" : "info@jembi.org"
     }]
   }],
-  "description" : "This profile is to record the Viral sample collection date and related details.",
+  "description" : "The test sample that was collected for the initiated lab order",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
