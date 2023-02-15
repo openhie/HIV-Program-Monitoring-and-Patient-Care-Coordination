@@ -659,7 +659,7 @@ Sub-departmentServiceDiscipline","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","The subject of the report - usually, but not always, the patient","The subject of the report. Usually, but not always, this is a patient. However, diagnostic services also perform analyses on specimens collected from a variety of other sources.","","SHALL know the subject context.","","","","","","","",,,,,"",,,,"DiagnosticReport.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-diagnostic-report","DiagnosticReport.encounter","DiagnosticReport.encounter","","Context
-","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
+","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Health care event when test ordered","The healthcare event  (e.g. a patient and healthcare provider interaction) which this DiagnosticReport is about.","This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter  but still be tied to the context of the encounter  (e.g. pre-admission laboratory tests).","Links the request to the Encounter context.","","","","","","","",,,,,"",,,,"DiagnosticReport.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "hiv-diagnostic-report","DiagnosticReport.effective[x]","DiagnosticReport.effective[x]","","Observation time

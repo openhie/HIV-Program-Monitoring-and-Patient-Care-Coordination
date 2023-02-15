@@ -21,6 +21,9 @@
   <subject>
     <reference value="Patient/HIVPatientExample"/>
   </subject>
+  <encounter>
+    <reference value="Encounter/TargetFacilityEncounterExample"/>
+  </encounter>
   <performer>
     <reference value="Practitioner/PractitionerExample"/>
   </performer>

@@ -21,6 +21,9 @@
   "subject" : {
     "reference" : "Patient/HIVPatientExample"
   },
+  "encounter" : {
+    "reference" : "Encounter/TargetFacilityEncounterExample"
+  },
   "performer" : [{
     "reference" : "Practitioner/PractitionerExample"
   }],

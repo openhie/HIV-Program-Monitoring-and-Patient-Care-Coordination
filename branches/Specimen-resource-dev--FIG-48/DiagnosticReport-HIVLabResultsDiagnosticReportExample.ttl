@@ -38,6 +38,10 @@
      fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Patient/HIVPatientExample>;
      fhir:Reference.reference [ fhir:value "Patient/HIVPatientExample" ]
   ]; # 
+  fhir:DiagnosticReport.encounter [
+     fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Encounter/TargetFacilityEncounterExample>;
+     fhir:Reference.reference [ fhir:value "Encounter/TargetFacilityEncounterExample" ]
+  ]; # 
   fhir:DiagnosticReport.performer [
      fhir:index 0;
      fhir:link <http://openhie.org/fhir/hiv-program-monitoring/Practitioner/PractitionerExample>;
