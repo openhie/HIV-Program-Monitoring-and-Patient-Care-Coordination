@@ -312,7 +312,8 @@ Description: "Covid19 Lab Results Diagnostic Report example"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #final
 * code = $LNC#25836-8 
-* subject = Reference(HIVPatientExample) 
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
 * performer = Reference(PractitionerExample)
 * result = Reference(HIVTestResultExample)
 * conclusion = "Some conclusion text"

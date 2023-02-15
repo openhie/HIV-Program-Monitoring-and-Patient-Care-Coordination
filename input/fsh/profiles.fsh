@@ -247,8 +247,8 @@ Description: "Assists with tracking the state of the lab order and its completio
 * intent = #order
 * executionPeriod 1..1
 * lastModified 0..1
-* requester
-* owner
+* requester 0..1
+* owner 0..1
 * note 0..1
 * output 0..*
 * output.type.coding.code from VSVLResultCode (required)
@@ -263,6 +263,7 @@ Description: "A report as a result of the lab task being completed"
 * status = #final
 * code from VSTestTypes (required)
 * subject 1..1
+* encounter 1..1
 * performer 1..1
 * result 1..1
 * conclusion 0..1
