@@ -21,10 +21,16 @@
     }
   ],
   "profiles": {
+    "ServiceRequest": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/HIV-lab-order",
+        "title": "Lab Order"
+      }
+    ],
     "Observation": [
       {
-        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-suppression",
-        "title": "Viral Load Suppression"
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results",
+        "title": "Lab Results"
       }
     ],
     "CarePlan": [
@@ -39,10 +45,22 @@
         "title": "Diagnosis"
       }
     ],
+    "DiagnosticReport": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnostic-report",
+        "title": "Diagnostic Report"
+      }
+    ],
     "EpisodeOfCare": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care",
         "title": "HIV Episode Of Care"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task",
+        "title": "Lab Task"
       }
     ],
     "Organization": [
@@ -57,6 +75,18 @@
         "title": "Patient"
       }
     ],
+    "Practitioner": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner",
+        "title": "Practitioner"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location",
+        "title": "Lab Order Request Location"
+      }
+    ],
     "Encounter": [
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
@@ -65,6 +95,12 @@
       {
         "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter",
         "title": "Transferring Facility Encounter"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen",
+        "title": "Viral Load Specimen"
       }
     ]
   },
@@ -83,6 +119,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
@@ -121,9 +160,11 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line": [
+      "Bundle.entry.resource.activity.detail",
       "CarePlan.activity.detail"
     ],
     "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit": [
+      "Bundle.entry.resource",
       "Encounter"
     ]
   }
