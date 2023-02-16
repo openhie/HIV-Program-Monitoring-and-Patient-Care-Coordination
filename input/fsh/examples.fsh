@@ -221,7 +221,7 @@ Description: "HIV Lab Order example"
 * requester = Reference(PractitionerExample)
 * locationReference = Reference(HIVServiceRequestLocationExample)
 * doNotPerform = false
-* reasonCode = $SCT#397933008
+* reasonCode = $SCT#428450006
 * specimen = Reference(VLSpecimenExample)
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.text = "additional notes here"
@@ -329,7 +329,7 @@ Description: "ARVCarePlan Refused example"
 * encounter = Reference(TargetFacilityEncounterExample)
 * period.start = "2021-12-01"
 * period.end = "2022-12-01"
-* activity.outcomeCodeableConcept.coding.code = $CIEL#162572 "Date patient refused HIV care/treatment"
+* activity.outcomeCodeableConcept.coding.code = $CIEL#162572
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #stopped

@@ -105,22 +105,19 @@ Description: "A list of HIV test types"
 * $LNC#25836-8 "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
 
 ValueSet: VSReasonForAssessmentOrTestNotPerformed
-Id: vs-covid19-reason-for-assessment-or-test-not-performed
+Id: vs-reason-for-assessment-or-test-not-performed
 Title: "Reason for Assessment or Test Not Performed"
 Description: "A list of reasons associated with the service request for the lab order"
 * ^experimental = false
 //Reasons for assessment
-* $SCT#428792000 "Contact of a case"
-* $SCT#171367005 "Travel Examination"
-* $SCT#308273005 "Follow-up"
-* $SCT#223366009 "Health worker"
-* $SCT#34325006 "Other frontline worker"
-* $SCT#168260004 "Post-mortem"
-* $SCT#170497006 "Quarantine"
-* $SCT#273407003 "RDT confirmatory"
-* $SCT#243790003 "Surveillance"
-* $SCT#264931009 "Symptomatic/Illness"
-* $SCT#255375007 "Voluntary" 
+* $SCT#77386006 "Currently pregnant"
+* $SCT#428450006 "Repeat"
+* $SCT#171111007 "Results not available"
+* $SCT#266721009 "Absent response to treatment"
+* $SCT#170564007 "Chronic disease - treatment changed (finding)"
+* $SCT#413712001 "Breastfeeding (mother) (observable entity)"
+* $SCT#315124004 "Baseline Viral Load / Routine Viral Load"
+* $SCT#2528003 "Persistent low-Level viraemia"
 //Reasons test not performed
 * $SCT#441510007 "Blood sample coagulated" 
 * $SCT#123840003 "Contaminated specimen"
