@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-16T13:15:00+00:00"/>
+  <date value="2023-02-16T13:21:24+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -937,7 +937,7 @@
         <reference value="ValueSet/vs-careplan-outcome"/>
       </reference>
       <name value="ARV treatment outcomes"/>
-      <description value="Value-set for ARV treatment plan outcomes"/>
+      <description value="ARV treatment plan outcomes"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
