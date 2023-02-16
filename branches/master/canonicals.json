@@ -168,13 +168,6 @@
     "name" : "VSARVMedicationRequest"
   },
   {
-    "id" : "vs-covid19-reason-for-assessment-or-test-not-performed",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-covid19-reason-for-assessment-or-test-not-performed",
-    "version" : "0.1.0-test",
-    "name" : "VSReasonForAssessmentOrTestNotPerformed"
-  },
-  {
     "id" : "vs-hiv-death",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
@@ -201,6 +194,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type",
     "version" : "0.1.0-test",
     "name" : "VSPatientEnrollmentType"
+  },
+  {
+    "id" : "vs-reason-for-assessment-or-test-not-performed",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-reason-for-assessment-or-test-not-performed",
+    "version" : "0.1.0-test",
+    "name" : "VSReasonForAssessmentOrTestNotPerformed"
   },
   {
     "id" : "vs-specimen-type",
