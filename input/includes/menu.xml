@@ -4,6 +4,7 @@
 	{% include custom.css %}
 </style>
 
+<!--
 <ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
 	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
 		<ul>
@@ -48,6 +49,18 @@
 				</ul>
 			</li>
 			
+			<li><a href="referenced-sources.html">References</a></li>
+			<li><a href="artifacts.html">Artifacts</a></li>
+			<li><a href="toc.html">Table of Contents</a></li>
+		</ul>
+    </li>
+</ul> 
+-->
+
+<ul id="mainMenuOptions" xmlns="http://www.w3.org/1999/xhtml" class="dropdown">
+	<li><a href="#" style="font-size: 12px; text-decoration: none;">Menu <b class="caret"></b></a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="referenced-sources.html">References</a></li>
 			<li><a href="artifacts.html">Artifacts</a></li>
 			<li><a href="toc.html">Table of Contents</a></li>
