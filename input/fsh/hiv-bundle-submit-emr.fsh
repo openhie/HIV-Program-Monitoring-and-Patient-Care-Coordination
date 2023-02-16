@@ -4,10 +4,6 @@ Usage: #example
 Title: "HIV Submit EMR Bundle Example"
 Description: "HIV Submit EMR Bundle Example"
 * type = #transaction
-* entry[+].fullUrl = "Organization/HIVOrganizationExample"
-* entry[=].resource = HIVOrganizationExample
-* entry[=].request.method = #PUT
-* entry[=].request.url = "Organization/HIVOrganizationExample"
 
 * entry[+].fullUrl = "Patient/HIVPatientExample"
 * entry[=].resource = HIVPatientExample
