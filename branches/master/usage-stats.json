@@ -160,9 +160,11 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/art-regimen-line": [
+      "Bundle.entry.resource.activity.detail",
       "CarePlan.activity.detail"
     ],
     "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit": [
+      "Bundle.entry.resource",
       "Encounter"
     ]
   }

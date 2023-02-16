@@ -3,8 +3,9 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.37
-Generated Thu Feb 16 08:24:36 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Thu Feb 16 09:21:04 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabOrder : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-LabRejection : 0 / 0 / 3
@@ -67,6 +68,7 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-EMR.json ==
 == fsh-generated/resources/Bundle-LabCancellation.json ==
 == fsh-generated/resources/Bundle-LabOrder.json ==
 == fsh-generated/resources/Bundle-LabRejection.json ==
