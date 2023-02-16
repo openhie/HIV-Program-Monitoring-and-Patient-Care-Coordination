@@ -221,7 +221,7 @@ Description: "HIV Lab Order example"
 * requester = Reference(PractitionerExample)
 * locationReference = Reference(HIVServiceRequestLocationExample)
 * doNotPerform = false
-* reasonCode = $SCT#397933008
+* reasonCode = $SCT#428450006
 * specimen = Reference(VLSpecimenExample)
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.text = "additional notes here"
