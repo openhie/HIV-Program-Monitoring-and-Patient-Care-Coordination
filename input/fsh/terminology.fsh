@@ -1,6 +1,5 @@
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
-Alias: $CIEL = https://openconceptlab.org
 
 CodeSystem: CSVLResultCode
 Id: cs-vl-result-code
@@ -130,7 +129,8 @@ Description: "A list of reasons associated with the service request for the lab 
 ValueSet: VSCarePlanActivityOutcome
 Id: vs-careplan-outcome
 Title: "ARV treatment outcomes"
-Description: "Value-set for ARV treatment plan outcomes"
-* $CIEL#162572 "Date patient refused HIV care/treatment" 
+Description: "ARV treatment plan outcomes"
+* ^experimental = false
+* $SCT#105480006 "Procedure declined by patient (situation)" 
 
 

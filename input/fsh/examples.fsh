@@ -329,7 +329,7 @@ Description: "ARVCarePlan Refused example"
 * encounter = Reference(TargetFacilityEncounterExample)
 * period.start = "2021-12-01"
 * period.end = "2022-12-01"
-* activity.outcomeCodeableConcept.coding.code = $CIEL#162572
+* activity.outcomeCodeableConcept = $SCT#105480006
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #stopped
