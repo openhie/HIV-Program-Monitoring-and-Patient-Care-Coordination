@@ -1,6 +1,5 @@
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct
-Alias: $LNC = http://loinc.org
 
 CodeSystem: CSVLResultCode
 Id: cs-vl-result-code
@@ -126,3 +125,12 @@ Description: "A list of reasons associated with the service request for the lab 
 * $SCT#281268007 "Insufficient sample"
 * $SCT#281265005 "Specimen not labeled"
 * $SCT#419182006 "Supplies not available"
+
+ValueSet: VSCarePlanActivityOutcome
+Id: vs-careplan-outcome
+Title: "ARV treatment outcomes"
+Description: "ARV treatment plan outcomes"
+* ^experimental = false
+* $SCT#105480006 "Procedure declined by patient (situation)" 
+
+

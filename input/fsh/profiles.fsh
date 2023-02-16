@@ -125,10 +125,12 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * encounter 1..1
 * period 1..1
 * activity 1..* 
+* activity.outcomeCodeableConcept from VSCarePlanActivityOutcome (required)
 * activity.detail 1..1
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code from VSARVMedicationRequest (required)
 * activity.detail.status 1..1
+* activity.detail.scheduledPeriod MS
 * activity.detail.productCodeableConcept 1..1  
 * activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
 * note 0..1
