@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5edfc079-398d-4b90-9076-020736dbbcfd"/>
+  <id value="0ef9aaba-b7af-4efb-94df-3528cbc5c22c"/>
   <meta>
-    <lastUpdated value="2023-02-16T07:39:57.565+00:00"/>
+    <lastUpdated value="2023-02-16T08:15:30.804+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -47,7 +47,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -67,8 +67,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:bfedc371-8c92-4d80-83ba-522eedc35b43"/>
-          <timestamp value="2023-02-16T07:40:27+00:00"/>
+          <identifier value="urn:uuid:414f494d-79d1-4d96-9d9c-cfdb210db990"/>
+          <timestamp value="2023-02-16T08:15:55+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -158,7 +158,7 @@
         <title value="Patient Type at Enrolment"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -178,8 +178,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f14ffd96-805f-45fe-993c-f63e005cbaf2"/>
-          <timestamp value="2023-02-16T07:40:28+00:00"/>
+          <identifier value="urn:uuid:0478a24f-cdc6-459d-86c3-4473ce1905b4"/>
+          <timestamp value="2023-02-16T08:15:56+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -268,7 +268,7 @@
         <title value="Test Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -288,8 +288,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ce6f90ca-5f11-4995-859e-25336519409b"/>
-          <timestamp value="2023-02-16T07:40:31+00:00"/>
+          <identifier value="urn:uuid:db7dffc3-5f58-48cb-8f14-a75bc3b7235b"/>
+          <timestamp value="2023-02-16T08:15:58+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -356,7 +356,7 @@
         <title value="ARV Treatment Medication Request"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -376,8 +376,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7f03806f-a7dd-49cf-a517-7569050af4b5"/>
-          <timestamp value="2023-02-16T07:40:34+00:00"/>
+          <identifier value="urn:uuid:da4db4d6-f68b-4417-ae5a-dee8c4d9f018"/>
+          <timestamp value="2023-02-16T08:16:00+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -439,7 +439,7 @@
         <title value="Death"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -459,8 +459,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9f1eed8b-83ff-484a-aa00-ac91db5c1f5d"/>
-          <timestamp value="2023-02-16T07:40:39+00:00"/>
+          <identifier value="urn:uuid:3ab974ef-2591-432a-8a32-83a6750eb0ff"/>
+          <timestamp value="2023-02-16T08:16:04+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -491,7 +491,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 19 concepts</p>
+            <p>This value set contains 15 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <table class="codes">
               <tr>
@@ -507,75 +507,11 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-315124004"> </a>  
-                  <a href="http://snomed.info/id/315124004">315124004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Baseline Viral Load</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-182838006"> </a>  
-                  <a href="http://snomed.info/id/182838006">182838006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Change regimen</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-73697001"> </a>  
-                  <a href="http://snomed.info/id/73697001">73697001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Clinical failure</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-304539005"> </a>  
-                  <a href="http://snomed.info/id/304539005">304539005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Confirmation of treatment failure</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-413712001"> </a>  
-                  <a href="http://snomed.info/id/413712001">413712001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Currently breastfeeding child</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-77386006"> </a>  
                   <a href="http://snomed.info/id/77386006">77386006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Currently pregnant</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-2528003"> </a>  
-                  <a href="http://snomed.info/id/2528003">2528003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Persistent low-Level viraemia</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-30058000"> </a>  
-                  <a href="http://snomed.info/id/30058000">30058000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Recency Assay</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-395007004"> </a>  
-                  <a href="http://snomed.info/id/395007004">395007004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Regimen failure</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -595,11 +531,43 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-373113001"> </a>  
-                  <a href="http://snomed.info/id/373113001">373113001</a>
+                  <a name="http---snomed.info-sct-266721009"> </a>  
+                  <a href="http://snomed.info/id/266721009">266721009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Routine Viral Load</td>
+                <td>Absent response to treatment</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-170564007"> </a>  
+                  <a href="http://snomed.info/id/170564007">170564007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic disease - treatment changed (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-413712001"> </a>  
+                  <a href="http://snomed.info/id/413712001">413712001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Breastfeeding (mother) (observable entity)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-315124004"> </a>  
+                  <a href="http://snomed.info/id/315124004">315124004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Baseline Viral Load / Routine Viral Load</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-2528003"> </a>  
+                  <a href="http://snomed.info/id/2528003">2528003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Persistent low-Level viraemia</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -666,7 +634,7 @@
         <title value="Reason for Assessment or Test Not Performed"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -686,9 +654,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b636f686-6366-4dc1-956a-034251dec6ce"/>
-          <timestamp value="2023-02-16T07:40:39+00:00"/>
-          <total value="19"/>
+          <identifier value="urn:uuid:28001154-1fdc-4c18-87ab-244be4fe9eb4"/>
+          <timestamp value="2023-02-16T08:16:05+00:00"/>
+          <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -703,48 +671,8 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="315124004"/>
-            <display value="Baseline Viral Load"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="182838006"/>
-            <display value="Change regimen"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="73697001"/>
-            <display value="Clinical failure"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="304539005"/>
-            <display value="Confirmation of treatment failure"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="413712001"/>
-            <display value="Currently breastfeeding child"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="77386006"/>
             <display value="Currently pregnant"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="2528003"/>
-            <display value="Persistent low-Level viraemia"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="30058000"/>
-            <display value="Recency Assay"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="395007004"/>
-            <display value="Regimen failure"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -758,8 +686,28 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="373113001"/>
-            <display value="Routine Viral Load"/>
+            <code value="266721009"/>
+            <display value="Absent response to treatment"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="170564007"/>
+            <display value="Chronic disease - treatment changed (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="413712001"/>
+            <display value="Breastfeeding (mother) (observable entity)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="315124004"/>
+            <display value="Baseline Viral Load / Routine Viral Load"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2528003"/>
+            <display value="Persistent low-Level viraemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -839,7 +787,7 @@
         <title value="HIV Test Done"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -859,8 +807,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a5dc748d-d095-428c-ba26-780d02e337d9"/>
-          <timestamp value="2023-02-16T07:40:39+00:00"/>
+          <identifier value="urn:uuid:e5493942-ba16-4905-be22-0c0bf27aa3d2"/>
+          <timestamp value="2023-02-16T08:16:05+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -938,7 +886,7 @@
         <title value="ART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -958,8 +906,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e2e01b33-9bdd-4779-b9ca-3bdd557f67c4"/>
-          <timestamp value="2023-02-16T07:40:40+00:00"/>
+          <identifier value="urn:uuid:5e387558-e3eb-4b11-b7ad-c44ba011ca37"/>
+          <timestamp value="2023-02-16T08:16:06+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1031,7 +979,7 @@
         <title value="HIV Diagnosis"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1051,8 +999,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1bf1e6cd-54ae-493c-96ee-f46ed4302277"/>
-          <timestamp value="2023-02-16T07:40:46+00:00"/>
+          <identifier value="urn:uuid:9d67be7d-5fa9-435d-b306-a718c6fb5766"/>
+          <timestamp value="2023-02-16T08:16:11+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1132,7 +1080,7 @@
         <title value="Viral load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1152,8 +1100,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b38ed0c6-227d-45de-ae39-cfd76dca9819"/>
-          <timestamp value="2023-02-16T07:40:46+00:00"/>
+          <identifier value="urn:uuid:d539eeb7-5872-4c25-8a3d-91932d4408f5"/>
+          <timestamp value="2023-02-16T08:16:11+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1221,7 +1169,7 @@
         <title value="Specimen type used in Viral Load testing"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-02-16T07:39:57+00:00"/>
+        <date value="2023-02-16T08:15:30+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1241,8 +1189,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ec376b1f-500a-41c7-9de3-251c0c220c4d"/>
-          <timestamp value="2023-02-16T07:40:47+00:00"/>
+          <identifier value="urn:uuid:b9bea419-5e56-4ba4-b7f3-939edc2f4be7"/>
+          <timestamp value="2023-02-16T08:16:12+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
