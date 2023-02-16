@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "HIV Program Monitoring and Patient Care Coordination"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-16T09:19:54+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-16T13:15:00+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Jembi Health Systems"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -1364,6 +1364,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-careplan-outcome>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-careplan-outcome" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ARV treatment outcomes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value-set for ARV treatment plan outcomes" ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1373,7 +1386,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Type at Enrolment" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Custom Patient Types at Enrolment" ]
      ], [
-       fhir:index 48;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1386,7 +1399,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Viral load Suppressions Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A list of Viral load Statuses" ]
      ], [
-       fhir:index 49;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1402,7 +1415,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
        ]
      ], [
-       fhir:index 50;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1415,7 +1428,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The healthcare professional who has been assigned to a given lab task" ]
      ], [
-       fhir:index 51;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1428,7 +1441,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Specimen type used in Viral Load testing" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Specimen type used in Viral Load testing" ]
      ], [
-       fhir:index 52;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1444,7 +1457,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/HIV-lab-order>
        ]
      ], [
-       fhir:index 53;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1460,7 +1473,23 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
        ]
      ], [
-       fhir:index 54;
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/CarePlan/ARVTreatmentRefusedExample>;
+         fhir:Reference.reference [ fhir:value "CarePlan/ARVTreatmentRefusedExample" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example CarePlan - ARVTreatmentRefusedExample" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment";
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment>
+       ]
+     ], [
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1476,7 +1505,7 @@
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
