@@ -168,6 +168,13 @@
     "name" : "VSARVMedicationRequest"
   },
   {
+    "id" : "vs-careplan-outcome",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-careplan-outcome",
+    "version" : "0.1.0-test",
+    "name" : "VSCarePlanActivityOutcome"
+  },
+  {
     "id" : "vs-hiv-death",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",

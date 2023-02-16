@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-16T09:19:54+00:00"/>
+  <date value="2023-02-16T14:00:41+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -931,6 +931,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-careplan-outcome"/>
+      </reference>
+      <name value="ARV treatment outcomes"/>
+      <description value="ARV treatment plan outcomes"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -998,6 +1008,16 @@
       </reference>
       <name value="Example Task - HIVLabOrderRejectionTaskExample"/>
       <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CarePlan"/>
+      </extension>
+      <reference>
+        <reference value="CarePlan/ARVTreatmentRefusedExample"/>
+      </reference>
+      <name value="Example CarePlan - ARVTreatmentRefusedExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
