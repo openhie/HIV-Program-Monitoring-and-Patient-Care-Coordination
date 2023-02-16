@@ -2,9 +2,10 @@
 =========================================
 
 err = 0, warn = 8, info = 0
-IG Publisher Version: 1.2.36
-Generated Wed Feb 15 19:35:35 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+IG Publisher Version: 1.2.37
+Generated Thu Feb 16 13:16:18 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
+ /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabOrder : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-LabRejection : 0 / 0 / 3
@@ -53,11 +54,11 @@ Generated Wed Feb 15 19:35:35 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 0 / 3 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-covid19-reason-for-assessment-or-test-not-performed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-patient-enrollment-type : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-specimen-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-test-types : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-vl-result-code : 0 / 0 / 1
@@ -69,6 +70,7 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-EMR.json ==
 == fsh-generated/resources/Bundle-LabCancellation.json ==
 == fsh-generated/resources/Bundle-LabOrder.json ==
 == fsh-generated/resources/Bundle-LabRejection.json ==
@@ -121,11 +123,11 @@ WARNING: CarePlan/ARVTreatmentRefusedExample: CarePlan.activity[0].outcomeCodeab
 WARNING: ValueSet/vs-careplan-outcome: ValueSet.compose[0].include[0]: Unknown System 'https://openconceptlab.org' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://openconceptlab.org. Server Error: The code system 'https://openconceptlab.org' is not known (encountered paired with code = '162572'); The code provided (https://openconceptlab.org#162572) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 WARNING: ValueSet/vs-careplan-outcome: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'vs-careplan-outcome'): Error from server: Unable to provide support for code system https://openconceptlab.org
-== fsh-generated/resources/ValueSet-vs-covid19-reason-for-assessment-or-test-not-performed.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==
 == fsh-generated/resources/ValueSet-vs-patient-enrollment-type.json ==
+== fsh-generated/resources/ValueSet-vs-reason-for-assessment-or-test-not-performed.json ==
 == fsh-generated/resources/ValueSet-vs-specimen-type.json ==
 == fsh-generated/resources/ValueSet-vs-test-types.json ==
 == fsh-generated/resources/ValueSet-vs-vl-result-code.json ==
