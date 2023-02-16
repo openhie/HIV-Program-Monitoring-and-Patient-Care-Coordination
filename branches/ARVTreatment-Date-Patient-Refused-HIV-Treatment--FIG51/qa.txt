@@ -1,9 +1,9 @@
 ﻿HIVProgramMonitoring : Validation Results
 =========================================
 
-err = 0, warn = 8, info = 0
+err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.37
-Generated Thu Feb 16 13:16:18 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Thu Feb 16 13:22:33 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.1.0-test (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
@@ -11,7 +11,7 @@ Generated Thu Feb 16 13:16:18 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Bundle-LabRejection : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabResult : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-patient-enrollment-type : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-result-code : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-vl-suppression : 0 / 0 / 1
@@ -53,7 +53,7 @@ Generated Thu Feb 16 13:16:18 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.
  /github/workspace/fsh-generated/resources/Task-HIVLabResultTaskExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-artregimen-lines : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-careplan-outcome : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-death : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-diagnosis : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-hiv-test-done : 0 / 0 / 1
@@ -77,7 +77,6 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Bundle-LabResult.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample.json ==
-WARNING: CarePlan/ARVTreatmentRefusedExample: CarePlan.activity[0].outcomeCodeableConcept[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/CodeSystem-cs-patient-enrollment-type.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-result-code.json ==
 == fsh-generated/resources/CodeSystem-cs-vl-suppression.json ==
@@ -120,9 +119,6 @@ WARNING: CarePlan/ARVTreatmentRefusedExample: CarePlan.activity[0].outcomeCodeab
 == fsh-generated/resources/ValueSet-vs-artregimen-lines.json ==
 == fsh-generated/resources/ValueSet-vs-arvtreatment-activity-type.json ==
 == fsh-generated/resources/ValueSet-vs-careplan-outcome.json ==
-WARNING: ValueSet/vs-careplan-outcome: ValueSet.compose[0].include[0]: Unknown System 'https://openconceptlab.org' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system https://openconceptlab.org. Server Error: The code system 'https://openconceptlab.org' is not known (encountered paired with code = '162572'); The code provided (https://openconceptlab.org#162572) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
-WARNING: ValueSet/vs-careplan-outcome: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: ValueSet.where(id = 'vs-careplan-outcome'): Error from server: Unable to provide support for code system https://openconceptlab.org
 == fsh-generated/resources/ValueSet-vs-hiv-death.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-diagnosis.json ==
 == fsh-generated/resources/ValueSet-vs-hiv-test-done.json ==

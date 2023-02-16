@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-16T13:15:00+00:00",
+  "date" : "2023-02-16T13:21:24+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -1142,7 +1142,7 @@
         "reference" : "ValueSet/vs-careplan-outcome"
       },
       "name" : "ARV treatment outcomes",
-      "description" : "Value-set for ARV treatment plan outcomes"
+      "description" : "ARV treatment plan outcomes"
     },
     {
       "extension" : [{
