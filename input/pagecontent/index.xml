@@ -56,9 +56,9 @@
 
   <p id="messaging-testing" class="heading">Messaging &amp; Testing</p>
 
-  <!--<p>
+  <p>
     This specification defines the <a href="bundles.html">key FHIR messaging bundles</a> needed to support HIV case reporting &amp; lab integration.
-  </p>-->
+  </p>
 
   <p>
     Using an application called <a href="https://www.postman.com/" target="_blank">Postman</a>, you will be able to submit requests (message bundles) to the DISI Platform for processing &amp; reporting.
