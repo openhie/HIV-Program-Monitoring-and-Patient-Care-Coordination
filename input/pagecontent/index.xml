@@ -23,20 +23,20 @@
     The ultimate goal of HIV treatment is to achieve viral suppression. Program management and patient care coordination refers to continuous use of data at patient level to systematically provide high quality services to patients and achieve maximum program impact. 
     <br />
     <br />
-    As countries are working towards the attainment of the United Nations Programme on HIV/AIDS (<a href ="https://www.unaids.org/en" target="_blank">UNAIDS</a>) 95-95-95 goals, it is critical to understand gaps in the HIV continuum of care. 
+    As countries are working towards the attainment of the United Nations Programme on HIV/AIDS (UNAIDS) <a href="https://www.unaids.org/sites/default/files/media_asset/201506_JC2743_Understanding_FastTrack_en.pdf" target="_blank">95-95-95 goals</a>, it is critical to understand gaps in the HIV continuum of care. 
     Key elements to program management and patient care coordination include; identification and linkage to treatment &amp; care, retention and viral load monitoring <a href="#ref1">(University of California, San Francisco et al., 2022)</a>.
     <br />
     <br />
     Program management and patient care coordination serves both the needs of the patient and more broadly, achieving the goal of reaching epidemic control. 
     This means that all people living with HIV (PLHIV) should be identified, linked to treatment, and have continuity of treatment to achieve viral suppression. 
-    Interruption/Complete disengagement from treatment increases the risk of continued HIV transmission and is a deterrent in the journey towards the attainment of the <a href="https://www.unaids.org/sites/default/files/media_asset/201506_JC2743_Understanding_FastTrack_en.pdf" target="_blank">UNAIDS 95-95-95 goals</a> <a href="#ref1">(University of California, San Francisco et al., 2022)</a>.
+    Interruption/Complete disengagement from treatment increases the risk of continued HIV transmission and is a deterrent in the journey towards the attainment of the UNAIDS 95-95-95 goals <a href="#ref1">(University of California, San Francisco et al., 2022)</a>.
     <br />
     <br />
-    This is a content specific implementation guide that has been derived from the <a href="https://www.notion.so/gicsandbox/9bef96ab62b54ff9904fe93e13357b0a?v=ecd8a8b04b31406a92e9eb3a6420d051" target="_blank">HIV program monioring and patient care coordination</a> in order to effectively report on the progress towards viral suppression.
+    This is a content specific implementation guide that has been derived from the <a href="https://www.notion.so/gicsandbox/9bef96ab62b54ff9904fe93e13357b0a?v=ecd8a8b04b31406a92e9eb3a6420d051" target="_blank">HIV Program Monioring and Patient Care Coordination Minimum Dataset</a> in order to effectively report on the progress towards viral suppression.
   </p>
-  <p>
+  <!--<p>
     The <a href="bussiness-description.html">Business Description</a> for this implementation guide offers more detail in regards to its purpose.
-  </p>
+  </p>-->
 
   <h3>Technical</h3> <a name="technical"> </a>
   <p class="heading" id="technicalBackground">Background</p>
