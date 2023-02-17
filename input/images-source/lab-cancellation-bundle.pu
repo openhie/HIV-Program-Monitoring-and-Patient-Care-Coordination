@@ -1,0 +1,55 @@
+@startjson lab-cancellation-bundle
+{
+  "resourceType" : "Bundle",
+  "id" : "LabCancellation",
+  "type" : "transaction",
+  "entry" : [{
+    "fullUrl" : "Task/HIVLabOrderCancellationTaskExample",
+    "resource" : {
+      "resourceType" : "Task",
+      "id" : "HIVLabOrderCancellationTaskExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task"]
+      },
+    
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number",
+        "value" : "ORDER12345"
+      }],
+      "basedOn" : [{
+        "reference" : "ServiceRequest/HIVServiceRequestExample"
+      }],
+      "status" : "cancelled",
+      "statusReason" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "281264009"
+        }]
+      },
+      "intent" : "order",
+      "executionPeriod" : {
+        "end" : "2022-07-30"
+      },
+      "lastModified" : "2022-07-30",
+      "requester" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "owner" : {
+        "reference" : "Organization/HIVOrganizationExample"
+      },
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes here"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Task/HIVLabOrderCancellationTaskExample"
+    }
+  }]
+}
+
+@endjson
