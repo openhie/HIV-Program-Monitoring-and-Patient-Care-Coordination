@@ -1,9 +1,15 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" lang="en">
+    <style>
+        {% include custom.css %}
+    </style>
+
     <h3>Overview</h3> <a name="references-overview"> </a>
 
     <p>
         The following references have been cited to assist with the formulation of the specification for this implementation guide.
     </p>
+
+    <a href="index.html"><p class="heading">Home Page</p></a>
 
     <div>
         <ol>
