@@ -307,8 +307,8 @@ Description: "HIV Lab Order Rejection Task example"
 Instance: HIVLabResultsDiagnosticReportExample
 InstanceOf: HIVDiagnosticReport
 Usage: #example
-Title: "Covid19 Lab Results Diagnostic Report example"
-Description: "Covid19 Lab Results Diagnostic Report example"
+Title: "HIV Lab Results Diagnostic Report example"
+Description: "HIV Lab Results Diagnostic Report example"
 * basedOn = Reference(HIVServiceRequestExample)
 * status = #final
 * code = $LNC#25836-8 
