@@ -2,7 +2,7 @@ Profile: HIVOrganization
 Parent: Organization
 Id: hiv-organization
 Title: "HIV Organization"
-Description: "Organization providing HIV Testing Services"
+Description: "Organization providing HIV Testing Services."
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
@@ -23,7 +23,7 @@ Profile: HIVPatient
 Parent: Patient
 Id: hiv-patient
 Title: "Patient"
-Description: "A patient resource for an HIV Patient"
+Description: "A patient resource for an HIV Patient."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
@@ -44,7 +44,7 @@ Profile: TargetFacilityEncounter
 Parent: Encounter
 Id: target-facility-encounter
 Title: "Target Facility Encounter" 
-Description: "This profile represents the facility the patient is being transferred to"
+Description: "This profile represents the current facility at which the patient is receiving treatment."
 * extension contains HIVCareNextAppointment named next-visit 0..1 MS
 * status 1..1
 * class 1..1
@@ -64,7 +64,7 @@ Profile: TransferringFacilityEncounter
 Parent: Encounter
 Id: transferring-facility-encounter
 Title: "Transferring Facility Encounter" 
-Description: "This profile represents the facility the patient is being transferred from"
+Description: "This profile represents the facility the patient is being transferred from."
 * status 1..1
 * class 1..1
 * period 1..1
@@ -74,7 +74,7 @@ Profile: HIVDiagnosis
 Parent: Condition
 Id: hiv-diagnosis
 Title: "Diagnosis"
-Description: "Confirmation of the diagnosis"
+Description: "This profile represents the confirmation of HIV diagnosis."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
@@ -84,7 +84,7 @@ Description: "Confirmation of the diagnosis"
 * identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis" (exactly)
 * clinicalStatus 1..1
 * verificationStatus 1..1
-* code from VSHIVDiagnosis (required)
+* code from VSCondition (required)
 * subject 1..1
 * encounter 1..1
 * recordedDate 1..1
@@ -94,7 +94,7 @@ Profile: Death
 Parent: Observation
 Id: death
 Title: "Patient Death"
-Description: "This profile is to record the death of a patient observation"
+Description: "This profile captures the death outcome for a patient."
 * status = #final
 * code from VSHIVDeath (required)
 * subject 1..1
@@ -106,7 +106,7 @@ Profile: DateHIVTestDone
 Parent: Observation
 Id: date-hiv-test-done
 Title: "Date HIV Test Done"
-Description: "This profile is to record the Date when HIV test was done for a patient"
+Description: "This profile is to record the date when HIV test was done for a patient."
 * status = #final
 * code from VSHIVTestDone (required)
 * subject 1..1
@@ -118,7 +118,7 @@ Profile: ARVTreatment
 Parent: CarePlan
 Id: hiv-arv-treatment
 Title: "ARV Treatment"
-Description: "This profile is to record prescribed ARV regimen against a given therapeutic line"
+Description: "This profile is to record prescribed ARV regimen against a given therapeutic line."
 * status 1..1
 * intent 1..1
 * subject 1..1
@@ -138,15 +138,15 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 Extension: ARTRegimenLine
 Id: art-regimen-line
 Title: "ART Regimen Line"
-Description: "ART Regimen Line"
+Description: "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
 * value[x] only CodeableConcept
 * valueCodeableConcept from VSARTRegimenLines (required)
 
 Profile: HIVEpisodeOfCare
 Parent: EpisodeOfCare
 Id: hiv-episode-of-care
-Title: "HIV Episode Of Care"
-Description: "This profile is to record the patient HIV Management Programme Enrollment details."
+Title: "Patient Enrollment Type"
+Description: "This profile is used to record the enrolment type at the time of the encounter."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
@@ -165,7 +165,7 @@ Profile: VLSpecimen
 Parent: Specimen
 Id: viral-load-specimen
 Title: "Viral Load Specimen"
-Description: "The test sample that was collected for the initiated lab order"
+Description: "The test sample that was collected for the initiated lab order."
 * identifier 1..1 
 * type from VSSpecimenType (required)
 * subject 1..1
@@ -192,7 +192,7 @@ Profile: HIVServiceRequest
 Parent: ServiceRequest
 Id: HIV-lab-order
 Title: "Lab Order"
-Description: "A service request that initiates the need for the lab to collect the test sample"
+Description: "A service request that initiates the need for the lab to collect the test sample."
 * identifier ^slicing.discriminator.type = #pattern
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #openAtEnd
@@ -218,7 +218,7 @@ Profile: HIVTestResult
 Parent: Observation
 Id: hiv-test-results
 Title: "Lab Results"
-Description: "The result of the lab test which determines whether the patient is infected with HIV or not"
+Description: "The result of the lab test which determines whether the patient is infected with HIV or not."
 * status = #final
 * code from VSVLResultCode (required)
 * subject 1..1
@@ -233,7 +233,7 @@ Profile: HIVPractitioner
 Parent: Practitioner
 Id: hiv-practitioner
 Title: "Practitioner"
-Description: "The healthcare professional who has been assigned to a given lab task"
+Description: "The healthcare professional who has been assigned to a given lab task."
 * name 1..1
 * telecom 0..1
 
@@ -241,7 +241,7 @@ Profile: HIVLabTask
 Parent: Task
 Id: hiv-lab-task
 Title: "Lab Task"
-Description: "Assists with tracking the state of the lab order and its completion status"
+Description: "Assists with tracking the state of the lab order and its completion status."
 * identifier 1..*
 * basedOn only Reference(ServiceRequest)
 * status 1..1
@@ -260,7 +260,7 @@ Profile: HIVDiagnosticReport
 Parent: DiagnosticReport
 Id: hiv-diagnostic-report
 Title: "Diagnostic Report"
-Description: "A report as a result of the lab task being completed"
+Description: "A report as a result of the lab task being completed."
 * basedOn only Reference(ServiceRequest)
 * status = #final
 * code from VSTestTypes (required)
