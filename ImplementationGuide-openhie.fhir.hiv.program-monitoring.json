@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-27T06:07:40+00:00",
+  "date" : "2023-02-27T06:39:33+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -625,7 +625,7 @@
         "reference" : "StructureDefinition/hiv-arv-treatment"
       },
       "name" : "ARV Treatment",
-      "description" : "This profile is to record prescribed ARV regimen against a given therapeutic line"
+      "description" : "This profile is to record prescribed ARV regimen against a given therapeutic line."
     },
     {
       "extension" : [{
@@ -647,7 +647,7 @@
         "reference" : "StructureDefinition/hiv-organization"
       },
       "name" : "HIV Organization",
-      "description" : "Organization providing HIV Testing Services"
+      "description" : "Organization providing HIV Testing Services."
     },
     {
       "extension" : [{
@@ -669,7 +669,7 @@
         "reference" : "StructureDefinition/death"
       },
       "name" : "Patient Death",
-      "description" : "This profile is to record the death of a patient observation"
+      "description" : "This profile captures the death outcome for a patient."
     },
     {
       "extension" : [{
@@ -691,7 +691,7 @@
         "reference" : "StructureDefinition/art-regimen-line"
       },
       "name" : "ART Regimen Line",
-      "description" : "ART Regimen Line"
+      "description" : "Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."
     },
     {
       "extension" : [{
@@ -702,7 +702,7 @@
         "reference" : "StructureDefinition/hiv-lab-task"
       },
       "name" : "Lab Task",
-      "description" : "Assists with tracking the state of the lab order and its completion status"
+      "description" : "Assists with tracking the state of the lab order and its completion status."
     },
     {
       "extension" : [{
@@ -724,7 +724,7 @@
         "reference" : "ValueSet/vs-hiv-test-done"
       },
       "name" : "HIV Test Done",
-      "description" : "HIV Test Done"
+      "description" : "Used by the observation to indicate that a HIV test was performed."
     },
     {
       "extension" : [{
@@ -735,7 +735,7 @@
         "reference" : "StructureDefinition/target-facility-encounter"
       },
       "name" : "Target Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred to"
+      "description" : "This profile represents the current facility at which the patient is receiving treatment."
     },
     {
       "extension" : [{
@@ -757,7 +757,7 @@
         "reference" : "StructureDefinition/hiv-diagnostic-report"
       },
       "name" : "Diagnostic Report",
-      "description" : "A report as a result of the lab task being completed"
+      "description" : "A report as a result of the lab task being completed."
     },
     {
       "extension" : [{
@@ -778,8 +778,8 @@
       "reference" : {
         "reference" : "ValueSet/vs-vl-suppression"
       },
-      "name" : "Viral load Suppressions Status",
-      "description" : "A list of Viral load Statuses"
+      "name" : "Viral Load Suppressions Status",
+      "description" : "Describes a patient's current viral load status."
     },
     {
       "extension" : [{
@@ -790,7 +790,7 @@
         "reference" : "StructureDefinition/date-hiv-test-done"
       },
       "name" : "Date HIV Test Done",
-      "description" : "This profile is to record the Date when HIV test was done for a patient"
+      "description" : "This profile is to record the date when HIV test was done for a patient."
     },
     {
       "extension" : [{
@@ -812,7 +812,7 @@
         "reference" : "StructureDefinition/hiv-patient"
       },
       "name" : "Patient",
-      "description" : "A patient resource for an HIV Patient"
+      "description" : "A patient resource for an HIV Patient."
     },
     {
       "extension" : [{
@@ -834,7 +834,7 @@
         "reference" : "StructureDefinition/transferring-facility-encounter"
       },
       "name" : "Transferring Facility Encounter",
-      "description" : "This profile represents the facility the patient is being transferred from"
+      "description" : "This profile represents the facility the patient is being transferred from."
     },
     {
       "extension" : [{
@@ -855,8 +855,8 @@
       "reference" : {
         "reference" : "StructureDefinition/hiv-episode-of-care"
       },
-      "name" : "HIV Episode Of Care",
-      "description" : "This profile is to record the patient HIV Management Programme Enrollment details."
+      "name" : "Patient Enrollment Type",
+      "description" : "This profile is used to record the enrolment type at the time of the encounter."
     },
     {
       "extension" : [{
@@ -878,7 +878,7 @@
         "reference" : "StructureDefinition/viral-load-specimen"
       },
       "name" : "Viral Load Specimen",
-      "description" : "The test sample that was collected for the initiated lab order"
+      "description" : "The test sample that was collected for the initiated lab order."
     },
     {
       "extension" : [{
@@ -911,7 +911,7 @@
         "reference" : "ValueSet/vs-careplan-outcome"
       },
       "name" : "ARV treatment outcomes",
-      "description" : "ARV treatment plan outcomes"
+      "description" : "A list of possible ARV treatment outcomes."
     },
     {
       "extension" : [{
@@ -922,7 +922,7 @@
         "reference" : "ValueSet/vs-reason-for-assessment-or-test-not-performed"
       },
       "name" : "Reason for Assessment or Test Not Performed",
-      "description" : "A list of reasons associated with the service request for the lab order"
+      "description" : "A list of reasons associated with the service request for the lab order."
     },
     {
       "extension" : [{
@@ -933,7 +933,7 @@
         "reference" : "StructureDefinition/hiv-test-results"
       },
       "name" : "Lab Results",
-      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not"
+      "description" : "The result of the lab test which determines whether the patient is infected with HIV or not."
     },
     {
       "extension" : [{
@@ -960,13 +960,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-condition"
+      },
+      "name" : "Conditions",
+      "description" : "A list of possible HIV conditions."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/hiv-practitioner"
       },
       "name" : "Practitioner",
-      "description" : "The healthcare professional who has been assigned to a given lab task"
+      "description" : "The healthcare professional who has been assigned to a given lab task."
     },
     {
       "extension" : [{
@@ -1010,18 +1021,7 @@
         "reference" : "StructureDefinition/hiv-diagnosis"
       },
       "name" : "Diagnosis",
-      "description" : "Confirmation of the diagnosis"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/vs-hiv-diagnosis"
-      },
-      "name" : "HIV Diagnosis",
-      "description" : "A list of possible HIV diagnoses"
+      "description" : "This profile represents the confirmation of HIV diagnosis."
     },
     {
       "extension" : [{
@@ -1098,7 +1098,7 @@
         "reference" : "ValueSet/vs-artregimen-lines"
       },
       "name" : "ART Regimen Lines",
-      "description" : "A list of ART Regimen Lines"
+      "description" : "A list of ART regimen therapeutic lines."
     },
     {
       "extension" : [{
@@ -1130,8 +1130,8 @@
       "reference" : {
         "reference" : "ValueSet/vs-specimen-type"
       },
-      "name" : "Specimen type used in Viral Load testing",
-      "description" : "Specimen type used in Viral Load testing"
+      "name" : "Specimen Type Used In Viral Load testing",
+      "description" : "A list of specimen types."
     },
     {
       "extension" : [{
@@ -1175,7 +1175,7 @@
         "reference" : "ValueSet/vs-vl-result-code"
       },
       "name" : "Viral Load Result Code",
-      "description" : "Viral Load Result Code"
+      "description" : "A code used to indicate the category for the lab result."
     },
     {
       "extension" : [{
@@ -1197,7 +1197,7 @@
         "reference" : "ValueSet/vs-arvtreatment-activity-type"
       },
       "name" : "ARV Treatment Medication Request",
-      "description" : "ARV Treatment Medication Request"
+      "description" : "Codes used to represent a medication request for ART."
     },
     {
       "extension" : [{
@@ -1208,7 +1208,7 @@
         "reference" : "StructureDefinition/HIV-lab-order"
       },
       "name" : "Lab Order",
-      "description" : "A service request that initiates the need for the lab to collect the test sample"
+      "description" : "A service request that initiates the need for the lab to collect the test sample."
     },
     {
       "extension" : [{
