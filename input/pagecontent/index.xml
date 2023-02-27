@@ -6,7 +6,7 @@
   <a name="scope">  </a>
 
   <p>
-    This Implementation Guide contains the specifications for HIV program monioring and patient care coordination.
+    This Implementation Guide contains the specifications for HIV program monitoring and patient care coordination.
   </p>
 
   <blockquote class="stu-note">
@@ -43,10 +43,10 @@
 
   <p>
     This implementation guide was developed as the messaging standards specification for one of the DISI Platform reference solutions. 
-    DISI proposes to create a standards-based architecture that would allow multiple countries to adopt a similar framework for generating reports that they require. Currently, there are two DISI Reference Implementations for data centralization and reporting, one for <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">HIV</a> and another for <a href="https://jembi.gitbook.io/cares-on-platform/" target="_blank">COVID19</a>.
+    DISI proposes to create a standards-based architecture that would allow multiple countries to adopt a similar framework for generating reports that they require. Currently, there are two Data Integration Strategy &amp; Implementation (DISI) Reference Implementations for data centralization and reporting, one for <a href="https://jembi.gitbook.io/disi-on-platform/" target="_blank">HIV</a> and another for <a href="https://jembi.gitbook.io/cares-on-platform/" target="_blank">COVID19</a>.
     <br />
     <br />
-    The DISI acrhitecture brings forth a <a href="https://jembi.gitbook.io/jembi-platform/packages" target="_blank">set of components</a> that are common among HIV and COVID19. The DISI architecture can be seen below.
+    The DISI architecture brings forth a <a href="https://jembi.gitbook.io/jembi-platform/packages" target="_blank">set of components</a> that are common among HIV and COVID19. The DISI architecture can be seen below.
   </p>
 
   <figure>
@@ -65,7 +65,7 @@
   </p>
 
   <p>
-    Properly tailored postman collections will enable end-to-end testing between the EMR and analytics platform. Moreover, a tester can configure postman variables which have can be designed to randomly populate data for all key fields in all resources. This is a great way to carry out exploratory testing.
+    Properly tailored postman collections will enable end-to-end testing between the EMR and analytics platform. Moreover, a tester can configure postman variables which can be designed to randomly populate data for all key fields in all resources. This is a great way to carry out exploratory testing.
     <br />
     <br />
     The use of postman variables also allows you to statically initiate variables to actual values you need.

@@ -3,8 +3,7 @@
     <h3>Introduction</h3> <a name="intro"> </a>
 
     <p>
-        Testing data for accuracy and correctness is essential for any bussiness who relies on quality data for the purpose of decision making.
-        This is even more critical in healhcare as data is very commonly used to monitor the health status of a client and used to make decisions in regards to diagnosis and treatment plans etc.
+        Testing data for accuracy and correctness is essential for any business who relies on quality data for the purpose of decision making. This is even more critical in healthcare as data is very commonly used to monitor the health status of a client and used to make decisions in regards to diagnosis and treatment plans etc.
         <br />
         <br />
         For this reason, using an established automated testing framework can be highly beneficial to ensure data quality.
@@ -32,7 +31,7 @@
                 <li><em>End-to-end testing</em></li>
                 <ol>
                     <li>
-                        To ensure that data is moving along the pipeline from the PoS system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
+                        To ensure that data is moving along the pipeline from the point of service (PoS) system to the analytics platform in a timeous fashion and that both target systems (<a href="https://hapifhir.io/hapi-fhir/docs/getting_started/introduction.html" target="_blank">Central Data Repository</a> &amp; <a href="https://jembi.gitbook.io/jembi-platform/packages/client-registry-santempi" target="_blank">Client Registry</a>) represent data that is accurate and correct. 
                         The key objective of this test is to ensure the availability of data and data quality.
                     </li>
                 </ol>
