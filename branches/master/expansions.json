@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d1993d83-33c2-45d9-9efd-cf47fda01a8c",
+  "id" : "fa9f8fac-eb1c-45b8-91f9-9e1263ae6974",
   "meta" : {
-    "lastUpdated" : "2023-02-20T07:40:50.995+00:00"
+    "lastUpdated" : "2023-02-27T06:44:17.805+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -20,7 +20,7 @@
       "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -32,7 +32,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "HIV Test Done",
+      "description" : "Used by the observation to indicate that a HIV test was performed.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:30fe34c2-1234-46bc-8fbc-8bc91bcec99e",
-        "timestamp" : "2023-02-20T07:41:22+00:00",
+        "identifier" : "urn:uuid:d94fc060-8408-436b-998f-05ca574507a9",
+        "timestamp" : "2023-02-27T06:44:49+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -78,7 +78,7 @@
       "title" : "Patient Type at Enrolment",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -98,8 +98,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:78eaa7c1-3e00-4c5f-9b0c-ff8c985696d2",
-        "timestamp" : "2023-02-20T07:41:24+00:00",
+        "identifier" : "urn:uuid:f64305de-1fb1-4095-be67-18a2cdcbea23",
+        "timestamp" : "2023-02-27T06:44:51+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -151,15 +151,15 @@
       "id" : "vs-vl-suppression",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-245780008\"> </a>  <a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>http://snomed.info/sct</td><td>Suppressed (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19032002\"> </a>  <a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>http://snomed.info/sct</td><td>Uncontrolled (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-54690008\"> </a>  <a href=\"http://snomed.info/id/54690008\">54690008</a></td><td>http://snomed.info/sct</td><td>Unknown (origin) (qualifier value)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-245780008\"> </a>  <a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>http://snomed.info/sct</td><td>Suppressed (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19032002\"> </a>  <a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>http://snomed.info/sct</td><td>Uncontrolled (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>  <a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown (qualifier value)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-suppression",
       "version" : "0.1.0-test",
       "name" : "VSVLSuppression",
-      "title" : "Viral load Suppressions Status",
+      "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -171,7 +171,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of Viral load Statuses",
+      "description" : "Describes a patient's current viral load status.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -179,8 +179,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3d61b98b-9969-45d8-9392-d898dd1496c8",
-        "timestamp" : "2023-02-20T07:41:24+00:00",
+        "identifier" : "urn:uuid:451cae6c-e0f1-4298-af34-e1dfae752e04",
+        "timestamp" : "2023-02-27T06:44:51+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -206,8 +206,8 @@
         },
         {
           "system" : "http://snomed.info/sct",
-          "code" : "54690008",
-          "display" : "Unknown (origin) (qualifier value)"
+          "code" : "261665006",
+          "display" : "Unknown (qualifier value)"
         }]
       }
     }
@@ -227,7 +227,7 @@
       "title" : "ARV treatment outcomes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -239,7 +239,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "ARV treatment plan outcomes",
+      "description" : "A list of possible ARV treatment outcomes.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -247,8 +247,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:81d53c59-7683-44ab-bfd4-66fa0a785f7f",
-        "timestamp" : "2023-02-20T07:41:28+00:00",
+        "identifier" : "urn:uuid:e26adbf7-12d9-4f80-95fe-005f07b9b884",
+        "timestamp" : "2023-02-27T06:44:57+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -285,7 +285,7 @@
       "title" : "Reason for Assessment or Test Not Performed",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -297,7 +297,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of reasons associated with the service request for the lab order",
+      "description" : "A list of reasons associated with the service request for the lab order.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -305,8 +305,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7d875d66-1c9a-455f-baef-25a40c5059f8",
-        "timestamp" : "2023-02-20T07:41:29+00:00",
+        "identifier" : "urn:uuid:5f760291-1b69-4dd0-9bfa-c248f0da0517",
+        "timestamp" : "2023-02-27T06:44:58+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -399,21 +399,21 @@
     }
   },
   {
-    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
+    "fullUrl" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-condition",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "vs-hiv-diagnosis",
+      "id" : "vs-condition",
       "text" : {
         "status" : "generated",
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86406008\"> </a>  <a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus infection (disorder)</td></tr></table></div>"
       },
-      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
+      "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-condition",
       "version" : "0.1.0-test",
-      "name" : "VSHIVDiagnosis",
-      "title" : "HIV Diagnosis",
+      "name" : "VSCondition",
+      "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -425,7 +425,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of possible HIV diagnoses",
+      "description" : "A list of possible HIV conditions.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -433,8 +433,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7e1840d0-a3cf-44f6-81ef-1aff3649f2e1",
-        "timestamp" : "2023-02-20T07:41:31+00:00",
+        "identifier" : "urn:uuid:c2c7a73d-db04-46a7-8698-e23cbf23a6c3",
+        "timestamp" : "2023-02-27T06:44:59+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -471,7 +471,7 @@
       "title" : "Death",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -491,8 +491,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5b10155f-c1c8-4ad5-9e68-7f38baa41a83",
-        "timestamp" : "2023-02-20T07:41:31+00:00",
+        "identifier" : "urn:uuid:c012fd32-b614-4bcb-8425-611383fee4fd",
+        "timestamp" : "2023-02-27T06:45:01+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -521,7 +521,7 @@
       "id" : "vs-test-types",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25842-6\"> </a>  <a href=\"https://loinc.org/25842-6/\">25842-6</a></td><td>http://loinc.org</td><td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25836-8\"> </a>  <a href=\"https://loinc.org/25836-8/\">25836-8</a></td><td>http://loinc.org</td><td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25842-6\"> </a>  <a href=\"https://loinc.org/25842-6/\">25842-6</a></td><td>http://loinc.org</td><td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25836-8\"> </a>  <a href=\"https://loinc.org/25836-8/\">25836-8</a></td><td>http://loinc.org</td><td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-24467-3\"> </a>  <a href=\"https://loinc.org/24467-3/\">24467-3</a></td><td>http://loinc.org</td><td>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-test-types",
       "version" : "0.1.0-test",
@@ -529,7 +529,7 @@
       "title" : "Test Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -549,9 +549,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:41ac87c4-d94e-44db-8ea3-8422c610a1a5",
-        "timestamp" : "2023-02-20T07:41:31+00:00",
-        "total" : 2,
+        "identifier" : "urn:uuid:41a21a5e-aee3-40e9-b734-74719f5a9261",
+        "timestamp" : "2023-02-27T06:45:01+00:00",
+        "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -573,6 +573,11 @@
           "system" : "http://loinc.org",
           "code" : "25836-8",
           "display" : "HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "24467-3",
+          "display" : "CD3+CD4+ (T4 helper) cells [#/volume] in Blood"
         }]
       }
     }
@@ -592,7 +597,7 @@
       "title" : "ART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -604,7 +609,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "A list of ART Regimen Lines",
+      "description" : "A list of ART regimen therapeutic lines.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -612,8 +617,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cf8451eb-e778-4b58-a82e-17f96bb46d9c",
-        "timestamp" : "2023-02-20T07:41:31+00:00",
+        "identifier" : "urn:uuid:e80e878f-76ac-48ea-b742-1962653395d4",
+        "timestamp" : "2023-02-27T06:45:01+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -657,10 +662,10 @@
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type",
       "version" : "0.1.0-test",
       "name" : "VSSpecimenType",
-      "title" : "Specimen type used in Viral Load testing",
+      "title" : "Specimen Type Used In Viral Load testing",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -672,7 +677,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "Specimen type used in Viral Load testing",
+      "description" : "A list of specimen types.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -680,8 +685,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:58bbd907-44a0-4ad5-a293-bd7d6955e96b",
-        "timestamp" : "2023-02-20T07:41:31+00:00",
+        "identifier" : "urn:uuid:555daca5-22b8-4231-8c7e-722900a448c8",
+        "timestamp" : "2023-02-27T06:45:02+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -738,7 +743,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -750,7 +755,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "Viral Load Result Code",
+      "description" : "A code used to indicate the category for the lab result.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -758,8 +763,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:64f09375-ea07-4b86-a303-4bed9b4a36a7",
-        "timestamp" : "2023-02-20T07:41:32+00:00",
+        "identifier" : "urn:uuid:63ae2111-f137-433e-99f3-5929af3ce3d2",
+        "timestamp" : "2023-02-27T06:45:02+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -796,7 +801,7 @@
       "title" : "ARV Treatment Medication Request",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-02-20T07:40:50+00:00",
+      "date" : "2023-02-27T06:44:17+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -808,7 +813,7 @@
           "value" : "info@jembi.org"
         }]
       }],
-      "description" : "ARV Treatment Medication Request",
+      "description" : "Codes used to represent a medication request for ART.",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -816,8 +821,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c184dd3c-ce3c-4809-a76b-5edda4dec613",
-        "timestamp" : "2023-02-20T07:41:32+00:00",
+        "identifier" : "urn:uuid:e30a7120-f276-4745-853f-756fdb28c6f0",
+        "timestamp" : "2023-02-27T06:45:02+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",

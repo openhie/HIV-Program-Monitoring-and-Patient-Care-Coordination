@@ -154,18 +154,18 @@
     "name" : "VSCarePlanActivityOutcome"
   },
   {
+    "id" : "vs-condition",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-condition",
+    "version" : "0.1.0-test",
+    "name" : "VSCondition"
+  },
+  {
     "id" : "vs-hiv-death",
     "type" : "ValueSet",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
     "version" : "0.1.0-test",
     "name" : "VSHIVDeath"
-  },
-  {
-    "id" : "vs-hiv-diagnosis",
-    "type" : "ValueSet",
-    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-diagnosis",
-    "version" : "0.1.0-test",
-    "name" : "VSHIVDiagnosis"
   },
   {
     "id" : "vs-hiv-test-done",

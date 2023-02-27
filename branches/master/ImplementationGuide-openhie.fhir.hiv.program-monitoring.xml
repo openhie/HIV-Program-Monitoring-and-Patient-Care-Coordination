@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-20T07:40:50+00:00"/>
+  <date value="2023-02-27T06:44:17+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -467,7 +467,7 @@
         <reference value="StructureDefinition/hiv-arv-treatment"/>
       </reference>
       <name value="ARV Treatment"/>
-      <description value="This profile is to record prescribed ARV regimen against a given therapeutic line"/>
+      <description value="This profile is to record prescribed ARV regimen against a given therapeutic line."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -487,7 +487,7 @@
         <reference value="StructureDefinition/hiv-organization"/>
       </reference>
       <name value="HIV Organization"/>
-      <description value="Organization providing HIV Testing Services"/>
+      <description value="Organization providing HIV Testing Services."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -507,7 +507,7 @@
         <reference value="StructureDefinition/death"/>
       </reference>
       <name value="Patient Death"/>
-      <description value="This profile is to record the death of a patient observation"/>
+      <description value="This profile captures the death outcome for a patient."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -527,7 +527,7 @@
         <reference value="StructureDefinition/art-regimen-line"/>
       </reference>
       <name value="ART Regimen Line"/>
-      <description value="ART Regimen Line"/>
+      <description value="Therapeutic lines that are used to classify the patient's currently prescribed ARV regimen."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -537,7 +537,7 @@
         <reference value="StructureDefinition/hiv-lab-task"/>
       </reference>
       <name value="Lab Task"/>
-      <description value="Assists with tracking the state of the lab order and its completion status"/>
+      <description value="Assists with tracking the state of the lab order and its completion status."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -557,7 +557,7 @@
         <reference value="ValueSet/vs-hiv-test-done"/>
       </reference>
       <name value="HIV Test Done"/>
-      <description value="HIV Test Done"/>
+      <description value="Used by the observation to indicate that a HIV test was performed."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -567,7 +567,7 @@
         <reference value="StructureDefinition/target-facility-encounter"/>
       </reference>
       <name value="Target Facility Encounter"/>
-      <description value="This profile represents the facility the patient is being transferred to"/>
+      <description value="This profile represents the current facility at which the patient is receiving treatment."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -587,7 +587,7 @@
         <reference value="StructureDefinition/hiv-diagnostic-report"/>
       </reference>
       <name value="Diagnostic Report"/>
-      <description value="A report as a result of the lab task being completed"/>
+      <description value="A report as a result of the lab task being completed."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -606,8 +606,8 @@
       <reference>
         <reference value="ValueSet/vs-vl-suppression"/>
       </reference>
-      <name value="Viral load Suppressions Status"/>
-      <description value="A list of Viral load Statuses"/>
+      <name value="Viral Load Suppressions Status"/>
+      <description value="Describes a patient's current viral load status."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -617,7 +617,7 @@
         <reference value="StructureDefinition/date-hiv-test-done"/>
       </reference>
       <name value="Date HIV Test Done"/>
-      <description value="This profile is to record the Date when HIV test was done for a patient"/>
+      <description value="This profile is to record the date when HIV test was done for a patient."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -637,7 +637,7 @@
         <reference value="StructureDefinition/hiv-patient"/>
       </reference>
       <name value="Patient"/>
-      <description value="A patient resource for an HIV Patient"/>
+      <description value="A patient resource for an HIV Patient."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -657,7 +657,7 @@
         <reference value="StructureDefinition/transferring-facility-encounter"/>
       </reference>
       <name value="Transferring Facility Encounter"/>
-      <description value="This profile represents the facility the patient is being transferred from"/>
+      <description value="This profile represents the facility the patient is being transferred from."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -676,8 +676,8 @@
       <reference>
         <reference value="StructureDefinition/hiv-episode-of-care"/>
       </reference>
-      <name value="HIV Episode Of Care"/>
-      <description value="This profile is to record the patient HIV Management Programme Enrollment details."/>
+      <name value="Patient Enrollment Type"/>
+      <description value="This profile is used to record the enrolment type at the time of the encounter."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -697,7 +697,7 @@
         <reference value="StructureDefinition/viral-load-specimen"/>
       </reference>
       <name value="Viral Load Specimen"/>
-      <description value="The test sample that was collected for the initiated lab order"/>
+      <description value="The test sample that was collected for the initiated lab order."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -727,7 +727,7 @@
         <reference value="ValueSet/vs-careplan-outcome"/>
       </reference>
       <name value="ARV treatment outcomes"/>
-      <description value="ARV treatment plan outcomes"/>
+      <description value="A list of possible ARV treatment outcomes."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -737,7 +737,7 @@
         <reference value="ValueSet/vs-reason-for-assessment-or-test-not-performed"/>
       </reference>
       <name value="Reason for Assessment or Test Not Performed"/>
-      <description value="A list of reasons associated with the service request for the lab order"/>
+      <description value="A list of reasons associated with the service request for the lab order."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -747,7 +747,7 @@
         <reference value="StructureDefinition/hiv-test-results"/>
       </reference>
       <name value="Lab Results"/>
-      <description value="The result of the lab test which determines whether the patient is infected with HIV or not"/>
+      <description value="The result of the lab test which determines whether the patient is infected with HIV or not."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -771,13 +771,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-condition"/>
+      </reference>
+      <name value="Conditions"/>
+      <description value="A list of possible HIV conditions."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/hiv-practitioner"/>
       </reference>
       <name value="Practitioner"/>
-      <description value="The healthcare professional who has been assigned to a given lab task"/>
+      <description value="The healthcare professional who has been assigned to a given lab task."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -817,17 +827,7 @@
         <reference value="StructureDefinition/hiv-diagnosis"/>
       </reference>
       <name value="Diagnosis"/>
-      <description value="Confirmation of the diagnosis"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/vs-hiv-diagnosis"/>
-      </reference>
-      <name value="HIV Diagnosis"/>
-      <description value="A list of possible HIV diagnoses"/>
+      <description value="This profile represents the confirmation of HIV diagnosis."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -897,7 +897,7 @@
         <reference value="ValueSet/vs-artregimen-lines"/>
       </reference>
       <name value="ART Regimen Lines"/>
-      <description value="A list of ART Regimen Lines"/>
+      <description value="A list of ART regimen therapeutic lines."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -926,8 +926,8 @@
       <reference>
         <reference value="ValueSet/vs-specimen-type"/>
       </reference>
-      <name value="Specimen type used in Viral Load testing"/>
-      <description value="Specimen type used in Viral Load testing"/>
+      <name value="Specimen Type Used In Viral Load testing"/>
+      <description value="A list of specimen types."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -967,7 +967,7 @@
         <reference value="ValueSet/vs-vl-result-code"/>
       </reference>
       <name value="Viral Load Result Code"/>
-      <description value="Viral Load Result Code"/>
+      <description value="A code used to indicate the category for the lab result."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -987,7 +987,7 @@
         <reference value="ValueSet/vs-arvtreatment-activity-type"/>
       </reference>
       <name value="ARV Treatment Medication Request"/>
-      <description value="ARV Treatment Medication Request"/>
+      <description value="Codes used to represent a medication request for ART."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -997,7 +997,7 @@
         <reference value="StructureDefinition/HIV-lab-order"/>
       </reference>
       <name value="Lab Order"/>
-      <description value="A service request that initiates the need for the lab to collect the test sample"/>
+      <description value="A service request that initiates the need for the lab to collect the test sample."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
