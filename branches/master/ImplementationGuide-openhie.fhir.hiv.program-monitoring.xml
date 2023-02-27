@@ -7,12 +7,12 @@
 </div></div>
   </text>
   <url value="http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring"/>
-  <version value="0.1.0-test"/>
+  <version value="0.2.0"/>
   <name value="HIVProgramMonitoring"/>
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-27T10:45:48+00:00"/>
+  <date value="2023-02-27T12:41:19+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>

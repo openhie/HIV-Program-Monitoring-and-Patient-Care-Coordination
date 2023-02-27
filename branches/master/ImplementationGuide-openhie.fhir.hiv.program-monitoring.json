@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HIVProgramMonitoring</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring</pre><div><p>HIV Program Monitoring and Patient Care Coordination</p>\n</div></div>"
   },
   "url" : "http://openhie.org/fhir/hiv-program-monitoring/ImplementationGuide/openhie.fhir.hiv.program-monitoring",
-  "version" : "0.1.0-test",
+  "version" : "0.2.0",
   "name" : "HIVProgramMonitoring",
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-02-27T10:45:48+00:00",
+  "date" : "2023-02-27T12:41:19+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{

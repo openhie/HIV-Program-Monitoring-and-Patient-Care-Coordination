@@ -17,11 +17,11 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization"/>
-  <version value="0.1.0-test"/>
+  <version value="0.2.0"/>
   <name value="HIVOrganization"/>
   <title value="HIV Organization"/>
   <status value="active"/>
-  <date value="2023-02-27T10:45:48+00:00"/>
+  <date value="2023-02-27T12:41:19+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
