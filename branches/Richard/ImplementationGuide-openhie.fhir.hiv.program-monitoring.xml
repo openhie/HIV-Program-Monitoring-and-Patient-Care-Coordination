@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-02-28T10:52:31+00:00"/>
+  <date value="2023-03-01T07:12:03+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -521,6 +521,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-reason-sample-cancelled-or-rejected"/>
+      </reference>
+      <name value="Reasons why a lab order was cancelled or rejected"/>
+      <description value="Reasons why a lab order was cancelled or rejected."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -618,6 +628,16 @@
       </reference>
       <name value="Date HIV Test Done"/>
       <description value="This profile is to record the date when HIV test was done for a patient."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-arv-regimen"/>
+      </reference>
+      <name value="A list of ARV regimen"/>
+      <description value="A list of ARV regimen."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
