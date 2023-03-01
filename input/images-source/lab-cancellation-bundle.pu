@@ -11,8 +11,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task"]
       },
-    
-      "identifier" : [{
+           "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number",
         "value" : "ORDER12345"
       }],
@@ -51,5 +50,4 @@
     }
   }]
 }
-
 @endjson
