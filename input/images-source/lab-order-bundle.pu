@@ -11,7 +11,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task"]
       },
-     
+    
       "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number",
         "value" : "ORDER12345"
@@ -52,7 +52,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location"]
       },
-    
+     
       "name" : "HIV Location",
       "address" : {
         "city" : "DISI city",
@@ -131,7 +131,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner"]
       },
-    
+      
       "name" : [{
         "family" : "Smith",
         "given" : ["James"]
@@ -154,15 +154,14 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen"]
       },
-     
-      "identifier" : [{
+           "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/specimen",
         "value" : "abc123"
       }],
       "type" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "395058002"
+          "code" : "119361006"
         }]
       },
       "subject" : {
@@ -185,5 +184,4 @@
     }
   }]
 }
-
 @endjson

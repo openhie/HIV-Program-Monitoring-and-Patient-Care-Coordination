@@ -146,7 +146,7 @@ Description: "ARVCarePlan example"
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #in-progress
-* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.productCodeableConcept = $SCT#387005008
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
 * note.text = "Additional information regarding the ARV treatment prescribed"
 * note.authorReference = Reference(HIVOrganizationExample)
@@ -328,7 +328,7 @@ Description: "ARVCarePlan Refused example"
 * activity.detail.kind = #MedicationRequest
 * activity.detail.code = $LNC#45260-7 
 * activity.detail.status = #stopped
-* activity.detail.productCodeableConcept.text = "TDF/3TC/DTG"
+* activity.detail.productCodeableConcept = $SCT#387005008
 * activity.detail.scheduledPeriod.start = "2022-06-01"
 * activity.detail.scheduledPeriod.end = "2022-06-01"
 * activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
