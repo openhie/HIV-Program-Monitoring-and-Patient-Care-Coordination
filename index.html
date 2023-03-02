@@ -383,7 +383,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     The DISI architecture brings forth a <a href="https://jembi.gitbook.io/jembi-platform/packages" target="_blank">set of components</a> that are common among HIV and COVID19. 
     <br/>
     <br/>
-    The below generic architecture illustrates the high-level components for DISI and implementations alike to support case reporting in a HIE. For a more technical representation of the DISI architecture to support case reporting, please see the <a href="disi_architecture.png" target="_blank">DISI Component Architecture</a>.
+    The below generic architecture illustrates the high-level components for DISI and implementations alike to support case reporting and program monitoring in a HIE. For a more technical representation of the DISI architecture to support case reporting and program monitoring, please see the <a href="disi_architecture.png" target="_blank">DISI Component Architecture</a>.
   </p>
 
   <figure style="border: none; outline: none;">
@@ -394,15 +394,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p id="messaging-testing" class="heading">Messaging &amp; Testing</p>
 
   <p>
-    This specification defines the <a href="bundles.html">key FHIR messaging bundles</a> needed to support HIV Program Monitoring and Patient Care Coordination &amp; lab integration.
+    This specification defines the <a href="bundles.html">key FHIR messaging bundles</a> needed to support HIV program monitoring &amp; lab integration.
   </p>
 
   <p>
     Using an application called <a href="https://www.postman.com/" target="_blank">Postman</a>, you will be able to submit requests (message bundles) to the DISI Platform for processing &amp; reporting.
+    <br/>
+    <br/>
+    There are two Postman Collections namely: 
   </p>
 
+  <ol>
+    <li>HIV Program Monitoring</li>
+    <li>HIV Lab Integration</li>
+  </ol>
+
   <p>
-    Properly tailored postman collections will enable end-to-end testing between the EMR and analytics platform. Moreover, a tester can configure postman variables which can be designed to randomly populate data for all key fields in all resources. This is a great way to carry out exploratory testing.
+    Please see our <a href="https://jembi.gitbook.io/disi-on-platform/postman-collections" target="_blank">Postman Collections for HIV</a> as well as the descriptions for each of the message bundles that exist in each postman collection.
+    <br/>
+    <br/>
+    Each of the these postman collections have been tailored to support end-to-end testing between the EMR and lab systems. Moreover, each collection comes with a set of postman variables which have been designed to randomly populate data for all key fields in all resources. This is a great way to carry out exploratory testing.
     <br/>
     <br/>
     The use of postman variables also allows you to statically initiate variables to actual values you need.
@@ -498,7 +509,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 06:11+0000">2023-03-02</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 06:25+0000">2023-03-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
