@@ -269,3 +269,39 @@ Description: "A report as a result of the lab task being completed."
 * performer 1..1
 * result 1..1
 * conclusion 0..1
+
+Profile: TransferredOutServiceRequest
+Parent: ServiceRequest
+Id: transferred-out
+Title: "Transferred Out Service Request"
+Description: "A service request that initiates the need for a patient to be transferred to another organization."
+* status 1..1
+* intent = #order
+* code from VSTransferredOut (required)
+* subject 1..1
+* encounter 1..1
+* occurrenceDateTime 1..1
+* requester 1..1
+* performer 1..1
+* note 0..1
+
+Profile: HIVOrganizationPatientTransferredTo
+Parent: Organization
+Id: hiv-organization-patient-transferred-to
+Title: "HIV Organization Patient Is Transferred To"
+Description: "Organization who is receiving the patient as being transferred in."
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.description = "Slice based on the type of identifier"
+* identifier contains
+    HTS 1..1
+* identifier[HTS].value 1..1
+* identifier[HTS].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization" (exactly)
+* address 1..1
+* address.country 1..1
+* address.state 1..1
+* address.district 1..1
+* address.city 1..1
+* name 1..1

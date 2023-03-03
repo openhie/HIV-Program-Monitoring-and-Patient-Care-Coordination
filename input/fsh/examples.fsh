@@ -335,3 +335,37 @@ Description: "ARVCarePlan Refused example"
 * note.text = "Patient stopped treatment"
 * note.authorReference = Reference(HIVOrganizationExample)
 * note.time = "2022-02-07T13:28:17-05:00"
+
+Instance: TransferredOutServiceRequestExample
+InstanceOf: TransferredOutServiceRequest
+Usage: #example
+Title: "Patient Transferred Out Example"
+Description: "Patient Transferred Out Example"
+* status = #completed
+* intent = #order
+* code = $LNC#LA20597-3
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* occurrenceDateTime = "2012-01-05"
+* requester = Reference(PractitionerExample)
+* performer = Reference(HIVOrganizationPatientTransferredToExample)
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.text = "additional notes about the transfer"
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: HIVOrganizationPatientTransferredToExample
+InstanceOf: HIVOrganizationPatientTransferredTo
+Usage: #example
+Title: "HIV Organization Patient Is Transferred To Example"
+Description: "HIV Organization Patient Is Transferred To Example"
+* identifier[HTS].value = "facility1"
+* identifier[HTS].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization"
+* name = "HIV Test Services Health Facility"
+* address[+].country = "DISI country"
+* address[=].state = "DISI state 1"
+* address[=].district = "DISI district 1"
+* address[=].city = "DISI city 1"
+* address[=].line[+] = "DISI line 1"
+* address[=].line[+] = "DISI line 2"
+* address[=].line[+] = "DISI line 3"
+* address[=].postalCode = "DISI postal code"

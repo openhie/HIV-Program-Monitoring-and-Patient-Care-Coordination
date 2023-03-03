@@ -175,3 +175,10 @@ Description: "A list of ARV regimen."
 * $SCT#427314002 "Tenofovir disoproxil and lamivudine (TDF + 3TC)"
 * $SCT#387151007 "Zidovudine (AZT)"
 * $SCT#776469003 "Zidovudine and lamivudine (AZT + 3TC)"
+
+ValueSet: VSTransferredOut
+Id: vs-transferred-out
+Title: "Transferred out"
+Description: "Transferred out codes"
+* ^experimental = false
+* $LNC#LA20597-3 "Transferred to another hospital"
