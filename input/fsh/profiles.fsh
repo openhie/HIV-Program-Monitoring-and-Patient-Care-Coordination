@@ -31,9 +31,9 @@ Description: "A patient resource for an HIV Patient."
     NID 0..1 and
     MN 1..1
 * identifier[NID].value 0..1
-* identifier[NID].system = "http://openhie.org/fhir/hiv-cbs/identifier/nid" (exactly)
+* identifier[NID].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/nid" (exactly)
 * identifier[MN].value 1..1
-* identifier[MN].system = "http://openhie.org/fhir/hiv-cbs/identifier/mn" (exactly)
+* identifier[MN].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/mn" (exactly)
 * active 0..1
 * name.given 1..*
 * name.family 1..1
