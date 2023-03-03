@@ -11,7 +11,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient"]
       },
-      
+     
       "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/nid",
         "value" : "NID1234567"
@@ -56,7 +56,8 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter"]
       },
-          "extension" : [{
+     
+      "extension" : [{
         "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
         "valueDateTime" : "2022-10-22"
       }],
@@ -95,7 +96,8 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter"]
       },
-          "status" : "finished",
+    
+      "status" : "finished",
       "class" : {
         "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
         "code" : "AMB"
@@ -121,7 +123,8 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results"]
       },
-           "status" : "final",
+     
+      "status" : "final",
       "code" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
@@ -166,7 +169,8 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"]
       },
-           "identifier" : [{
+     
+      "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis",
         "value" : "abc123"
       }],
@@ -216,7 +220,8 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death"]
       },
-          "status" : "final",
+     
+      "status" : "final",
       "code" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
@@ -251,7 +256,8 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done"]
       },
-           "status" : "final",
+    
+      "status" : "final",
       "code" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
@@ -286,7 +292,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"]
       },
-    
+     
       "status" : "active",
       "intent" : "plan",
       "subject" : {
@@ -347,7 +353,8 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care"]
       },
-           "identifier" : [{
+      
+      "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id",
         "value" : "abc123"
       }],
@@ -374,6 +381,79 @@
     "request" : {
       "method" : "PUT",
       "url" : "EpisodeOfCare/HIVEpisodeOfCareExample"
+    }
+  },
+  {
+    "fullUrl" : "ServiceRequest/TransferredOutServiceRequestExample",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "TransferredOutServiceRequestExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferred-out"]
+      },
+     
+      "status" : "completed",
+      "intent" : "order",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA20597-3"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/HIVPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/TargetFacilityEncounterExample"
+      },
+      "occurrenceDateTime" : "2012-01-05",
+      "requester" : {
+        "reference" : "Practitioner/PractitionerExample"
+      },
+      "performer" : [{
+        "reference" : "Organization/HIVOrganizationPatientTransferredToExample"
+      }],
+      "note" : [{
+        "authorReference" : {
+          "reference" : "Organization/HIVOrganizationExample"
+        },
+        "time" : "2015-02-07T13:28:17-05:00",
+        "text" : "additional notes about the transfer"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "ServiceRequest/TransferredOutServiceRequestExample"
+    }
+  },
+  {
+    "fullUrl" : "Organization/HIVOrganizationPatientTransferredToExample",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "HIVOrganizationPatientTransferredToExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization-patient-transferred-to"]
+      },
+     
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization-patient-transferred-to",
+        "value" : "facility1"
+      }],
+      "name" : "HIV Test Services Health Facility",
+      "address" : [{
+        "line" : ["DISI line 1",
+        "DISI line 2",
+        "DISI line 3"],
+        "city" : "DISI city 1",
+        "district" : "DISI district 1",
+        "state" : "DISI state 1",
+        "postalCode" : "DISI postal code",
+        "country" : "DISI country"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/HIVOrganizationPatientTransferredToExample"
     }
   }]
 }
