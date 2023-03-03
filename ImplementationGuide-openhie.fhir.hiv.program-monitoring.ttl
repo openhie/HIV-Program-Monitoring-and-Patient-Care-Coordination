@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "HIV Program Monitoring and Patient Care Coordination"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-03T13:05:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-03T13:27:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -1120,6 +1120,20 @@
        fhir:example [
          fhir:v "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task"^^xsd:anyURI ;
          fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-lab-task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CarePlan" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/CarePlan/ARVTreatmentContactedExample> ;
+         fhir:reference [ fhir:v "CarePlan/ARVTreatmentContactedExample" ]
+       ] ;
+       fhir:name [ fhir:v "Example CarePlan - ARVTreatmentContactedExample" ] ;
+       fhir:example [
+         fhir:v "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment>
        ]
      ] [
        fhir:extension ( [

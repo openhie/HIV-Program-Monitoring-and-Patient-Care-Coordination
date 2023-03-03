@@ -3,13 +3,14 @@
 
 err = 0, warn = 4, info = 0
 IG Publisher Version: 1.2.39
-Generated Fri Mar 03 13:06:42 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.2.0 (canonical = http://openhie.org/fhir/hiv-program-monitoring)
+Generated Fri Mar 03 13:29:05 UTC 2023. FHIR version 4.0.1 for openhie.fhir.hiv.program-monitoring#0.2.0 (canonical = http://openhie.org/fhir/hiv-program-monitoring)
  Build Errors : 0 / 4 / 0
  /github/workspace/fsh-generated/resources/Bundle-EMR : 0 / 0 / 25
  /github/workspace/fsh-generated/resources/Bundle-LabCancellation : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabOrder : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-LabRejection : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/Bundle-LabResult : 0 / 0 / 11
+ /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentContactedExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-HIVDiagnosisExample : 0 / 0 / 1
@@ -79,6 +80,7 @@ WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in 
 == fsh-generated/resources/Bundle-LabOrder.json ==
 == fsh-generated/resources/Bundle-LabRejection.json ==
 == fsh-generated/resources/Bundle-LabResult.json ==
+== fsh-generated/resources/CarePlan-ARVTreatmentContactedExample.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentExample.json ==
 == fsh-generated/resources/CarePlan-ARVTreatmentRefusedExample.json ==
 == fsh-generated/resources/Condition-HIVDiagnosisExample.json ==
