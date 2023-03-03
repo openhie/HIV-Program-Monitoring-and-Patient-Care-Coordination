@@ -298,7 +298,7 @@ Description: "Organization who is receiving the patient as being transferred in.
 * identifier contains
     HTS 1..1
 * identifier[HTS].value 1..1
-* identifier[HTS].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization-patient-transferred-to" (exactly)
+* identifier[HTS].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization" (exactly)
 * address 1..1
 * address.country 1..1
 * address.state 1..1

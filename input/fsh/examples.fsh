@@ -359,7 +359,7 @@ Usage: #example
 Title: "HIV Organization Patient Is Transferred To Example"
 Description: "HIV Organization Patient Is Transferred To Example"
 * identifier[HTS].value = "facility1"
-* identifier[HTS].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization-patient-transferred-to"
+* identifier[HTS].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization"
 * name = "HIV Test Services Health Facility"
 * address[+].country = "DISI country"
 * address[=].state = "DISI state 1"
