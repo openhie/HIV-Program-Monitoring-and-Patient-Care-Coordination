@@ -30,7 +30,7 @@ Id: vs-hiv-death
 Title: "Death"
 Description:  "A list of possible HIV deaths"
 * ^experimental = false
-* $SCT#419099009 "Dead (finding)"
+* $SCT#419620001 "Death (event)"
 
 ValueSet: VSHIVTestDone
 Id: vs-hiv-test-done
