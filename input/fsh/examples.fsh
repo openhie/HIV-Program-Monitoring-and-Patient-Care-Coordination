@@ -112,7 +112,7 @@ Usage: #example
 Title: "Patient Death example"
 Description: "Patient Death example"
 * status = #final
-* code = $SCT#419099009
+* code = $SCT#419620001
 * subject = Reference(HIVPatientExample)
 * encounter = Reference(TargetFacilityEncounterExample)
 * effectiveDateTime = "2023-02-05"
