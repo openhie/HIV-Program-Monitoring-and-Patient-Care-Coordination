@@ -113,7 +113,8 @@ Id: vs-careplan-outcome
 Title: "ARV treatment outcomes"
 Description: "A list of possible ARV treatment outcomes."
 * ^experimental = false
-* $SCT#105480006 "Procedure declined by patient (situation)"
+* $SCT#737038009 "Declined consent for treatment (finding)"
+* $SCT#386473003 "Telephone follow-up (procedure)"
 
 ValueSet: VSReasonForSampleCancellationOrRejection
 Id: vs-reason-sample-cancelled-or-rejected

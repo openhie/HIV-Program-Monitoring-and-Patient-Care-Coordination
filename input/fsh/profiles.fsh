@@ -84,6 +84,7 @@ Description: "This profile represents the confirmation of HIV diagnosis."
 * identifier[HPTUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis" (exactly)
 * clinicalStatus 1..1
 * verificationStatus 1..1
+* code 1..1
 * code from VSCondition (required)
 * subject 1..1
 * encounter 1..1
@@ -125,14 +126,18 @@ Description: "This profile is to record prescribed ARV regimen against a given t
 * encounter 1..1
 * period 1..1
 * activity 1..* 
+* activity.outcomeCodeableConcept 0..* MS
 * activity.outcomeCodeableConcept from VSCarePlanActivityOutcome (required)
-* activity.detail 1..1
+* activity.detail 0..1
+* activity.detail.kind 0..1 MS
 * activity.detail.kind = #MedicationRequest
+* activity.detail.code 0..1 MS
 * activity.detail.code from VSARVMedicationRequest (required)
 * activity.detail.status 1..1
-* activity.detail.scheduledPeriod MS
+* activity.detail.productCodeableConcept 0..1 MS
 * activity.detail.productCodeableConcept from VSARVRegimen (required)
-* activity.detail.extension contains ARTRegimenLine named artRegimenLine 1..1
+* activity.detail.extension contains ARTRegimenLine named artRegimenLine 0..1 MS
+* activity.detail.scheduledPeriod 0..1
 * note 0..1
 
 Extension: ARTRegimenLine
@@ -155,6 +160,7 @@ Description: "This profile is used to record the enrolment type at the time of t
 * identifier[HMPUI].value 1..1
 * identifier[HMPUI].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id" (exactly)
 * status 1..1
+* type 1..1
 * type from VSPatientEnrollmentType (required)
 * diagnosis 1..* 
 * diagnosis.condition 1..1 
@@ -166,7 +172,8 @@ Parent: Specimen
 Id: viral-load-specimen
 Title: "Viral Load Specimen"
 Description: "The test sample that was collected for the initiated lab order."
-* identifier 1..1 
+* identifier 1..1
+* type 1..1
 * type from VSSpecimenType (required)
 * subject 1..1
 * collection.collectedDateTime 1..1
@@ -203,6 +210,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * identifier[FILL].system = "http://openhie.org/fhir/hiv-program-monitoring/identifier/lab-order-identifier" (exactly)
 * status 1..1
 * intent = #order
+* code 1..1
 * code from VSTestTypes (required)
 * subject 1..1
 * encounter 1..1
@@ -210,6 +218,7 @@ Description: "A service request that initiates the need for the lab to collect t
 * requester 1..1
 * locationReference 1..1
 * doNotPerform 0..1
+* reasonCode 1..*
 * reasonCode from VSReasonForAssessmentOrTestNotPerformed (required)
 * specimen 1..1
 * note 0..1
@@ -225,6 +234,7 @@ Description: "The result of the lab test which determines whether the patient is
 * encounter 1..1
 * effectiveDateTime 1..1
 * valueInteger 1..1
+* interpretation 1..1
 * interpretation from VSVLSuppression (required)
 * performer 1..1
 * note 0..1
@@ -277,6 +287,7 @@ Title: "Transferred Out Service Request"
 Description: "A service request that initiates the need for a patient to be transferred to another organization."
 * status 1..1
 * intent = #order
+* code 1..1
 * code from VSTransferredOut (required)
 * subject 1..1
 * encounter 1..1

@@ -313,29 +313,6 @@ Description: "HIV Lab Results Diagnostic Report example"
 * result = Reference(HIVTestResultExample)
 * conclusion = "Some conclusion text"
 
-Instance: ARVTreatmentRefusedExample
-InstanceOf: ARVTreatment
-Usage: #example
-Title: "ARVCarePlan Refused example"
-Description: "ARVCarePlan Refused example"
-* status = #active
-* intent = #plan
-* subject = Reference(HIVPatientExample)
-* encounter = Reference(TargetFacilityEncounterExample)
-* period.start = "2021-12-01"
-* period.end = "2022-12-01"
-* activity.outcomeCodeableConcept = $SCT#105480006
-* activity.detail.kind = #MedicationRequest
-* activity.detail.code = $LNC#45260-7 
-* activity.detail.status = #stopped
-* activity.detail.productCodeableConcept = $SCT#387005008
-* activity.detail.scheduledPeriod.start = "2022-06-01"
-* activity.detail.scheduledPeriod.end = "2022-06-01"
-* activity.detail.extension[artRegimenLine].valueCodeableConcept = $SCT#708255002
-* note.text = "Patient stopped treatment"
-* note.authorReference = Reference(HIVOrganizationExample)
-* note.time = "2022-02-07T13:28:17-05:00"
-
 Instance: TransferredOutServiceRequestExample
 InstanceOf: TransferredOutServiceRequest
 Usage: #example
@@ -369,3 +346,41 @@ Description: "HIV Organization Patient Is Transferred To Example"
 * address[=].line[+] = "DISI line 2"
 * address[=].line[+] = "DISI line 3"
 * address[=].postalCode = "DISI postal code"
+
+Instance: ARVTreatmentRefusedExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "ARV Treatment Refused Example"
+Description: "ARV Treatment Refused Example"
+* status = #completed
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = "2022-12-01"
+* period.end = "2022-12-01"
+* activity.outcomeCodeableConcept = $SCT#737038009
+* activity.detail.status = #not-started
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
+* note.text = "Additional information regarding the patient's refusal for the prescribed ARV treatment"
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
+
+Instance: ARVTreatmentContactedExample
+InstanceOf: ARVTreatment
+Usage: #example
+Title: "Contacted For ARV Treatment Example"
+Description: "Contacted For ARV Treatment Example"
+* status = #completed
+* intent = #plan
+* subject = Reference(HIVPatientExample)
+* encounter = Reference(TargetFacilityEncounterExample)
+* period.start = "2022-12-01"
+* period.end = "2022-12-01"
+* activity.outcomeCodeableConcept = $SCT#386473003
+* activity.detail.status = #not-started
+* activity.detail.scheduledPeriod.start = "2023-01-01"
+* activity.detail.scheduledPeriod.end = "2023-01-01"
+* note.text = "Additional information in regards to contacting the patient for ARV treatment."
+* note.authorReference = Reference(HIVOrganizationExample)
+* note.time = "2015-02-07T13:28:17-05:00"
