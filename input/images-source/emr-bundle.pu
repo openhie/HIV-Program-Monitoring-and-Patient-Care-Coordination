@@ -96,7 +96,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter"]
       },
-    
+     
       "status" : "finished",
       "class" : {
         "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -220,7 +220,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death"]
       },
-     
+    
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -292,7 +292,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"]
       },
-     
+    
       "status" : "active",
       "intent" : "plan",
       "subject" : {
@@ -353,7 +353,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-episode-of-care"]
       },
-      
+     
       "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id",
         "value" : "abc123"
@@ -391,7 +391,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferred-out"]
       },
-     
+    
       "status" : "completed",
       "intent" : "order",
       "code" : {
@@ -436,7 +436,7 @@
       },
      
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization-patient-transferred-to",
+        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization",
         "value" : "facility1"
       }],
       "name" : "HIV Test Services Health Facility",
@@ -454,6 +454,29 @@
     "request" : {
       "method" : "PUT",
       "url" : "Organization/HIVOrganizationPatientTransferredToExample"
+    }
+  },
+  {
+    "fullUrl" : "Practitioner/PractitionerExample",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "PractitionerExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner"]
+      },
+    
+      "name" : [{
+        "family" : "Smith",
+        "given" : ["James"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "27537652509"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Practitioner/PractitionerExample"
     }
   }]
 }
