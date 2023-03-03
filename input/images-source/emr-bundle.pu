@@ -123,7 +123,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results"]
       },
-     
+    
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -220,7 +220,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/death"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -256,7 +256,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/date-hiv-test-done"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -391,7 +391,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferred-out"]
       },
-    
+     
       "status" : "completed",
       "intent" : "order",
       "code" : {
@@ -434,7 +434,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization-patient-transferred-to"]
       },
-     
+    
       "identifier" : [{
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization",
         "value" : "facility1"
@@ -464,7 +464,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner"]
       },
-    
+     
       "name" : [{
         "family" : "Smith",
         "given" : ["James"]
