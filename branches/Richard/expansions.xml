@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="70af5470-1a76-4651-912d-5819df9e060f"/>
+  <id value="b7a4e5f9-b7b7-4adc-acb4-ed3343bd56c1"/>
   <meta>
-    <lastUpdated value="2023-03-02T06:25:57.701+00:00"/>
+    <lastUpdated value="2023-03-03T14:40:41.955+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -61,7 +61,7 @@
         <title value="Reasons why a lab order was cancelled or rejected"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -81,8 +81,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a817ea5f-a8dc-4d33-95ab-ebd5f4d6b7b8"/>
-          <timestamp value="2023-03-02T06:26:45+00:00"/>
+          <identifier value="urn:uuid:0bae6a28-f20d-4d34-b0dd-f31adc69742b"/>
+          <timestamp value="2023-03-03T14:41:21+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -154,7 +154,7 @@
         <title value="HIV Test Done"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -174,8 +174,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:27f6c0c4-a501-495b-9a1d-68c104d578e2"/>
-          <timestamp value="2023-03-02T06:26:48+00:00"/>
+          <identifier value="urn:uuid:255dd842-215c-415c-94fd-073d185a2877"/>
+          <timestamp value="2023-03-03T14:41:23+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -267,7 +267,7 @@
         <title value="Patient Type at Enrolment"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -287,8 +287,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:51e4e2f4-456b-45ca-a926-02627d76f131"/>
-          <timestamp value="2023-03-02T06:26:50+00:00"/>
+          <identifier value="urn:uuid:edfe8780-edd7-4dbb-9779-37286c23cd5c"/>
+          <timestamp value="2023-03-03T14:41:25+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -389,7 +389,7 @@
         <title value="Viral Load Suppressions Status"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -409,8 +409,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:93266e2a-3773-4ae1-bc7a-51eba785522c"/>
-          <timestamp value="2023-03-02T06:26:50+00:00"/>
+          <identifier value="urn:uuid:ffc9dbb3-1129-42f4-8146-1829400dfb23"/>
+          <timestamp value="2023-03-03T14:41:25+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -642,7 +642,7 @@
         <title value="A list of ARV regimen"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -662,8 +662,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7ab1cce9-63d7-4da6-86d9-e7109f191798"/>
-          <timestamp value="2023-03-02T06:26:51+00:00"/>
+          <identifier value="urn:uuid:348a68fb-5d5d-4b12-8dd4-bca22a46feb8"/>
+          <timestamp value="2023-03-03T14:41:26+00:00"/>
           <total value="21"/>
           <parameter>
             <name value="excludeNested"/>
@@ -794,7 +794,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2022</p>
             <table class="codes">
               <tr>
@@ -810,11 +810,19 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-105480006"> </a>  
-                  <a href="http://snomed.info/id/105480006">105480006</a>
+                  <a name="http---snomed.info-sct-737038009"> </a>  
+                  <a href="http://snomed.info/id/737038009">737038009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Procedure declined by patient (situation)</td>
+                <td>Declined consent for treatment (finding)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-386473003"> </a>  
+                  <a href="http://snomed.info/id/386473003">386473003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Telephone follow-up (procedure)</td>
               </tr>
             </table>
           </div>
@@ -825,7 +833,7 @@
         <title value="ARV treatment outcomes"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -845,9 +853,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c7a39f0b-0b36-4845-8f91-987020c76a01"/>
-          <timestamp value="2023-03-02T06:26:56+00:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:750d03c3-7d86-4915-ae44-d478b8f3776d"/>
+          <timestamp value="2023-03-03T14:41:31+00:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -862,8 +870,13 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="105480006"/>
-            <display value="Procedure declined by patient (situation)"/>
+            <code value="737038009"/>
+            <display value="Declined consent for treatment (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="386473003"/>
+            <display value="Telephone follow-up (procedure)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -1020,7 +1033,7 @@
         <title value="Reason for Assessment or Test Not Performed"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1040,8 +1053,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:75d5902d-a6b4-46b1-9a0c-86bc16bdbbdb"/>
-          <timestamp value="2023-03-02T06:26:57+00:00"/>
+          <identifier value="urn:uuid:79fdc8d0-bcd0-4ab9-ab35-c8b5c322e299"/>
+          <timestamp value="2023-03-03T14:41:31+00:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1173,7 +1186,7 @@
         <title value="Conditions"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1193,8 +1206,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:934ffb25-ebcc-41b8-91cc-4d974ea8d06c"/>
-          <timestamp value="2023-03-02T06:26:58+00:00"/>
+          <identifier value="urn:uuid:d18d29d7-958b-4427-a3ba-bb05675b230c"/>
+          <timestamp value="2023-03-03T14:41:32+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1256,7 +1269,7 @@
         <title value="Death"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1276,8 +1289,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:207782c1-cc6d-4d5c-b433-116b4df67ccb"/>
-          <timestamp value="2023-03-02T06:27:00+00:00"/>
+          <identifier value="urn:uuid:4509f40e-861f-48b6-b372-c02ff7bef7cc"/>
+          <timestamp value="2023-03-03T14:41:34+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1355,7 +1368,7 @@
         <title value="Test Types"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1375,8 +1388,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a69d875b-3339-4c8b-8a1a-5cf72629a74d"/>
-          <timestamp value="2023-03-02T06:27:00+00:00"/>
+          <identifier value="urn:uuid:180c1414-f8a7-49bf-998f-274cd559b6fc"/>
+          <timestamp value="2023-03-03T14:41:34+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1464,7 +1477,7 @@
         <title value="ART Regimen Lines"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1484,8 +1497,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8a6ab740-2f75-49b3-bd71-7f6e67d8b895"/>
-          <timestamp value="2023-03-02T06:27:00+00:00"/>
+          <identifier value="urn:uuid:cabfbce0-4ff6-48a5-bfd0-a4c7edb6debe"/>
+          <timestamp value="2023-03-03T14:41:34+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1589,7 +1602,7 @@
         <title value="Specimen Type Used In Viral Load testing"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1609,8 +1622,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:907f653d-1f5d-4111-bcee-ec3d1d45d328"/>
-          <timestamp value="2023-03-02T06:27:00+00:00"/>
+          <identifier value="urn:uuid:ebebf91e-5cb2-4168-a3ea-f1ff0d96e261"/>
+          <timestamp value="2023-03-03T14:41:35+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1692,7 +1705,7 @@
         <title value="Viral Load Result Code"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1712,8 +1725,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9fe1a1e0-47c6-415a-b9ac-99c7e509f3cc"/>
-          <timestamp value="2023-03-02T06:27:01+00:00"/>
+          <identifier value="urn:uuid:5648246b-756b-46d3-a134-480d8f4ca38b"/>
+          <timestamp value="2023-03-03T14:41:35+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1775,7 +1788,7 @@
         <title value="ARV Treatment Medication Request"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2023-03-02T06:25:57+00:00"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
         <publisher value="Jembi Health Systems"/>
         <contact>
           <telecom>
@@ -1795,8 +1808,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d7c8b1a3-d11c-40dc-ad15-8674e362355b"/>
-          <timestamp value="2023-03-02T06:27:01+00:00"/>
+          <identifier value="urn:uuid:23b6c51d-3600-45cf-88c4-b75fb4cac718"/>
+          <timestamp value="2023-03-03T14:41:36+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1814,6 +1827,89 @@
             <system value="http://loinc.org"/>
             <code value="45260-7"/>
             <display value="HIV ART medication"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-transferred-out"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-transferred-out"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA20597-3"> </a>  
+                  <a href="https://loinc.org/LA20597-3/">LA20597-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Transferred to another hospital</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-transferred-out"/>
+        <version value="0.2.0"/>
+        <name value="VSTransferredOut"/>
+        <title value="Transferred out"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-03-03T14:40:41+00:00"/>
+        <publisher value="Jembi Health Systems"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.jembi.org"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@jembi.org"/>
+          </telecom>
+        </contact>
+        <description value="Transferred out codes"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:eb71501b-c386-4722-88f2-4ebe139380a0"/>
+          <timestamp value="2023-03-03T14:41:37+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.73"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA20597-3"/>
+            <display value="Transferred to another hospital"/>
           </contains>
         </expansion>
       </ValueSet>

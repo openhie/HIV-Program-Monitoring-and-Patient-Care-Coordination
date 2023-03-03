@@ -11,7 +11,7 @@
   "title" : "HIV Program Monitoring and Patient Care Coordination",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-03-02T06:25:57+00:00",
+  "date" : "2023-03-03T14:40:41+00:00",
   "publisher" : "Jembi Health Systems",
   "contact" : [{
     "telecom" : [{
@@ -619,6 +619,17 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/HIVOrganizationPatientTransferredToExample"
+      },
+      "name" : "Example Organization - HIVOrganizationPatientTransferredToExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization-patient-transferred-to"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -823,7 +834,7 @@
         "reference" : "Bundle/EMR"
       },
       "name" : "Example Bundle - EMR",
-      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner"
     },
     {
       "extension" : [{
@@ -901,6 +912,17 @@
       },
       "name" : "Viral Load Specimen",
       "description" : "The test sample that was collected for the initiated lab order."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hiv-organization-patient-transferred-to"
+      },
+      "name" : "HIV Organization Patient Is Transferred To",
+      "description" : "Organization who is receiving the patient as being transferred in."
     },
     {
       "extension" : [{
@@ -1136,6 +1158,39 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/ARVTreatmentContactedExample"
+      },
+      "name" : "Example CarePlan - ARVTreatmentContactedExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/TransferredOutServiceRequestExample"
+      },
+      "name" : "Example ServiceRequest - TransferredOutServiceRequestExample",
+      "exampleCanonical" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferred-out"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/transferred-out"
+      },
+      "name" : "Transferred Out Service Request",
+      "description" : "A service request that initiates the need for a patient to be transferred to another organization."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Encounter"
       }],
       "reference" : {
@@ -1231,6 +1286,17 @@
       },
       "name" : "Lab Order",
       "description" : "A service request that initiates the need for the lab to collect the test sample."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-transferred-out"
+      },
+      "name" : "Transferred out",
+      "description" : "Transferred out codes"
     },
     {
       "extension" : [{

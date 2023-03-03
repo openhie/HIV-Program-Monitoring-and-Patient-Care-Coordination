@@ -84,6 +84,13 @@
     "name" : "HIVOrganization"
   },
   {
+    "id" : "hiv-organization-patient-transferred-to",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-organization-patient-transferred-to",
+    "version" : "0.2.0",
+    "name" : "HIVOrganizationPatientTransferredTo"
+  },
+  {
     "id" : "hiv-patient",
     "type" : "StructureDefinition",
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-patient",
@@ -117,6 +124,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter",
     "version" : "0.2.0",
     "name" : "TargetFacilityEncounter"
+  },
+  {
+    "id" : "transferred-out",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferred-out",
+    "version" : "0.2.0",
+    "name" : "TransferredOutServiceRequest"
   },
   {
     "id" : "transferring-facility-encounter",
@@ -215,6 +229,13 @@
     "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-test-types",
     "version" : "0.2.0",
     "name" : "VSTestTypes"
+  },
+  {
+    "id" : "vs-transferred-out",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-transferred-out",
+    "version" : "0.2.0",
+    "name" : "VSTransferredOut"
   },
   {
     "id" : "vs-vl-result-code",
