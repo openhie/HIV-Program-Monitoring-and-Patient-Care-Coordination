@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "HIV Program Monitoring and Patient Care Coordination"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-03-03T07:18:54+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-03T08:26:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Jembi Health Systems"] ; # 
   fhir:contact ( [
      fhir:telecom ( [
@@ -760,8 +760,8 @@
        ] ;
        fhir:name [ fhir:v "Example Bundle - EMR" ] ;
        fhir:example [
-         fhir:v "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"^^xsd:anyURI ;
-         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis>
+         fhir:v "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner>
        ]
      ] [
        fhir:extension ( [
