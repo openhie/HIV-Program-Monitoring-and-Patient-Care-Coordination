@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "14921e15-8724-4b0d-b062-30e0aa9eb3bd",
+  "id" : "c2904e4c-ac15-4b44-9c6f-8733c24096da",
   "meta" : {
-    "lastUpdated" : "2023-03-07T16:19:15.141+00:00"
+    "lastUpdated" : "2023-03-07T17:24:01.247+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,7 +12,7 @@
       "id" : "vs-reason-sample-cancelled-or-rejected",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281264009\"> </a>  <a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>http://snomed.info/sct</td><td>Inappropriate bottle or container for sample (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281266006\"> </a>  <a href=\"http://snomed.info/id/281266006\">281266006</a></td><td>http://snomed.info/sct</td><td>No sample received (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-135839007\"> </a>  <a href=\"http://snomed.info/id/135839007\">135839007</a></td><td>http://snomed.info/sct</td><td>Sample rejected (finding)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281264009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>http://snomed.info/sct</td><td>Inappropriate bottle or container for sample (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281266006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281266006\">281266006</a></td><td>http://snomed.info/sct</td><td>No sample received (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-135839007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/135839007\">135839007</a></td><td>http://snomed.info/sct</td><td>Sample rejected (finding)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-reason-sample-cancelled-or-rejected",
       "version" : "0.2.0",
@@ -20,7 +20,7 @@
       "title" : "Reasons why a lab order was cancelled or rejected",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -40,8 +40,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:75be8c3e-386c-45c5-8af2-a8088ac6a440",
-        "timestamp" : "2023-03-07T16:20:05+00:00",
+        "identifier" : "urn:uuid:5b44343e-5108-433a-9faf-7838d82f4f55",
+        "timestamp" : "2023-03-07T17:24:33+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -80,7 +80,7 @@
       "id" : "vs-hiv-test-done",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>  <a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus viral load (procedure)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-test-done",
       "version" : "0.2.0",
@@ -88,7 +88,7 @@
       "title" : "HIV Test Done",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -108,8 +108,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2ff5cd01-d70d-41e1-a364-dedd9aa2de77",
-        "timestamp" : "2023-03-07T16:20:07+00:00",
+        "identifier" : "urn:uuid:d46954c1-3df7-4932-9afe-d658a5d567ff",
+        "timestamp" : "2023-03-07T17:24:35+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -138,7 +138,7 @@
       "id" : "vs-patient-enrollment-type",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.73</li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-185387006\"> </a>  <a href=\"http://snomed.info/id/185387006\">185387006</a></td><td>http://snomed.info/sct</td><td>New patient consultation (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309037001\"> </a>  <a href=\"http://snomed.info/id/309037001\">309037001</a></td><td>http://snomed.info/sct</td><td>Transfer status (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-182837001\"> </a>  <a href=\"http://snomed.info/id/182837001\">182837001</a></td><td>http://snomed.info/sct</td><td>Restart of medication (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6505-7\"> </a>  <a href=\"https://loinc.org/LA6505-7/\">LA6505-7</a></td><td>http://loinc.org</td><td>PMTCT</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.73</li><li>SNOMED CT International edition 31-Jul 2022</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-185387006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/185387006\">185387006</a></td><td>http://snomed.info/sct</td><td>New patient consultation (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-309037001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/309037001\">309037001</a></td><td>http://snomed.info/sct</td><td>Transfer status (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-182837001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/182837001\">182837001</a></td><td>http://snomed.info/sct</td><td>Restart of medication (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6505-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA6505-7/\">LA6505-7</a></td><td>http://loinc.org</td><td>PMTCT</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-patient-enrollment-type",
       "version" : "0.2.0",
@@ -146,7 +146,7 @@
       "title" : "Patient Type at Enrolment",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -166,8 +166,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:290ec711-f0b5-4fdf-b579-1061231d83a7",
-        "timestamp" : "2023-03-07T16:20:10+00:00",
+        "identifier" : "urn:uuid:53aa9fe9-71e5-4222-b12f-da191626f95f",
+        "timestamp" : "2023-03-07T17:24:36+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -219,7 +219,7 @@
       "id" : "vs-vl-suppression",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-245780008\"> </a>  <a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>http://snomed.info/sct</td><td>Suppressed (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19032002\"> </a>  <a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>http://snomed.info/sct</td><td>Uncontrolled (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>  <a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown (qualifier value)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-245780008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/245780008\">245780008</a></td><td>http://snomed.info/sct</td><td>Suppressed (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19032002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19032002\">19032002</a></td><td>http://snomed.info/sct</td><td>Uncontrolled (qualifier value)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown (qualifier value)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-suppression",
       "version" : "0.2.0",
@@ -227,7 +227,7 @@
       "title" : "Viral Load Suppressions Status",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -247,8 +247,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ca88a272-5a39-4b24-b5b6-2d7fa4097126",
-        "timestamp" : "2023-03-07T16:20:10+00:00",
+        "identifier" : "urn:uuid:4ed19844-9e37-4478-ba7d-1a8f65881055",
+        "timestamp" : "2023-03-07T17:24:36+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -287,7 +287,7 @@
       "id" : "vs-arv-regimen",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 21 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387105006\"> </a>  <a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>http://snomed.info/sct</td><td>Didanosine (DDI)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387005008\"> </a>  <a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>http://snomed.info/sct</td><td>Abacavir (ABC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-772188001\"> </a>  <a href=\"http://snomed.info/id/772188001\">772188001</a></td><td>http://snomed.info/sct</td><td>Abacavir and lamivudine (ABC + 3TC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-427314002\"> </a>  <a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>http://snomed.info/sct</td><td>ABC + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-878898002\"> </a>  <a href=\"http://snomed.info/id/878898002\">878898002</a></td><td>http://snomed.info/sct</td><td>Atazanavir/ritonavir (ATV/r)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-713464000\"> </a>  <a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>http://snomed.info/sct</td><td>Dolutegravir (DTG)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387001004\"> </a>  <a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>http://snomed.info/sct</td><td>Efavirenz (EFV)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-404856006\"> </a>  <a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>http://snomed.info/sct</td><td>Emtricitabine (FTC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-432121008\"> </a>  <a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>http://snomed.info/sct</td><td>Etravirine (ETV)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386897000\"> </a>  <a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>http://snomed.info/sct</td><td>Lamivudine (3TC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-776569000\"> </a>  <a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>http://snomed.info/sct</td><td>Lopinavir/ritonavir (LPV/r)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386898005\"> </a>  <a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>http://snomed.info/sct</td><td>Nevirapine (NVP)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-429707008\"> </a>  <a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>http://snomed.info/sct</td><td>Raltegravir (RAL)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-703123005\"> </a>  <a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>http://snomed.info/sct</td><td>Rilpivirine (RIL)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386896009\"> </a>  <a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>http://snomed.info/sct</td><td>Ritonavir (RTV)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386895008\"> </a>  <a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>http://snomed.info/sct</td><td>Stavudine (D4T)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422091007\"> </a>  <a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>http://snomed.info/sct</td><td>Tenofovir (TDF)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-421203005\"> </a>  <a href=\"http://snomed.info/id/421203005\">421203005</a></td><td>http://snomed.info/sct</td><td>Tenofovir disoproxil (TDF)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-414091005\"> </a>  <a href=\"http://snomed.info/id/414091005\">414091005</a></td><td>http://snomed.info/sct</td><td>Tenofovir disoproxil and emtricitabine (TDF + FTC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387151007\"> </a>  <a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>http://snomed.info/sct</td><td>Zidovudine (AZT)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-776469003\"> </a>  <a href=\"http://snomed.info/id/776469003\">776469003</a></td><td>http://snomed.info/sct</td><td>Zidovudine and lamivudine (AZT + 3TC)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 21 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387105006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387105006\">387105006</a></td><td>http://snomed.info/sct</td><td>Didanosine (DDI)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387005008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387005008\">387005008</a></td><td>http://snomed.info/sct</td><td>Abacavir (ABC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-772188001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/772188001\">772188001</a></td><td>http://snomed.info/sct</td><td>Abacavir and lamivudine (ABC + 3TC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-427314002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/427314002\">427314002</a></td><td>http://snomed.info/sct</td><td>ABC + 3TC + ATV/r</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-878898002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/878898002\">878898002</a></td><td>http://snomed.info/sct</td><td>Atazanavir/ritonavir (ATV/r)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-713464000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/713464000\">713464000</a></td><td>http://snomed.info/sct</td><td>Dolutegravir (DTG)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387001004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387001004\">387001004</a></td><td>http://snomed.info/sct</td><td>Efavirenz (EFV)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-404856006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/404856006\">404856006</a></td><td>http://snomed.info/sct</td><td>Emtricitabine (FTC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-432121008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/432121008\">432121008</a></td><td>http://snomed.info/sct</td><td>Etravirine (ETV)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386897000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/386897000\">386897000</a></td><td>http://snomed.info/sct</td><td>Lamivudine (3TC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-776569000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/776569000\">776569000</a></td><td>http://snomed.info/sct</td><td>Lopinavir/ritonavir (LPV/r)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386898005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/386898005\">386898005</a></td><td>http://snomed.info/sct</td><td>Nevirapine (NVP)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-429707008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/429707008\">429707008</a></td><td>http://snomed.info/sct</td><td>Raltegravir (RAL)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-703123005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/703123005\">703123005</a></td><td>http://snomed.info/sct</td><td>Rilpivirine (RIL)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386896009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/386896009\">386896009</a></td><td>http://snomed.info/sct</td><td>Ritonavir (RTV)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386895008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/386895008\">386895008</a></td><td>http://snomed.info/sct</td><td>Stavudine (D4T)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422091007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/422091007\">422091007</a></td><td>http://snomed.info/sct</td><td>Tenofovir (TDF)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-421203005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/421203005\">421203005</a></td><td>http://snomed.info/sct</td><td>Tenofovir disoproxil (TDF)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-414091005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/414091005\">414091005</a></td><td>http://snomed.info/sct</td><td>Tenofovir disoproxil and emtricitabine (TDF + FTC)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-387151007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/387151007\">387151007</a></td><td>http://snomed.info/sct</td><td>Zidovudine (AZT)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-776469003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/776469003\">776469003</a></td><td>http://snomed.info/sct</td><td>Zidovudine and lamivudine (AZT + 3TC)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arv-regimen",
       "version" : "0.2.0",
@@ -295,7 +295,7 @@
       "title" : "A list of ARV regimen",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -315,8 +315,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5d88b876-781d-4077-be8e-67a83ee85225",
-        "timestamp" : "2023-03-07T16:20:11+00:00",
+        "identifier" : "urn:uuid:09281049-4ce6-45fc-bf1c-61e988584d1f",
+        "timestamp" : "2023-03-07T17:24:38+00:00",
         "total" : 21,
         "parameter" : [{
           "name" : "excludeNested",
@@ -445,7 +445,7 @@
       "id" : "vs-careplan-outcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-737038009\"> </a>  <a href=\"http://snomed.info/id/737038009\">737038009</a></td><td>http://snomed.info/sct</td><td>Declined consent for treatment (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386473003\"> </a>  <a href=\"http://snomed.info/id/386473003\">386473003</a></td><td>http://snomed.info/sct</td><td>Telephone follow-up (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-737038009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/737038009\">737038009</a></td><td>http://snomed.info/sct</td><td>Declined consent for treatment (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-386473003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/386473003\">386473003</a></td><td>http://snomed.info/sct</td><td>Telephone follow-up (procedure)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-careplan-outcome",
       "version" : "0.2.0",
@@ -453,7 +453,7 @@
       "title" : "ARV treatment outcomes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -473,8 +473,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1557cfe5-19e2-4212-af0d-44f7e872ec65",
-        "timestamp" : "2023-03-07T16:20:19+00:00",
+        "identifier" : "urn:uuid:80b65cf7-4f9f-4d69-91b5-ee9cfa9e62dd",
+        "timestamp" : "2023-03-07T17:24:43+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -508,7 +508,7 @@
       "id" : "vs-reason-for-assessment-or-test-not-performed",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-77386006\"> </a>  <a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>http://snomed.info/sct</td><td>Currently pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-428450006\"> </a>  <a href=\"http://snomed.info/id/428450006\">428450006</a></td><td>http://snomed.info/sct</td><td>Repeat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-171111007\"> </a>  <a href=\"http://snomed.info/id/171111007\">171111007</a></td><td>http://snomed.info/sct</td><td>Results not available</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-266721009\"> </a>  <a href=\"http://snomed.info/id/266721009\">266721009</a></td><td>http://snomed.info/sct</td><td>Absent response to treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-170564007\"> </a>  <a href=\"http://snomed.info/id/170564007\">170564007</a></td><td>http://snomed.info/sct</td><td>Chronic disease - treatment changed (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-413712001\"> </a>  <a href=\"http://snomed.info/id/413712001\">413712001</a></td><td>http://snomed.info/sct</td><td>Breastfeeding (mother) (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>  <a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Baseline Viral Load / Routine Viral Load</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-2528003\"> </a>  <a href=\"http://snomed.info/id/2528003\">2528003</a></td><td>http://snomed.info/sct</td><td>Persistent low-Level viraemia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441510007\"> </a>  <a href=\"http://snomed.info/id/441510007\">441510007</a></td><td>http://snomed.info/sct</td><td>Blood sample coagulated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-123840003\"> </a>  <a href=\"http://snomed.info/id/123840003\">123840003</a></td><td>http://snomed.info/sct</td><td>Contaminated specimen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-397933008\"> </a>  <a href=\"http://snomed.info/id/397933008\">397933008</a></td><td>http://snomed.info/sct</td><td>Equipment failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281264009\"> </a>  <a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>http://snomed.info/sct</td><td>Inappropriate sample container used</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281268007\"> </a>  <a href=\"http://snomed.info/id/281268007\">281268007</a></td><td>http://snomed.info/sct</td><td>Insufficient sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281265005\"> </a>  <a href=\"http://snomed.info/id/281265005\">281265005</a></td><td>http://snomed.info/sct</td><td>Specimen not labeled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419182006\"> </a>  <a href=\"http://snomed.info/id/419182006\">419182006</a></td><td>http://snomed.info/sct</td><td>Supplies not available</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 15 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-77386006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>http://snomed.info/sct</td><td>Currently pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-428450006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/428450006\">428450006</a></td><td>http://snomed.info/sct</td><td>Repeat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-171111007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/171111007\">171111007</a></td><td>http://snomed.info/sct</td><td>Results not available</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-266721009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/266721009\">266721009</a></td><td>http://snomed.info/sct</td><td>Absent response to treatment</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-170564007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/170564007\">170564007</a></td><td>http://snomed.info/sct</td><td>Chronic disease - treatment changed (finding)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-413712001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/413712001\">413712001</a></td><td>http://snomed.info/sct</td><td>Breastfeeding (mother) (observable entity)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-315124004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/315124004\">315124004</a></td><td>http://snomed.info/sct</td><td>Baseline Viral Load / Routine Viral Load</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-2528003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/2528003\">2528003</a></td><td>http://snomed.info/sct</td><td>Persistent low-Level viraemia</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441510007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/441510007\">441510007</a></td><td>http://snomed.info/sct</td><td>Blood sample coagulated</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-123840003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/123840003\">123840003</a></td><td>http://snomed.info/sct</td><td>Contaminated specimen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-397933008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/397933008\">397933008</a></td><td>http://snomed.info/sct</td><td>Equipment failure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281264009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281264009\">281264009</a></td><td>http://snomed.info/sct</td><td>Inappropriate sample container used</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281268007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281268007\">281268007</a></td><td>http://snomed.info/sct</td><td>Insufficient sample</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-281265005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/281265005\">281265005</a></td><td>http://snomed.info/sct</td><td>Specimen not labeled</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419182006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419182006\">419182006</a></td><td>http://snomed.info/sct</td><td>Supplies not available</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-reason-for-assessment-or-test-not-performed",
       "version" : "0.2.0",
@@ -516,7 +516,7 @@
       "title" : "Reason for Assessment or Test Not Performed",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -536,8 +536,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc8ea783-76e5-4474-b88b-af5c048dbd54",
-        "timestamp" : "2023-03-07T16:20:19+00:00",
+        "identifier" : "urn:uuid:33d0ff93-b901-42b0-8c84-fe8791d82fdf",
+        "timestamp" : "2023-03-07T17:24:43+00:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -636,7 +636,7 @@
       "id" : "vs-condition",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86406008\"> </a>  <a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus infection (disorder)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86406008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/86406008\">86406008</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus infection (disorder)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-condition",
       "version" : "0.2.0",
@@ -644,7 +644,7 @@
       "title" : "Conditions",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -664,8 +664,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f7063040-2e30-452b-8187-a53a75e0fcba",
-        "timestamp" : "2023-03-07T16:20:21+00:00",
+        "identifier" : "urn:uuid:fdbd483c-c7a5-402c-9f7d-c01328e1e177",
+        "timestamp" : "2023-03-07T17:24:44+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -694,7 +694,7 @@
       "id" : "vs-hiv-death",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419620001\"> </a>  <a href=\"http://snomed.info/id/419620001\">419620001</a></td><td>http://snomed.info/sct</td><td>Death (event)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-419620001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/419620001\">419620001</a></td><td>http://snomed.info/sct</td><td>Death (event)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-hiv-death",
       "version" : "0.2.0",
@@ -702,7 +702,7 @@
       "title" : "Death",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -722,8 +722,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8c92890a-cd3b-448e-bcc6-ec1145b7cd30",
-        "timestamp" : "2023-03-07T16:20:23+00:00",
+        "identifier" : "urn:uuid:fa4f0f65-d88c-402d-9acb-d628b81c8b51",
+        "timestamp" : "2023-03-07T17:24:46+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -752,7 +752,7 @@
       "id" : "vs-test-types",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25842-6\"> </a>  <a href=\"https://loinc.org/25842-6/\">25842-6</a></td><td>http://loinc.org</td><td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25836-8\"> </a>  <a href=\"https://loinc.org/25836-8/\">25836-8</a></td><td>http://loinc.org</td><td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-24467-3\"> </a>  <a href=\"https://loinc.org/24467-3/\">24467-3</a></td><td>http://loinc.org</td><td>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25842-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/25842-6/\">25842-6</a></td><td>http://loinc.org</td><td>HIV 2 proviral DNA [Presence] in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-25836-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/25836-8/\">25836-8</a></td><td>http://loinc.org</td><td>HIV 1 RNA [#/volume] (viral load) in Specimen by NAA with probe detection</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-24467-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/24467-3/\">24467-3</a></td><td>http://loinc.org</td><td>CD3+CD4+ (T4 helper) cells [#/volume] in Blood</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-test-types",
       "version" : "0.2.0",
@@ -760,7 +760,7 @@
       "title" : "Test Types",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -780,8 +780,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f3a1c5e3-a25b-4517-a9d5-aa0b7de87c29",
-        "timestamp" : "2023-03-07T16:20:23+00:00",
+        "identifier" : "urn:uuid:316b27f3-5233-4a90-b317-dad09e05ed01",
+        "timestamp" : "2023-03-07T17:24:46+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -820,7 +820,7 @@
       "id" : "vs-artregimen-lines",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708255002\"> </a>  <a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>http://snomed.info/sct</td><td>First line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708256001\"> </a>  <a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>http://snomed.info/sct</td><td>Second line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708257005\"> </a>  <a href=\"http://snomed.info/id/708257005\">708257005</a></td><td>http://snomed.info/sct</td><td>Third line treatment (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708255002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/708255002\">708255002</a></td><td>http://snomed.info/sct</td><td>First line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708256001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/708256001\">708256001</a></td><td>http://snomed.info/sct</td><td>Second line treatment (procedure)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-708257005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/708257005\">708257005</a></td><td>http://snomed.info/sct</td><td>Third line treatment (procedure)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-artregimen-lines",
       "version" : "0.2.0",
@@ -828,7 +828,7 @@
       "title" : "ART Regimen Lines",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -848,8 +848,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d2e9e569-5b80-460c-ad42-77595eb34fbb",
-        "timestamp" : "2023-03-07T16:20:23+00:00",
+        "identifier" : "urn:uuid:e1d754cb-cf70-4cff-a2d4-891dce4b2c63",
+        "timestamp" : "2023-03-07T17:24:46+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -888,7 +888,7 @@
       "id" : "vs-specimen-type",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119361006\"> </a>  <a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>http://snomed.info/sct</td><td>Plasma specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-440500007\"> </a>  <a href=\"http://snomed.info/id/440500007\">440500007</a></td><td>http://snomed.info/sct</td><td>Dried blood spot specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441620008\"> </a>  <a href=\"http://snomed.info/id/441620008\">441620008</a></td><td>http://snomed.info/sct</td><td>Oral fluid specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-258580003\"> </a>  <a href=\"http://snomed.info/id/258580003\">258580003</a></td><td>http://snomed.info/sct</td><td>Whole blood specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119364003\"> </a>  <a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>http://snomed.info/sct</td><td>Serum specimen (specimen)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119361006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/119361006\">119361006</a></td><td>http://snomed.info/sct</td><td>Plasma specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-440500007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/440500007\">440500007</a></td><td>http://snomed.info/sct</td><td>Dried blood spot specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-441620008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/441620008\">441620008</a></td><td>http://snomed.info/sct</td><td>Oral fluid specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-258580003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/258580003\">258580003</a></td><td>http://snomed.info/sct</td><td>Whole blood specimen (specimen)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-119364003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/119364003\">119364003</a></td><td>http://snomed.info/sct</td><td>Serum specimen (specimen)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-specimen-type",
       "version" : "0.2.0",
@@ -896,7 +896,7 @@
       "title" : "Specimen Type Used In Viral Load testing",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -916,8 +916,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7ef04185-6273-42cf-9b3b-c8a87b69fb17",
-        "timestamp" : "2023-03-07T16:20:24+00:00",
+        "identifier" : "urn:uuid:60de0c65-c501-48e5-b5b2-bb848e15226e",
+        "timestamp" : "2023-03-07T17:24:47+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -966,7 +966,7 @@
       "id" : "vs-vl-result-code",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-398579006\"> </a>  <a href=\"http://snomed.info/id/398579006\">398579006</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus-1 nucleic acid assay (procedure)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2022</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-398579006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/398579006\">398579006</a></td><td>http://snomed.info/sct</td><td>Human immunodeficiency virus-1 nucleic acid assay (procedure)</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-vl-result-code",
       "version" : "0.2.0",
@@ -974,7 +974,7 @@
       "title" : "Viral Load Result Code",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -994,8 +994,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:54e697d1-fb2d-437a-84d8-b79ede3a1a45",
-        "timestamp" : "2023-03-07T16:20:24+00:00",
+        "identifier" : "urn:uuid:ba250939-3377-45c3-b4fb-ccbe5c883e60",
+        "timestamp" : "2023-03-07T17:24:47+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1024,7 +1024,7 @@
       "id" : "vs-arvtreatment-activity-type",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-45260-7\"> </a>  <a href=\"https://loinc.org/45260-7/\">45260-7</a></td><td>http://loinc.org</td><td>HIV ART medication</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-45260-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/45260-7/\">45260-7</a></td><td>http://loinc.org</td><td>HIV ART medication</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-arvtreatment-activity-type",
       "version" : "0.2.0",
@@ -1032,7 +1032,7 @@
       "title" : "ARV Treatment Medication Request",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1052,8 +1052,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7f4caa08-d84d-42a4-b937-878c4142586d",
-        "timestamp" : "2023-03-07T16:20:24+00:00",
+        "identifier" : "urn:uuid:f9e37990-3d28-4ce7-8d24-8bba7e8574e4",
+        "timestamp" : "2023-03-07T17:24:47+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1082,7 +1082,7 @@
       "id" : "vs-transferred-out",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20597-3\"> </a>  <a href=\"https://loinc.org/LA20597-3/\">LA20597-3</a></td><td>http://loinc.org</td><td>Transferred to another hospital</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20597-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA20597-3/\">LA20597-3</a></td><td>http://loinc.org</td><td>Transferred to another hospital</td></tr></table></div>"
       },
       "url" : "http://openhie.org/fhir/hiv-program-monitoring/ValueSet/vs-transferred-out",
       "version" : "0.2.0",
@@ -1090,7 +1090,7 @@
       "title" : "Transferred out",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-03-07T16:19:15+00:00",
+      "date" : "2023-03-07T17:24:01+00:00",
       "publisher" : "Jembi Health Systems",
       "contact" : [{
         "telecom" : [{
@@ -1110,8 +1110,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:63df3d08-5ddf-462e-b8de-852fd989c053",
-        "timestamp" : "2023-03-07T16:20:27+00:00",
+        "identifier" : "urn:uuid:9181552e-23b7-4e1d-84ed-d3a0ff35c4ab",
+        "timestamp" : "2023-03-07T17:24:48+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
