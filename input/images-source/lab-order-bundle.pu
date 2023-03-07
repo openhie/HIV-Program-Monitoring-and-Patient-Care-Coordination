@@ -13,7 +13,13 @@
       },
     
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/test-order-number",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "FILL"
+          }]
+        },
+        "system" : "http://openhie.org/fhir/hiv-program-monitoring/lab-integration/order-id",
         "value" : "ORDER12345"
       }],
       "basedOn" : [{
@@ -45,25 +51,39 @@
     }
   },
   {
-    "fullUrl" : "Location/HIVServiceRequestLocationExample",
+    "fullUrl" : "Organization/HIVServiceRequestLocationExample",
     "resource" : {
-      "resourceType" : "Location",
+      "resourceType" : "Organization",
       "id" : "HIVServiceRequestLocationExample",
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location"]
       },
-     
-      "name" : "HIV Location",
-      "address" : {
-        "city" : "DISI city",
-        "district" : "DISI district",
-        "state" : "DISI state",
+    
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "XX"
+          }]
+        },
+        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-service-request-location",
+        "value" : "facility2"
+      }],
+      "name" : "Laboratory Services",
+      "address" : [{
+        "line" : ["DISI line 1",
+        "DISI line 2",
+        "DISI line 3"],
+        "city" : "DISI city 1",
+        "district" : "DISI district 1",
+        "state" : "DISI state 1",
+        "postalCode" : "DISI postal code",
         "country" : "DISI country"
-      }
+      }]
     },
     "request" : {
       "method" : "PUT",
-      "url" : "Location/HIVServiceRequestLocationExample"
+      "url" : "Organization/HIVServiceRequestLocationExample"
     }
   },
   {
@@ -74,8 +94,14 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/HIV-lab-order"]
       },
-     
+   
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/lab-order-identifier",
         "value" : "ORDER12345"
       }],
@@ -98,8 +124,8 @@
       "requester" : {
         "reference" : "Practitioner/PractitionerExample"
       },
-      "locationReference" : [{
-        "reference" : "Location/HIVServiceRequestLocationExample"
+      "performer" : [{
+        "reference" : "Organization/HIVServiceRequestLocationExample"
       }],
       "reasonCode" : [{
         "coding" : [{
@@ -131,7 +157,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-practitioner"]
       },
-      
+    
       "name" : [{
         "family" : "Smith",
         "given" : ["James"]
@@ -154,8 +180,15 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/viral-load-specimen"]
       },
-           "identifier" : [{
-        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/specimen",
+    
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "USID"
+          }]
+        },
+        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/specimen-id",
         "value" : "abc123"
       }],
       "type" : {

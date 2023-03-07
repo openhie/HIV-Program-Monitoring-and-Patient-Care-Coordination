@@ -13,7 +13,13 @@
       },
      
       "identifier" : [{
-        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/mn",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "MR"
+          }]
+        },
+        "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/mr",
         "value" : "ORG1-0765712"
       },
       {
@@ -60,7 +66,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/target-facility-encounter"]
       },
-    
+     
       "extension" : [{
         "url" : "http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-care-next-visit",
         "valueDateTime" : "2022-10-22"
@@ -100,7 +106,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter"]
       },
-    
+      
       "status" : "finished",
       "class" : {
         "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -173,8 +179,14 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"]
       },
-     
+   
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PI"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-diagnosis",
         "value" : "abc123"
       }],
@@ -229,7 +241,7 @@
       "code" : {
         "coding" : [{
           "system" : "http://snomed.info/sct",
-          "code" : "419099009"
+          "code" : "419620001"
         }]
       },
       "subject" : {
@@ -296,7 +308,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"]
       },
-     
+    
       "status" : "active",
       "intent" : "plan",
       "subject" : {
@@ -359,6 +371,12 @@
       },
      
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PI"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/enrollment-unique-id",
         "value" : "abc123"
       }],
@@ -440,6 +458,12 @@
       },
      
       "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "XX"
+          }]
+        },
         "system" : "http://openhie.org/fhir/hiv-program-monitoring/identifier/hiv-organization",
         "value" : "facility1"
       }],
