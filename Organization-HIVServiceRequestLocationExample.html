@@ -1,11 +1,9 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Example Location - HIVServiceRequestLocationExample - TTL Representation - FHIR v4.0.1</title>
+    <title>OPENHIE.FHIR.HIV.PROGRAM-MONITORING\Example Organization - HIVServiceRequestLocationExample - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.37"}
-    h3,h4,h5,h6{--heading-prefix:"6.37"}</style>
+    <style type="text/css">h2{--heading-prefix:"6.62"}
+    h3,h4,h5,h6{--heading-prefix:"6.62"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -248,7 +246,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Location - HIVServiceRequestLocationExample</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example Organization - HIVServiceRequestLocationExample</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -260,9 +258,10 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">HIV Program Monitoring and Patient Care Coordination, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination">https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-program-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HIV Program Monitoring and Patient Care Coordination, published by Jembi Health Systems. This is not an authorized publication; it is the continuous build for version 0.2.0). This version is based on the current content of <a href="https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination">https://github.com/openhie/HIV-Program-Monitoring-and-Patient-Care-Coordination</a> and changes regularly. See the <a href="http://openhie.org/fhir/hiv-program-monitoring/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
+  
 
 
 
@@ -273,29 +272,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="Location-HIVServiceRequestLocationExample.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Location-HIVServiceRequestLocationExample.xml.html">XML</a>
+      <a href="Organization-HIVServiceRequestLocationExample.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="Location-HIVServiceRequestLocationExample.json.html">JSON</a>
+      <a href="Organization-HIVServiceRequestLocationExample.json.html">JSON</a>
     </li>
   
 
 
   
-    <li class="active">
-      <a href="#">TTL</a>
+    <li>
+      <a href="Organization-HIVServiceRequestLocationExample.ttl.html">TTL</a>
     </li>
   
 
@@ -304,10 +303,11 @@
 </ul>
 
 
-<a name="root"> </a>
+  <a name="root"> </a>
 
 
-<h2 id="root">: Example Location - HIVServiceRequestLocationExample - TTL Representation</h2>
+  <h2 id="root">Example Organization: Example Organization - HIVServiceRequestLocationExample</h2>
+
   <table class="colsi">
     <tr>
 
@@ -322,44 +322,15 @@
   </table>
 
 
-<p><a href="Location-HIVServiceRequestLocationExample.ttl" no-download="true">Raw ttl</a> | <a href="Location-HIVServiceRequestLocationExample.ttl" download>Download</a></p>
 
   <!-- insert intro if present -->
   
 
 
 
-  <pre class="rdf" style="white-space: pre; overflow: hidden"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="HIVServiceRequestLocationExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;HIVServiceRequestLocationExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-hiv-service-request-location.html">Lab Order Request Location</a></p></div><p><b>identifier</b>: Organization identifier: facility2</p><p><b>name</b>: Laboratory Services</p><p><b>address</b>: DISI line 1 DISI line 2 DISI line 3 DISI city 1 DISI state 1 DISI postal code DISI country </p></div>
 
-# - resource -------------------------------------------------------------------
-
- a fhir:Location ;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/location.html#Location.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;HIVServiceRequestLocationExample&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/location.html#Location.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/location.html#Location.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Location&lt;/b&gt;&lt;a name=\&quot;HIVServiceRequestLocationExample\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Location &amp;quot;HIVServiceRequestLocationExample&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-hiv-service-request-location.html\&quot;&gt;Lab Order Request Location&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: HIV Location&lt;/p&gt;&lt;p&gt;&lt;b&gt;address&lt;/b&gt;: DISI city DISI state DISI country &lt;/p&gt;&lt;/div&gt;&quot;
-  ] ; # 
-  <a href="http://hl7.org/fhir/R4/location.html#Location.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HIV Location&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/location.html#Location.address">fhir:address</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">fhir:city</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DISI city&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.district">fhir:district</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DISI district&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.state">fhir:state</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DISI state&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DISI country&quot; ]
-  ] . # 
-
-</code></pre>
-
-
+  
 
   <!-- insert notes if present -->
   
@@ -389,7 +360,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
            
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 7, 2023 14:13+0000">2023-03-07</span>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.jembi.org">Jembi Health Systems</a>.  Package openhie.fhir.hiv.program-monitoring#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 7, 2023 14:55+0000">2023-03-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

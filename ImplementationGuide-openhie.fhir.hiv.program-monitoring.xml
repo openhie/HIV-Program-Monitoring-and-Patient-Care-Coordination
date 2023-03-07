@@ -12,7 +12,7 @@
   <title value="HIV Program Monitoring and Patient Care Coordination"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-03-07T14:13:00+00:00"/>
+  <date value="2023-03-07T14:55:06+00:00"/>
   <publisher value="Jembi Health Systems"/>
   <contact>
     <telecom>
@@ -478,16 +478,6 @@
       </reference>
       <name value="ARV Treatment"/>
       <description value="This profile is to record prescribed ARV regimen against a given therapeutic line."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/HIVServiceRequestLocationExample"/>
-      </reference>
-      <name value="Example Location - HIVServiceRequestLocationExample"/>
-      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1058,6 +1048,16 @@
       </reference>
       <name value="ARV Treatment Medication Request"/>
       <description value="Codes used to represent a medication request for ART."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HIVServiceRequestLocationExample"/>
+      </reference>
+      <name value="Example Organization - HIVServiceRequestLocationExample"/>
+      <exampleCanonical value="http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-service-request-location"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
