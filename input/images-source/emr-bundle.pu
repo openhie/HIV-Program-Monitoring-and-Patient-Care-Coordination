@@ -106,7 +106,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/transferring-facility-encounter"]
       },
-      
+     
       "status" : "finished",
       "class" : {
         "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
@@ -133,7 +133,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-test-results"]
       },
-    
+     
       "status" : "final",
       "code" : {
         "coding" : [{
@@ -179,7 +179,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-diagnosis"]
       },
-   
+     
       "identifier" : [{
         "type" : {
           "coding" : [{
@@ -308,7 +308,7 @@
       "meta" : {
         "profile" : ["http://openhie.org/fhir/hiv-program-monitoring/StructureDefinition/hiv-arv-treatment"]
       },
-    
+     
       "status" : "active",
       "intent" : "plan",
       "subject" : {
@@ -340,6 +340,10 @@
             }]
           },
           "status" : "in-progress",
+          "scheduledPeriod" : {
+            "start" : "2023-01-01",
+            "end" : "2023-01-01"
+          },
           "productCodeableConcept" : {
             "coding" : [{
               "system" : "http://snomed.info/sct",
