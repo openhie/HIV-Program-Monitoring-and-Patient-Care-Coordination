@@ -45,7 +45,7 @@
   <fhirVersion value="4.0.1"/>
 
  <dependsOn id="HIVCBS">
-    <uri value="https://openhie.github.io/HIV-CBS"/>
+    <uri value="http://build.fhir.org/ig/openhie/HIV-CBS"/>
     <packageId value="openhie.fhir.hiv.cbs"/>
     <version value="current"/>
   </dependsOn>
